@@ -1,0 +1,82 @@
+[
+	{
+		"nama": "Menggunakan handphone tidak sesuai ketentuan",
+		"kategori": 2,
+		"poin_tambahan": false,
+		"poin": 4,
+		"sub_id": 10,
+		"sub": "Pelanggaran ringan"
+	},
+	{
+		"nama": "Menjadi Anggota Batalyon/Polisi Taruna",
+		"kategori": 1,
+		"poin_tambahan": false,
+		"poin": 3,
+		"sub_id": 7,
+		"sub": "Tanggungjawab Dan Kepemimpinan"
+	},
+	{
+		"nama": "Menjadi Wakil Komandan Batalyon/Polisi Taruna",
+		"kategori": 1,
+		"poin_tambahan": false,
+		"poin": 5,
+		"sub_id": 7,
+		"sub": "Tanggungjawab Dan Kepemimpinan"
+	},
+	{
+		"nama": "Mengikuti kegiatan Pengasuhan (Olahraga, Apel, Upacara, Makan Bersama, dll) dengan kehadiran ≥ 80 %",
+		"kategori": 1,
+		"poin_tambahan": false,
+		"poin": 2,
+		"sub_id": 1,
+		"sub": "Disiplin Dan Pantang Menyerah"
+	},
+	{
+		"nama": "Mengikuti kegiatan Pengasuhan (Olahraga, Apel, Upacara, Makan Bersama, dll) dengan kehadiran 100 %",
+		"kategori": 1,
+		"poin_tambahan": false,
+		"poin": 3,
+		"sub_id": 1,
+		"sub": "Disiplin Dan Pantang Menyerah"
+	},
+	{
+		"nama": "Kegiatan lain yang patut diberikan penghargaan dengan pertimbangan Ketua dan Tim Pengasuhan",
+		"kategori": 1,
+		"poin_tambahan": false,
+		"poin": 6,
+		"sub_id": 8,
+		"sub": "Loyalitas Pada Cita-cita Organisasi"
+	},
+	{
+		"nama": "Melaksanakan tugas-tugas kelembagaan dalam rangka percepatan kegiatan/program strategis STPN dan Kementerian ATR/BPN",
+		"kategori": 1,
+		"poin_tambahan": false,
+		"poin": 6,
+		"sub_id": 8,
+		"sub": "Loyalitas Pada Cita-cita Organisasi"
+	},
+	{
+		"nama": "Melaksanakan tugas-tugas pembantuan dalam rangka menunjang kegiatan-kegiatan yang diselenggarakan STPN dan Kementerian ATR/BPN, antara lain Seminar Nasional, Kuliah Umum, Sarasehan Pertanahan, Wisuda, dan kegiatan lain yang sejenis",
+		"kategori": 1,
+		"poin_tambahan": false,
+		"poin": 3,
+		"sub_id": 8,
+		"sub": "Loyalitas Pada Cita-cita Organisasi"
+	},
+	{
+		"nama": "Kegiatan lain yang patut diberikan penghargaan dengan pertimbangan Ketua dan Tim Pengasuhan",
+		"kategori": 1,
+		"poin_tambahan": false,
+		"poin": 10,
+		"sub_id": 7,
+		"sub": "Tanggungjawab Dan Kepemimpinan"
+	},
+	{
+		"nama": "Menjadi Ketua/Koordinator Regu Praktik Kerja Lapangan (PKL)/KKNP-PTLP/Pemberdayaan Taruna dan yang sejenis",
+		"kategori": 1,
+		"poin_tambahan": false,
+		"poin": 4,
+		"sub_id": 7,
+		"sub": "Tanggungjawab Dan Kepemimpinan"
+	}
+]
