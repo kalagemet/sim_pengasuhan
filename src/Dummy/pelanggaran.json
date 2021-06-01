@@ -1,0 +1,44 @@
+[
+	{
+		"SubPenghargaan": [
+			{ "key": 0, "value": 1, "text": "Kesamaptaan" },
+			{ "key": 1, "value": 2, "text": "Kejujuran" },
+			{ "key": 2, "value": 3, "text": "Keindonesiaan Yang Pluralis" },
+			{ "key": 3, "value": 4, "text": "Prima Melayani" },
+			{ "key": 4, "value": 5, "text": "Disiplin Dan Pantang Menyerah" },
+			{
+				"key": 5,
+				"value": 6,
+				"text": "Senantiasa Evaluasi Dan Mengembangkan Diri"
+			},
+			{ "key": 6, "value": 7, "text": "Tanggungjawab Dan Kepemimpinan" },
+			{ "key": 7, "value": 8, "text": "Loyalitas Pada Cita-cita Organisasi" }
+		]
+	},
+	{
+		"SubPelanggaran": [
+			{ "key": 10, "value": 10, "text": "Pelanggaran ringan" },
+			{ "key": 11, "value": 11, "text": "Pelanggaran sedang" },
+			{ "key": 12, "value": 12, "text": "Pelanggaran berat" }
+		]
+	},
+	{
+		"SubPelanggaran": [
+			{ "key": 110, "value": 11, "text": "Pesiar Dan Izin Bermalam" },
+			{ "key": 121, "value": 12, "text": "Tata Cara Pakaian" },
+			{ "key": 123, "value": 13, "text": "Tugas Jaga" },
+			{ "key": 13, "value": 14, "text": "Penggunaan Asrama dan Kebersihan" },
+			{ "key": 14, "value": 15, "text": "Olahraga" },
+			{ "key": 15, "value": 16, "text": "Penggunaan Alat dan Inventaris STPN" },
+			{ "key": 16, "value": 17, "text": "Sikap Kepemimpinan" },
+			{ "key": 17, "value": 18, "text": "Kewenangan" },
+			{ "key": 18, "value": 19, "text": "Kendaraan" },
+			{ "key": 19, "value": 20, "text": "Kelas" },
+			{ "key": 20, "value": 21, "text": "Apel Baris Berbaris dan Laporan" },
+			{ "key": 21, "value": 22, "text": "Keuangan" },
+			{ "key": 22, "value": 23, "text": "Lain - lain" },
+			{ "key": 23, "value": 24, "text": "Etika" },
+			{ "key": 24, "value": 25, "text": "Kewajiban" }
+		]
+	}
+]
