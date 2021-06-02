@@ -16,12 +16,12 @@ class Context extends Component {
 			// 	header: "Sekolah Tinggi Petanahan Nasional",
 			// 	msg: "Lorent ipsum dolar set",
 			// },
-			// {
-			// 	error: 1,
-			// 	user: "all",
-			// 	header: "Pesan dari Sistem",
-			// 	msg: "Pesan Peringatan untuk semua",
-			// },
+			{
+				error: 1,
+				user: "all",
+				header: "Pesan dari Sistem",
+				msg: "Pesan Peringatan untuk semua",
+			},
 		],
 		notification: [],
 	};
@@ -30,9 +30,8 @@ class Context extends Component {
 		this.setState({ loadingApp: bool });
 	};
 
-	notify = async (icon, header, msg) => {
+	notify = (icon, header, msg) => {
 		let tmp = this.state.notification;
-		let i = tmp.length;
 		tmp.unshift({
 			icon: icon,
 			msg: msg,
@@ -42,13 +41,14 @@ class Context extends Component {
 		this.setState({
 			notification: tmp,
 		});
-		setTimeout(() => this.popNotify(i), 3000);
+		setTimeout(() => this.popNotify(msg), 4000);
 	};
 
-	popNotify = async (index) => {
+	popNotify = (msg) => {
 		let tmp = this.state.notification;
+		let index = tmp.indexOf(msg);
 		if (tmp.length > 0) {
-			delete tmp[index];
+			tmp.splice(index, 1);
 			this.setState({ notification: tmp });
 		}
 	};
@@ -60,6 +60,7 @@ class Context extends Component {
 		} else if (this.state.loginAs === "taruna") {
 			this.setState({ loginAs: "admin" });
 		}
+
 		setTimeout(() => this.setLoadingApp(false), 1000);
 	};
 

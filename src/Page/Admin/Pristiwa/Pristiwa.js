@@ -159,7 +159,7 @@ class Pristiwa extends Component {
 															maxLine={2}
 															ellipsis={" ... "}
 															trimRight
-															basedOn="letters"
+															basedOn="words"
 														/>
 													}
 												/>

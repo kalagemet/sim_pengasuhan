@@ -73,7 +73,7 @@ export default function StepThree(props) {
 															maxLine={1}
 															ellipsis={" ... "}
 															trimRight
-															basedOn="letters"
+															basedOn="words"
 														/>
 													</Table.Cell>
 													<Table.Cell>

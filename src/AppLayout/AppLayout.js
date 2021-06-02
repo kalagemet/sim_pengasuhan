@@ -91,20 +91,20 @@ export function AppLayout(props) {
 										<TransitionablePortal
 											key={i}
 											onClose={() => popNotify(i)}
-											open={d.open}
-											transition={{ animation: "fade up", duration: 1000 }}
+											open
+											transition={{ animation: "fade up", duration: 800 }}
 										>
 											<Segment
 												vertical
 												style={{
 													margin: 20,
 													position: "fixed",
-													top: 80 - i * 10 + "%",
+													top: i * 80,
 													zIndex: 1001,
 												}}
 											>
 												<Message
-													onDismiss={() => popNotify(i)}
+													onDismiss={() => popNotify(d.msg)}
 													info
 													icon={d.icon}
 													header={d.header}

@@ -181,7 +181,7 @@ export default function StepOne(props) {
 																			maxLine={1}
 																			ellipsis={" ... "}
 																			trimRight
-																			basedOn="letters"
+																			basedOn="words"
 																		/>
 																	}
 																/>
@@ -212,7 +212,7 @@ export default function StepOne(props) {
 																					maxLine={1}
 																					ellipsis={" ... "}
 																					trimRight
-																					basedOn="letters"
+																					basedOn="words"
 																				/>
 																			);
 																		}}
@@ -363,7 +363,7 @@ export default function StepOne(props) {
 																	maxLine={1}
 																	ellipsis={" ... "}
 																	trimRight
-																	basedOn="letters"
+																	basedOn="words"
 																/>
 															);
 														}}
@@ -383,7 +383,7 @@ export default function StepOne(props) {
 																maxLine={2}
 																ellipsis={" ... "}
 																trimRight
-																basedOn="letters"
+																basedOn="words"
 															/>
 														}
 													/>
