@@ -15,6 +15,7 @@ import {
 	Message,
 	Pagination,
 	Popup,
+	Container,
 } from "semantic-ui-react";
 import LinesEllipsis from "react-lines-ellipsis";
 import { Consumer } from "../../../Context";
@@ -24,8 +25,9 @@ const data_pristiwa = require("../../../Dummy/pristiwa.json");
 export default function StepOne(props) {
 	const [showModal, setShowModal] = useState(false);
 	const [startDate, setStartDate] = useState(new Date());
-	const [pristiwa, setPristiwa] = useState(props.data.pristiwa);
+	const [pristiwa, setPristiwa] = useState([...props.data.pristiwa]);
 	const [dataPristiwa, setDataPristiwa] = useState([]);
+	const [kategori] = [data];
 	const [loading, setLoading] = useState({
 		modal: true,
 		search: true,
@@ -111,7 +113,7 @@ export default function StepOne(props) {
 													}}
 												/>
 												<Dropdown.Header>Sub Pristiwa</Dropdown.Header>
-												{data[0].SubPenghargaan.map((d, i) => {
+												{kategori[0].SubPenghargaan.map((d, i) => {
 													return (
 														<Dropdown.Item
 															key={i}
@@ -125,7 +127,7 @@ export default function StepOne(props) {
 														/>
 													);
 												})}
-												{data[1].SubPelanggaran.map((d, i) => {
+												{kategori[1].SubPelanggaran.map((d, i) => {
 													return (
 														<Dropdown.Item
 															key={i}
@@ -152,7 +154,7 @@ export default function StepOne(props) {
 								</Grid.Column>
 							</Grid.Row>
 						</Grid>
-						{!loading.modal && dataPristiwa.length > 0 ? (
+						{dataPristiwa.length > 0 ? (
 							<Consumer>
 								{({ setNotify }) => (
 									<Segment vertical textAlign="right">
@@ -323,18 +325,21 @@ export default function StepOne(props) {
 					</Grid.Column>
 				</Grid.Row>
 			</Grid>
-			{pristiwa.length === 0 ? (
-				<Message
-					style={{ margin: "50px 0 100px 0" }}
-					warning
-					icon="box"
-					header="Belum ada Pristiwa yang dipilih"
-					content="pilih item pristiwa melalui kolom pencarian atau melalui list pristiwa pada bagian atas pesan ini"
-				/>
-			) : (
-				<Consumer>
-					{({ setNotify }) => (
-						<Segment vertical textAlign="right">
+
+			<Consumer>
+				{({ setNotify }) => (
+					<Segment vertical textAlign="right">
+						{pristiwa.length === 0 ? (
+							<Container textAlign="center">
+								<Message
+									style={{ margin: "50px 0 100px 0" }}
+									warning
+									icon="box"
+									header="Belum ada Pristiwa yang dipilih"
+									content="pilih item pristiwa melalui kolom pencarian atau melalui list pristiwa pada bagian atas pesan ini"
+								/>
+							</Container>
+						) : (
 							<Table unstackable>
 								<Table.Header>
 									<Table.Row>
@@ -417,18 +422,19 @@ export default function StepOne(props) {
 									})}
 								</Table.Body>
 							</Table>
-							<Button
-								onClick={() => props.nextState(pristiwa)}
-								basic
-								primary
-								icon="right arrow"
-								labelPosition="right"
-								content="Selanjutnya"
-							/>
-						</Segment>
-					)}
-				</Consumer>
-			)}
+						)}
+						<Button
+							onClick={() => props.nextState(pristiwa)}
+							basic
+							disabled={pristiwa.length === 0}
+							primary
+							icon="right arrow"
+							labelPosition="right"
+							content="Selanjutnya"
+						/>
+					</Segment>
+				)}
+			</Consumer>
 		</Segment>
 	);
 }

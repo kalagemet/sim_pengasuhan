@@ -102,6 +102,7 @@ class Entri extends Component {
 							render: () => (
 								<Tab.Pane>
 									<StepTwo
+										data={this.state.data}
 										nextState={this.setTaruna}
 										prefState={this.handleTab}
 									/>
