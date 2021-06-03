@@ -7,14 +7,21 @@ import {
 	Segment,
 	Table,
 	Label,
+	Confirm,
 } from "semantic-ui-react";
 import LinesEllipsis from "react-lines-ellipsis";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function StepThree(props) {
-	const pristiwa = props.data.pristiwa;
 	const [loading, setLoading] = useState(false);
 	const [berhasil, setBerhasil] = useState(false);
+	const [konfirmasi, setKonfirmasi] = useState(false);
+
+	useEffect(() => {
+		if (props.data.pristiwa.length === 0 || props.data.taruna.length === 0) {
+			props.prefState(0);
+		}
+	});
 
 	const submitData = () => {
 		setLoading(true);
@@ -52,6 +59,23 @@ export default function StepThree(props) {
 				</Segment>
 			) : (
 				<Segment vertical>
+					<Confirm
+						size="tiny"
+						content={
+							<Header style={{ margin: 40 }} as="h1" icon>
+								<Icon name="help" color="green" />
+								Anda yakin ?
+								<Header.Subheader>
+									Penerapan poin akan berdampak pada status pengasuhan taruna/i
+								</Header.Subheader>
+							</Header>
+						}
+						confirmButton="Ya, Terapkan Poin !"
+						cancelButton="Batal"
+						open={konfirmasi}
+						onCancel={() => setKonfirmasi(false)}
+						onConfirm={() => submitData()}
+					/>
 					<Grid>
 						<Grid.Column textAlign="right" computer={8} tablet={16} mobile={16}>
 							<Table unstackable>
@@ -63,30 +87,28 @@ export default function StepThree(props) {
 									</Table.Row>
 								</Table.Header>
 								<Table.Body>
-									{pristiwa.length > 0
-										? pristiwa.map((d, i) => (
-												<Table.Row key={i}>
-													<Table.Cell>{i + 1}</Table.Cell>
-													<Table.Cell>
-														<LinesEllipsis
-															text={d.nama}
-															maxLine={1}
-															ellipsis={" ... "}
-															trimRight
-															basedOn="words"
-														/>
-													</Table.Cell>
-													<Table.Cell>
-														<Label
-															color={d.kategori === 1 ? "green" : "red"}
-															horizontal
-														>
-															{d.poin}
-														</Label>
-													</Table.Cell>
-												</Table.Row>
-										  ))
-										: ""}
+									{props.data.pristiwa.map((d, i) => (
+										<Table.Row key={i}>
+											<Table.Cell>{i + 1}</Table.Cell>
+											<Table.Cell>
+												<LinesEllipsis
+													text={d.nama}
+													maxLine={1}
+													ellipsis={" ... "}
+													trimRight
+													basedOn="words"
+												/>
+											</Table.Cell>
+											<Table.Cell>
+												<Label
+													color={d.kategori === 1 ? "green" : "red"}
+													horizontal
+												>
+													{d.poin}
+												</Label>
+											</Table.Cell>
+										</Table.Row>
+									))}
 								</Table.Body>
 							</Table>
 						</Grid.Column>
@@ -99,10 +121,14 @@ export default function StepThree(props) {
 									</Table.Row>
 								</Table.Header>
 								<Table.Body>
-									<Table.Row>
-										<Table.Cell>1</Table.Cell>
-										<Table.Cell>156599023 - Hamid Musafa</Table.Cell>
-									</Table.Row>
+									{props.data.taruna.map((d, i) => (
+										<Table.Row key={i}>
+											<Table.Cell>{i + 1}</Table.Cell>
+											<Table.Cell>
+												{d.id} - {d.nama}
+											</Table.Cell>
+										</Table.Row>
+									))}
 								</Table.Body>
 							</Table>
 						</Grid.Column>
@@ -128,7 +154,7 @@ export default function StepThree(props) {
 								icon="save"
 								labelPosition="right"
 								content="Simpan"
-								onClick={() => submitData()}
+								onClick={() => setKonfirmasi(true)}
 							/>
 						</Button.Group>
 					</Segment>

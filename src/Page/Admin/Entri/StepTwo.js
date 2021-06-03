@@ -18,6 +18,7 @@ const data = require("../../../Dummy/taruna.json");
 
 export default function StepTwo(props) {
 	const [checkBox, setCheckBox] = useState(false);
+	const [pilihanTaruna, setPilihanTaruna] = useState([]);
 	const [taruna, setTaruna] = useState([...props.data.taruna]);
 	const [daftarTaruna, setDaftarTaruna] = useState([]);
 	const [loading, setLoading] = useState(true);
@@ -35,9 +36,9 @@ export default function StepTwo(props) {
 
 	const tambahTaruna = (index) => {
 		setTaruna([...taruna, daftarTaruna[index]]);
-		let tmp = daftarTaruna;
-		tmp.splice(index, 1);
-		setDaftarTaruna(tmp);
+		// let tmp = daftarTaruna;
+		// tmp.splice(index, 1);
+		// setDaftarTaruna(tmp);
 	};
 
 	const hapusTaruna = (index) => {
@@ -45,6 +46,36 @@ export default function StepTwo(props) {
 		let tmp = taruna;
 		tmp.splice(index, 1);
 		setTaruna(tmp);
+	};
+
+	const setPilihan = () => {
+		if (checkBox) {
+			setCheckBox(false);
+			setPilihanTaruna([]);
+		} else {
+			setCheckBox(true);
+		}
+	};
+
+	const addPilihan = (bool, data) => {
+		let tmp = pilihanTaruna;
+		if (bool) {
+			setPilihanTaruna([...pilihanTaruna, data]);
+		} else {
+			let index = tmp.indexOf(data);
+			if (index >= 0) {
+				tmp.splice(index, 1);
+				setPilihanTaruna([...tmp]);
+			}
+		}
+	};
+
+	const pilihSemua = () => {
+		setPilihanTaruna([...daftarTaruna]);
+	};
+
+	const tambahPilihan = () => {
+		setTaruna([...taruna, ...pilihanTaruna]);
 	};
 
 	return (
@@ -105,18 +136,31 @@ export default function StepTwo(props) {
 													<Table.HeaderCell textAlign="right">
 														{checkBox ? (
 															<Button.Group size="small">
-																<Button positive>Tambahkan</Button>
+																{pilihanTaruna.length === 0 ? (
+																	<Button
+																		onClick={() => pilihSemua()}
+																		secondary
+																	>
+																		Pilih semua
+																	</Button>
+																) : (
+																	<Button
+																		onClick={() => tambahPilihan()}
+																		primary
+																	>
+																		Tambahkan
+																	</Button>
+																)}
 																<Button
 																	color="orange"
 																	icon="x"
 																	basic
-																	onClick={() => setCheckBox(false)}
+																	onClick={() => setPilihan()}
 																/>
 															</Button.Group>
 														) : (
 															<Button
-																onClick={() => setCheckBox(true)}
-																primary
+																onClick={() => setPilihan()}
 																size="small"
 																content="Pilih"
 																icon="check"
@@ -137,7 +181,13 @@ export default function StepTwo(props) {
 														<Table.Cell>{d.kelas}</Table.Cell>
 														<Table.Cell textAlign="right">
 															{checkBox ? (
-																<Checkbox fitted />
+																<Checkbox
+																	fitted
+																	onClick={(e, data) => {
+																		addPilihan(data.checked, d);
+																	}}
+																	checked={pilihanTaruna.includes(d)}
+																/>
 															) : (
 																<Button
 																	onClick={() => {
@@ -237,7 +287,7 @@ export default function StepTwo(props) {
 					/>
 					<Button
 						disabled={taruna.length === 0}
-						onClick={() => props.nextState()}
+						onClick={() => props.nextState(taruna)}
 						basic
 						primary
 						icon="right arrow"

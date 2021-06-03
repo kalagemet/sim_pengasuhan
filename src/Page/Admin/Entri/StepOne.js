@@ -43,9 +43,9 @@ export default function StepOne(props) {
 
 	const tambahPristiwa = (index) => {
 		setPristiwa([...pristiwa, dataPristiwa[index]]);
-		let tmp = dataPristiwa;
-		tmp.splice(index, 1);
-		setDataPristiwa(tmp);
+		// let tmp = dataPristiwa;
+		// tmp.splice(index, 1);
+		// setDataPristiwa(tmp);
 	};
 
 	const hapusPristiwa = (index) => {

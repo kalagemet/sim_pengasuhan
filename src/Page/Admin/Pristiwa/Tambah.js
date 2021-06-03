@@ -68,7 +68,6 @@ export default function TambahPeristiwa(props) {
 							<Select
 								onChange={(e, d) => setState({ ...state, kategori: d.value })}
 								fluid
-								selectedLabel={1}
 								placeholder="Pilih kategori"
 								value={state.kategori}
 								options={[
@@ -113,7 +112,6 @@ export default function TambahPeristiwa(props) {
 							<Select
 								fluid
 								value={state.subPeristiwa}
-								placeholder="Sapta Karakter"
 								options={
 									state.kategori === 1
 										? data[0].SubPenghargaan
@@ -147,7 +145,7 @@ export default function TambahPeristiwa(props) {
 									nama_peristiwa: props.data.nama,
 									kategori: props.data.kategori,
 									poin: props.data.poin,
-									subPeristiwa: props.data.sub,
+									subPeristiwa: props.data.sub_id,
 								})
 							}
 							content="Reset"

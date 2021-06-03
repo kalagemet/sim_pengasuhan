@@ -22,7 +22,7 @@ class Entri extends Component {
 	};
 
 	setTaruna = (data) => {
-		// this.setState({ ...this.state.data, taruna: data });
+		this.setState({ data: { ...this.state.data, taruna: data } });
 		this.setState({ activeIndex: 2 });
 	};
 
