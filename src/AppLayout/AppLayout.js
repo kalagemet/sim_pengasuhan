@@ -85,7 +85,7 @@ export function AppLayout(props) {
 			}) =>
 				authenticated ? (
 					<div className="app-layout">
-						{notification !== "undefined"
+						{notification.length !== 0
 							? notification.map((d, i) => {
 									return (
 										<TransitionablePortal

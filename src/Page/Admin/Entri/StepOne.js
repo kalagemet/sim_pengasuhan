@@ -43,9 +43,6 @@ export default function StepOne(props) {
 
 	const tambahPristiwa = (index) => {
 		setPristiwa([...pristiwa, dataPristiwa[index]]);
-		// let tmp = dataPristiwa;
-		// tmp.splice(index, 1);
-		// setDataPristiwa(tmp);
 	};
 
 	const hapusPristiwa = (index) => {
@@ -415,7 +412,11 @@ export default function StepOne(props) {
 													/>
 												</Table.Cell>
 												<Table.Cell>
-													<Input placeholder="Tambah keterangan" />
+													<Input
+														value={d.keterangan}
+														onChange={(e, d) => console.log(d.value)}
+														placeholder="Tambah keterangan"
+													/>
 												</Table.Cell>
 											</Table.Row>
 										);
