@@ -7,6 +7,7 @@ import {
 	Icon,
 	Image,
 	Input,
+	Message,
 	Segment,
 } from "semantic-ui-react";
 import loginlogo from "../Assets/image/login.png";
@@ -16,23 +17,34 @@ import { ContextType } from "../Context";
 class Login extends Component {
 	state = {
 		loading: false,
+		username: "",
+		password: "",
+		auth_failed: false,
+		msg_err: "",
+		direct_link: false,
 	};
 
 	static contextType = ContextType;
 
+	componentDidMount() {
+		if (window.location.pathname !== "/") {
+			this.setState({ direct_link: true });
+		}
+	}
+
 	login = async () => {
-		if (this.context.id !== "" || this.context.password !== "") {
+		if (this.state.username !== "" || this.state.password !== "") {
 			this.setState({ loading: true });
-			let ts = new Date();
-			let body = new FormData();
-			body.append(
+			let ts = new Date().toString();
+			var formData = new FormData();
+			formData.append(
 				"post_data",
 				JSON.stringify({
 					isAuth: "logged",
 					verb: "get_list_prodi_many",
-					id: this.context.id,
+					id: this.state.username,
 					tSign: ts,
-					token: md5(md5(this.context.password) + ts),
+					token: md5(md5(this.state.password) + ts),
 					special: 0,
 					operation: "read",
 					payload: {
@@ -49,13 +61,24 @@ class Login extends Component {
 				})
 			);
 			await fetch("http://10.0.21.30/api_pengasuhan/main_api", {
-				mode: "no-cors",
+				// mode: "no-cors",
 				method: "POST",
-				body: body,
+				body: formData,
 			})
 				.then((response) => response.text())
-				.then((response) => console.log(response))
-				.catch((e) => console.error(e));
+				.then((response) =>
+					response === "auth failed"
+						? this.setState({
+								msg: "Autentikasi gagal !!",
+								auth_failed: true,
+								loading: false,
+						  })
+						: console.log(response)
+				)
+				.catch((e) => {
+					console.error(e);
+					this.setState({ msg: "Error priksa console !!", auth_failed: true });
+				});
 		}
 	};
 
@@ -78,28 +101,43 @@ class Login extends Component {
 						</Header>
 						<br />
 					</div>
+					{this.state.auth_failed ? (
+						<Message
+							style={{ margin: "0 70px 20px 40px" }}
+							error
+							content="Autentikasi gagal !!"
+						/>
+					) : this.state.direct_link ? (
+						<Message
+							style={{ margin: "0 70px 20px 40px" }}
+							warning
+							content="Autentikasi diperlukan !!"
+						/>
+					) : (
+						""
+					)}
 					<Form>
 						<Form.Field className="input-field">
 							<Input
-								onChange={(e, d) => this.context.setCredential(d.value, "")}
+								onChange={(e, d) => this.setState({ username: d.value })}
 								icon
 								iconPosition="left"
 								placeholder="username..."
 							>
 								<Icon className="login-icon-form" name="user" />
-								<input value={this.context.id} className="username" />
+								<input value={this.state.username} className="username" />
 							</Input>
 						</Form.Field>
 						<Form.Field className="input-field">
 							<Input
-								onChange={(e, d) => this.context.setCredential("", d.value)}
+								onChange={(e, d) => this.setState({ password: d.value })}
 								icon
 								iconPosition="left"
 								placeholder="password..."
 							>
 								<Icon className="login-icon-form" name="lock" />
 								<input
-									value={this.context.password}
+									value={this.state.password}
 									type="password"
 									name="password"
 									className="password"

@@ -5,9 +5,10 @@ const { Provider, Consumer } = (ContextType = React.createContext());
 
 class Context extends Component {
 	state = {
-		id: "",
-		password: "",
-		token: "",
+		user: {
+			id: "",
+			password: "",
+		},
 		authenticated: false,
 		loginAs: "admin",
 		loadingApp: false,
@@ -26,6 +27,17 @@ class Context extends Component {
 			},
 		],
 		notification: [],
+	};
+
+	setLogin = (id, pass, as) => {
+		this.setState({
+			authenticated: true,
+			user: {
+				id: id,
+				password: pass,
+			},
+			loginAs: as,
+		});
 	};
 
 	setCredential = (id, pass) => {
@@ -78,6 +90,7 @@ class Context extends Component {
 					...this.state,
 					switchUser: this.switchUser,
 					setLoad: this.setLoadingApp,
+					setLogin: this.setLogin,
 					setNotify: this.notify,
 					popNotify: this.popNotify,
 					setCredential: this.setCredential,
