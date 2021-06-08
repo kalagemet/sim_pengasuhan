@@ -1,3 +1,4 @@
+import md5 from "md5";
 import React, { Component } from "react";
 import { Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 import { NavLink } from "react-router-dom";
@@ -119,9 +120,9 @@ const TarunaPanel = () => {
 
 export default class MenuBar extends Component {
 	render() {
-		if (this.props.panel === "admin") {
+		if (this.props.panel === md5("admin")) {
 			return <AdminPanel {...this.props} />;
-		} else if (this.props.panel === "taruna") {
+		} else if (this.props.panel === md5("taruna")) {
 			return <TarunaPanel />;
 		} else {
 			return <div />;

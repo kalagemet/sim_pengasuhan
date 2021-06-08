@@ -15,6 +15,8 @@ import logoStpn from "../Assets/logo_stpn.png";
 import { ContextType } from "../Context";
 
 class Login extends Component {
+	static contextType = ContextType;
+
 	state = {
 		loading: false,
 		username: "",
@@ -24,8 +26,6 @@ class Login extends Component {
 		direct_link: false,
 	};
 
-	static contextType = ContextType;
-
 	componentDidMount() {
 		if (window.location.pathname !== "/") {
 			this.setState({ direct_link: true });
@@ -33,6 +33,7 @@ class Login extends Component {
 	}
 
 	login = async () => {
+		this.setState({ direct_link: false, auth_failed: false });
 		if (this.state.username !== "" || this.state.password !== "") {
 			this.setState({ loading: true });
 			let ts = new Date().toString();
@@ -73,7 +74,7 @@ class Login extends Component {
 								auth_failed: true,
 								loading: false,
 						  })
-						: console.log(response)
+						: this.context.setLogin(response)
 				)
 				.catch((e) => {
 					console.error(e);
@@ -104,6 +105,7 @@ class Login extends Component {
 					{this.state.auth_failed ? (
 						<Message
 							style={{ margin: "0 70px 20px 40px" }}
+							onDismiss={() => this.setState({ auth_failed: false })}
 							error
 							content="Autentikasi gagal !!"
 						/>
@@ -111,6 +113,7 @@ class Login extends Component {
 						<Message
 							style={{ margin: "0 70px 20px 40px" }}
 							warning
+							onDismiss={() => this.setState({ direct_link: false })}
 							content="Autentikasi diperlukan !!"
 						/>
 					) : (

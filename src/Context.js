@@ -1,42 +1,56 @@
+import md5 from "md5";
 import React, { Component } from "react";
+import cookie from "react-cookie";
 
 let ContextType;
 const { Provider, Consumer } = (ContextType = React.createContext());
 
 class Context extends Component {
-	state = {
-		user: {
-			id: "",
-			password: "",
-		},
-		authenticated: false,
-		loginAs: "admin",
-		loadingApp: false,
-		message: [
-			// {
-			// 	error: 0,
-			// 	user: "taruna",
-			// 	header: "Sekolah Tinggi Petanahan Nasional",
-			// 	msg: "Lorent ipsum dolar set",
-			// },
-			{
-				error: 1,
-				user: "all",
-				header: "Pesan dari Sistem",
-				msg: "Pesan Peringatan untuk semua",
+	constructor(props) {
+		super(props);
+		this.state = {
+			user: {
+				id: "",
+				password: "",
 			},
-		],
-		notification: [],
+			authenticated: cookie.load("autenticated") || false,
+			loginAs: cookie.load("user_level") || "",
+			loadingApp: true,
+			message: [
+				// {
+				// 	error: 0,
+				// 	user: "taruna",
+				// 	header: "Sekolah Tinggi Petanahan Nasional",
+				// 	msg: "Lorent ipsum dolar set",
+				// },
+				{
+					error: 1,
+					user: "all",
+					header: "Pesan dari Sistem",
+					msg: "Pesan Peringatan untuk semua",
+				},
+			],
+			notification: [],
+		};
+	}
+
+	setLogin = () => {
+		cookie.save("autenticated", true);
+		cookie.save("user_level", md5("admin"));
+		console.log(md5("admin"));
+		this.setState({
+			authenticated: cookie.load("autenticated") || false,
+			loginAs: cookie.load("user_level") || "",
+		});
+		setTimeout(() => this.setState({ loadingApp: false }), 3000);
 	};
 
-	setLogin = (id, pass, as) => {
+	logout = () => {
+		cookie.remove("autenticated");
+		cookie.remove("user_level");
 		this.setState({
-			authenticated: true,
-			user: {
-				id: id,
-				password: pass,
-			},
-			loginAs: as,
+			authenticated: false,
+			loginAs: "",
 		});
 	};
 
@@ -49,7 +63,7 @@ class Context extends Component {
 		this.setState({ loadingApp: bool });
 	};
 
-	notify = (icon, header, msg) => {
+	notify = async (icon, header, msg) => {
 		let tmp = this.state.notification;
 		tmp.unshift({
 			icon: icon,
@@ -74,12 +88,13 @@ class Context extends Component {
 
 	switchUser = () => {
 		this.setLoadingApp(true);
-		if (this.state.loginAs === "admin") {
-			this.setState({ loginAs: "taruna" });
-		} else if (this.state.loginAs === "taruna") {
-			this.setState({ loginAs: "admin" });
+		if (this.state.loginAs === md5("admin")) {
+			this.setState({ loginAs: md5("taruna") });
+		} else if (this.state.loginAs === md5("taruna")) {
+			this.logout();
+		} else {
+			this.setState({ loginAs: "" });
 		}
-
 		setTimeout(() => this.setLoadingApp(false), 1000);
 	};
 
@@ -91,6 +106,7 @@ class Context extends Component {
 					switchUser: this.switchUser,
 					setLoad: this.setLoadingApp,
 					setLogin: this.setLogin,
+					logout: this.logout,
 					setNotify: this.notify,
 					popNotify: this.popNotify,
 					setCredential: this.setCredential,
