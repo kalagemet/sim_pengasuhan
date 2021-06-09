@@ -15,7 +15,7 @@ class Context extends Component {
 			},
 			authenticated: cookie.load("autenticated") || false,
 			loginAs: cookie.load("user_level") || "",
-			loadingApp: true,
+			loadingApp: false,
 			message: [
 				// {
 				// 	error: 0,
@@ -34,10 +34,16 @@ class Context extends Component {
 		};
 	}
 
-	setLogin = () => {
+	componentWillUnmount() {
+		cookie.save("autenticated", this.state.authenticated, { maxAge: 3600 });
+		cookie.save("user_level", this.state.loginAs, { maxAge: 3600 });
+	}
+
+	setLogin = (id, level, password) => {
 		cookie.save("autenticated", true);
-		cookie.save("user_level", md5("admin"));
-		console.log(md5("admin"));
+		cookie.save("user_level", md5(level));
+		cookie.save("user_id", md5(id));
+		cookie.save("user_lock", md5(password));
 		this.setState({
 			authenticated: cookie.load("autenticated") || false,
 			loginAs: cookie.load("user_level") || "",
@@ -52,11 +58,6 @@ class Context extends Component {
 			authenticated: false,
 			loginAs: "",
 		});
-	};
-
-	setCredential = (id, pass) => {
-		if (id !== "") this.setState({ id: id });
-		if (pass !== "") this.setState({ password: pass });
 	};
 
 	setLoadingApp = (bool) => {
@@ -109,7 +110,6 @@ class Context extends Component {
 					logout: this.logout,
 					setNotify: this.notify,
 					popNotify: this.popNotify,
-					setCredential: this.setCredential,
 				}}
 			>
 				{this.props.children}

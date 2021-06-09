@@ -19,9 +19,12 @@ import TambahTaruna from "./Page/Admin/Users/Tambah";
 import md5 from "md5";
 import { Button, Header, Icon, Modal } from "semantic-ui-react";
 
-function AdminRouter() {
+function AdminRouter(props) {
 	return (
 		<Switch>
+			<Route exact path="/logout">
+				<LogoutModal {...props} />
+			</Route>
 			<Route exact path="/">
 				<Redirect to="/dashboard" />
 			</Route>
@@ -39,9 +42,12 @@ function AdminRouter() {
 	);
 }
 
-function TarunaRouter() {
+function TarunaRouter(props) {
 	return (
 		<Switch>
+			<Route exact path="/logout">
+				<LogoutModal {...props} />
+			</Route>
 			<Route exact path="/">
 				<Redirect to="/dashboard" />
 			</Route>
@@ -49,6 +55,25 @@ function TarunaRouter() {
 			<Route exact path="/transkrip" component={TranskripTaruna} />
 			<Route exact path="*" component={NotFound} />
 		</Switch>
+	);
+}
+
+function LogoutModal(props) {
+	return (
+		<Modal open basic>
+			<Header style={{ margin: "0 30px 0 30px" }} as="h1" icon>
+				<Icon name="sign-out alternate" color="red" />
+				Anda yakin untuk log out ?
+			</Header>
+			<Modal.Actions style={{ textAlign: "center" }}>
+				<Button onClick={() => props.logout()} negative>
+					Ya, Keluar
+				</Button>
+				<Button as="a" href="/" positive>
+					Tidak, kembali
+				</Button>
+			</Modal.Actions>
+		</Modal>
 	);
 }
 
@@ -60,22 +85,16 @@ function App() {
 					<Consumer>
 						{({ loginAs, logout }) => {
 							if (loginAs === md5("admin")) {
-								return <AdminRouter />;
+								return <AdminRouter logout={() => logout()} />;
 							} else if (loginAs === md5("taruna")) {
-								return <TarunaRouter />;
+								return <TarunaRouter logout={() => logout()} />;
 							} else {
 								return (
 									<Modal size="tiny" open basic>
 										<Header style={{ margin: "0 30px 0 30px" }} as="h1" icon>
 											<Icon name="x" color="red" />
-											Autentikasi invalid !!
+											Session invalid!
 										</Header>
-										<Modal.Content>
-											<h3>
-												Identitas aplikasi mencurigakan, Silahkan lakukan login
-												ulang
-											</h3>
-										</Modal.Content>
 										<Modal.Actions style={{ textAlign: "center" }}>
 											<Button onClick={() => logout()} positive>
 												re-Login

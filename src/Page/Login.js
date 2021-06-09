@@ -74,7 +74,11 @@ class Login extends Component {
 								auth_failed: true,
 								loading: false,
 						  })
-						: this.context.setLogin(response)
+						: this.context.setLogin(
+								this.state.username,
+								"admin",
+								this.state.password
+						  )
 				)
 				.catch((e) => {
 					console.error(e);
