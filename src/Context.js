@@ -24,10 +24,10 @@ class Context extends Component {
 				// 	msg: "Lorent ipsum dolar set",
 				// },
 				{
-					error: 1,
+					error: 0,
 					user: "all",
-					header: "Pesan dari Sistem",
-					msg: "Pesan Peringatan untuk semua",
+					header: "Selamat Datang",
+					msg: "Sistem Informasi Pengasuhan STPN Yogyakarta",
 				},
 			],
 			notification: [],

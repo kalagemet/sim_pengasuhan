@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import {
 	Button,
 	Divider,
+	Dropdown,
 	Grid,
 	Header,
 	Icon,
 	Image,
+	Input,
 	Label,
 	Message,
 	Modal,
@@ -22,6 +24,15 @@ import {
 import MenuBar from "./MenuBar";
 import { Consumer } from "../Context";
 import Login from "../Page/Login";
+
+const semester = [
+	{ key: "2020/1", text: "2020/2021", value: "2020/2021" },
+	{ key: "2020/2", text: "2020/2021", value: "2020/2021" },
+	{ key: "2019/1", text: "2019/2020", value: "2019/2020" },
+	{ key: "2019/2", text: "2019/2020", value: "2019/2020" },
+	{ key: "2018/1", text: "2018/2019", value: "2018/2019" },
+	{ key: "2018/2", text: "2018/2019", value: "2018/2019" },
+];
 
 const LogoHeader = (sidebarExpand) => (
 	<Header inverted as="h3" className="header-logo">
@@ -178,7 +189,7 @@ export function AppLayout(props) {
 							<Segment vertical className="header-segment">
 								<Grid>
 									<Grid.Row>
-										<Grid.Column tablet={11} computer={11} mobile={2}>
+										<Grid.Column tablet={8} computer={8} mobile={2}>
 											{mobileView ? (
 												<Button
 													onClick={() => {
@@ -215,12 +226,12 @@ export function AppLayout(props) {
 											)}
 										</Grid.Column>
 										<Grid.Column
-											tablet={5}
-											computer={5}
+											tablet={8}
+											computer={8}
 											mobile={14}
 											textAlign="right"
 										>
-											<Header as="h4" textAlign="right">
+											{/* <Header as="h4" textAlign="right">
 												<Image
 													style={{ marginLeft: "15px" }}
 													className="user-account"
@@ -228,7 +239,28 @@ export function AppLayout(props) {
 													circular
 												/>
 												Hamid Musafa
-											</Header>
+											</Header> */}
+											<span>
+												{mobileView ? "" : "Menampilkan Tahun Ajar :"}
+												<Dropdown
+													direction="left"
+													text={semester[0].value}
+													multiple
+												>
+													<Dropdown.Menu>
+														<Input
+															icon="search"
+															iconPosition="left"
+															className="search"
+														/>
+														<Dropdown.Menu scrolling>
+															{semester.map((option) => (
+																<Dropdown.Item key={option.value} {...option} />
+															))}
+														</Dropdown.Menu>
+													</Dropdown.Menu>
+												</Dropdown>
+											</span>
 										</Grid.Column>
 									</Grid.Row>
 								</Grid>
