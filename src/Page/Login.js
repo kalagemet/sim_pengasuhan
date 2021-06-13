@@ -60,7 +60,6 @@ class Login extends Component {
 			})
 				.then((response) => response.json())
 				.then((response) => {
-					console.log(response);
 					response.is_active === 0
 						? this.setState({
 								msg_err:

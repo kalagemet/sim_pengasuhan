@@ -12,21 +12,76 @@ import {
 	Popup,
 	Search,
 	Segment,
+	Input,
 	Table,
 } from "semantic-ui-react";
 import TambahPeristiwa from "./Tambah";
 import LinesEllipsis from "react-lines-ellipsis";
+import { ContextType } from "../../../Context";
+import md5 from "md5";
 const data = require("../../../Dummy/pelanggaran.json");
 const dataTable = require("../../../Dummy/pristiwa.json");
 
 class Pristiwa extends Component {
+	static contextType = ContextType;
 	state = {
 		loading: true,
+		kategori: [],
+		loadingKategori: true,
+		cariKategori: "",
+		loadingCariKategori: false,
+		kategoriActive: "",
 	};
 
 	componentDidMount() {
 		setTimeout(() => this.setState({ loading: false }), 2000);
+		this.getFilterKategori();
 	}
+
+	getFilterKategori = async () => {
+		let ts = new Date().toString();
+		var formData = new FormData();
+		formData.append(
+			"post_data",
+			JSON.stringify({
+				isAuth: "logged",
+				verb: "get_kategori",
+				id: "admin",
+				tSign: ts,
+				token: md5(this.context.user.token + ts),
+				special: 0,
+				operation: "read",
+				payload: {
+					is_direct: 1,
+					is_filtered: 0,
+					filter: { key1: "nama_kategori" },
+					term: this.state.cariKategori,
+					count: "10",
+					page: "1",
+				},
+			})
+		);
+		await fetch(`${process.env.REACT_APP_API_SERVER}`, {
+			method: "POST",
+			body: formData,
+		})
+			.then((response) => response.json())
+			.then((response) => {
+				if (this.state.cariKategori === "") {
+					this.setState({ kategoriActive: "semua" });
+				}
+				this.setState({
+					kategori: response.data,
+					loadingKategori: false,
+					loadingCariKategori: false,
+				});
+			})
+			.catch((e) => console.error(e));
+	};
+
+	pilihFilter = async (value) => {
+		this.setState({ kategoriActive: value, loading: true });
+	};
 
 	render() {
 		return (
@@ -38,7 +93,9 @@ class Pristiwa extends Component {
 				<Grid columns={2}>
 					<Grid.Column textAlign="left">
 						<Dropdown
-							text="Filter"
+							disabled={this.state.loading || this.state.loadingKategori}
+							loading={this.state.loadingKategori}
+							text={this.state.kategoriActive}
 							icon="filter"
 							floating
 							labeled
@@ -49,9 +106,11 @@ class Pristiwa extends Component {
 								<Dropdown.Menu scrolling>
 									<Dropdown.Header>Kategori</Dropdown.Header>
 									<Dropdown.Item
-										key="semua"
-										value="Semua"
-										text="Semua"
+										key=""
+										active={this.state.kategoriActive === "semua"}
+										value="semua"
+										text="semua"
+										onClick={(e, d) => this.pilihFilter(d.value)}
 										label={{
 											color: "blue",
 											empty: true,
@@ -59,9 +118,11 @@ class Pristiwa extends Component {
 										}}
 									/>
 									<Dropdown.Item
-										key="Penghargaan"
-										value="Penghargaan"
-										text="Penghargaan"
+										key="penghargaan"
+										active={this.state.kategoriActive === "penghargaan"}
+										value="penghargaan"
+										text="penghargaan"
+										onClick={(e, d) => this.pilihFilter(d.value)}
 										label={{
 											color: "green",
 											empty: true,
@@ -69,9 +130,11 @@ class Pristiwa extends Component {
 										}}
 									/>
 									<Dropdown.Item
-										key="Pelanggaran"
-										value="Pelanggaran"
-										text="Pelanggaran"
+										key="pelanggaran"
+										active={this.state.kategoriActive === "pelanggaran"}
+										value="pelanggaran"
+										text="pelanggaran"
+										onClick={(e, d) => this.pilihFilter(d.value)}
 										label={{
 											color: "red",
 											empty: true,
@@ -79,26 +142,43 @@ class Pristiwa extends Component {
 										}}
 									/>
 									<Dropdown.Header>Sub Pristiwa</Dropdown.Header>
-									{data[0].SubPenghargaan.map((d, i) => {
-										return (
-											<Dropdown.Item
-												key={i}
-												value={d.value}
-												text={d.text}
-												label={{ color: "green", empty: true, circular: true }}
-											/>
-										);
-									})}
-									{data[1].SubPelanggaran.map((d, i) => {
-										return (
-											<Dropdown.Item
-												key={i}
-												value={d.value}
-												text={d.text}
-												label={{ color: "red", empty: true, circular: true }}
-											/>
-										);
-									})}
+									<Input
+										focus
+										onClick={(e) => e.stopPropagation()}
+										loading={this.state.loadingCariKategori}
+										onChange={(e, d) =>
+											this.setState(
+												{
+													cariKategori: d.value,
+													loadingCariKategori: true,
+												},
+												this.getFilterKategori
+											)
+										}
+										icon="search"
+										iconPosition="left"
+										className="search"
+									/>
+									{this.state.kategori.length === 0 ? (
+										<Dropdown.Item key={0} text="Tidak ada data" disabled />
+									) : (
+										this.state.kategori.map((d) => {
+											return (
+												<Dropdown.Item
+													key={d.id_kategori}
+													active={this.state.kategoriActive === d.id_kategori}
+													value={d.id_kategori}
+													text={d.nama_kategori}
+													onClick={(e, d) => this.pilihFilter(d.value)}
+													label={{
+														color: d.is_penghargaan === "1" ? "green" : "red",
+														empty: true,
+														circular: true,
+													}}
+												/>
+											);
+										})
+									)}
 								</Dropdown.Menu>
 							</Dropdown.Menu>
 						</Dropdown>{" "}
