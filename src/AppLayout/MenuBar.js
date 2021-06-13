@@ -1,6 +1,6 @@
 import md5 from "md5";
 import React, { Component } from "react";
-import { Menu, MenuItem, SubMenu } from "react-pro-sidebar";
+import { Menu, MenuItem } from "react-pro-sidebar";
 import { NavLink } from "react-router-dom";
 import { Header, Icon } from "semantic-ui-react";
 
@@ -23,7 +23,19 @@ const AdminPanel = () => {
 					Dashboard
 				</MenuItem>
 			</NavLink>
-			<SubMenu
+			<NavLink
+				activeClassName="active"
+				className="menu-item-sidebar"
+				to="/poin"
+			>
+				<MenuItem
+					icon={<Icon name="pencil square" size="large" />}
+					className="menu-item-sidebar"
+				>
+					Poin Pengasuhan
+				</MenuItem>
+			</NavLink>
+			{/* <SubMenu
 				title="Poin Taruna"
 				className="menu-item-sidebar"
 				icon={<Icon name="pencil square" size="large" />}
@@ -42,7 +54,7 @@ const AdminPanel = () => {
 				>
 					<MenuItem>Pemutihan Poin</MenuItem>
 				</NavLink>
-			</SubMenu>
+			</SubMenu> */}
 			<NavLink
 				activeClassName="active"
 				className="menu-item-sidebar"

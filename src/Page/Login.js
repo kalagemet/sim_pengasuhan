@@ -42,7 +42,7 @@ class Login extends Component {
 				"post_data",
 				JSON.stringify({
 					isAuth: "logged",
-					verb: "get_list_prodi_many",
+					verb: "get_data_user_single",
 					id: this.state.username,
 					tSign: ts,
 					token: md5(md5(this.state.password) + ts),
@@ -50,39 +50,38 @@ class Login extends Component {
 					operation: "read",
 					payload: {
 						is_direct: 1,
-						is_multiple: 0,
-						is_filtered: 0,
-						filter: {
-							key1: "nama_prodi",
-						},
-						term: "a",
-						count: "10",
-						page: "1",
+						id: this.state.username,
 					},
 				})
 			);
-			await fetch("http://10.0.21.30/api_pengasuhan/main_api", {
-				// mode: "no-cors",
+			await fetch(process.env.REACT_APP_API_SERVER, {
 				method: "POST",
 				body: formData,
 			})
-				.then((response) => response.text())
-				.then((response) =>
-					response === "auth failed"
+				.then((response) => response.json())
+				.then((response) => {
+					console.log(response);
+					response.is_active === 0
 						? this.setState({
-								msg: "Autentikasi gagal !!",
+								msg_err:
+									"Autentikasi gagal, user anda tidak aktif, silahkan hubungi petugas !!",
 								auth_failed: true,
 								loading: false,
 						  })
 						: this.context.setLogin(
-								this.state.username,
-								"admin",
+								response.id_penguna,
+								response.is_admin === "1" ? true : false,
+								response.f_id,
 								this.state.password
-						  )
-				)
+						  );
+				})
 				.catch((e) => {
-					console.error(e);
-					this.setState({ msg: "Error priksa console !!", auth_failed: true });
+					// console.error(e);
+					this.setState({
+						msg_err: "Username atau Password salah !!",
+						auth_failed: true,
+						loading: false,
+					});
 				});
 		}
 	};
@@ -111,7 +110,7 @@ class Login extends Component {
 							style={{ margin: "0 70px 20px 40px" }}
 							onDismiss={() => this.setState({ auth_failed: false })}
 							error
-							content="Autentikasi gagal !!"
+							content={this.state.msg_err}
 						/>
 					) : this.state.direct_link ? (
 						<Message

@@ -53,8 +53,8 @@ export default function StepThree(props) {
 					<br />
 					<br />
 					<br />
-					<Button onClick={() => props.endState()} positive>
-						Entri Baru
+					<Button onClick={() => props.endState()} primary>
+						Daftar Entri
 					</Button>
 				</Segment>
 			) : (

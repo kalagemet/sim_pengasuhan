@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { Component, useEffect, useState } from "react";
 import {
 	Button,
 	Divider,
@@ -11,6 +11,7 @@ import {
 	Label,
 	Message,
 	Modal,
+	Placeholder,
 	Segment,
 	TransitionablePortal,
 } from "semantic-ui-react";
@@ -22,17 +23,9 @@ import {
 	SidebarHeader,
 } from "react-pro-sidebar";
 import MenuBar from "./MenuBar";
-import { Consumer } from "../Context";
+import { Consumer, ContextType } from "../Context";
 import Login from "../Page/Login";
-
-const semester = [
-	{ key: "2020/1", text: "2020/2021", value: "2020/2021" },
-	{ key: "2020/2", text: "2020/2021", value: "2020/2021" },
-	{ key: "2019/1", text: "2019/2020", value: "2019/2020" },
-	{ key: "2019/2", text: "2019/2020", value: "2019/2020" },
-	{ key: "2018/1", text: "2018/2019", value: "2018/2019" },
-	{ key: "2018/2", text: "2018/2019", value: "2018/2019" },
-];
+import md5 from "md5";
 
 const LogoHeader = (sidebarExpand) => (
 	<Header inverted as="h3" className="header-logo">
@@ -240,27 +233,7 @@ export function AppLayout(props) {
 												/>
 												Hamid Musafa
 											</Header> */}
-											<span>
-												{mobileView ? "" : "Menampilkan Tahun Ajar :"}
-												<Dropdown
-													direction="left"
-													text={semester[0].value}
-													multiple
-												>
-													<Dropdown.Menu>
-														<Input
-															icon="search"
-															iconPosition="left"
-															className="search"
-														/>
-														<Dropdown.Menu scrolling>
-															{semester.map((option) => (
-																<Dropdown.Item key={option.value} {...option} />
-															))}
-														</Dropdown.Menu>
-													</Dropdown.Menu>
-												</Dropdown>
-											</span>
+											<GetTahunAjar mobileView={mobileView} />
 										</Grid.Column>
 									</Grid.Row>
 								</Grid>
@@ -293,4 +266,124 @@ export function AppLayout(props) {
 			}
 		</Consumer>
 	);
+}
+
+class GetTahunAjar extends Component {
+	static contextType = ContextType;
+
+	state = {
+		loading: true,
+		semester: [],
+		semesterActive: "Loading...",
+		cari: "",
+		loadingCari: false,
+	};
+
+	componentDidMount() {
+		this.context.setLoad(false);
+		this.getTahunAjar();
+	}
+
+	getTahunAjar = async () => {
+		let ts = new Date().toString();
+		var formData = new FormData();
+		formData.append(
+			"post_data",
+			JSON.stringify({
+				isAuth: "logged",
+				verb: "get_tahun_ajaran_semua",
+				id: this.context.user.f_id,
+				tSign: ts,
+				token: md5(this.context.user.token + ts),
+				special: 0,
+				operation: "read",
+				payload: {
+					is_direct: 1,
+					is_filtered: 0,
+					filter: { key1: "t.no_tahun" },
+					term: this.state.cari,
+					count: "10",
+					page: "1",
+				},
+			})
+		);
+		await fetch(`${process.env.REACT_APP_API_SERVER}`, {
+			method: "POST",
+			body: formData,
+		})
+			.then((response) => response.json())
+			.then((response) => {
+				this.setState(
+					{
+						semester: response.data,
+						loading: false,
+						loadingCari: false,
+					},
+					() => {
+						this.state.semester.forEach((d) =>
+							d.is_active === "1"
+								? this.setState({
+										semesterActive:
+											d.no_tahun +
+											" " +
+											(d.no_semester === "1" ? "Genap" : "Ganjil"),
+								  })
+								: null
+						);
+					}
+				);
+			})
+			.catch((e) => console.error(e));
+	};
+
+	render() {
+		return this.state.loading ? (
+			<Placeholder fluid>
+				<Placeholder.Line />
+				<Placeholder.Line />
+			</Placeholder>
+		) : (
+			<span>
+				{this.props.mobileView ? "" : "Menampilkan Tahun Ajar :"}
+				<Dropdown direction="left" text={this.state.semesterActive} multiple>
+					<Dropdown.Menu>
+						<Input
+							focus
+							onClick={(e) => e.stopPropagation()}
+							loading={this.state.loadingCari}
+							onChange={(e, d) =>
+								this.setState(
+									{ cari: d.value, loadingCari: true },
+									this.getTahunAjar
+								)
+							}
+							type="number"
+							icon="search"
+							iconPosition="left"
+							className="search"
+						/>
+						<Dropdown.Menu scrolling>
+							{this.state.semester.length === 0 ? (
+								<Dropdown.Item disabled key={0} text="Tidak ada data" />
+							) : (
+								this.state.semester.map((d, i) => (
+									<Dropdown.Item
+										key={i}
+										disabled={this.state.loadingCari}
+										value={d.id_semester}
+										text={
+											d.no_tahun +
+											" " +
+											(d.no_semester === "1" ? "Genap" : "Ganjil")
+										}
+										selected={d.is_active === "1"}
+									/>
+								))
+							)}
+						</Dropdown.Menu>
+					</Dropdown.Menu>
+				</Dropdown>
+			</span>
+		);
+	}
 }

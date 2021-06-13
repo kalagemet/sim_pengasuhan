@@ -9,13 +9,14 @@ class Context extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			user: {
-				id: "",
-				password: "",
-			},
 			authenticated: cookie.load("autenticated") || false,
 			loginAs: cookie.load("user_level") || "",
-			loadingApp: false,
+			user: {
+				user_id: cookie.load("user_id") || "",
+				f_id: cookie.load("f_id") || "",
+				token: cookie.load("user_lock") || "",
+			},
+			loadingApp: true,
 			message: [
 				// {
 				// 	error: 0,
@@ -37,16 +38,25 @@ class Context extends Component {
 	componentWillUnmount() {
 		cookie.save("autenticated", this.state.authenticated, { maxAge: 3600 });
 		cookie.save("user_level", this.state.loginAs, { maxAge: 3600 });
+		cookie.save("user_id", this.state.user.user, { maxAge: 3600 });
+		cookie.save("f_id", this.state.user.f_id, { maxAge: 3600 });
+		cookie.save("user_lock", this.state.user.token, { maxAge: 3600 });
 	}
 
-	setLogin = (id, level, password) => {
+	setLogin = (id, is_admin, f_id, password) => {
 		cookie.save("autenticated", true);
-		cookie.save("user_level", md5(level));
-		cookie.save("user_id", md5(id));
+		cookie.save("user_level", is_admin ? md5("admin") : md5("taruna"));
+		cookie.save("user_id", id);
+		cookie.save("f_id", f_id);
 		cookie.save("user_lock", md5(password));
 		this.setState({
 			authenticated: cookie.load("autenticated") || false,
 			loginAs: cookie.load("user_level") || "",
+			user: {
+				user: cookie.load("user_id") || "",
+				f_id: cookie.load("f_id") || "",
+				token: cookie.load("user_lock") || "",
+			},
 		});
 		setTimeout(() => this.setState({ loadingApp: false }), 3000);
 	};

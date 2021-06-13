@@ -18,6 +18,7 @@ import DetailUser from "./Page/Admin/Users/Detail";
 import TambahTaruna from "./Page/Admin/Users/Tambah";
 import md5 from "md5";
 import { Button, Header, Icon, Modal } from "semantic-ui-react";
+import Poin from "./Page/Admin/Poin/Poin";
 
 function AdminRouter(props) {
 	return (
@@ -29,6 +30,7 @@ function AdminRouter(props) {
 				<Redirect to="/dashboard" />
 			</Route>
 			<Route exact path="/dashboard" component={Dashboard} />
+			<Route path="/poin" component={Poin} />
 			<Route path="/entri-poin" component={Entri} />
 			<Route exact path="/pristiwa" component={Pristiwa} />
 			<Route path="/pristiwa/detail" component={DetailPristiwa} />

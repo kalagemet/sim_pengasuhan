@@ -1,0 +1,100 @@
+get data user single
+{
+				"isAuth": "logged",
+				"verb":"get_data_user_single",
+				"id":"admin",
+				"tSign":"0000",
+				"token":"47e943a33d522bb04645c5acfff36a4c",
+				
+				"special":0,
+				"operation": "read",
+				"payload":
+				{
+					"is_direct":1,
+					"id":"admin"
+				}
+}
+-----------------------------
+get data tahun_ajaran_aktif
+{
+				"isAuth": "logged",
+				"verb":"get_tahun_ajaran_aktif",
+				"id":"admin",
+				"tSign":"0000",
+				"token":"47e943a33d522bb04645c5acfff36a4c",
+				
+				"special":0,
+				"operation": "read",
+				"payload":
+				{
+					"is_direct":1
+				}
+}
+
+
+get tahun ajaran semua
+
+			{
+				"isAuth": "logged",
+				"verb":"get_tahun_ajaran_semua",
+				"id":"admin",
+				"tSign":"0000",
+				"token":"47e943a33d522bb04645c5acfff36a4c",
+				"special":0,
+				"operation": "read",
+				"payload":
+				{
+					"is_direct":1,
+					"is_filtered":0,
+					"filter": {"key1":"t.no_tahun"},
+					"term":"21",
+					"count":"10",
+					"page":"1"
+				}
+			}
+
+
+get kategori
+	{
+				"isAuth": "logged",
+				"verb":"get_kategori",
+				"id":"admin",
+				"tSign":"0000",
+				"token":"47e943a33d522bb04645c5acfff36a4c",
+				"special":0,
+				"operation": "read",
+				"payload":
+				{
+					"is_direct":1,
+					"is_filtered":0,
+					"filter": {"key1":"t.no_tahun"},
+					"term":"21",
+					"count":"10",
+					"page":"1"
+				}
+			}
+
+
+get poin
+	{
+				"isAuth": "logged",
+				"verb":"get_poin",
+				"id":"admin",
+				"tSign":"0000",
+				"token":"47e943a33d522bb04645c5acfff36a4c",
+				"special":0,
+				"operation": "read",
+				"payload":
+				{
+					"is_direct":1,
+					"is_filtered":0,
+					"filter": {"key1":"k.nama_kategori", "key2":"k.is_penghargaan"},
+					"term":"1",
+					"count":"10",
+					"page":"1",
+					"is_and":0
+				}
+	}
+
+is and hanya diisi jika ingin menggunakan logic and. 
+is and boleh ditulis boleh tidak
