@@ -11,8 +11,9 @@ import {
 	Table,
 	Label,
 } from "semantic-ui-react";
+import { ContextType } from "../../../Context";
 
-const Detail = () => {
+const Detail = (props) => {
 	return (
 		<Segment>
 			<Table unstackable basic="very" compact="very" celled>
@@ -21,6 +22,13 @@ const Detail = () => {
 						<Table.HeaderCell>Detail Penguna</Table.HeaderCell>
 						<Table.HeaderCell>
 							<Button
+								onClick={() => {
+									props.setLoad(true);
+									setTimeout(() => {
+										props.setLoad(false);
+										window.open("/transkrip.html", "_blank");
+									}, 2000);
+								}}
 								floated="right"
 								basic
 								positive
@@ -77,6 +85,8 @@ const Detail = () => {
 };
 
 class DetailUsers extends Component {
+	static contextType = ContextType;
+
 	constructor(props) {
 		super(props);
 		this.goBack = this.goBack.bind(this);
@@ -213,7 +223,7 @@ class DetailUsers extends Component {
 							</Segment>
 						</Grid.Column>
 						<Grid.Column computer={6} tablet={16} mobile={16}>
-							<Detail />
+							<Detail setLoad={this.context.setLoad} />
 						</Grid.Column>
 					</Grid.Row>
 				</Grid>

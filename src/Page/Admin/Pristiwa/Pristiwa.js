@@ -30,7 +30,12 @@ class Pristiwa extends Component {
 		loadingKategori: true,
 		cariKategori: "",
 		loadingCariKategori: false,
-		kategoriActive: "",
+		kategoriActive: [
+			{
+				key: "",
+				text: "semua",
+			},
+		],
 	};
 
 	componentDidMount() {
@@ -68,7 +73,7 @@ class Pristiwa extends Component {
 			.then((response) => response.json())
 			.then((response) => {
 				if (this.state.cariKategori === "") {
-					this.setState({ kategoriActive: "semua" });
+					this.setState({ kategoriActive: { text: "semua", key: "" } });
 				}
 				this.setState({
 					kategori: response.data,
@@ -80,7 +85,10 @@ class Pristiwa extends Component {
 	};
 
 	pilihFilter = async (value) => {
-		this.setState({ kategoriActive: value, loading: true });
+		this.setState({
+			kategoriActive: { key: value.value, text: value.text },
+			loading: true,
+		});
 	};
 
 	render() {
@@ -95,7 +103,7 @@ class Pristiwa extends Component {
 						<Dropdown
 							disabled={this.state.loading || this.state.loadingKategori}
 							loading={this.state.loadingKategori}
-							text={this.state.kategoriActive}
+							text={this.state.kategoriActive.text}
 							icon="filter"
 							floating
 							labeled
@@ -107,10 +115,10 @@ class Pristiwa extends Component {
 									<Dropdown.Header>Kategori</Dropdown.Header>
 									<Dropdown.Item
 										key=""
-										active={this.state.kategoriActive === "semua"}
-										value="semua"
+										active={this.state.kategoriActive.key === "semua"}
+										value=""
 										text="semua"
-										onClick={(e, d) => this.pilihFilter(d.value)}
+										onClick={(e, d) => this.pilihFilter(d)}
 										label={{
 											color: "blue",
 											empty: true,
@@ -119,10 +127,10 @@ class Pristiwa extends Component {
 									/>
 									<Dropdown.Item
 										key="penghargaan"
-										active={this.state.kategoriActive === "penghargaan"}
+										active={this.state.kategoriActive.key === "penghargaan"}
 										value="penghargaan"
 										text="penghargaan"
-										onClick={(e, d) => this.pilihFilter(d.value)}
+										onClick={(e, d) => this.pilihFilter(d)}
 										label={{
 											color: "green",
 											empty: true,
@@ -131,10 +139,10 @@ class Pristiwa extends Component {
 									/>
 									<Dropdown.Item
 										key="pelanggaran"
-										active={this.state.kategoriActive === "pelanggaran"}
+										active={this.state.kategoriActive.key === "pelanggaran"}
 										value="pelanggaran"
 										text="pelanggaran"
-										onClick={(e, d) => this.pilihFilter(d.value)}
+										onClick={(e, d) => this.pilihFilter(d)}
 										label={{
 											color: "red",
 											empty: true,
@@ -166,10 +174,12 @@ class Pristiwa extends Component {
 											return (
 												<Dropdown.Item
 													key={d.id_kategori}
-													active={this.state.kategoriActive === d.id_kategori}
+													active={
+														this.state.kategoriActive.key === d.id_kategori
+													}
 													value={d.id_kategori}
 													text={d.nama_kategori}
-													onClick={(e, d) => this.pilihFilter(d.value)}
+													onClick={(e, d) => this.pilihFilter(d)}
 													label={{
 														color: d.is_penghargaan === "1" ? "green" : "red",
 														empty: true,
