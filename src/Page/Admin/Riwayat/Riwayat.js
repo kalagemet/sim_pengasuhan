@@ -88,7 +88,7 @@ class Riwayat extends Component {
 						<Table.Row>
 							<Table.HeaderCell>No.</Table.HeaderCell>
 							<Table.HeaderCell>Tanggal</Table.HeaderCell>
-							<Table.HeaderCell>Nama Pristiwa</Table.HeaderCell>
+							<Table.HeaderCell>Nama peristiwa</Table.HeaderCell>
 							<Table.HeaderCell>User</Table.HeaderCell>
 							<Table.HeaderCell>Aksi</Table.HeaderCell>
 						</Table.Row>

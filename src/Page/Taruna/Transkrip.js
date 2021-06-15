@@ -98,7 +98,7 @@ const TableView = () => {
 					</Grid.Column>
 					<Grid.Column textAlign="right" width={8}>
 						<Select
-							placeholder="Pilih jenis pristiwa"
+							placeholder="Pilih jenis peristiwa"
 							options={[{ key: 1, value: "1", text: "Penghargaan" }]}
 						/>
 					</Grid.Column>
@@ -109,7 +109,7 @@ const TableView = () => {
 					<Table.Row>
 						<Table.HeaderCell>No.</Table.HeaderCell>
 						<Table.HeaderCell>Tanggal</Table.HeaderCell>
-						<Table.HeaderCell>Pristiwa</Table.HeaderCell>
+						<Table.HeaderCell>peristiwa</Table.HeaderCell>
 						<Table.HeaderCell>Jumlah Poin</Table.HeaderCell>
 					</Table.Row>
 				</Table.Header>

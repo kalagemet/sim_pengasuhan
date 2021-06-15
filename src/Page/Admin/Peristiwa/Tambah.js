@@ -51,7 +51,7 @@ export default function TambahPeristiwa(props) {
 				<Grid>
 					<Grid.Row>
 						<Grid.Column>
-							<label>Nama Pristiwa</label>
+							<label>Nama peristiwa</label>
 							<Input
 								fluid
 								value={state.nama_peristiwa}
@@ -64,7 +64,7 @@ export default function TambahPeristiwa(props) {
 					</Grid.Row>
 					<Grid.Row columns={2}>
 						<Grid.Column>
-							<label>Kategori Pristiwa</label>
+							<label>Kategori peristiwa</label>
 							<Select
 								onChange={(e, d) => setState({ ...state, kategori: d.value })}
 								fluid
@@ -108,7 +108,7 @@ export default function TambahPeristiwa(props) {
 					</Grid.Row>
 					<Grid.Row>
 						<Grid.Column>
-							<label>Sub Pristiwa</label>
+							<label>Sub peristiwa</label>
 							<Select
 								fluid
 								value={state.subPeristiwa}

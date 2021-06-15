@@ -149,7 +149,7 @@ export default class Poin extends Component {
 												circular: false,
 											}}
 										/>
-										<Dropdown.Header>Sub Pristiwa</Dropdown.Header>
+										<Dropdown.Header>Sub peristiwa</Dropdown.Header>
 										<Input
 											focus
 											onClick={(e) => e.stopPropagation()}
@@ -226,7 +226,7 @@ export default class Poin extends Component {
 							<Table.Row>
 								<Table.HeaderCell>No.</Table.HeaderCell>
 								<Table.HeaderCell>Tanggal</Table.HeaderCell>
-								<Table.HeaderCell>Pristiwa</Table.HeaderCell>
+								<Table.HeaderCell>peristiwa</Table.HeaderCell>
 								<Table.HeaderCell>Poin</Table.HeaderCell>
 								<Table.HeaderCell>Taruna</Table.HeaderCell>
 								<Table.HeaderCell>Aksi</Table.HeaderCell>

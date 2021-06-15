@@ -18,7 +18,7 @@ const Detail = () => {
 			<Table unstackable basic="very" compact="very" celled>
 				<Table.Header>
 					<Table.Row>
-						<Table.HeaderCell>Detail Pristiwa</Table.HeaderCell>
+						<Table.HeaderCell>Detail peristiwa</Table.HeaderCell>
 						<Table.HeaderCell>
 							<Button
 								size="mini"
@@ -33,7 +33,7 @@ const Detail = () => {
 				</Table.Header>
 				<Table.Body>
 					<Table.Row>
-						<Table.Cell>Nama Pristiwa</Table.Cell>
+						<Table.Cell>Nama peristiwa</Table.Cell>
 						<Table.Cell>Meninggalkan Asrama</Table.Cell>
 					</Table.Row>
 					<Table.Row>
@@ -54,7 +54,7 @@ const Detail = () => {
 	);
 };
 
-class DetailPristiwa extends Component {
+class Detailperistiwa extends Component {
 	constructor(props) {
 		super(props);
 		this.goBack = this.goBack.bind(this);
@@ -169,4 +169,4 @@ class DetailPristiwa extends Component {
 	}
 }
 
-export default DetailPristiwa;
+export default Detailperistiwa;

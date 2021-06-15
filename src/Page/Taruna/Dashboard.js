@@ -126,7 +126,7 @@ const TableView = () => {
 				<Table.Header>
 					<Table.Row>
 						<Table.HeaderCell>No.</Table.HeaderCell>
-						<Table.HeaderCell>Pristiwa</Table.HeaderCell>
+						<Table.HeaderCell>peristiwa</Table.HeaderCell>
 						<Table.HeaderCell>Poin</Table.HeaderCell>
 						<Table.HeaderCell>Tanggal</Table.HeaderCell>
 					</Table.Row>

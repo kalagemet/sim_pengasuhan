@@ -5,35 +5,12 @@ import {
 	Card,
 	Divider,
 	Grid,
-	Header,
 	Icon,
-	Message,
-	Pagination,
 	Segment,
 	Statistic,
-	Table,
 	Placeholder,
 } from "semantic-ui-react";
-
-const LoadingTableView = () => {
-	return (
-		<Segment vertical>
-			<Placeholder fluid>
-				<Placeholder.Header>
-					<Placeholder.Line length="full" />
-					<Placeholder.Line />
-				</Placeholder.Header>
-				<Placeholder.Paragraph>
-					<Placeholder.Image />
-					<Placeholder.Image />
-					<Placeholder.Line length="full" />
-					<Placeholder.Line length="very long" />
-					<Placeholder.Line length="short" />
-				</Placeholder.Paragraph>
-			</Placeholder>
-		</Segment>
-	);
-};
+import TableView from "./TableView";
 
 const LoadingChartView = () => {
 	return (
@@ -82,71 +59,6 @@ const LoadingCardView = () => {
 	);
 };
 
-const TableView = () => {
-	return (
-		<Segment vertical style={{ textAlign: "right" }}>
-			<Header as="h4" textAlign="center">
-				Daftar Taruna dengan Poin Kurang
-				<Header.Subheader>
-					Pilih salah satu Infografis untuk menganti isi Tabel
-				</Header.Subheader>
-			</Header>
-			<Button
-				size="mini"
-				icon="share square"
-				labelPosition="left"
-				content="Export Data"
-				positive
-				basic
-			/>
-			<Table unstackable>
-				<Table.Header>
-					<Table.Row>
-						<Table.HeaderCell>No.</Table.HeaderCell>
-						<Table.HeaderCell>Taruna</Table.HeaderCell>
-						<Table.HeaderCell>Poin</Table.HeaderCell>
-						<Table.HeaderCell>Status</Table.HeaderCell>
-					</Table.Row>
-				</Table.Header>
-				<Table.Body>
-					<Table.Row>
-						<Table.Cell>1</Table.Cell>
-						<Table.Cell>15650028 - Hamid Musafa</Table.Cell>
-						<Table.Cell>55</Table.Cell>
-						<Table.Cell>Aktif</Table.Cell>
-					</Table.Row>
-					<Table.Row>
-						<Table.Cell>1</Table.Cell>
-						<Table.Cell>15650028 - Hamid Musafa</Table.Cell>
-						<Table.Cell>55</Table.Cell>
-						<Table.Cell>Aktif</Table.Cell>
-					</Table.Row>
-					<Table.Row>
-						<Table.Cell>1</Table.Cell>
-						<Table.Cell>15650028 - Hamid Musafa</Table.Cell>
-						<Table.Cell>55</Table.Cell>
-						<Table.Cell>Aktif</Table.Cell>
-					</Table.Row>
-				</Table.Body>
-			</Table>
-			<Message
-				info
-				icon="info circle"
-				content="Menampilkan 1-20 dari 200 Data"
-				style={{ textAlign: "center", fontStyle: "italic" }}
-			/>
-			<Pagination
-				defaultActivePage={1}
-				firstItem={null}
-				lastItem={null}
-				pointing
-				secondary
-				totalPages={3}
-			/>
-		</Segment>
-	);
-};
-
 const CardView = (props) => {
 	return (
 		<div className="card-dashboard">
@@ -159,7 +71,7 @@ const CardView = (props) => {
 						<Statistic.Value>800</Statistic.Value>
 						<Statistic.Label>
 							<Button
-								onClick={() => props.setTableView()}
+								onClick={() => props.setTableView(0)}
 								className="action"
 								animated
 							>
@@ -182,7 +94,7 @@ const CardView = (props) => {
 						<Statistic.Value>32</Statistic.Value>
 						<Statistic.Label>
 							<Button
-								onClick={() => props.setTableView()}
+								onClick={() => props.setTableView(1)}
 								className="action"
 								animated
 							>
@@ -203,7 +115,7 @@ const CardView = (props) => {
 						<Statistic.Value>2 </Statistic.Value>
 						<Statistic.Label>
 							<Button
-								onClick={() => props.setTableView()}
+								onClick={() => props.setTableView(2)}
 								className="action"
 								animated
 							>
@@ -224,7 +136,7 @@ const CardView = (props) => {
 						<Statistic.Value>30</Statistic.Value>
 						<Statistic.Label>
 							<Button
-								onClick={() => props.setTableView()}
+								onClick={() => props.setTableView(3)}
 								className="action"
 								animated
 							>
@@ -269,27 +181,28 @@ const ChartView = () => {
 };
 
 class Dashboard extends Component {
-	state = {
-		loadingTable: true,
-		loadingChart: true,
-		loadingCard: true,
-	};
+	constructor(props) {
+		super(props);
+		this.state = {
+			loadingChart: true,
+			loadingCard: true,
+			activeCard: 0,
+		};
+	}
 
 	componentDidMount() {
 		setTimeout(
 			() =>
 				this.setState({
-					loadingTable: false,
 					loadingCard: false,
 					loadingChart: false,
 				}),
-			4000
+			1000
 		);
 	}
 
-	setTableView = () => {
-		this.setState({ loadingTable: true });
-		setTimeout(() => this.setState({ loadingTable: false }), 1000);
+	setTableView = (index) => {
+		this.setState({ loadingTable: true, activeCard: index });
 	};
 
 	render() {
@@ -299,13 +212,13 @@ class Dashboard extends Component {
 				{this.state.loadingCard ? (
 					<LoadingCardView />
 				) : (
-					<CardView setTableView={() => this.setTableView()} />
+					<CardView setTableView={() => this.setTableView} />
 				)}
 				<Divider />
 				<Grid>
 					<Grid.Row>
 						<Grid.Column mobile={16} tablet={16} computer={8}>
-							{this.state.loadingTable ? <LoadingTableView /> : <TableView />}
+							<TableView index={this.state.activeCard} />
 						</Grid.Column>
 						<Grid.Column mobile={16} tablet={16} computer={8}>
 							{this.state.loadingChart ? <LoadingChartView /> : <ChartView />}

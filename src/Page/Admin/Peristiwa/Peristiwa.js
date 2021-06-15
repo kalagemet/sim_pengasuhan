@@ -20,9 +20,9 @@ import LinesEllipsis from "react-lines-ellipsis";
 import { ContextType } from "../../../Context";
 import md5 from "md5";
 const data = require("../../../Dummy/pelanggaran.json");
-const dataTable = require("../../../Dummy/pristiwa.json");
+const dataTable = require("../../../Dummy/peristiwa.json");
 
-class Pristiwa extends Component {
+class peristiwa extends Component {
 	static contextType = ContextType;
 	state = {
 		loading: true,
@@ -96,7 +96,7 @@ class Pristiwa extends Component {
 			<Segment vertical textAlign="right">
 				<Header textAlign="center" as="h5" dividing color="blue">
 					PERISTIWA PENGASUHAN
-					<Header.Subheader>Manajement pristiwa</Header.Subheader>
+					<Header.Subheader>Manajement peristiwa</Header.Subheader>
 				</Header>
 				<Grid columns={2}>
 					<Grid.Column textAlign="left">
@@ -149,7 +149,7 @@ class Pristiwa extends Component {
 											circular: false,
 										}}
 									/>
-									<Dropdown.Header>Sub Pristiwa</Dropdown.Header>
+									<Dropdown.Header>Sub peristiwa</Dropdown.Header>
 									<Input
 										focus
 										onClick={(e) => e.stopPropagation()}
@@ -195,7 +195,7 @@ class Pristiwa extends Component {
 						<Search placeholder="Cari " icon="search" />
 					</Grid.Column>
 					<Grid.Column>
-						<TambahPeristiwa header="Tambah Pristiwa">
+						<TambahPeristiwa header="Tambah peristiwa">
 							<Button
 								content="Tambah"
 								icon="plus"
@@ -213,7 +213,7 @@ class Pristiwa extends Component {
 								<Table.HeaderCell>No.</Table.HeaderCell>
 								<Table.HeaderCell>Tanggal</Table.HeaderCell>
 								<Table.HeaderCell>Kategori</Table.HeaderCell>
-								<Table.HeaderCell>Nama Pristiwa</Table.HeaderCell>
+								<Table.HeaderCell>Nama peristiwa</Table.HeaderCell>
 								<Table.HeaderCell>Aksi</Table.HeaderCell>
 							</Table.Row>
 						</Table.Header>
@@ -260,7 +260,7 @@ class Pristiwa extends Component {
 														color="blue"
 														animated="vertical"
 														as={Link}
-														to="/pristiwa/detail"
+														to="/peristiwa/detail"
 													>
 														<Button.Content visible>
 															<Icon fitted name="info" />
@@ -269,7 +269,7 @@ class Pristiwa extends Component {
 													</Button>
 													<Button
 														as={Link}
-														to="/pristiwa/riwayat"
+														to="/peristiwa/riwayat"
 														color="teal"
 														animated="vertical"
 													>
@@ -278,7 +278,11 @@ class Pristiwa extends Component {
 														</Button.Content>
 														<Button.Content hidden>Riwayat</Button.Content>
 													</Button>
-													<TambahPeristiwa header="Edit Pristiwa" edit data={d}>
+													<TambahPeristiwa
+														header="Edit peristiwa"
+														edit
+														data={d}
+													>
 														<Button animated="vertical" color="orange">
 															<Button.Content visible>
 																<Icon fitted name="pencil alternate" />
@@ -334,4 +338,4 @@ class Pristiwa extends Component {
 	}
 }
 
-export default Pristiwa;
+export default peristiwa;

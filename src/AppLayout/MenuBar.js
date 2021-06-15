@@ -70,7 +70,7 @@ const AdminPanel = () => {
 			<NavLink
 				activeClassName="active"
 				className="menu-item-sidebar"
-				to="/pristiwa"
+				to="/peristiwa"
 			>
 				<MenuItem
 					className="menu-item-sidebar"

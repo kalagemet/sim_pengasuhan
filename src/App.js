@@ -7,11 +7,11 @@ import { Consumer, Context } from "./Context";
 import NotFound from "./Page/404";
 import Dashboard from "./Page/Admin/Dashboard";
 import Entri from "./Page/Admin/Entri/Entri";
-import Pristiwa from "./Page/Admin/Pristiwa/Pristiwa";
+import peristiwa from "./Page/Admin/Peristiwa/Peristiwa";
 import DashboardTaruna from "./Page/Taruna/Dashboard";
 import TranskripTaruna from "./Page/Taruna/Transkrip";
-import DetailPristiwa from "./Page/Admin/Pristiwa/Detail";
-import RiwayatPristiwa from "./Page/Admin/Pristiwa/Riwayat";
+import Detailperistiwa from "./Page/Admin/Peristiwa/Detail";
+import Riwayatperistiwa from "./Page/Admin/Peristiwa/Riwayat";
 import Riwayat from "./Page/Admin/Riwayat/Riwayat";
 import Users from "./Page/Admin/Users/Users";
 import DetailUser from "./Page/Admin/Users/Detail";
@@ -32,9 +32,9 @@ function AdminRouter(props) {
 			<Route exact path="/dashboard" component={Dashboard} />
 			<Route path="/poin" component={Poin} />
 			<Route path="/entri-poin" component={Entri} />
-			<Route exact path="/pristiwa" component={Pristiwa} />
-			<Route path="/pristiwa/detail" component={DetailPristiwa} />
-			<Route path="/pristiwa/riwayat" component={RiwayatPristiwa} />
+			<Route exact path="/peristiwa" component={peristiwa} />
+			<Route path="/peristiwa/detail" component={Detailperistiwa} />
+			<Route path="/peristiwa/riwayat" component={Riwayatperistiwa} />
 			<Route exact path="/riwayat" component={Riwayat} />
 			<Route exact path="/users" component={Users} />
 			<Route path="/users/detail" component={DetailUser} />

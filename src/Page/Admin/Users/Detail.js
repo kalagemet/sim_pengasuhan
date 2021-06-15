@@ -135,7 +135,7 @@ class DetailUsers extends Component {
 						<Grid.Column computer={10} tablet={16} mobile={16}>
 							<Segment textAlign="right">
 								<Header textAlign="center" as="h4">
-									Daftar Entri Pristiwa
+									Daftar Entri peristiwa
 								</Header>
 								<Grid columns={1}>
 									<Grid.Column textAlign="left">
@@ -149,14 +149,14 @@ class DetailUsers extends Component {
 												},
 											]}
 										/>{" "}
-										<Input placeholder="Cari Pristiwa" icon="search" />
+										<Input placeholder="Cari peristiwa" icon="search" />
 									</Grid.Column>
 								</Grid>
 								<Table unstackable>
 									<Table.Header>
 										<Table.Row>
 											<Table.HeaderCell>No.</Table.HeaderCell>
-											<Table.HeaderCell>Nama Pristiwa</Table.HeaderCell>
+											<Table.HeaderCell>Nama peristiwa</Table.HeaderCell>
 											<Table.HeaderCell>Tanggal</Table.HeaderCell>
 											<Table.HeaderCell>Jumlah Poin</Table.HeaderCell>
 											<Table.HeaderCell>Aksi</Table.HeaderCell>

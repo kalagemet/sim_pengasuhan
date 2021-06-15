@@ -237,7 +237,7 @@ export default function StepTwo(props) {
 									warning
 									icon="box"
 									header="Belum ada Taruna/i yang dipilih"
-									content="pilih item  melalui kolom pencarian atau melalui list pristiwa pada bagian atas/samping kiri"
+									content="pilih item  melalui kolom pencarian atau melalui list peristiwa pada bagian atas/samping kiri"
 								/>
 							) : (
 								<Table unstackable>

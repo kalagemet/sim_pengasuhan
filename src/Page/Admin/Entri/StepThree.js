@@ -18,7 +18,7 @@ export default function StepThree(props) {
 	const [konfirmasi, setKonfirmasi] = useState(false);
 
 	useEffect(() => {
-		if (props.data.pristiwa.length === 0 || props.data.taruna.length === 0) {
+		if (props.data.peristiwa.length === 0 || props.data.taruna.length === 0) {
 			props.prefState(0);
 		}
 	});
@@ -82,12 +82,12 @@ export default function StepThree(props) {
 								<Table.Header>
 									<Table.Row>
 										<Table.HeaderCell>No.</Table.HeaderCell>
-										<Table.HeaderCell>Nama Pristiwa</Table.HeaderCell>
+										<Table.HeaderCell>Nama peristiwa</Table.HeaderCell>
 										<Table.HeaderCell>Poin</Table.HeaderCell>
 									</Table.Row>
 								</Table.Header>
 								<Table.Body>
-									{props.data.pristiwa.map((d, i) => (
+									{props.data.peristiwa.map((d, i) => (
 										<Table.Row key={i}>
 											<Table.Cell>{i + 1}</Table.Cell>
 											<Table.Cell>

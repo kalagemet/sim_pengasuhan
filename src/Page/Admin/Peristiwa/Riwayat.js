@@ -13,7 +13,7 @@ import {
 	Table,
 } from "semantic-ui-react";
 
-class RiwayatPristiwa extends Component {
+class Riwayatperistiwa extends Component {
 	constructor(props) {
 		super(props);
 		this.goBack = this.goBack.bind(this);
@@ -131,4 +131,4 @@ class RiwayatPristiwa extends Component {
 	}
 }
 
-export default RiwayatPristiwa;
+export default Riwayatperistiwa;

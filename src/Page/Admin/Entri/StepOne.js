@@ -20,13 +20,13 @@ import {
 import LinesEllipsis from "react-lines-ellipsis";
 import { Consumer } from "../../../Context";
 const data = require("../../../Dummy/pelanggaran.json");
-const data_pristiwa = require("../../../Dummy/pristiwa.json");
+const data_peristiwa = require("../../../Dummy/peristiwa.json");
 
 export default function StepOne(props) {
 	const [showModal, setShowModal] = useState(false);
 	const [startDate, setStartDate] = useState(new Date());
-	const [pristiwa, setPristiwa] = useState([...props.data.pristiwa]);
-	const [dataPristiwa, setDataPristiwa] = useState([]);
+	const [peristiwa, setperistiwa] = useState([...props.data.peristiwa]);
+	const [dataperistiwa, setDataperistiwa] = useState([]);
 	const [kategori] = [data];
 	const [loading, setLoading] = useState({
 		modal: true,
@@ -34,22 +34,22 @@ export default function StepOne(props) {
 	});
 
 	useEffect(() => {
-		setDataPristiwa(
-			data_pristiwa.filter((el) => {
-				return !pristiwa.includes(el);
+		setDataperistiwa(
+			data_peristiwa.filter((el) => {
+				return !peristiwa.includes(el);
 			})
 		);
-	}, [pristiwa]);
+	}, [peristiwa]);
 
-	const tambahPristiwa = (index) => {
-		setPristiwa([...pristiwa, dataPristiwa[index]]);
+	const tambahperistiwa = (index) => {
+		setperistiwa([...peristiwa, dataperistiwa[index]]);
 	};
 
-	const hapusPristiwa = (index) => {
-		setDataPristiwa([...dataPristiwa, pristiwa[index]]);
-		let tmp = pristiwa;
+	const hapusperistiwa = (index) => {
+		setDataperistiwa([...dataperistiwa, peristiwa[index]]);
+		let tmp = peristiwa;
 		tmp.splice(index, 1);
-		setPristiwa(tmp);
+		setperistiwa(tmp);
 	};
 
 	const ShowTableModal = (props) => {
@@ -62,7 +62,7 @@ export default function StepOne(props) {
 					setTimeout(() => setLoading([{ ...loading, modal: false }]), 1000);
 				}}
 			>
-				<Modal.Header>Daftar Pristiwa Pengasuhan</Modal.Header>
+				<Modal.Header>Daftar peristiwa Pengasuhan</Modal.Header>
 				<Modal.Content scrolling>
 					<Segment vertical loading={loading.modal}>
 						<Grid>
@@ -109,7 +109,7 @@ export default function StepOne(props) {
 														circular: false,
 													}}
 												/>
-												<Dropdown.Header>Sub Pristiwa</Dropdown.Header>
+												<Dropdown.Header>Sub peristiwa</Dropdown.Header>
 												{kategori[0].SubPenghargaan.map((d, i) => {
 													return (
 														<Dropdown.Item
@@ -151,7 +151,7 @@ export default function StepOne(props) {
 								</Grid.Column>
 							</Grid.Row>
 						</Grid>
-						{dataPristiwa.length > 0 ? (
+						{dataperistiwa.length > 0 ? (
 							<Consumer>
 								{({ setNotify }) => (
 									<Segment vertical textAlign="right">
@@ -166,7 +166,7 @@ export default function StepOne(props) {
 												</Table.Row>
 											</Table.Header>
 											<Table.Body duration={200}>
-												{dataPristiwa.map((d, i) => {
+												{dataperistiwa.map((d, i) => {
 													return (
 														<Table.Row key={i}>
 															<Table.Cell>{i + 1}</Table.Cell>
@@ -202,7 +202,7 @@ export default function StepOne(props) {
 																<Button.Group size="mini" floated="right">
 																	<Button
 																		onClick={() => {
-																			tambahPristiwa(i);
+																			tambahperistiwa(i);
 																			setNotify(
 																				"check circle",
 																				"Berhasil menambahkan",
@@ -302,7 +302,7 @@ export default function StepOne(props) {
 					<Grid.Column textAlign="left" mobile={16} tablet={8} computer={8}>
 						<Search
 							input="sdsds"
-							placeholder="Cari Pristiwa"
+							placeholder="Cari peristiwa"
 							icon="search"
 							noResultsMessage="Tidak Ditemukan"
 							noResultsDescription="Tidak ada peristiwa yang anda maksud"
@@ -315,7 +315,7 @@ export default function StepOne(props) {
 								floated="right"
 								color="orange"
 								icon="list"
-								content="List Pristiwa"
+								content="List peristiwa"
 								labelPosition="right"
 							/>
 						</ShowTableModal>
@@ -326,14 +326,14 @@ export default function StepOne(props) {
 			<Consumer>
 				{({ setNotify }) => (
 					<Segment vertical textAlign="right">
-						{pristiwa.length === 0 ? (
+						{peristiwa.length === 0 ? (
 							<Container textAlign="center">
 								<Message
 									style={{ margin: "50px 0 100px 0" }}
 									warning
 									icon="box"
-									header="Belum ada Pristiwa yang dipilih"
-									content="pilih item pristiwa melalui kolom pencarian atau melalui list pristiwa pada bagian atas pesan ini"
+									header="Belum ada peristiwa yang dipilih"
+									content="pilih item peristiwa melalui kolom pencarian atau melalui list peristiwa pada bagian atas pesan ini"
 								/>
 							</Container>
 						) : (
@@ -342,7 +342,7 @@ export default function StepOne(props) {
 									<Table.Row>
 										<Table.HeaderCell> </Table.HeaderCell>
 										<Table.HeaderCell>No.</Table.HeaderCell>
-										<Table.HeaderCell>Nama Pristiwa</Table.HeaderCell>
+										<Table.HeaderCell>Nama peristiwa</Table.HeaderCell>
 										<Table.HeaderCell>Poin</Table.HeaderCell>
 										<Table.HeaderCell>Status</Table.HeaderCell>
 										<Table.HeaderCell>Waktu</Table.HeaderCell>
@@ -350,16 +350,16 @@ export default function StepOne(props) {
 									</Table.Row>
 								</Table.Header>
 								<Table.Body>
-									{pristiwa.map((d, i) => {
+									{peristiwa.map((d, i) => {
 										return (
 											<Table.Row key={i}>
 												<Table.Cell>
 													<Button
 														onClick={() => {
-															hapusPristiwa(i);
+															hapusperistiwa(i);
 															setNotify(
 																"trash alternate",
-																"Pristiwa dihapus",
+																"peristiwa dihapus",
 																<LinesEllipsis
 																	text={d.nama}
 																	maxLine={1}
@@ -425,9 +425,9 @@ export default function StepOne(props) {
 							</Table>
 						)}
 						<Button
-							onClick={() => props.nextState(pristiwa)}
+							onClick={() => props.nextState(peristiwa)}
 							basic
-							disabled={pristiwa.length === 0}
+							disabled={peristiwa.length === 0}
 							primary
 							icon="right arrow"
 							labelPosition="right"

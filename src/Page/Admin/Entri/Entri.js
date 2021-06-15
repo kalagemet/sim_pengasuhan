@@ -10,14 +10,14 @@ class Entri extends Component {
 		this.state = {
 			activeIndex: 0,
 			data: {
-				pristiwa: [],
+				peristiwa: [],
 				taruna: [],
 			},
 		};
 	}
 
-	setPristiwa = (data) => {
-		this.setState({ data: { ...this.state.data, pristiwa: data } });
+	setperistiwa = (data) => {
+		this.setState({ data: { ...this.state.data, peristiwa: data } });
 		this.setState({ activeIndex: 1 });
 	};
 
@@ -35,7 +35,7 @@ class Entri extends Component {
 			activeIndex: 0,
 			berhasil: false,
 			data: {
-				pristiwa: [],
+				peristiwa: [],
 				taruna: [],
 			},
 		});
@@ -60,7 +60,7 @@ class Entri extends Component {
 						completed={this.state.activeIndex > 0 ? true : false}
 					>
 						<Step.Content>
-							<Step.Title>Pristiwa</Step.Title>
+							<Step.Title>peristiwa</Step.Title>
 							<Step.Description>Pilih poin yang akan di entri</Step.Description>
 						</Step.Content>
 					</Step>
@@ -93,7 +93,7 @@ class Entri extends Component {
 								<Tab.Pane>
 									<StepOne
 										data={this.state.data}
-										nextState={this.setPristiwa}
+										nextState={this.setperistiwa}
 									/>
 								</Tab.Pane>
 							),
