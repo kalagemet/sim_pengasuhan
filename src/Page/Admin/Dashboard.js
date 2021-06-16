@@ -186,8 +186,9 @@ class Dashboard extends Component {
 		this.state = {
 			loadingChart: true,
 			loadingCard: true,
-			activeCard: 0,
+			activeCard: 1,
 		};
+		this.setTableView = this.setTableView.bind(this);
 	}
 
 	componentDidMount() {
@@ -202,7 +203,7 @@ class Dashboard extends Component {
 	}
 
 	setTableView = (index) => {
-		this.setState({ loadingTable: true, activeCard: index });
+		this.setState({ activeCard: index });
 	};
 
 	render() {
@@ -212,7 +213,7 @@ class Dashboard extends Component {
 				{this.state.loadingCard ? (
 					<LoadingCardView />
 				) : (
-					<CardView setTableView={() => this.setTableView} />
+					<CardView setTableView={() => this.setTableView()} />
 				)}
 				<Divider />
 				<Grid>

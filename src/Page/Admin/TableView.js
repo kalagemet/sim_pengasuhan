@@ -109,10 +109,62 @@ class SangatBaik extends Component {
 	}
 }
 
+class BelumBaik extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			loading: true,
+		};
+	}
+
+	componentDidMount() {
+		setTimeout(() => this.setState({ loading: false }), 2000);
+	}
+
+	render() {
+		return this.state.loading ? (
+			<LoadingTableView />
+		) : (
+			<Segment vertical style={{ textAlign: "right" }}>
+				<Header as="h4" textAlign="center">
+					Daftar Taruna dengan Poin Kurang
+					<Header.Subheader>
+						Pilih salah satu Infografis untuk menganti isi Tabel
+					</Header.Subheader>
+				</Header>
+				<Button
+					size="mini"
+					icon="share square"
+					labelPosition="left"
+					content="Export Data"
+					positive
+					basic
+				/>
+				<Message
+					info
+					icon="info circle"
+					content="Menampilkan 1-20 dari 200 Data"
+					style={{ textAlign: "center", fontStyle: "italic" }}
+				/>
+				<Pagination
+					defaultActivePage={1}
+					firstItem={null}
+					lastItem={null}
+					pointing
+					secondary
+					totalPages={3}
+				/>
+			</Segment>
+		);
+	}
+}
+
 function TableView(props) {
 	switch (props.index) {
 		case 0:
 			return <SangatBaik {...props} />;
+		case 1:
+			return <BelumBaik {...props} />;
 		default:
 			return <SangatBaik {...props} />;
 	}
