@@ -17,7 +17,7 @@ function Import() {
 	return <Segment vertical></Segment>;
 }
 
-class TambahTaruna extends Component {
+class TambahUser extends Component {
 	constructor(props) {
 		super(props);
 		this.goBack = this.goBack.bind(this);
@@ -29,7 +29,7 @@ class TambahTaruna extends Component {
 
 	render() {
 		return (
-			<Segment vertical>
+			<Segment vertical className="page-content-segment">
 				<Grid>
 					<Grid.Row>
 						<Grid.Column computer={14} tablet={13} mobile={16}>
@@ -87,4 +87,4 @@ class TambahTaruna extends Component {
 	}
 }
 
-export default TambahTaruna;
+export default TambahUser;

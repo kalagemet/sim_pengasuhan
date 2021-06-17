@@ -93,7 +93,7 @@ export default class Poin extends Component {
 
 	render() {
 		return (
-			<Segment textAlign="right" vertical>
+			<Segment textAlign="right" vertical className="page-content-segment">
 				<Header textAlign="center" as="h4" dividing color="blue">
 					Riwayat Poin Pengasuhan
 				</Header>
@@ -205,7 +205,7 @@ export default class Poin extends Component {
 								labelPosition="left"
 								content="Entri Poin"
 								as={Link}
-								to={"/entri-poin"}
+								to={"/poin/entri-poin"}
 								basic
 								positive
 							/>
@@ -226,7 +226,7 @@ export default class Poin extends Component {
 							<Table.Row>
 								<Table.HeaderCell>No.</Table.HeaderCell>
 								<Table.HeaderCell>Tanggal</Table.HeaderCell>
-								<Table.HeaderCell>peristiwa</Table.HeaderCell>
+								<Table.HeaderCell>Jml peristiwa</Table.HeaderCell>
 								<Table.HeaderCell>Poin</Table.HeaderCell>
 								<Table.HeaderCell>Taruna</Table.HeaderCell>
 								<Table.HeaderCell>Aksi</Table.HeaderCell>
@@ -238,7 +238,7 @@ export default class Poin extends Component {
 									<Table.Row key={i}>
 										<Table.Cell>{i + 1}</Table.Cell>
 										<Table.Cell>12/02/2021</Table.Cell>
-										<Table.Cell>Menjadi Komandan </Table.Cell>
+										<Table.Cell>40 Menjadi Komandan... </Table.Cell>
 										<Table.Cell>
 											<Label color="red">@20</Label>
 										</Table.Cell>
@@ -246,12 +246,16 @@ export default class Poin extends Component {
 											20 <Icon name="user" />
 										</Table.Cell>
 										<Table.Cell>
-											<Button fluid animated="vertical" color="orange">
-												<Button.Content visible>
-													<Icon fitted name="pencil alternate" />
-												</Button.Content>
-												<Button.Content hidden>Edit</Button.Content>
-											</Button>
+											<Button
+												as={Link}
+												to="/poin/edit"
+												fluid
+												icon="edit"
+												labelPosition="left"
+												basic
+												content="Edit"
+												color="red"
+											/>
 										</Table.Cell>
 									</Table.Row>
 								);

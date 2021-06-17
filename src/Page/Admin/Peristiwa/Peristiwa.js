@@ -93,7 +93,7 @@ class peristiwa extends Component {
 
 	render() {
 		return (
-			<Segment vertical textAlign="right">
+			<Segment vertical textAlign="right" className="page-content-segment">
 				<Header textAlign="center" as="h5" dividing color="blue">
 					PERISTIWA PENGASUHAN
 					<Header.Subheader>Manajement peristiwa</Header.Subheader>

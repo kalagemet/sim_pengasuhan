@@ -47,7 +47,7 @@ class Entri extends Component {
 
 	render() {
 		return (
-			<Segment vertical>
+			<Segment vertical className="page-content-segment">
 				<Header textAlign="center" as="h3" dividing color="blue">
 					Entri Poin
 					<Header.Subheader>

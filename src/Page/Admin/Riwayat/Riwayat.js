@@ -53,7 +53,7 @@ class Riwayat extends Component {
 			}
 		);
 		return (
-			<Segment vertical textAlign="right">
+			<Segment vertical textAlign="right" className="page-content-segment">
 				<Header textAlign="center" as="h5" dividing color="blue">
 					RIWAYAT SISTEM
 					<Header.Subheader>Riwayat Manajement Pengasuhan</Header.Subheader>

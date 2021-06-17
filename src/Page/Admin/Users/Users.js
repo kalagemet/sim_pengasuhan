@@ -31,7 +31,12 @@ class Users extends Component {
 
 	render() {
 		return (
-			<Segment loading={this.state.loading} textAlign="right" vertical>
+			<Segment
+				loading={this.state.loading}
+				textAlign="right"
+				vertical
+				className="page-content-segment"
+			>
 				<Header textAlign="center" as="h4" dividing color="blue">
 					Manajemen Penguna
 					<Header.Subheader>Manajement penguna pada Sistem</Header.Subheader>

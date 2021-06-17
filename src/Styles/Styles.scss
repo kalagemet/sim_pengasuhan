@@ -186,6 +186,9 @@ $icon-bg-color: transparent !default;
 			border-radius: 5px;
 		}
 	}
+	.page-content-segment {
+		min-height: 80vh;
+	}
 }
 
 .react-datepicker-wrapper {

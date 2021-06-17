@@ -98,7 +98,7 @@ class DetailUsers extends Component {
 
 	render() {
 		return (
-			<Segment vertical>
+			<Segment vertical className="page-content-segment">
 				<Grid>
 					<Grid.Row>
 						<Grid.Column computer={10} tablet={16} mobile={16}>

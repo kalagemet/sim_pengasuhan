@@ -25,7 +25,7 @@ class Riwayatperistiwa extends Component {
 
 	render() {
 		return (
-			<Segment vertical>
+			<Segment vertical className="page-content-segment">
 				<Grid>
 					<Grid.Row>
 						<Grid.Column computer={11} tablet={16} mobile={16}>

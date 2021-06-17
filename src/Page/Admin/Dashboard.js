@@ -208,7 +208,7 @@ class Dashboard extends Component {
 
 	render() {
 		return (
-			<Segment vertical>
+			<Segment vertical className="page-content-segment">
 				<Divider />
 				{this.state.loadingCard ? (
 					<LoadingCardView />
