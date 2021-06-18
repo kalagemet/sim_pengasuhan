@@ -1,5 +1,11 @@
 import React, { Component } from "react";
-import { Segment, Header, Grid, Table } from "semantic-ui-react";
+import { Segment, Header, Grid, Table, Tab } from "semantic-ui-react";
+
+class DaftarTaruna extends Component {
+	render() {
+		return <Segment vertical></Segment>;
+	}
+}
 
 export default class EditPoin extends Component {
 	render() {
@@ -9,8 +15,8 @@ export default class EditPoin extends Component {
 					Edit Entri Poin Pengasuhan
 				</Header>
 				<Grid>
-					<Grid.Column mobile={16} tablet={8} computer={8}>
-						<Table basic="very" definition>
+					<Grid.Column mobile={16} tablet={16} computer={8}>
+						<Table definition>
 							<Table.Body>
 								<Table.Row>
 									<Table.Cell>ID Peristiwa</Table.Cell>
@@ -31,8 +37,30 @@ export default class EditPoin extends Component {
 							</Table.Body>
 						</Table>
 					</Grid.Column>
-					<Grid.Column mobile={16} tablet={8} computer={8}></Grid.Column>
+					<Grid.Column mobile={16} tablet={16} computer={8}></Grid.Column>
 				</Grid>
+				<br />
+				<Tab
+					menu={{ secondary: true, pointing: true }}
+					panes={[
+						{
+							menuItem: "Daftar Taruna",
+							render: () => (
+								<Tab.Pane attached={false}>
+									<DaftarTaruna />
+								</Tab.Pane>
+							),
+						},
+						{
+							menuItem: "Daftar Pristiwa",
+							render: () => (
+								<Tab.Pane attached={false}>
+									<DaftarTaruna />
+								</Tab.Pane>
+							),
+						},
+					]}
+				/>
 			</Segment>
 		);
 	}
