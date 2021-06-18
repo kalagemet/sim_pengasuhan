@@ -3,7 +3,25 @@ import { Segment, Header, Grid, Table, Tab } from "semantic-ui-react";
 
 class DaftarTaruna extends Component {
 	render() {
-		return <Segment vertical></Segment>;
+		return (
+			<Segment vertical>
+				<Header textAlign="center" as="h4">
+					Daftar Taruna pada Etri
+				</Header>
+			</Segment>
+		);
+	}
+}
+
+class DaftarPristiwa extends Component {
+	render() {
+		return (
+			<Segment vertical>
+				<Header textAlign="center" as="h4">
+					Daftar Pristiwa pada Etri
+				</Header>
+			</Segment>
+		);
 	}
 }
 
@@ -55,7 +73,7 @@ export default class EditPoin extends Component {
 							menuItem: "Daftar Pristiwa",
 							render: () => (
 								<Tab.Pane attached={false}>
-									<DaftarTaruna />
+									<DaftarPristiwa />
 								</Tab.Pane>
 							),
 						},
