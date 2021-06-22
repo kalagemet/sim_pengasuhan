@@ -15,8 +15,10 @@
 		"react-google-charts": "^3.0.15",
 		"react-lines-ellipsis": "^0.15.0",
 		"react-pro-sidebar": "^0.6.0",
+		"react-qr-code": "^1.1.1",
 		"react-router-dom": "^5.2.0",
 		"react-scripts": "4.0.3",
+		"react-to-print": "^2.12.6",
 		"semantic-ui-css": "^2.4.1",
 		"semantic-ui-react": "^2.0.3",
 		"web-vitals": "^1.0.1"

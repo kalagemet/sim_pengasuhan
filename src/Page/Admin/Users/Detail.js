@@ -12,6 +12,7 @@ import {
 	Label,
 } from "semantic-ui-react";
 import { ContextType } from "../../../Context";
+import TranskripTaruna from "../Pdf/TranskripTaruna";
 
 const Detail = (props) => {
 	return (
@@ -21,14 +22,7 @@ const Detail = (props) => {
 					<Table.Row>
 						<Table.HeaderCell>Detail Penguna</Table.HeaderCell>
 						<Table.HeaderCell>
-							<Button
-								onClick={() => {
-									props.setLoad(true);
-									setTimeout(() => {
-										props.setLoad(false);
-										window.open("/transkrip.html", "_blank");
-									}, 2000);
-								}}
+							<TranskripTaruna
 								floated="right"
 								basic
 								positive
