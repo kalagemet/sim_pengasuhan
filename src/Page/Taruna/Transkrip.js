@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import {
-	Button,
 	Grid,
 	Header,
 	Label,
@@ -11,6 +10,7 @@ import {
 	Select,
 	Table,
 } from "semantic-ui-react";
+import CetakTranskrip from "../Admin/Pdf/TranskripTaruna";
 
 const DetailTaruna = () => {
 	return (
@@ -20,7 +20,7 @@ const DetailTaruna = () => {
 					<Table.Row>
 						<Table.HeaderCell>Detail Taruna</Table.HeaderCell>
 						<Table.HeaderCell>
-							<Button
+							<CetakTranskrip
 								size="mini"
 								floated="right"
 								positive

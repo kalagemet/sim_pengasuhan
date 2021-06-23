@@ -6,7 +6,7 @@ import logo_stpn from "../../../Assets/logo_stpn.png";
 import ReactToPrint, { PrintContextConsumer } from "react-to-print";
 import { Consumer } from "../../../Context";
 
-const TranskripTarunaDOM = React.forwardRef((props, ref) => (
+const TranskripDOM = React.forwardRef((props, ref) => (
 	<div
 		ref={ref}
 		className="page-pdf"
@@ -98,36 +98,18 @@ const TranskripTarunaDOM = React.forwardRef((props, ref) => (
 					</Table.Row>
 				</Table.Body>
 			</Table>
-			<br />
-			<Grid columns={2}>
-				<Grid.Column></Grid.Column>
-				<Grid.Column textAlign="center">
-					<p>
-						MENGESAHKAN
-						<br />
-						KASUBAG KEMAHASISWAAN DAN ALUMNI
-						<br />
-						SEKOLAH TINGGI PETANAHAN YOGYAKARTA
-					</p>
-					<b>
-						<p style={{ marginTop: 80 }}>
-							<u>Gad Momole, S.SiT., MPA.</u>
-						</p>
-					</b>
-					<p>NIP. 197610101997031003</p>
-				</Grid.Column>
-			</Grid>
 		</Segment>
 		<i>halaman 1 dari 1 halaman</i>
 	</div>
 ));
 
-export default function TranskripTaruna(props) {
+export default function Transkrip(props) {
 	const ref = useRef();
 
 	const print = (func) => {
 		func();
 	};
+	return <TranskripDOM />;
 	return (
 		<Consumer>
 			{({ setLoad }) => (
@@ -143,7 +125,7 @@ export default function TranskripTaruna(props) {
 							)}
 						</PrintContextConsumer>
 					</ReactToPrint>
-					<TranskripTarunaDOM ref={ref} />
+					<TranskripDOM ref={ref} />
 				</div>
 			)}
 		</Consumer>

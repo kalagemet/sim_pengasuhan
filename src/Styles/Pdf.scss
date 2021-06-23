@@ -6,7 +6,7 @@ body {
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 0.5cm;
-	box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+	// box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
 }
 .page-pdf[ukuran="A4"] {
 	width: 21cm;
@@ -32,10 +32,15 @@ body {
 	width: 21cm;
 	height: 14.8cm;
 }
+@media screen {
+	.page-pdf {
+		// display: none;
+	}
+}
 @media print {
 	body,
 	.page-pdf {
 		margin: 0;
-		box-shadow: 0;
+		font-family: "Times New Roman", Times, serif;
 	}
 }

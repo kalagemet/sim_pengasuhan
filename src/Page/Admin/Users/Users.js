@@ -45,23 +45,45 @@ class Users extends Component {
 					<Grid.Row>
 						<Grid.Column textAlign="left" computer={12} mobile={16} tablet={12}>
 							<Select
-								placeholder="Kategori"
+								placeholder="Program Studi"
+								options={[
+									{
+										key: 1,
+										value: "1",
+										text: "D1 Pengukuran Kadstra;",
+									},
+									{
+										key: 2,
+										value: "2",
+										text: "D4 Petanahan",
+									},
+								]}
+							/>{" "}
+							<Select
+								placeholder="Kelas"
 								options={[
 									{
 										key: 1,
 										value: "taruna",
-										text: "Taruna",
+										text: "2019 A",
 									},
 									{
 										key: 2,
 										value: "admin",
-										text: "Administrator",
+										text: "2019 B",
 									},
 								]}
 							/>{" "}
 							<Input placeholder="Cari " iconPosition="left" icon="search" />
 						</Grid.Column>
 						<Grid.Column textAlign="right" computer={4} mobile={16} tablet={4}>
+							<Button
+								icon="print"
+								labelPosition="left"
+								content="Cetak"
+								basic
+								color="blue"
+							/>{" "}
 							<Button
 								icon="add"
 								labelPosition="left"
