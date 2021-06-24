@@ -26,7 +26,6 @@ import MenuBar from "./MenuBar";
 import { Consumer, ContextType } from "../Context";
 import Login from "../Page/Login";
 import md5 from "md5";
-import Transkrip from "../Page/Admin/Pdf/TranskripKomulatif";
 
 const LogoHeader = (sidebarExpand) => (
 	<Header inverted as="h3" className="header-logo">
@@ -77,7 +76,6 @@ export function AppLayout(props) {
 		window.addEventListener("resize", collapsed);
 	});
 
-	return <Transkrip />;
 	return (
 		<Consumer>
 			{({

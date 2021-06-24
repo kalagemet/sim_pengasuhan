@@ -119,8 +119,8 @@ export default function Transkrip(props) {
 	const PAGE_RANGE = 29;
 
 	const data = [
-		1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 12, 12, 12, 1, 21, 2, 2, 1, 1, 2, 2, 3,
-		4, 45, 5, 5, 5,
+		1, 2, 3, 5, 6, 7, 8, 9, 0, 1, 2, 1, 2, 1, 3, 3, 2, 2, 3, 2, 3, 4, 3, 3, 4,
+		34, 34, 34, 34, 34, 34, 3, 3, 43, 43, 43, 43, 43, 4, 343, 4, 343, 4, 3,
 	];
 
 	useEffect(() => {
@@ -129,7 +129,7 @@ export default function Transkrip(props) {
 		} else {
 			setPage(Math.ceil((data.length - PAGE_RANGE_HEADER) / PAGE_RANGE) + 1);
 		}
-	});
+	}, [data.length]);
 
 	const print = (func) => {
 		func();
@@ -139,20 +139,14 @@ export default function Transkrip(props) {
 		var table = [];
 		var inset = 1;
 		var offset = PAGE_RANGE_HEADER;
-		var end = (data.length - PAGE_RANGE_HEADER) % PAGE_RANGE;
 		if (index !== 0) {
 			inset = PAGE_RANGE * (index - 1) + (PAGE_RANGE_HEADER + index);
 			offset = PAGE_RANGE * index + PAGE_RANGE_HEADER + index;
-			if (offset > data.length) {
-				offset = inset + end;
-			}
-		} else {
-			if (offset > data.length) {
-				offset = data.length;
-			}
 		}
-		console.log(offset);
-		for (let i = inset; i < offset + 1; i++) {
+		if (offset > data.length) {
+			offset = data.length + 1;
+		}
+		for (let i = inset; i < offset; i++) {
 			table.push(data[i - 1]);
 		}
 		return table;
@@ -175,11 +169,6 @@ export default function Transkrip(props) {
 	};
 
 	return (
-		<div ref={ref}>
-			<PageDom />
-		</div>
-	);
-	return (
 		<Consumer>
 			{({ setLoad }) => (
 				<div>
@@ -194,14 +183,10 @@ export default function Transkrip(props) {
 							)}
 						</PrintContextConsumer>
 					</ReactToPrint>
-					<TranskripDOM
-						data={[
-							1, 2, 3, 5, 6, 7, 8, 9, 0, 1, 2, 1, 2, 1, 3, 3, 2, 2, 3, 2, 3, 4,
-							3, 3, 4, 34, 34, 34, 34, 34, 34, 3, 3, 43, 43, 43, 43, 43, 4, 343,
-							4, 343, 4, 3,
-						]}
-						ref={ref}
-					/>
+
+					<div ref={ref}>
+						<PageDom />
+					</div>
 				</div>
 			)}
 		</Consumer>

@@ -13,6 +13,7 @@ import {
 	Select,
 	Table,
 } from "semantic-ui-react";
+import CetakTranskrip from "../Pdf/TranskripKomulatif";
 
 const data = require("../../../Dummy/taruna.json");
 
@@ -43,7 +44,7 @@ class Users extends Component {
 				</Header>
 				<Grid>
 					<Grid.Row>
-						<Grid.Column textAlign="left" computer={12} mobile={16} tablet={12}>
+						<Grid.Column textAlign="left" computer={11} mobile={16} tablet={11}>
 							<Select
 								placeholder="Program Studi"
 								options={[
@@ -76,23 +77,25 @@ class Users extends Component {
 							/>{" "}
 							<Input placeholder="Cari " iconPosition="left" icon="search" />
 						</Grid.Column>
-						<Grid.Column textAlign="right" computer={4} mobile={16} tablet={4}>
-							<Button
-								icon="print"
-								labelPosition="left"
-								content="Cetak"
-								basic
-								color="blue"
-							/>{" "}
-							<Button
-								icon="add"
-								labelPosition="left"
-								content="Tambah"
-								as={Link}
-								to={"/users/tambah_taruna"}
-								basic
-								positive
-							/>
+						<Grid.Column textAlign="right" computer={5} mobile={16} tablet={5}>
+							<Button.Group>
+								<CetakTranskrip
+									icon="print"
+									labelPosition="left"
+									content="Cetak"
+									basic
+									color="blue"
+								/>
+								<Button
+									icon="add"
+									labelPosition="left"
+									content="Tambah"
+									as={Link}
+									to={"/users/tambah_taruna"}
+									basic
+									positive
+								/>
+							</Button.Group>
 						</Grid.Column>
 					</Grid.Row>
 				</Grid>
