@@ -1,7 +1,14 @@
-import React, { useRef } from "react";
-import { Grid, Header, Segment, Image, Table, Button } from "semantic-ui-react";
+import React, { useEffect, useRef, useState } from "react";
+import {
+	Grid,
+	Header,
+	Segment,
+	Image,
+	Divider,
+	Table,
+	Button,
+} from "semantic-ui-react";
 import "../../../Styles/Pdf.scss";
-import QRCode from "react-qr-code";
 import logo_stpn from "../../../Assets/logo_stpn.png";
 import ReactToPrint, { PrintContextConsumer } from "react-to-print";
 import { Consumer } from "../../../Context";
@@ -15,101 +22,163 @@ const TranskripDOM = React.forwardRef((props, ref) => (
 	>
 		<Segment vertical style={{ minHeight: "95%" }}>
 			<br />
-			<Grid style={{ borderBottom: "solid 2px" }} columns="3">
-				<Grid.Column width="3" textAlign="center">
-					<Image size="tiny" src={logo_stpn} />
-				</Grid.Column>
-				<Grid.Column width="13" textAlign="left">
-					<Header as="h4">
-						KEMENTRIAN AGRARIA DAN TATA RUANG/
-						<br />
-						BADAN PETANAHAN NASIONAL
-						<br />
-						SEKOLAH TINGGI PETANAHAN NASIONAL
-						<br />
-						<Header.Subheader>
-							Alamat : Jl. Tata Bhumi No.5 Banyuraden Gamping Sleman Yogyakarta
-							55293 Telp : (0274) 587239 Fax : 0274 587138
-						</Header.Subheader>
+
+			{props.header ? (
+				<Segment vertical>
+					<Grid style={{ borderBottom: "solid 2px" }} columns="3">
+						<Grid.Column width="3" textAlign="center">
+							<Image size="tiny" src={logo_stpn} />
+						</Grid.Column>
+						<Grid.Column width="13" textAlign="left">
+							<Header as="h4">
+								KEMENTRIAN AGRARIA DAN TATA RUANG/
+								<br />
+								BADAN PETANAHAN NASIONAL
+								<br />
+								SEKOLAH TINGGI PETANAHAN NASIONAL
+								<br />
+								<Header.Subheader>
+									Alamat : Jl. Tata Bhumi No.5 Banyuraden Gamping Sleman
+									Yogyakarta 55293 Telp : (0274) 587239 Fax : 0274 587138
+								</Header.Subheader>
+							</Header>
+						</Grid.Column>
+					</Grid>
+					<Header textAlign="center" as="h4">
+						<u>TRANSKRIP NILAI PENGASUHAN</u>
 					</Header>
-				</Grid.Column>
-			</Grid>
-			<Header textAlign="center" as="h4">
-				<u>TRANSKRIP NILAI PENGASUHAN</u>
-			</Header>
-			<Grid columns="3">
-				<Grid.Column width="5">
-					<Grid.Row>Nama Taruna</Grid.Row>
-					<Grid.Row>Nomor Induk Taruna</Grid.Row>
-					<Grid.Row>Program Studi</Grid.Row>
-					<Grid.Row>Poin Pengasuhan</Grid.Row>
-					<Grid.Row>Predikat Pengasuhan</Grid.Row>
-				</Grid.Column>
-				<Grid.Column width="7">
-					<Grid.Row>: Nama Taruna</Grid.Row>
-					<Grid.Row>: D124566</Grid.Row>
-					<Grid.Row>: D-IV Pengukuran</Grid.Row>
-					<Grid.Row>: 300</Grid.Row>
-					<Grid.Row>: Sangat Baik</Grid.Row>
-				</Grid.Column>
-				<Grid.Column textAlign="center" width="4">
-					<QRCode level="H" size={80} value="dkdkdkdkd" />
-				</Grid.Column>
-			</Grid>
-			<br />
-			<Table basic="very">
-				<Table.Header style={{ fontWight: "bold" }}>
+					<Grid columns="3">
+						<Grid.Column width="5">
+							<Grid.Row>Kelas</Grid.Row>
+							<Grid.Row>Angkatan</Grid.Row>
+							<Grid.Row>Program Studi</Grid.Row>
+							<Grid.Row>Tahun Ajar</Grid.Row>
+						</Grid.Column>
+						<Grid.Column width="7">
+							<Grid.Row>: Nama Taruna</Grid.Row>
+							<Grid.Row>: D124566</Grid.Row>
+							<Grid.Row>: D-IV Pengukuran</Grid.Row>
+							<Grid.Row>: 2020/2021 Genap</Grid.Row>
+						</Grid.Column>
+						<Grid.Column textAlign="center" width="4"></Grid.Column>
+					</Grid>
+				</Segment>
+			) : (
+				<i>
+					<b>
+						Transkrip Nilai Pengasuhan
+						<Divider />
+					</b>
+				</i>
+			)}
+			<Table size="small" compact="very" celled>
+				<Table.Header>
 					<Table.Row>
-						<Table.HeaderCell>Poin Penghargaan</Table.HeaderCell>
-						<Table.HeaderCell textAlign="right">Total Poin</Table.HeaderCell>
+						<Table.HeaderCell>No.</Table.HeaderCell>
+						<Table.HeaderCell>NIT</Table.HeaderCell>
+						<Table.HeaderCell>Nama Taruna</Table.HeaderCell>
+						<Table.HeaderCell textAlign="center">
+							Poin Penghargaan
+						</Table.HeaderCell>
+						<Table.HeaderCell textAlign="center">
+							Poin Pelanggaran
+						</Table.HeaderCell>
+						<Table.HeaderCell textAlign="center">IPK</Table.HeaderCell>
 					</Table.Row>
 				</Table.Header>
 				<Table.Body>
-					{[1, 2, 3, 4, 5, 6, 7].map((i) => {
+					{props.content.map((d, i) => {
 						return (
 							<Table.Row key={i}>
-								<Table.Cell>{i}. Saptakarakter</Table.Cell>
-								<Table.Cell textAlign="right">50 Poin</Table.Cell>
+								<Table.Cell>
+									{props.page === 1
+										? 1 + i
+										: props.page - 1 + i + 24 + 29 * (props.page - 2)}
+								</Table.Cell>
+								<Table.Cell>123123</Table.Cell>
+								<Table.Cell singleLine>Nama Taruna</Table.Cell>
+								<Table.Cell textAlign="center">{d}</Table.Cell>
+								<Table.Cell textAlign="center">5</Table.Cell>
+								<Table.Cell textAlign="center">5</Table.Cell>
 							</Table.Row>
 						);
 					})}
 				</Table.Body>
 			</Table>
-			<br />
-			<Table basic="very">
-				<Table.Header style={{ fontWight: "bold" }}>
-					<Table.Row>
-						<Table.HeaderCell>Poin Pelanggaran</Table.HeaderCell>
-						<Table.HeaderCell textAlign="right">Total Poin</Table.HeaderCell>
-					</Table.Row>
-				</Table.Header>
-				<Table.Body>
-					<Table.Row>
-						<Table.Cell>1. Pelanggaran ringan</Table.Cell>
-						<Table.Cell textAlign="right">0 Poin</Table.Cell>
-					</Table.Row>
-					<Table.Row>
-						<Table.Cell>2. Pelanggaran sedang</Table.Cell>
-						<Table.Cell textAlign="right">0 Poin</Table.Cell>
-					</Table.Row>
-					<Table.Row>
-						<Table.Cell>3. Pelanggaran berat</Table.Cell>
-						<Table.Cell textAlign="right">0 Poin</Table.Cell>
-					</Table.Row>
-				</Table.Body>
-			</Table>
 		</Segment>
-		<i>halaman 1 dari 1 halaman</i>
+		<i>
+			halaman {props.page} dari {props.totalPage} halaman
+		</i>
 	</div>
 ));
 
 export default function Transkrip(props) {
 	const ref = useRef();
+	const [page, setPage] = useState(0);
+	const PAGE_RANGE_HEADER = 24;
+	const PAGE_RANGE = 29;
+
+	const data = [
+		1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 12, 12, 12, 1, 21, 2, 2, 1, 1, 2, 2, 3,
+		4, 45, 5, 5, 5,
+	];
+
+	useEffect(() => {
+		if (data.length < PAGE_RANGE_HEADER) {
+			setPage(1);
+		} else {
+			setPage(Math.ceil((data.length - PAGE_RANGE_HEADER) / PAGE_RANGE) + 1);
+		}
+	});
 
 	const print = (func) => {
 		func();
 	};
-	return <TranskripDOM />;
+
+	const pagination = (index) => {
+		var table = [];
+		var inset = 1;
+		var offset = PAGE_RANGE_HEADER;
+		var end = (data.length - PAGE_RANGE_HEADER) % PAGE_RANGE;
+		if (index !== 0) {
+			inset = PAGE_RANGE * (index - 1) + (PAGE_RANGE_HEADER + index);
+			offset = PAGE_RANGE * index + PAGE_RANGE_HEADER + index;
+			if (offset > data.length) {
+				offset = inset + end;
+			}
+		} else {
+			if (offset > data.length) {
+				offset = data.length;
+			}
+		}
+		console.log(offset);
+		for (let i = inset; i < offset + 1; i++) {
+			table.push(data[i - 1]);
+		}
+		return table;
+	};
+
+	const PageDom = () => {
+		var hal = [];
+		for (let i = 0; i < page; i++) {
+			hal.push(
+				<TranskripDOM
+					content={pagination(i)}
+					page={i + 1}
+					totalPage={page}
+					header={i === 0}
+					key={i}
+				/>
+			);
+		}
+		return hal;
+	};
+
+	return (
+		<div ref={ref}>
+			<PageDom />
+		</div>
+	);
 	return (
 		<Consumer>
 			{({ setLoad }) => (
@@ -125,7 +194,14 @@ export default function Transkrip(props) {
 							)}
 						</PrintContextConsumer>
 					</ReactToPrint>
-					<TranskripDOM ref={ref} />
+					<TranskripDOM
+						data={[
+							1, 2, 3, 5, 6, 7, 8, 9, 0, 1, 2, 1, 2, 1, 3, 3, 2, 2, 3, 2, 3, 4,
+							3, 3, 4, 34, 34, 34, 34, 34, 34, 3, 3, 43, 43, 43, 43, 43, 4, 343,
+							4, 343, 4, 3,
+						]}
+						ref={ref}
+					/>
 				</div>
 			)}
 		</Consumer>
