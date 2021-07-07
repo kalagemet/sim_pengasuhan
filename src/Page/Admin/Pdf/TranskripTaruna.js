@@ -128,6 +128,19 @@ export default function TranskripTaruna(props) {
 	const print = (func) => {
 		func();
 	};
+
+	const DocumentDom = () => {
+		if (props.singlePage) {
+			return <TranskripTarunaDOM />;
+		} else {
+			var hal = [];
+			for (let i = 0; i < props.data.length; i++) {
+				hal.push(<TranskripTarunaDOM key={i} />);
+			}
+			return hal;
+		}
+	};
+
 	return (
 		<Consumer>
 			{({ setLoad }) => (
@@ -143,7 +156,9 @@ export default function TranskripTaruna(props) {
 							)}
 						</PrintContextConsumer>
 					</ReactToPrint>
-					<TranskripTarunaDOM ref={ref} />
+					<div ref={ref}>
+						<DocumentDom />
+					</div>
 				</div>
 			)}
 		</Consumer>

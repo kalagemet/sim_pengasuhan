@@ -1,8 +1,62 @@
 import React, { Component } from "react";
-import { Button, Grid, Header, Search, Segment, Tab } from "semantic-ui-react";
+import {
+	Button,
+	Grid,
+	Header,
+	Table,
+	Search,
+	Segment,
+	Tab,
+	Message,
+	Pagination,
+	Label,
+} from "semantic-ui-react";
 
 function TambahAdmin() {
-	return <Segment vertical></Segment>;
+	return (
+		<Segment vertical textAlign="right">
+			<Table basic="very" textAlign="center">
+				<Table.Header>
+					<Table.Row>
+						<Table.HeaderCell>No.</Table.HeaderCell>
+						<Table.HeaderCell textAlign="left">Administrator</Table.HeaderCell>
+						<Table.HeaderCell>Dibuat</Table.HeaderCell>
+						<Table.HeaderCell>Status</Table.HeaderCell>
+						<Table.HeaderCell>Password</Table.HeaderCell>
+					</Table.Row>
+				</Table.Header>
+				<Table.Body>
+					{[1, 2, 3, 4, 5].map((i) => {
+						return (
+							<Table.Row key={i}>
+								<Table.Cell>1.</Table.Cell>
+								<Table.Cell textAlign="left">Admin 1</Table.Cell>
+								<Table.Cell>12/01/2021-20.30</Table.Cell>
+								<Table.Cell>Administrator</Table.Cell>
+								<Table.Cell>
+									<Label>s*******</Label>
+								</Table.Cell>
+							</Table.Row>
+						);
+					})}
+				</Table.Body>
+			</Table>
+			<Message
+				info
+				icon="info circle"
+				content="Menampilkan 1-20 dari 200 Data"
+				style={{ textAlign: "center", fontStyle: "italic" }}
+			/>
+			<Pagination
+				defaultActivePage={1}
+				firstItem={null}
+				lastItem={null}
+				pointing
+				secondary
+				totalPages={3}
+			/>
+		</Segment>
+	);
 }
 
 function Tambah() {
@@ -57,7 +111,7 @@ class TambahUser extends Component {
 					menuPosition="right"
 					panes={[
 						{
-							menuItem: "Tambah Administrator",
+							menuItem: "Administrator",
 							render: () => (
 								<Tab.Pane attached={false}>
 									<TambahAdmin />

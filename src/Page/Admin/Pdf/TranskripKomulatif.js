@@ -91,9 +91,7 @@ const TranskripDOM = React.forwardRef((props, ref) => (
 						return (
 							<Table.Row key={i}>
 								<Table.Cell>
-									{props.page === 1
-										? 1 + i
-										: props.page - 1 + i + 24 + 29 * (props.page - 2)}
+									{props.page === 1 ? 1 + i : 28 + 35 * (props.page - 2) + i}
 								</Table.Cell>
 								<Table.Cell>123123</Table.Cell>
 								<Table.Cell singleLine>Nama Taruna</Table.Cell>
@@ -115,13 +113,10 @@ const TranskripDOM = React.forwardRef((props, ref) => (
 export default function Transkrip(props) {
 	const ref = useRef();
 	const [page, setPage] = useState(0);
-	const PAGE_RANGE_HEADER = 24;
-	const PAGE_RANGE = 29;
+	const PAGE_RANGE_HEADER = 28;
+	const PAGE_RANGE = 35;
 
-	const data = [
-		1, 2, 3, 5, 6, 7, 8, 9, 0, 1, 2, 1, 2, 1, 3, 3, 2, 2, 3, 2, 3, 4, 3, 3, 4,
-		34, 34, 34, 34, 34, 34, 3, 3, 43, 43, 43, 43, 43, 4, 343, 4, 343, 4, 3,
-	];
+	const data = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 	useEffect(() => {
 		if (data.length < PAGE_RANGE_HEADER) {
@@ -140,8 +135,8 @@ export default function Transkrip(props) {
 		var inset = 1;
 		var offset = PAGE_RANGE_HEADER;
 		if (index !== 0) {
-			inset = PAGE_RANGE * (index - 1) + (PAGE_RANGE_HEADER + index);
-			offset = PAGE_RANGE * index + PAGE_RANGE_HEADER + index;
+			inset = PAGE_RANGE * (index - 1) + PAGE_RANGE_HEADER;
+			offset = PAGE_RANGE * index + PAGE_RANGE_HEADER;
 		}
 		if (offset > data.length) {
 			offset = data.length + 1;

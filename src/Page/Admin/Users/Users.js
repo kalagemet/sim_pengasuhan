@@ -14,6 +14,7 @@ import {
 	Table,
 } from "semantic-ui-react";
 import CetakTranskrip from "../Pdf/TranskripKomulatif";
+import CetakPilihan from "../Pdf/TranskripTaruna";
 
 const data = require("../../../Dummy/taruna.json");
 
@@ -21,6 +22,8 @@ class Users extends Component {
 	state = {
 		loading: true,
 		taruna: [],
+		pilihanTaruna: [],
+		checkBox: false,
 	};
 
 	componentDidMount() {
@@ -28,6 +31,35 @@ class Users extends Component {
 			() => this.setState({ loading: false, taruna: [...data] }),
 			2000
 		);
+	}
+
+	setPilihan() {
+		if (this.state.checkBox) {
+			this.setState({ checkBox: false });
+		} else {
+			this.setState({ checkBox: true });
+		}
+	}
+
+	addPilihan(bool, data) {
+		let tmp = this.state.pilihanTaruna;
+		if (bool) {
+			this.setState({ pilihanTaruna: [...tmp, data] });
+		} else {
+			let index = tmp.indexOf(data);
+			if (index >= 0) {
+				tmp.splice(index, 1);
+				this.setState({ pilihanTaruna: tmp });
+			}
+		}
+	}
+
+	pilihSemua() {
+		if (this.state.pilihanTaruna.length === this.state.taruna.length) {
+			this.setState({ pilihanTaruna: [] });
+		} else {
+			this.setState({ pilihanTaruna: [...this.state.taruna] });
+		}
 	}
 
 	render() {
@@ -79,13 +111,24 @@ class Users extends Component {
 						</Grid.Column>
 						<Grid.Column textAlign="right" computer={5} mobile={16} tablet={5}>
 							<Button.Group>
-								<CetakTranskrip
-									icon="print"
-									labelPosition="left"
-									content="Cetak"
-									basic
-									color="blue"
-								/>
+								{this.state.checkBox ? (
+									<CetakPilihan
+										data={this.state.pilihanTaruna}
+										disabled={this.state.pilihanTaruna.length === 0}
+										icon="print"
+										labelPosition="left"
+										content="Cetak Pilihan"
+										color="blue"
+									/>
+								) : (
+									<CetakTranskrip
+										icon="print"
+										labelPosition="left"
+										content="Cetak"
+										basic
+										color="blue"
+									/>
+								)}
 								<Button
 									icon="add"
 									labelPosition="left"
@@ -111,7 +154,17 @@ class Users extends Component {
 						<Table unstackable>
 							<Table.Header>
 								<Table.Row>
-									<Table.HeaderCell>No.</Table.HeaderCell>
+									<Table.HeaderCell>
+										<Button onClick={() => this.setPilihan()}>No.</Button>
+										{this.state.checkBox ? (
+											<Button
+												onClick={() => this.pilihSemua()}
+												icon="check square outline"
+											/>
+										) : (
+											""
+										)}
+									</Table.HeaderCell>
 									<Table.HeaderCell>Nama User</Table.HeaderCell>
 									<Table.HeaderCell>Status</Table.HeaderCell>
 									<Table.HeaderCell>Level</Table.HeaderCell>
@@ -123,7 +176,19 @@ class Users extends Component {
 								{this.state.taruna.map((d, i) => {
 									return (
 										<Table.Row key={i}>
-											<Table.Cell>{i + 1}</Table.Cell>
+											<Table.Cell>
+												{this.state.checkBox ? (
+													<Checkbox
+														fitted
+														onClick={(e, data) => {
+															this.addPilihan(data.checked, d);
+														}}
+														checked={this.state.pilihanTaruna.includes(d)}
+													/>
+												) : (
+													i + 1
+												)}
+											</Table.Cell>
 											<Table.Cell>
 												{d.id} - {d.nama}
 											</Table.Cell>

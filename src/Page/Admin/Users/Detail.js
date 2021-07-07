@@ -23,6 +23,7 @@ const Detail = (props) => {
 						<Table.HeaderCell>Detail Penguna</Table.HeaderCell>
 						<Table.HeaderCell>
 							<TranskripTaruna
+								singlePage
 								floated="right"
 								basic
 								positive
