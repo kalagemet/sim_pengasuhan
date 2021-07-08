@@ -88,7 +88,7 @@ class Context extends Component {
 		setTimeout(() => this.popNotify(msg), 4000);
 	};
 
-	popNotify = (msg) => {
+	popNotify = async (msg) => {
 		let tmp = this.state.notification;
 		let index = tmp.indexOf(msg);
 		if (tmp.length > 0) {

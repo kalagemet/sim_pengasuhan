@@ -20,6 +20,7 @@ import md5 from "md5";
 import { Button, Header, Icon, Modal } from "semantic-ui-react";
 import Poin from "./Page/Admin/Poin/Poin";
 import EditPoin from "./Page/Admin/Poin/EditPoin";
+import RequiredApi from "./Dummy/Required";
 
 function AdminRouter(props) {
 	return (
@@ -44,6 +45,9 @@ function AdminRouter(props) {
 			<Route exact path="/users" component={Users} />
 			<Route path="/users/detail" component={DetailUser} />
 			<Route path="/users/tambah_taruna" component={TambahTaruna} />
+
+			<Route exact path="/api" component={RequiredApi} />
+
 			<Route exact path="*" component={NotFound} />
 		</Switch>
 	);

@@ -34,19 +34,22 @@ export default function StepOne(props) {
 	});
 
 	useEffect(() => {
-		setDataperistiwa(
-			data_peristiwa.filter((el) => {
-				return !peristiwa.includes(el);
-			})
-		);
+		// setDataperistiwa(
+		// 	data_peristiwa.filter((el) => {
+		// 		return !peristiwa.includes(el);
+		// 	})
+		// );
+		setDataperistiwa(data_peristiwa);
 	}, [peristiwa]);
 
 	const tambahperistiwa = (index) => {
-		setperistiwa([...peristiwa, dataperistiwa[index]]);
+		if (!peristiwa.includes(dataperistiwa[index])) {
+			setperistiwa([...peristiwa, dataperistiwa[index]]);
+		}
 	};
 
 	const hapusperistiwa = (index) => {
-		setDataperistiwa([...dataperistiwa, peristiwa[index]]);
+		// setDataperistiwa([...dataperistiwa, peristiwa[index]]);
 		let tmp = peristiwa;
 		tmp.splice(index, 1);
 		setperistiwa(tmp);
@@ -196,31 +199,53 @@ export default function StepOne(props) {
 															<Table.Cell>
 																{d.kategori === 1
 																	? "Penghargaan"
-																	: "Pelangaran"}
+																	: "Pelanggaran"}
 															</Table.Cell>
 															<Table.Cell>
-																<Button.Group size="mini" floated="right">
-																	<Button
-																		onClick={() => {
-																			tambahperistiwa(i);
-																			setNotify(
-																				"check circle",
-																				"Berhasil menambahkan",
-																				<LinesEllipsis
-																					text={d.nama}
-																					maxLine={1}
-																					ellipsis={" ... "}
-																					trimRight
-																					basedOn="words"
-																				/>
-																			);
-																		}}
-																		primary
-																		size="tiny"
-																		content="Tambah"
-																		labelPosition="left"
-																		icon="add"
-																	/>
+																<Button.Group fluid size="mini" floated="right">
+																	{peristiwa.includes(d) === true ? (
+																		<Button
+																			onClick={() => {
+																				hapusperistiwa(i);
+																				setNotify(
+																					"trash alternate",
+																					"peristiwa dihapus",
+																					<LinesEllipsis
+																						text={d.nama}
+																						maxLine={1}
+																						ellipsis={" ... "}
+																						trimRight
+																						basedOn="words"
+																					/>
+																				);
+																			}}
+																			color="red"
+																			content="Hapus"
+																			labelPosition="left"
+																			icon="trash"
+																		/>
+																	) : (
+																		<Button
+																			onClick={() => {
+																				tambahperistiwa(i);
+																				setNotify(
+																					"check circle",
+																					"Berhasil menambahkan",
+																					<LinesEllipsis
+																						text={d.nama}
+																						maxLine={1}
+																						ellipsis={" ... "}
+																						trimRight
+																						basedOn="words"
+																					/>
+																				);
+																			}}
+																			primary
+																			content="Tambah"
+																			labelPosition="left"
+																			icon="add"
+																		/>
+																	)}
 																	<Button animated color="orange" size="tiny">
 																		<Button.Content hidden content="Edit" />
 																		<Button.Content visible>
