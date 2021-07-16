@@ -217,123 +217,12 @@ export default function Perubahan(props) {
 							<Icon name="arrow right" />
 						</Divider>
 					</Segment>
-					{/* <Grid>
-						<Grid.Column tablet={8} computer={8} mobile={16} textAlign="left">
-							<Grid relaxed="very" columns={2}>
-								<Grid.Column>
-									<Table unstackable basic="very">
-										<Table.Header>
-											<Table.Row>
-												<Table.HeaderCell>No.</Table.HeaderCell>
-												<Table.HeaderCell>Nama Taruna</Table.HeaderCell>
-											</Table.Row>
-										</Table.Header>
-										<Table.Body>
-											{props.dataAwal.taruna.map((d, i) => (
-												<Table.Row key={i}>
-													<Table.Cell>{i + 1}</Table.Cell>
-													<Table.Cell>{d.nama}</Table.Cell>
-												</Table.Row>
-											))}
-										</Table.Body>
-									</Table>
-								</Grid.Column>
-								<Grid.Column>
-									<Table unstackable basic="very">
-										<Table.Header>
-											<Table.Row>
-												<Table.HeaderCell>No.</Table.HeaderCell>
-												<Table.HeaderCell>Nama Taruna</Table.HeaderCell>
-											</Table.Row>
-										</Table.Header>
-										<Table.Body>
-											{props.data.taruna.map((d, i) => (
-												<Table.Row key={i}>
-													<Table.Cell>{i + 1}</Table.Cell>
-													<Table.Cell>{d.nama}</Table.Cell>
-												</Table.Row>
-											))}
-										</Table.Body>
-									</Table>
-								</Grid.Column>
-							</Grid>
-							<Divider vertical>
-								<Icon name="arrow right" />
-							</Divider>
-						</Grid.Column>
-						<Grid.Column tablet={8} computer={8} mobile={16} textAlign="left">
-							<Grid relaxed="very" columns={2}>
-								<Grid.Column>
-									<Table unstackable basic="very">
-										<Table.Header>
-											<Table.Row>
-												<Table.HeaderCell>No.</Table.HeaderCell>
-												<Table.HeaderCell>Nama Pristiwa</Table.HeaderCell>
-											</Table.Row>
-										</Table.Header>
-										<Table.Body>
-											{props.dataAwal.pristiwa.map((d, i) => (
-												<Table.Row key={i}>
-													<Table.Cell>{i + 1}</Table.Cell>
-													<Table.Cell>
-														<Popup
-															hoverable
-															content={d.nama}
-															trigger={
-																<LinesEllipsis
-																	text={d.nama}
-																	maxLine={1}
-																	ellipsis={" ... "}
-																	trimRight
-																	basedOn="words"
-																/>
-															}
-														/>
-													</Table.Cell>
-												</Table.Row>
-											))}
-										</Table.Body>
-									</Table>
-								</Grid.Column>
-								<Grid.Column>
-									<Table unstackable basic="very">
-										<Table.Header>
-											<Table.Row>
-												<Table.HeaderCell>No.</Table.HeaderCell>
-												<Table.HeaderCell>Nama Pristiwa</Table.HeaderCell>
-											</Table.Row>
-										</Table.Header>
-										<Table.Body>
-											{props.data.pristiwa.map((d, i) => (
-												<Table.Row key={i}>
-													<Table.Cell>{i + 1}</Table.Cell>
-													<Table.Cell>
-														<Popup
-															hoverable
-															content={d.nama}
-															trigger={
-																<LinesEllipsis
-																	text={d.nama}
-																	maxLine={1}
-																	ellipsis={" ... "}
-																	trimRight
-																	basedOn="words"
-																/>
-															}
-														/>
-													</Table.Cell>
-												</Table.Row>
-											))}
-										</Table.Body>
-									</Table>
-								</Grid.Column>
-							</Grid>
-							<Divider vertical>
-								<Icon name="arrow right" />
-							</Divider>
-						</Grid.Column>
-					</Grid>
-					<br /> */}
+					<Message
+						style={{ textAlign: "center" }}
+						content="Mohon perhatikan perubahan sebelum anda menyimpannya"
+						icon="info"
+						warning
+					/>
 					<br />
 					<Button
 						size="large"
