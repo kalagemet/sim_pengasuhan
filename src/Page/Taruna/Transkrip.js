@@ -21,6 +21,7 @@ const DetailTaruna = () => {
 						<Table.HeaderCell>Detail Taruna</Table.HeaderCell>
 						<Table.HeaderCell>
 							<CetakTranskrip
+								singlePage
 								size="mini"
 								floated="right"
 								positive
