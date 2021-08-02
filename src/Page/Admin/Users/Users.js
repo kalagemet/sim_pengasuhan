@@ -15,6 +15,7 @@ import {
 } from "semantic-ui-react";
 import CetakTranskrip from "../Pdf/TranskripKomulatif";
 import CetakPilihan from "../Pdf/TranskripTaruna";
+import Ppt from "./PowerPoin";
 
 const data = require("../../../Dummy/taruna.json");
 
@@ -110,17 +111,27 @@ class Users extends Component {
 							<Input placeholder="Cari " iconPosition="left" icon="search" />
 						</Grid.Column>
 						<Grid.Column textAlign="right" computer={5} mobile={16} tablet={5}>
-							<Button.Group>
-								{this.state.checkBox ? (
+							{this.state.checkBox ? (
+								<Button.Group>
 									<CetakPilihan
 										data={this.state.pilihanTaruna}
 										disabled={this.state.pilihanTaruna.length === 0}
 										icon="print"
 										labelPosition="left"
-										content="Cetak Pilihan"
+										content="Transkrip"
 										color="blue"
 									/>
-								) : (
+									<Ppt
+										labelPosition="left"
+										data={this.state.pilihanTaruna}
+										disabled={this.state.pilihanTaruna.length === 0}
+										content="PPTx"
+										icon="file powerpoint"
+										color="orange"
+									/>
+								</Button.Group>
+							) : (
+								<Button.Group>
 									<CetakTranskrip
 										icon="print"
 										labelPosition="left"
@@ -128,17 +139,18 @@ class Users extends Component {
 										basic
 										color="blue"
 									/>
-								)}
-								<Button
-									icon="add"
-									labelPosition="left"
-									content="Tambah"
-									as={Link}
-									to={"/users/tambah_taruna"}
-									basic
-									positive
-								/>
-							</Button.Group>
+
+									<Button
+										icon="add"
+										labelPosition="left"
+										content="Tambah"
+										as={Link}
+										to={"/users/tambah_taruna"}
+										basic
+										positive
+									/>
+								</Button.Group>
+							)}
 						</Grid.Column>
 					</Grid.Row>
 				</Grid>
