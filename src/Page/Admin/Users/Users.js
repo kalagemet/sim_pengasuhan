@@ -133,6 +133,8 @@ class Users extends Component {
 							) : (
 								<Button.Group>
 									<CetakTranskrip
+										data={this.state.taruna}
+										disabled={!this.state.taruna.length === 0}
 										icon="print"
 										labelPosition="left"
 										content="Cetak"

@@ -45,7 +45,7 @@ const TranskripDOM = React.forwardRef((props, ref) => (
 						</Grid.Column>
 					</Grid>
 					<Header textAlign="center" as="h4">
-						<u>TRANSKRIP NILAI PENGASUHAN</u>
+						<u>DAFTAR NILAI PENGASUHAN</u>
 					</Header>
 					<Grid columns="3">
 						<Grid.Column width="5">
@@ -55,7 +55,7 @@ const TranskripDOM = React.forwardRef((props, ref) => (
 							<Grid.Row>Tahun Ajar</Grid.Row>
 						</Grid.Column>
 						<Grid.Column width="7">
-							<Grid.Row>: Nama Taruna</Grid.Row>
+							<Grid.Row>: D {"(2019)"}</Grid.Row>
 							<Grid.Row>: D124566</Grid.Row>
 							<Grid.Row>: D-IV Pengukuran</Grid.Row>
 							<Grid.Row>: 2020/2021 Genap</Grid.Row>
@@ -93,9 +93,9 @@ const TranskripDOM = React.forwardRef((props, ref) => (
 								<Table.Cell>
 									{props.page === 1 ? 1 + i : 28 + 35 * (props.page - 2) + i}
 								</Table.Cell>
-								<Table.Cell>123123</Table.Cell>
-								<Table.Cell singleLine>Nama Taruna</Table.Cell>
-								<Table.Cell textAlign="center">{d}</Table.Cell>
+								<Table.Cell>{d.id}</Table.Cell>
+								<Table.Cell singleLine>{d.nama}</Table.Cell>
+								<Table.Cell textAlign="center">-</Table.Cell>
 								<Table.Cell textAlign="center">5</Table.Cell>
 								<Table.Cell textAlign="center">5</Table.Cell>
 							</Table.Row>
@@ -116,7 +116,7 @@ export default function Transkrip(props) {
 	const PAGE_RANGE_HEADER = 28;
 	const PAGE_RANGE = 35;
 
-	const data = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+	const data = [...props.data];
 
 	useEffect(() => {
 		if (data.length < PAGE_RANGE_HEADER) {
