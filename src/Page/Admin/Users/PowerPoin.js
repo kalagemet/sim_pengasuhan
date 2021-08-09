@@ -17,6 +17,8 @@ const IDENTITAS_TARUNA = [
 	"Judul Tugas Akhir",
 ];
 
+const HOST = "http://" + window.location.host;
+
 const Ppt = (props) => {
 	const daftar = Object.keys(props.data).map((i) => [
 		props.data[i].nama, //nama
@@ -38,6 +40,7 @@ const Ppt = (props) => {
 				<Button
 					{...props}
 					onClick={() => {
+						setLoad(true);
 						ReactPPTX.render(
 							<Presentation layout="16x10">
 								{daftar.map((d, i) => {
@@ -47,14 +50,14 @@ const Ppt = (props) => {
 											style={{
 												backgroundImage: {
 													kind: "path",
-													path: "http://localhost:3000/bg.jpeg",
+													path: HOST + "/bg.jpeg",
 												},
 											}}
 										>
 											<Image
 												src={{
 													kind: "path",
-													path: "http://localhost:3000/logo192.png",
+													path: HOST + "/logo192.png",
 												}}
 												style={{
 													x: 0.4,
@@ -66,7 +69,7 @@ const Ppt = (props) => {
 											<Image
 												src={{
 													kind: "path",
-													path: "http://localhost:3000/logoAtr.png",
+													path: HOST + "/logoAtr.png",
 												}}
 												style={{
 													x: 9,
@@ -104,7 +107,7 @@ const Ppt = (props) => {
 											<Image
 												src={{
 													kind: "path",
-													path: "http://localhost:3000/img/" + d[1] + ".jpg",
+													path: HOST + "/img/" + d[1] + ".jpg",
 												}}
 												style={{
 													x: 0.9,
@@ -236,7 +239,6 @@ const Ppt = (props) => {
 						)
 							.then(
 								(blob) => {
-									setLoad(true);
 									const a = document.createElement("a");
 									const url = URL.createObjectURL(blob);
 									a.href = url;

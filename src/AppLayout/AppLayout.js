@@ -224,16 +224,19 @@ export function AppLayout(props) {
 											mobile={14}
 											textAlign="right"
 										>
-											{/* <Header as="h4" textAlign="right">
-												<Image
-													style={{ marginLeft: "15px" }}
-													className="user-account"
-													src="https://react.semantic-ui.com/images/wireframe/square-image.png"
-													circular
-												/>
-												Hamid Musafa
-											</Header> */}
-											<GetTahunAjar mobileView={mobileView} />
+											{loginAs === md5("admin") ? (
+												<GetTahunAjar mobileView={mobileView} />
+											) : (
+												<Header as="h4" textAlign="right">
+													<Image
+														style={{ marginLeft: "15px" }}
+														className="user-account"
+														src="https://react.semantic-ui.com/images/wireframe/square-image.png"
+														circular
+													/>
+													Hamid Musafa
+												</Header>
+											)}
 										</Grid.Column>
 									</Grid.Row>
 								</Grid>
