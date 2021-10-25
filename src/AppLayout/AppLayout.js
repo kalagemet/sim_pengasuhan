@@ -74,6 +74,9 @@ export function AppLayout(props) {
 		}
 		collapsed();
 		window.addEventListener("resize", collapsed);
+		window.addEventListener("load", () => {
+			props.setLoad(false);
+		});
 	});
 
 	return (
@@ -82,7 +85,7 @@ export function AppLayout(props) {
 				authenticated,
 				loginAs,
 				message,
-				switchUser,
+				logout,
 				loadingApp,
 				notification,
 				popNotify,
@@ -140,18 +143,20 @@ export function AppLayout(props) {
 							className="sidebar-navigation"
 						>
 							<SidebarHeader>
-								{mobileView ? (
+								{/* {mobileView ? (
 									<Button
+										primary
 										fluid
 										color="blue"
 										icon="x"
 										labelPosition="right"
 										floated="right"
 										content="Tutup"
+										onClick={() => setSidebarExpand(!sidebarExpand)}
 									/>
 								) : (
 									""
-								)}
+								)} */}
 								{LogoHeader(sidebarExpand)}
 							</SidebarHeader>
 							<SidebarContent>
@@ -162,7 +167,7 @@ export function AppLayout(props) {
 									sidebarExpand ? "sidebar-footer" : "sidebar-footer close"
 								}
 							>
-								<Button animated color="red" onClick={switchUser}>
+								<Button animated color="red" onClick={logout}>
 									<Button.Content visible>
 										<Icon name="sign out alternate" />
 									</Button.Content>
@@ -231,10 +236,13 @@ export function AppLayout(props) {
 													<Image
 														style={{ marginLeft: "15px" }}
 														className="user-account"
-														src="https://react.semantic-ui.com/images/wireframe/square-image.png"
+														src={
+															"http://" + window.location.host + "/20293597.jpg"
+														}
+														// alt="https://react.semantic-ui.com/images/wireframe/square-image.png"
 														circular
 													/>
-													Hamid Musafa
+													Dhea Emeralda Annisa
 												</Header>
 											)}
 										</Grid.Column>

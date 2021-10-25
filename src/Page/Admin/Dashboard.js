@@ -9,6 +9,7 @@ import {
 	Segment,
 	Statistic,
 	Placeholder,
+	Select,
 } from "semantic-ui-react";
 import TableView from "./TableView";
 
@@ -62,6 +63,27 @@ const LoadingCardView = () => {
 const CardView = (props) => {
 	return (
 		<div className="card-dashboard">
+			<Card raised style={{ background: "green" }}>
+				<Card.Header className="title">Jumlah Taruna</Card.Header>
+				<Card.Content>
+					<Statistic className="value">
+						<Statistic.Value>800</Statistic.Value>
+						<Statistic.Label>
+							<Button
+								onClick={() => props.setTableView(0)}
+								className="action"
+								animated
+							>
+								<Button.Content visible>Taruna Aktif</Button.Content>
+								<Button.Content hidden>
+									Daftar Taruna
+									<Icon name="arrow right" />
+								</Button.Content>
+							</Button>
+						</Statistic.Label>
+					</Statistic>
+				</Card.Content>
+			</Card>
 			<Card raised style={{ background: "#1da6f0" }}>
 				<Card.Header className="title">
 					Taruna dengan kategori sangat baik
@@ -209,6 +231,72 @@ class Dashboard extends Component {
 	render() {
 		return (
 			<Segment vertical className="page-content-segment">
+				<Divider />
+				<div className="responsive_table">
+					<Select
+						placeholder="Jurusan"
+						value={1}
+						options={[
+							{
+								key: 0,
+								value: "0",
+								text: "Semua Jurusan",
+							},
+							{
+								key: 1,
+								value: "1",
+								text: "D-I PPK",
+							},
+							{
+								key: 2,
+								value: "2",
+								text: "D-IV Pertanahan",
+							},
+						]}
+					/>{" "}
+					<Select
+						placeholder="Angkatan"
+						value={1}
+						options={[
+							{
+								key: 0,
+								value: "0",
+								text: "Semua Angkatan",
+							},
+							{
+								key: 1,
+								value: "1",
+								text: "2020",
+							},
+							{
+								key: 2,
+								value: "2",
+								text: "2021",
+							},
+						]}
+					/>{" "}
+					<Select
+						placeholder="Kelas"
+						value={1}
+						options={[
+							{
+								key: 0,
+								value: "0",
+								text: "Semua Kelas",
+							},
+							{
+								key: 1,
+								value: "1",
+								text: "2020 - A",
+							},
+							{
+								key: 2,
+								value: "2",
+								text: "2020 - B",
+							},
+						]}
+					/>
+				</div>
 				<Divider />
 				{this.state.loadingCard ? (
 					<LoadingCardView />

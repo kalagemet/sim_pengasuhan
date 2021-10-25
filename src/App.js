@@ -21,6 +21,7 @@ import { Button, Header, Icon, Modal } from "semantic-ui-react";
 import Poin from "./Page/Admin/Poin/Poin";
 import EditPoin from "./Page/Admin/Poin/EditPoin";
 import RequiredApi from "./Dummy/Required";
+import DaftarPoin from "./Page/Taruna/Poin";
 
 function AdminRouter(props) {
 	return (
@@ -64,6 +65,7 @@ function TarunaRouter(props) {
 			</Route>
 			<Route exact path="/dashboard" component={DashboardTaruna} />
 			<Route exact path="/transkrip" component={TranskripTaruna} />
+			<Route exact path="/daftarpoin" component={DaftarPoin} />
 			<Route exact path="*" component={NotFound} />
 		</Switch>
 	);
@@ -92,31 +94,29 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Context>
-				<AppLayout>
-					<Consumer>
-						{({ loginAs, logout }) => {
-							if (loginAs === md5("admin")) {
-								return <AdminRouter logout={() => logout()} />;
-							} else if (loginAs === md5("taruna")) {
-								return <TarunaRouter logout={() => logout()} />;
-							} else {
-								return (
-									<Modal size="tiny" open basic>
-										<Header style={{ margin: "0 30px 0 30px" }} as="h1" icon>
-											<Icon name="x" color="red" />
-											Session invalid!
-										</Header>
-										<Modal.Actions style={{ textAlign: "center" }}>
-											<Button onClick={() => logout()} positive>
-												re-Login
-											</Button>
-										</Modal.Actions>
-									</Modal>
-								);
-							}
-						}}
-					</Consumer>
-				</AppLayout>
+				<Consumer>
+					{({ loginAs, logout, setLoad }) => (
+						<AppLayout setLoad={(e) => setLoad(e)}>
+							{loginAs === md5("admin") ? (
+								<AdminRouter logout={() => logout()} />
+							) : loginAs === md5("taruna") ? (
+								<TarunaRouter logout={() => logout()} />
+							) : (
+								<Modal size="tiny" open basic>
+									<Header style={{ margin: "0 30px 0 30px" }} as="h1" icon>
+										<Icon name="x" color="red" />
+										Session invalid!
+									</Header>
+									<Modal.Actions style={{ textAlign: "center" }}>
+										<Button onClick={() => logout()} positive>
+											re-Login
+										</Button>
+									</Modal.Actions>
+								</Modal>
+							)}
+						</AppLayout>
+					)}
+				</Consumer>
 			</Context>
 		</BrowserRouter>
 	);

@@ -110,7 +110,7 @@ export default function Perubahan(props) {
 																					maxLine={1}
 																					ellipsis={" ... "}
 																					trimRight
-																					basedOn="words"
+																					basedOn="letters"
 																				/>
 																			</Table.Cell>
 																		</Table.Row>
@@ -197,7 +197,7 @@ export default function Perubahan(props) {
 																					maxLine={1}
 																					ellipsis={" ... "}
 																					trimRight
-																					basedOn="words"
+																					basedOn="letters"
 																				/>
 																			</Table.Cell>
 																		</Table.Row>

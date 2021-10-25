@@ -183,7 +183,7 @@ export default function StepOne(props) {
 																			maxLine={1}
 																			ellipsis={" ... "}
 																			trimRight
-																			basedOn="words"
+																			basedOn="letters"
 																		/>
 																	}
 																/>
@@ -215,7 +215,7 @@ export default function StepOne(props) {
 																						maxLine={1}
 																						ellipsis={" ... "}
 																						trimRight
-																						basedOn="words"
+																						basedOn="letters"
 																					/>
 																				);
 																			}}
@@ -236,7 +236,7 @@ export default function StepOne(props) {
 																						maxLine={1}
 																						ellipsis={" ... "}
 																						trimRight
-																						basedOn="words"
+																						basedOn="letters"
 																					/>
 																				);
 																			}}
@@ -390,7 +390,7 @@ export default function StepOne(props) {
 																	maxLine={1}
 																	ellipsis={" ... "}
 																	trimRight
-																	basedOn="words"
+																	basedOn="letters"
 																/>
 															);
 														}}
@@ -410,7 +410,7 @@ export default function StepOne(props) {
 																maxLine={2}
 																ellipsis={" ... "}
 																trimRight
-																basedOn="words"
+																basedOn="letters"
 															/>
 														}
 													/>

@@ -1,5 +1,6 @@
 {
 	"name": "sim_pengasuhan",
+	"homepage": "http://penerimaan.stpn.ac.id",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {

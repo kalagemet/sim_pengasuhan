@@ -126,6 +126,18 @@ const TarunaPanel = () => {
 					Transkrip
 				</MenuItem>
 			</NavLink>
+			<NavLink
+				activeClassName="active"
+				className="menu-item-sidebar"
+				to="/daftarpoin"
+			>
+				<MenuItem
+					className="menu-item-sidebar"
+					icon={<Icon name="info" size="large" />}
+				>
+					Daftar Pristiwa
+				</MenuItem>
+			</NavLink>
 		</Menu>
 	);
 };

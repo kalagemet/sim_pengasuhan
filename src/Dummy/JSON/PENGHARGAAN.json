@@ -1,0 +1,689 @@
+[
+	{ "id_kat": 1, "kat": "Kesamaptaan", "nama": "Baik Sekali", "poin": "7,5" },
+	{ "id_kat": 1, "kat": "Kesamaptaan", "nama": "Baik", "poin": "5" },
+	{ "id_kat": 1, "kat": "Kesamaptaan", "nama": "Cukup", "poin": "2,5" },
+	{
+		"id_kat": 3,
+		"kat": "Keindonesiaan Yang Pluralis",
+		"nama": "Menghargai perbedaan dan bersedia menempati/tinggal di asrama bersama dengan teman yang berbeda asal daerah atau suku dan agama",
+		"poin": "5"
+	},
+	{
+		"id_kat": 2,
+		"kat": "Kejujuran",
+		"nama": "Berani berkata benar dan berlaku jujur saat ujian atau kegiatan lainnya (Tidak Berbohong, Tidak Menyontek, Tidak Curang, dll)",
+		"poin": "4"
+	},
+	{
+		"id_kat": 2,
+		"kat": "Kejujuran",
+		"nama": "Berani melaporkan apabila mengetahui ada perbuatan yang menyimpang/melanggar aturan",
+		"poin": "4"
+	},
+	{
+		"id_kat": 2,
+		"kat": "Kejujuran",
+		"nama": "Kegiatan lain yang patut diberikan penghargaan dengan pertimbangan Ketua dan Tim Pengasuhan",
+		"poin": "4"
+	},
+	{
+		"id_kat": 3,
+		"kat": "Keindonesiaan Yang Pluralis",
+		"nama": "Mengikuti/menampilkan pentas seni dan budaya daerah tingkat Internasional",
+		"poin": "10"
+	},
+	{
+		"id_kat": 3,
+		"kat": "Keindonesiaan Yang Pluralis",
+		"nama": "Mengikuti/menampilkan pentas seni dan budaya daerah tingkat Nasional",
+		"poin": "7,5"
+	},
+	{
+		"id_kat": 3,
+		"kat": "Keindonesiaan Yang Pluralis",
+		"nama": "Mengikuti/menampilkan pentas seni dan budaya daerah tingkat Provinsi",
+		"poin": "5"
+	},
+	{
+		"id_kat": 3,
+		"kat": "Keindonesiaan Yang Pluralis",
+		"nama": "Mengikuti/menampilkan pentas seni dan budaya daerah tingkat Kabupaten/kota",
+		"poin": "2,5"
+	},
+	{
+		"id_kat": 3,
+		"kat": "Keindonesiaan Yang Pluralis",
+		"nama": "Mengikuti/menampilkan pentas seni dan budaya daerah di lingkungan STPN",
+		"poin": "1,5"
+	},
+	{
+		"id_kat": 3,
+		"kat": "Keindonesiaan Yang Pluralis",
+		"nama": "Kegiatan lain yang patut diberikan penghargaan dengan pertimbangan Ketua dan Tim Pengasuhan",
+		"poin": "10"
+	},
+	{
+		"id_kat": 4,
+		"kat": "Prima Melayani",
+		"nama": "Mengikuti kegiatan pemberdayaan taruna di Kantor Pertanahan dan membuat laporan kegiatan sesuai standar yang ditentukan",
+		"poin": "4"
+	},
+	{
+		"id_kat": 4,
+		"kat": "Prima Melayani",
+		"nama": "Mengikuti Kegiatan Sosial dan Kemasyarakatan: Kerja Bakti",
+		"poin": "2"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Berprestasi di Bidang Akademik dan IPTEK, Olahraga, Seni Budaya, Kerohanian tingkat Provinsi/Kabupaten/Kota sebagai Juara I",
+		"poin": "5"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Berprestasi di Bidang Akademik dan IPTEK, Olahraga, Seni Budaya, Kerohanian tingkat Provinsi/Kabupaten/Kota sebagai Juara II",
+		"poin": "4"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Berprestasi di Bidang Akademik dan IPTEK, Olahraga, Seni Budaya, Kerohanian tingkat Nasional sebagai Peserta",
+		"poin": "3"
+	},
+	{
+		"id_kat": 5,
+		"kat": "Disiplin Dan Pantang Menyerah",
+		"nama": "Kegiatan lain yang patut diberikan penghargaan dengan pertimbangan Ketua dan Tim Pengasuhan",
+		"poin": "3"
+	},
+	{
+		"id_kat": 4,
+		"kat": "Prima Melayani",
+		"nama": "Mengikuti kegiatan sosial dan kemasyarakatan: Donor Darah",
+		"poin": "2"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Menciptakan software/aplikasi untuk mendukung percepatan pelayanan",
+		"poin": "10"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Mengikuti penelitian/riset bersama Dosen",
+		"poin": "8"
+	},
+	{
+		"id_kat": 4,
+		"kat": "Prima Melayani",
+		"nama": "Mengikuti kegiatan sosial dan kemasyarakatan: Bakti Sosial",
+		"poin": "2"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Penelitian mandiri yang dipublikasikan",
+		"poin": "10"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Mengikuti dan aktif dalam kegiatan pelatihan aplikasi dan pengayaan materi kuliah dengan presentase kehadiran ",
+		"poin": "4"
+	},
+	{
+		"id_kat": 4,
+		"kat": "Prima Melayani",
+		"nama": "Kegiatan lain yang patut diberikan penghargaan dengan pertimbangan Ketua dan Tim Pengasuhan",
+		"poin": "4"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Mengikuti kegiatan karya ilmiah/seminar/simposium/lokakarya/diskusi tingkat Internasional sebagai narasumber/pemateri/penulis/pemakalah",
+		"poin": "10"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Mengikuti kegiatan karya ilmiah/seminar/simposium/lokakarya/diskusi tingkat Nasional sebagai narasumber/pemateri/penulis/pemakalah",
+		"poin": "7,5"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Kepala Badan Senat Taruna (BST)",
+		"poin": "10"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Ketua Dewan Perwakilan Taruna (DPT)",
+		"poin": "10"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Komandan Korps Taruna Bela Negara (KTBN)",
+		"poin": "10"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Wakil Kepala Badan Senat Taruna (BST)",
+		"poin": "7,5"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Mengikuti kegiatan karya ilmiah/seminar/simposium/lokakarya/diskusi tingkat Internasional sebagai moderator/pemandu",
+		"poin": "7,5"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Wakil Ketua Dewan Perwakilan Taruna (DPT)",
+		"poin": "7,5"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Komandan Batalyon/Polisi Taruna",
+		"poin": "7,5"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Ketua Unit Kegiatan Taruna (UKT)",
+		"poin": "6,5"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Sekretaris/Bendahara/Kabid/Kepala Kantor Asrama Taruna Bhumi dan setingkatnya",
+		"poin": "6,5"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Kepala Seksi Organisasi Taruna dan setingkatnya",
+		"poin": "4"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Komisaris Kelas (Komkes)",
+		"poin": "4"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Pengurus Kelas",
+		"poin": "2,5"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Ditugaskan/dipilih sebagai Kakak Asuh/Mentor",
+		"poin": "6,5"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Ketua Panitia kegiatan di dalam kampus (PPSPP, HUT Asrama, Dies Natalis, Hantaru, Lomba Esai, dll)",
+		"poin": "5"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Wakil Ketua, Sekretaris dan Bendahara Panitia kegiatan di dalam kampus (PPSPP, HUT Asrama, Dies Natalis, Hantaru, Lomba Esai, dll)",
+		"poin": "4"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Mengikuti kegiatan karya ilmiah/seminar/simposium/lokakarya/diskusi tingkat Nasional sebagai moderator/pemandu",
+		"poin": "5"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Mengikuti kegiatan karya ilmiah/seminar/simposium/lokakarya/diskusi tingkat Internasional sebagai peserta",
+		"poin": "5"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Mengikuti kegiatan karya ilmiah/seminar/simposium/lokakarya/diskusi tingkat Nasional sebagai peserta",
+		"poin": "3"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Anggota Panitia kegiatan di dalam kampus (PPSPP, HUT Asrama, Dies Natalis, Hantaru, Lomba Esai, dll)",
+		"poin": "2"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Menulis pada Jurnal Internasional",
+		"poin": "10"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Menulis pada Jurnal Nasional Akreditasi/ISBN",
+		"poin": "8"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Menulis pada Jurnal Nasional Non Akreditasi/Non ISBN",
+		"poin": "6"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Menulis pada Surat Kabar dan Artikel Internasional",
+		"poin": "8"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Perwira Upacara",
+		"poin": "2"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Komandan Upacara",
+		"poin": "2"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Komandan Kompi Upacara",
+		"poin": "1,5"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Komandan Pleton Upacara",
+		"poin": "1"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Ajudan Pembina/Instruktur Upacara dan petugas lainnya yang setingkat",
+		"poin": "1"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Pengibar Bendera Upacara",
+		"poin": "1,5"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Pembaca UUD 1945",
+		"poin": "1,5"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Melaksanakan Dinas Jaga Taruna",
+		"poin": "1"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Mengikuti Upacara di luar Kampus",
+		"poin": "1,5"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Mewakili lembaga dalam kegiatan tertentu di luar STPN sebagai Peserta",
+		"poin": "2"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Ketua/Koordinator Regu Praktik Kerja Lapangan (PKL)/KKNP-PTLP/Pemberdayaan Taruna dan yang sejenis",
+		"poin": "4"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Kegiatan lain yang patut diberikan penghargaan dengan pertimbangan Ketua dan Tim Pengasuhan",
+		"poin": "10"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Menulis pada Surat Kabar dan Artikel Nasional",
+		"poin": "6"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Menulis pada Surat Kabar dan Artikel Regional/Lokal",
+		"poin": "4"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Berprestasi di Bidang Akademik dan IPTEK, Olahraga, Seni Budaya, Kerohanian tingkat Internasional sebagai Juara I",
+		"poin": "10"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Berprestasi di Bidang Akademik dan IPTEK, Olahraga, Seni Budaya, Kerohanian tingkat Internasional sebagai Juara II",
+		"poin": "7,5"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Berprestasi di Bidang Akademik dan IPTEK, Olahraga, Seni Budaya, Kerohanian tingkat Internasional sebagai Juara III",
+		"poin": "6"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Berprestasi di Bidang Akademik dan IPTEK, Olahraga, Seni Budaya, Kerohanian tingkat Internasional sebagai Peserta",
+		"poin": "4"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Berprestasi di Bidang Akademik dan IPTEK, Olahraga, Seni Budaya, Kerohanian tingkat Nasional sebagai Juara I",
+		"poin": "7,5"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Berprestasi di Bidang Akademik dan IPTEK, Olahraga, Seni Budaya, Kerohanian tingkat Nasional sebagai Juara II",
+		"poin": "6"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Berprestasi di Bidang Akademik dan IPTEK, Olahraga, Seni Budaya, Kerohanian tingkat Nasional sebagai Juara III",
+		"poin": "4,5"
+	},
+	{
+		"id_kat": 8,
+		"kat": "Loyalitas Pada Cita-cita Organisasi",
+		"nama": "Melaksanakan tugas-tugas pembantuan dalam rangka menunjang kegiatan-kegiatan yang diselenggarakan STPN dan Kementerian ATR/BPN, antara lain Seminar Nasional, Kuliah Umum, Sarasehan Pertanahan, Wisuda, dan kegiatan lain yang sejenis",
+		"poin": "4"
+	},
+	{
+		"id_kat": 8,
+		"kat": "Loyalitas Pada Cita-cita Organisasi",
+		"nama": "Melaksanakan tugas-tugas kelembagaan dalam rangka percepatan kegiatan/program strategis STPN dan Kementerian ATR/BPN",
+		"poin": "6"
+	},
+	{
+		"id_kat": 8,
+		"kat": "Loyalitas Pada Cita-cita Organisasi",
+		"nama": "Kegiatan lain yang patut diberikan penghargaan dengan pertimbangan Ketua dan Tim Pengasuhan",
+		"poin": "6"
+	},
+	{
+		"id_kat": 4,
+		"kat": "Prima Melayani",
+		"nama": "Mengikuti kegiatan KKNP-PTLP",
+		"poin": "1"
+	},
+	{
+		"id_kat": 5,
+		"kat": "Disiplin Dan Pantang Menyerah",
+		"nama": "Mengikuti kegiatan Pengenalan Kehidupan Kampus Taruna Baru (PKKTB) dengan kehadiran Ã¢â€°Â¥ 80 %",
+		"poin": "2"
+	},
+	{
+		"id_kat": 5,
+		"kat": "Disiplin Dan Pantang Menyerah",
+		"nama": "Mengikuti kegiatan Pengenalan Kehidupan Kampus Taruna Baru (PKKTB) dengan kehadiran 100 %",
+		"poin": "3"
+	},
+	{
+		"id_kat": 5,
+		"kat": "Disiplin Dan Pantang Menyerah",
+		"nama": "Mengikuti kegiatan Pengasuhan (Olahraga, Apel, Upacara, Makan Bersama, dll) dengan kehadiran 100 %",
+		"poin": "3"
+	},
+	{
+		"id_kat": 5,
+		"kat": "Disiplin Dan Pantang Menyerah",
+		"nama": "Mengikuti kegiatan Pengasuhan (Olahraga, Apel, Upacara, Makan Bersama, dll) dengan kehadiran Ã¢â€°Â¥ 80 %",
+		"poin": "2"
+	},
+	{
+		"id_kat": 4,
+		"kat": "Prima Melayani",
+		"nama": "Mengikuti kegiatan KKNP-PTLP dan membuat laporan kegiatan",
+		"poin": "3"
+	},
+	{
+		"id_kat": 4,
+		"kat": "Prima Melayani",
+		"nama": "Mengikuti kegiatan pemberdayaan taruna di Kantor Pertanahan",
+		"poin": "1"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Koordinator/Seksi Panitia kegiatan di dalam kampus (PPSPP, HUT Asrama, Dies Natalis, Hantaru, Lomba Esai, dll)",
+		"poin": "3"
+	},
+	{
+		"id_kat": 4,
+		"kat": "Prima Melayani",
+		"nama": "Mengikuti kegiatan KKNP-PTLP dan membuat laporan kegiatan sesuai dengan standar yang ditentukan",
+		"poin": "4"
+	},
+	{
+		"id_kat": 4,
+		"kat": "Prima Melayani",
+		"nama": "Mengikuti kegiatan pemberdayaan taruna di Kantor Pertanahan dan membuat laporan kegiatan",
+		"poin": "3"
+	},
+	{
+		"id_kat": 2,
+		"kat": "Kejujuran",
+		"nama": "Aktif mengikuti kegiatan keagamaan/ibadah dan hari-hari besar keagamaan (kehadiran 60 - 69 %)",
+		"poin": "1"
+	},
+	{
+		"id_kat": 2,
+		"kat": "Kejujuran",
+		"nama": "Aktif mengikuti kegiatan keagamaan/ibadah dan hari-hari besar keagamaan (kehadiran 70 - 79 %)",
+		"poin": "3"
+	},
+	{
+		"id_kat": 2,
+		"kat": "Kejujuran",
+		"nama": "Aktif mengikuti kegiatan Asistensi/Mentoring Keagamaan (kehadiran 70 - 79 %)",
+		"poin": "3"
+	},
+	{
+		"id_kat": 2,
+		"kat": "Kejujuran",
+		"nama": "Aktif mengikuti kegiatan keagamaan/ibadah dan hari-hari besar keagamaan (kehadiran Ã¢â€°Â¥ 80 %)",
+		"poin": "4"
+	},
+	{
+		"id_kat": 2,
+		"kat": "Kejujuran",
+		"nama": "Aktif mengikuti kegiatan Asistensi/Mentoring Keagamaan (kehadiran 60 - 69 %)",
+		"poin": "1"
+	},
+	{
+		"id_kat": 2,
+		"kat": "Kejujuran",
+		"nama": "Aktif mengikuti kegiatan Asistensi/Mentoring Keagamaan (kehadiran Ã¢â€°Â¥ 80 %)",
+		"poin": "4"
+	},
+	{
+		"id_kat": 5,
+		"kat": "Disiplin Dan Pantang Menyerah",
+		"nama": "Menjadi Peserta Terbaik kegiatan Pengenalan Kehidupan Kampus Taruna Baru (PKKTB)",
+		"poin": "4"
+	},
+	{
+		"id_kat": 5,
+		"kat": "Disiplin Dan Pantang Menyerah",
+		"nama": "Mengikuti kegiatan Latsardis dengan kehadiran 100 %",
+		"poin": "3"
+	},
+	{
+		"id_kat": 5,
+		"kat": "Disiplin Dan Pantang Menyerah",
+		"nama": "Mengikuti kegiatan Latsardis dengan kehadiran Ã¢â€°Â¥ 80 %",
+		"poin": "2"
+	},
+	{
+		"id_kat": 5,
+		"kat": "Disiplin Dan Pantang Menyerah",
+		"nama": "Menjadi Peserta Terbaik kegiatan Latsardis",
+		"poin": "4"
+	},
+	{
+		"id_kat": 5,
+		"kat": "Disiplin Dan Pantang Menyerah",
+		"nama": "Mengikuti kegiatan Latsarsus dengan kehadiran 100 %",
+		"poin": "3"
+	},
+	{
+		"id_kat": 5,
+		"kat": "Disiplin Dan Pantang Menyerah",
+		"nama": "Mengikuti kegiatan Latsarsus dengan kehadiran Ã¢â€°Â¥ 80 %",
+		"poin": "2"
+	},
+	{
+		"id_kat": 5,
+		"kat": "Disiplin Dan Pantang Menyerah",
+		"nama": "Menjadi Peserta Terbaik kegiatan Latsarsus",
+		"poin": "4"
+	},
+	{
+		"id_kat": 5,
+		"kat": "Disiplin Dan Pantang Menyerah",
+		"nama": "Mengikuti kegiatan Latsarpim dengan kehadiran 100 %",
+		"poin": "3"
+	},
+	{
+		"id_kat": 5,
+		"kat": "Disiplin Dan Pantang Menyerah",
+		"nama": "Mengikuti kegiatan Latsarpim dengan kehadiran Ã¢â€°Â¥ 80 %",
+		"poin": "2"
+	},
+	{
+		"id_kat": 5,
+		"kat": "Disiplin Dan Pantang Menyerah",
+		"nama": "Menjadi Peserta Terbaik kegiatan Latsarpim",
+		"poin": "4"
+	},
+	{
+		"id_kat": 5,
+		"kat": "Disiplin Dan Pantang Menyerah",
+		"nama": "Mengikuti kegiatan Kesamaptaan dan PBB dengan kehadiran 100 %",
+		"poin": "3"
+	},
+	{
+		"id_kat": 5,
+		"kat": "Disiplin Dan Pantang Menyerah",
+		"nama": "Mengikuti kegiatan Kesamaptaan dan PBB dengan kehadiran Ã¢â€°Â¥ 80 %",
+		"poin": "2"
+	},
+	{
+		"id_kat": 5,
+		"kat": "Disiplin Dan Pantang Menyerah",
+		"nama": "Mengikuti kegiatan UKT dengan kehadiran 100 %",
+		"poin": "3"
+	},
+	{
+		"id_kat": 5,
+		"kat": "Disiplin Dan Pantang Menyerah",
+		"nama": "Mengikuti kegiatan UKT dengan kehadiran Ã¢â€°Â¥ 80 %",
+		"poin": "2"
+	},
+	{
+		"id_kat": 5,
+		"kat": "Disiplin Dan Pantang Menyerah",
+		"nama": "Mengikuti kegiatan akademik (kuliah/praktikum/kuliah umum/seminar) dengan kehadiran 100 %",
+		"poin": "3"
+	},
+	{
+		"id_kat": 5,
+		"kat": "Disiplin Dan Pantang Menyerah",
+		"nama": "Mengikuti kegiatan akademik (kuliah/praktikum/kuliah umum/seminar) dengan kehadiran Ã¢â€°Â¥ 80 %",
+		"poin": "2"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Berprestasi di Bidang Akademik dan IPTEK, Olahraga, Seni Budaya, Kerohanian tingkat Provinsi/Kabupaten/Kota sebagai Juara III",
+		"poin": "3"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Berprestasi di Bidang Akademik dan IPTEK, Olahraga, Seni Budaya, Kerohanian tingkat Provinsi/Kabupaten/Kota sebagai Peserta",
+		"poin": "1,5"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Berprestasi di Bidang Akademik dan IPTEK, Olahraga, Seni Budaya, Kerohanian tingkat Internal Kampus sebagai Juara I",
+		"poin": "2,5"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Berprestasi di Bidang Akademik dan IPTEK, Olahraga, Seni Budaya, Kerohanian tingkat Internal Kampus sebagai Juara II",
+		"poin": "2"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Berprestasi di Bidang Akademik dan IPTEK, Olahraga, Seni Budaya, Kerohanian tingkat Internal Kampus sebagai Juara III",
+		"poin": "1,5"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Berprestasi di Bidang Akademik dan IPTEK, Olahraga, Seni Budaya, Kerohanian tingkat Internal Kampus sebagai Peserta",
+		"poin": "1"
+	},
+	{
+		"id_kat": 6,
+		"kat": "Senantiasa Evaluasi Dan Mengembangkan Diri",
+		"nama": "Kegiatan lain yang patut diberikan penghargaan dengan pertimbangan Ketua dan Tim Pengasuhan",
+		"poin": "10"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Wakil Komandan Batalyon/Polisi Taruna",
+		"poin": "5"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Anggota Batalyon/Polisi Taruna",
+		"poin": "3"
+	},
+	{
+		"id_kat": 7,
+		"kat": "Tanggungjawab Dan Kepemimpinan",
+		"nama": "Menjadi Komandan Kompi/Divisi",
+		"poin": "4"
+	}
+]

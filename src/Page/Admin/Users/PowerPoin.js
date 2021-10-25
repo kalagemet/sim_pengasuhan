@@ -7,32 +7,37 @@ const IDENTITAS_TARUNA = [
 	"Nama",
 	"NIT",
 	"Tempat, Tgl Lahir",
-	"Email",
-	"Jenis Kelamin",
-	"Nama Orang Tua",
+	// "Jenis Kelamin",
+	// "Kelas",
+	// "NIK",
 	"Asal",
 	"IPK Akademik",
 	"Predikat",
 	"Nilai Pengasuhan",
-	"Judul Tugas Akhir",
+	"Konsentrasi",
+	// "Judul Tugas Akhir",
 ];
 
 const HOST = "http://" + window.location.host;
+const ACARA =
+	"Wisuda Program Studi Diploma IV Pertanahan dan Diploma I Pengukuran dan Pemetaan Kadastral Sekolah Tinggi Pertanahan Nasional Tahun Akademik 2020/2021";
+const TANGGAL_ACARA = "Yogyakarta, 10 Oktober 2021";
 
 const Ppt = (props) => {
 	const daftar = Object.keys(props.data).map((i) => [
 		props.data[i].nama, //nama
 		props.data[i].id, //NIT
-		"Bandung, 15 Juli 2002", //TTL
-		"karinyulia1507@stpn.ac.id", //email
-		props.data[i].jk, //JK
-		"Ridwan Santoso", //Orang tua
-		"Banten", //Asal
-		"3.00", //IPK
-		"Memuaskan", //Predikat
-		"X", //Nilai
+		props.data[i].ttl, //"Bandung, 15 Juli 2002", //TTL
+		//props.data[i].pengasuhan, //"karinyulia1507@stpn.ac.id", //email
+		// props.data[i].jk, //JK
+		// props.data[i].nik,
+		props.data[i].asal, //"Ridwan Santoso", //Orang tua
+		props.data[i].ipk, //"Banten", //Asal
+		props.data[i].predikat, //"3.00", //IPK
+		props.data[i].pengasuhan, //"X", //Nilai
+		props.data[i].konsentrasi, //"X", //Nilai
 		//Judul Skripsi
-		"Pengukuran dan pemetaan bidang-bidang tanah di dusun ngemplak desa pagerharjo kec. Samigaluh",
+		//"Pengukuran dan pemetaan bidang-bidang tanah di dusun ngemplak desa pagerharjo kec. Samigaluh",
 	]);
 	return (
 		<Consumer>
@@ -50,7 +55,7 @@ const Ppt = (props) => {
 											style={{
 												backgroundImage: {
 													kind: "path",
-													path: HOST + "/bg.jpeg",
+													path: HOST + "/bg.png",
 												},
 											}}
 										>
@@ -94,12 +99,12 @@ const Ppt = (props) => {
 											<Shape
 												type="rect"
 												style={{
-													borderColor: "#ac4d19",
+													borderColor: "#b08e0a",
 													x: 3.5,
 													y: 0.7,
 													w: 3,
 													h: 0.1,
-													backgroundColor: "#ac4d19",
+													backgroundColor: "#b08e0a",
 												}}
 											/>
 
@@ -110,6 +115,11 @@ const Ppt = (props) => {
 													path: HOST + "/img/" + d[1] + ".jpg",
 												}}
 												style={{
+													sizing: {
+														fit: "cover",
+														// imageHeight: 3,
+														// imageWidth: 2,
+													},
 													x: 0.9,
 													y: 1.2,
 													w: 2,
@@ -119,24 +129,25 @@ const Ppt = (props) => {
 											<Shape
 												type="rect"
 												style={{
-													borderColor: "#ac4d19",
+													borderColor: "#b08e0a",
 													x: 1.1,
 													y: 4.5,
 													w: 1.5,
 													h: 0.1,
-													backgroundColor: "#ac4d19",
+													backgroundColor: "#b08e0a",
 													//1628b6
 													// FF0000
 												}}
 											/>
 
 											{/* identitas taruna */}
-											{IDENTITAS_TARUNA.map((data, i) => {
+											{/* {IDENTITAS_TARUNA.map((data, i) => {
 												return (
 													<Text
 														key={i}
 														style={{
 															verticalAlign: "top",
+															bold: true,
 															x: 3.4,
 															y: 1.1 + 0.29 * i,
 															w: 3,
@@ -155,6 +166,7 @@ const Ppt = (props) => {
 														key={i}
 														style={{
 															verticalAlign: "top",
+															bold: true,
 															x: 5.3,
 															y: 1.1 + 0.29 * i,
 															w: 3,
@@ -166,29 +178,62 @@ const Ppt = (props) => {
 														:
 													</Text>
 												);
-											})}
+											})} */}
 											{d.map((data, i) => {
 												let row = data.length > 27 ? (data.length - 27) / 3 : 0;
 												if (i === d.length - 1) {
 													row = data.length > 90 ? (data.length - 90) / 25 : 0;
+													if (data.length < 2) {
+														return null;
+													}
 												}
 												return (
-													<Text
-														key={i}
-														style={{
-															verticalAlign: "top",
-															bold: i === 0,
-															underline: i === 0,
-															x: 5.4,
-															y: 1.1 + 0.29 * i,
-															w: 4,
-															h: 0.5,
-															fontSize: 16 - row,
-															align: "left",
-														}}
-													>
-														{i === 0 ? data : data}
-													</Text>
+													<div key={i}>
+														<Text
+															style={{
+																verticalAlign: "top",
+																bold: true,
+																x: 3.4,
+																y: 1.1 + 0.29 * i,
+																w: 3,
+																h: 0.5,
+																fontSize: 16,
+																align: "left",
+															}}
+														>
+															{IDENTITAS_TARUNA[i]}
+														</Text>
+														<Text
+															style={{
+																verticalAlign: "top",
+																bold: true,
+																x: 5.3,
+																y: 1.1 + 0.29 * i,
+																w: 3,
+																h: 0.5,
+																fontSize: 16,
+																align: "left",
+															}}
+														>
+															:
+														</Text>
+														<Text
+															style={{
+																verticalAlign: "top",
+																// bold: i === 0,
+																bold: true,
+																underline: i === 0,
+																x: 5.4,
+																y: 1.1 + 0.29 * i,
+																w: 5,
+																h: 0.5,
+																fontSize: 16 - row,
+																align: "left",
+															}}
+														>
+															{i === 0 ? data.toUpperCase() : data}
+														</Text>
+													</div>
 												);
 											})}
 
@@ -198,10 +243,10 @@ const Ppt = (props) => {
 												style={{
 													borderColor: "#b08e0a",
 													backgroundColor: "#b08e0a",
-													w: 6,
-													h: 0.688,
-													y: "89%",
-													x: 2,
+													w: 8.4,
+													h: 1.05,
+													y: 5.2,
+													x: 0.8,
 												}}
 											/>
 											<Text
@@ -209,13 +254,14 @@ const Ppt = (props) => {
 													color: "white",
 													fontSize: 14,
 													bold: true,
-													w: "100%",
+													w: "84%",
 													h: 0.3,
-													y: 5.6,
+													y: 5.4,
+													x: 0.8,
 													align: "center",
 												}}
 											>
-												Wisuda IXXXX Sekolah Tinggi Petahanan Nasional
+												{ACARA}
 											</Text>
 											<Text
 												style={{
@@ -224,12 +270,12 @@ const Ppt = (props) => {
 													bold: true,
 													w: "100%",
 													h: 0.3,
-													y: 5.85,
+													y: 5.87,
 													verticalAlign: "bottom",
 													align: "center",
 												}}
 											>
-												Yogyakarta, 12 Januari 2021
+												{TANGGAL_ACARA}
 											</Text>
 										</Slide>
 									);

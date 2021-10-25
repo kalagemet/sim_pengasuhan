@@ -49,11 +49,11 @@ const TranskripTarunaDOM = React.forwardRef((props, ref) => (
 					<Grid.Row>: Nama Taruna</Grid.Row>
 					<Grid.Row>: D124566</Grid.Row>
 					<Grid.Row>: D-IV Pengukuran</Grid.Row>
-					<Grid.Row>: 300</Grid.Row>
-					<Grid.Row>: Sangat Baik</Grid.Row>
+					<Grid.Row>: 50</Grid.Row>
+					<Grid.Row>: Cukup</Grid.Row>
 				</Grid.Column>
 				<Grid.Column textAlign="center" width="4">
-					<QRCode level="H" size={80} value="dkdkdkdkd" />
+					<QRCode level="H" size={80} value="sda67eehbeyvfr7fgyu" />
 				</Grid.Column>
 			</Grid>
 			<br />
@@ -65,14 +65,32 @@ const TranskripTarunaDOM = React.forwardRef((props, ref) => (
 					</Table.Row>
 				</Table.Header>
 				<Table.Body>
-					{[1, 2, 3, 4, 5, 6, 7].map((i) => {
-						return (
-							<Table.Row key={i}>
-								<Table.Cell>{i}. Saptakarakter</Table.Cell>
-								<Table.Cell textAlign="right">50 Poin</Table.Cell>
-							</Table.Row>
-						);
-					})}
+					<Table.Row>
+						<Table.Cell>1. Kesamaptaan</Table.Cell>
+						<Table.Cell textAlign="right">0 Poin</Table.Cell>
+					</Table.Row>
+					<Table.Row>
+						<Table.Cell>2. Kejujuran</Table.Cell>
+						<Table.Cell textAlign="right">0 Poin</Table.Cell>
+					</Table.Row>
+					<Table.Row>
+						<Table.Cell>3. Keindonesiaan Yang Pluralis</Table.Cell>
+						<Table.Cell textAlign="right">0 Poin</Table.Cell>
+					</Table.Row>
+					<Table.Row>
+						<Table.Cell>
+							5. Senantiasa Evaluasi Dan Mengembangkan Diri
+						</Table.Cell>
+						<Table.Cell textAlign="right">0 Poin</Table.Cell>
+					</Table.Row>
+					<Table.Row>
+						<Table.Cell>6. Tanggungjawab Dan Kepemimpinan</Table.Cell>
+						<Table.Cell textAlign="right">0 Poin</Table.Cell>
+					</Table.Row>
+					<Table.Row>
+						<Table.Cell>7. Loyalitas Pada Cita-cita Organisasi</Table.Cell>
+						<Table.Cell textAlign="right">0 Poin</Table.Cell>
+					</Table.Row>
 				</Table.Body>
 			</Table>
 			<br />
@@ -130,7 +148,7 @@ export default function TranskripTaruna(props) {
 	};
 
 	const DocumentDom = () => {
-		if (props.singlePage) {
+		if (props.singlepage) {
 			return <TranskripTarunaDOM />;
 		} else {
 			var hal = [];

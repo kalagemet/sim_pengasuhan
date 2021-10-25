@@ -1,0 +1,17 @@
+[
+	{ "id": 1, "nama": "Pesiar Dan Izin Bermalam" },
+	{ "id": 2, "nama": "Tata Cara Pakaian" },
+	{ "id": 3, "nama": "Tugas Jaga" },
+	{ "id": 4, "nama": "Penggunaan Asrama dan Kebersihan" },
+	{ "id": 5, "nama": "Olahraga" },
+	{ "id": 6, "nama": "Penggunaan Alat dan Inventaris STPN" },
+	{ "id": 7, "nama": "Sikap Kepemimpinan" },
+	{ "id": 8, "nama": "Kewenangan" },
+	{ "id": 9, "nama": "Kendaraan" },
+	{ "id": 10, "nama": "Kelas" },
+	{ "id": 11, "nama": "Apel Baris Berbaris dan Laporan" },
+	{ "id": 12, "nama": "Keuangan" },
+	{ "id": 13, "nama": "Lain - lain" },
+	{ "id": 14, "nama": "Etika" },
+	{ "id": 15, "nama": "Kewajiban" }
+]

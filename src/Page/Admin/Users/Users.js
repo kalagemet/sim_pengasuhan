@@ -18,6 +18,9 @@ import CetakPilihan from "../Pdf/TranskripTaruna";
 import Ppt from "./PowerPoin";
 
 const data = require("../../../Dummy/taruna.json");
+// const data = require("../../../Dummy/yudisium.json");
+// const data = require("../../../Dummy/yudisium_d4.json");
+// const data = require("../../../Dummy/wisuda.json");
 
 class Users extends Component {
 	state = {
@@ -243,6 +246,27 @@ class Users extends Component {
 								})}
 							</Table.Body>
 						</Table>
+						<Select
+							placeholder="Menampilkan 25 data"
+							value={1}
+							options={[
+								{
+									key: 1,
+									value: "25",
+									text: "Menampilkan 25 data",
+								},
+								{
+									key: 2,
+									value: "50",
+									text: "Menampilkan 50 data",
+								},
+								{
+									key: 3,
+									value: "100",
+									text: "Menampilkan 100 data",
+								},
+							]}
+						/>
 						<Message
 							info
 							icon="info circle"

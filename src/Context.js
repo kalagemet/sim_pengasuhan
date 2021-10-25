@@ -26,8 +26,8 @@ class Context extends Component {
 				// },
 				{
 					error: 0,
-					user: "all",
-					header: "Selamat Datang",
+					user: md5("taruna"),
+					header: "Selamat Datang, Dhea",
 					msg: "Sistem Informasi Pengasuhan STPN Yogyakarta",
 				},
 			],
@@ -38,7 +38,7 @@ class Context extends Component {
 	componentWillUnmount() {
 		cookie.save("autenticated", this.state.authenticated, { maxAge: 3600 });
 		cookie.save("user_level", this.state.loginAs, { maxAge: 3600 });
-		cookie.save("user_id", this.state.user.user, { maxAge: 3600 });
+		cookie.save("user_id", this.state.user.user_id, { maxAge: 3600 });
 		cookie.save("f_id", this.state.user.f_id, { maxAge: 3600 });
 		cookie.save("user_lock", this.state.user.token, { maxAge: 3600 });
 	}

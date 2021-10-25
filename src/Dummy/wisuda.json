@@ -1,0 +1,6762 @@
+[
+	{
+		"nama": "Fajar Buyung Permadi",
+		"id": "17263020",
+		"ttl": "Bantul, 27 April 1994",
+		"asal": "Kalimantan Timur",
+		"ipk": "3,76",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Wasyilatul Jannah",
+		"id": "17263045",
+		"ttl": "Borong, 10 August 1992",
+		"asal": "Nusa Tenggara Timur",
+		"ipk": "3,72",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Hesty Wahyuni",
+		"id": "17263060",
+		"ttl": "Selayo, 19 September 1992",
+		"asal": "Sumatera Barat",
+		"ipk": "3,72",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Farah Nur Aisyah",
+		"id": "20DI7164",
+		"ttl": "Wonogiri, 11 July 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,80",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ahmad Rasis Sholikin",
+		"id": "17263010",
+		"ttl": "Sukoharjo, 19 Agustus 1994",
+		"asal": "Kalimantan Tengah",
+		"ipk": "3,37",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Dony Ferdiansyah",
+		"id": "17263018",
+		"ttl": "Lubuklinggau, 26 Maret 1992",
+		"asal": "Sumatera Selatan",
+		"ipk": "3,64",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Mega Milova L. Tjan",
+		"id": "17263029",
+		"ttl": "Ternate, 25 Juli 1995",
+		"asal": "Maluku Utara",
+		"ipk": "3,53",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Nur Aini Lestari",
+		"id": "17263033",
+		"ttl": "Pontianak, 14 November 1993",
+		"asal": "Kalimantan Tengah",
+		"ipk": "3,71",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Nurfathi Miastuti",
+		"id": "17263073",
+		"ttl": "Madiun, 23 Juni 1991",
+		"asal": "Jawa Timur",
+		"ipk": "3,54",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Muhammad Afiq Riwendi",
+		"id": "17263071",
+		"ttl": "Tegal, 05 November 1994",
+		"asal": "Banten",
+		"ipk": "3,31",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Suryo Adi Agung Wibowo",
+		"id": "17263043",
+		"ttl": "Purworejo, 02 April 1993",
+		"asal": "Sumatera Barat",
+		"ipk": "3,28",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Muhammad Marwan Isa",
+		"id": "17263072",
+		"ttl": "Ujung Pandang, 28 September 1986",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,16",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Sarah Puspita",
+		"id": "17263079",
+		"ttl": "Klaten, 24 November 1993",
+		"asal": "Sumatera Barat",
+		"ipk": "3,65",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Shofa Nur Faizza Az Zahro",
+		"id": "20DI6991",
+		"ttl": "Blora, 13 Oktober 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,65",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "A"
+	},
+	{
+		"nama": "A. Muh. Febri Angga",
+		"id": "20DI6946",
+		"ttl": "Watampone, 05 Februari 2001",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,61",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "A"
+	},
+	{
+		"nama": "Efryda Hanna Pramesti",
+		"id": "20DI6960",
+		"ttl": "Semarang, 20 Oktober 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,60",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "A"
+	},
+	{
+		"nama": "Afrillia Rosita Darmawangsih",
+		"id": "20DI6948",
+		"ttl": "Wonogiri, 09 April 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,59",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "A"
+	},
+	{
+		"nama": "Nova Nur Ramadhanti",
+		"id": "20DI6981",
+		"ttl": "Purbalingga, 13 November 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,51",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "A"
+	},
+	{
+		"nama": "Munadhiroh",
+		"id": "20DI7025",
+		"ttl": "Purworejo, 08 November 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,73",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "B"
+	},
+	{
+		"nama": "Nur Anisa Novianti",
+		"id": "20DI7027",
+		"ttl": "Pati, 06 November 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,73",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "A"
+	},
+	{
+		"nama": "Wilfa Afriyani",
+		"id": "20DI7044",
+		"ttl": "Dumai, 09 April 2003",
+		"asal": "Riau",
+		"ipk": "3,71",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "B"
+	},
+	{
+		"nama": "Maria Paruna Shintani",
+		"id": "20DI7021",
+		"ttl": "Palangka Raya, 22 September 2002",
+		"asal": "Kalimantan Tengah",
+		"ipk": "3,68",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "B"
+	},
+	{
+		"nama": "Lia Oktariani",
+		"id": "20DI7018",
+		"ttl": "Pagar Alam, 16 Oktober 2002",
+		"asal": "Sumatera Selatan        ",
+		"ipk": "3,65",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "B"
+	},
+	{
+		"nama": "Patricia Ernita Jayani",
+		"id": "20DI7030",
+		"ttl": "Bekasi, 17 Maret 2002",
+		"asal": "Jawa Barat",
+		"ipk": "3,60",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "B"
+	},
+	{
+		"nama": "Siska Amalia",
+		"id": "20DI7039",
+		"ttl": "Tegal, 27 Maret 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,51",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "B"
+	},
+	{
+		"nama": "Erlis Hersetya Firda",
+		"id": "20DI7061",
+		"ttl": "Kediri, 14 Agustus 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,68",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "C"
+	},
+	{
+		"nama": "Shalung Revanda Abrilia Ulfariani",
+		"id": "20DI7090",
+		"ttl": "Jombang, 14 Juni 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,66",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "C"
+	},
+	{
+		"nama": "Puput Ardiyanti",
+		"id": "20DI7082",
+		"ttl": "Blitar, 28 Mei 2000",
+		"asal": "Jawa Barat",
+		"ipk": "3,60",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "C"
+	},
+	{
+		"nama": "Ismah Nur Syahda",
+		"id": "20DI7066",
+		"ttl": "Purwokerto, Banyumas, 03 Maret 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,59",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "C"
+	},
+	{
+		"nama": "Reddy Pradana Putra",
+		"id": "20DI7085",
+		"ttl": "Blora, 12 Juni 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,58",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "C"
+	},
+	{
+		"nama": "Anis Nurjanah",
+		"id": "20DI7050",
+		"ttl": "Wonogiri, 08 Juli 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,56",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "C"
+	},
+	{
+		"nama": "Raja Syarif",
+		"id": "20DI7084",
+		"ttl": "Medan, 15 Januari 2002",
+		"asal": "Sumatera Utara",
+		"ipk": "3,56",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "C"
+	},
+	{
+		"nama": "Sasnita",
+		"id": "20DI7089",
+		"ttl": "Menggala, 21 Februari 2002",
+		"asal": "Lampung",
+		"ipk": "3,51",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "C"
+	},
+	{
+		"nama": "Davistha Shifa Azizah",
+		"id": "20DI7107",
+		"ttl": "Temanggung, 01 Februari 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,79",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "D"
+	},
+	{
+		"nama": "Sandhing Raharjo",
+		"id": "20DI7136",
+		"ttl": "Nganjuk, 11 Agustus 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,74",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "D"
+	},
+	{
+		"nama": "Dilla Frisa Yuni Amanda",
+		"id": "20DI7108",
+		"ttl": "Gunungkidul, 20 Juni 2002",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,73",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "D"
+	},
+	{
+		"nama": "Isniah Zahrotun Nisa",
+		"id": "20DI7116",
+		"ttl": "Klaten, 12 Februari 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,64",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "D"
+	},
+	{
+		"nama": "Nashifa Rahma Amalia",
+		"id": "20DI7127",
+		"ttl": "Gresik, 01 Juli 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,61",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "D"
+	},
+	{
+		"nama": "Agung Kuncoro",
+		"id": "20DI7097",
+		"ttl": "Surakarta, 16 November 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,60",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "D"
+	},
+	{
+		"nama": "Arya Rigar Aditya",
+		"id": "20DI7103",
+		"ttl": "Tulungagung, 26 November 2000",
+		"asal": "Jawa Timur",
+		"ipk": "3,59",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "D"
+	},
+	{
+		"nama": "Monalisa Desyana",
+		"id": "20DI7120",
+		"ttl": "Blora, 22 Desember 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,56",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "D"
+	},
+	{
+		"nama": "Anita Jumiasih",
+		"id": "20DI7102",
+		"ttl": "Kabupaten Semarang, 03 Juni 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,55",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "D"
+	},
+	{
+		"nama": "Fitria Keumala",
+		"id": "20DI7112",
+		"ttl": "Padang, 12 Desember 2002",
+		"asal": "Aceh",
+		"ipk": "3,54",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "D"
+	},
+	{
+		"nama": "Shinka Lintang Dhinasti",
+		"id": "20DI7138",
+		"ttl": "Trenggalek, 20 Juli 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,54",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "D"
+	},
+	{
+		"nama": "Syafa Vrishananda",
+		"id": "20DI7140",
+		"ttl": "Boyolali, 12 Maret 2000",
+		"asal": "Jawa Tengah",
+		"ipk": "3,53",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "D"
+	},
+	{
+		"nama": "Nidya Rahma Hutami Budiono",
+		"id": "20DI7180",
+		"ttl": "Tulungagung, 11 September 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,79",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "E"
+	},
+	{
+		"nama": "Muftia Astri Rosiani",
+		"id": "20DI7173",
+		"ttl": "Boyolali, 22 Desember 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,74",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "E"
+	},
+	{
+		"nama": "Ida Ayu Kade Diah Padmayani",
+		"id": "20DI7168",
+		"ttl": "Balikpapan, 28 Mei 2002",
+		"asal": "Kalimantan Timur",
+		"ipk": "3,69",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "E"
+	},
+	{
+		"nama": "Muhamad Pandu Saputra",
+		"id": "20DI7176",
+		"ttl": "Bantul, 27 Juni 2001",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,68",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "E"
+	},
+	{
+		"nama": "Salsabila Nuril Husna",
+		"id": "20DI7184",
+		"ttl": "Banjarnegara, 04 Juli 2003",
+		"asal": "Jawa Tengah",
+		"ipk": "3,68",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "E"
+	},
+	{
+		"nama": "Alifka Leoline Ferentysha",
+		"id": "20DI7152",
+		"ttl": "Bengkulu, 05 Agustus 2001",
+		"asal": "Bengkulu",
+		"ipk": "3,63",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "E"
+	},
+	{
+		"nama": "Annisa Nurul Jannah",
+		"id": "20DI7154",
+		"ttl": "Pati, 19 November 2000",
+		"asal": "Jawa Tengah",
+		"ipk": "3,60",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "E"
+	},
+	{
+		"nama": "Janisya Pratiwi Giardani",
+		"id": "20DI7169",
+		"ttl": "Jember, 29 Januari 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,58",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "E"
+	},
+	{
+		"nama": "Nanda Sashia Bimasri",
+		"id": "20DI7179",
+		"ttl": "Lubuklinggau, 07 April 2003",
+		"asal": "Sumatera Selatan        ",
+		"ipk": "3,56",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "E"
+	},
+	{
+		"nama": "Faqih Al-Fath",
+		"id": "20DI7163",
+		"ttl": "Bandar Lampung, 28 Mei 2002",
+		"asal": "Bengkulu",
+		"ipk": "3,55",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "E"
+	},
+	{
+		"nama": "Farika Windiarti",
+		"id": "20DI7165",
+		"ttl": "Jombang, 01 September 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,55",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "E"
+	},
+	{
+		"nama": "Citra Firza Azizah",
+		"id": "20DI7157",
+		"ttl": "Bantul, 18 Juli 2000",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,54",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "E"
+	},
+	{
+		"nama": "Alifiah Arystiyani Rahmah",
+		"id": "20DI7201",
+		"ttl": "Magelang, 29 Agustus 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,78",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "F"
+	},
+	{
+		"nama": "Nabila Meida Risqi Amanda Az Zahra",
+		"id": "20DI7229",
+		"ttl": "Boyolali, 06 Mei 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,59",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "F"
+	},
+	{
+		"nama": "Aprilia Dwi Cahyaningrum",
+		"id": "20DI7206",
+		"ttl": "Trenggalek, 07 April 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,59",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "F"
+	},
+	{
+		"nama": "Daffa Ali Husain",
+		"id": "20DI7207",
+		"ttl": "Trenggalek, 01 September 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,59",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "F"
+	},
+	{
+		"nama": "Alfi Fajmei Andiza",
+		"id": "20DI7200",
+		"ttl": "Baturaja, 14 Mei 2002",
+		"asal": "Sumatera Selatan        ",
+		"ipk": "3,53",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "F"
+	},
+	{
+		"nama": "Devi Putri Hanifah",
+		"id": "20DI7209",
+		"ttl": "Sukoharjo, 01 Desember 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,51",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "F"
+	},
+	{
+		"nama": "Aqilah Tasya Herwinza Putri",
+		"id": "20DI7253",
+		"ttl": "Jember, 01 Juni 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,73",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "G"
+	},
+	{
+		"nama": "Ida Ayu Cynthia Cahyaradhani Manuaba",
+		"id": "20DI7266",
+		"ttl": "Denpasar, 27 Februari 2002",
+		"asal": "Bali",
+		"ipk": "3,71",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "G"
+	},
+	{
+		"nama": "Dzaki Putra Prakosa",
+		"id": "20DI7259",
+		"ttl": "Karanganyar, 07 September 2000",
+		"asal": "Jawa Tengah",
+		"ipk": "3,56",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "G"
+	},
+	{
+		"nama": "Sarah Yanuar Az Zahra",
+		"id": "20DI7284",
+		"ttl": "Kebumen, 06 Januari 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,54",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "G"
+	},
+	{
+		"nama": "Shely Nurfana Fresil",
+		"id": "20DI7285",
+		"ttl": "Batam, 26 Agustus 2002",
+		"asal": "Sumatera Barat",
+		"ipk": "3,51",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "G"
+	},
+	{
+		"nama": "Amelia Ratna Yuanita",
+		"id": "20DI7300",
+		"ttl": "Klaten, 23 Oktober 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,66",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "H"
+	},
+	{
+		"nama": "Tyara Puspita Nilamsari",
+		"id": "20DI7340",
+		"ttl": "Kediri, 28 Juni 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,61",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "H"
+	},
+	{
+		"nama": "Yulia Isnaini",
+		"id": "20DI7344",
+		"ttl": "Grobogan, 15 Juli 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,60",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "H"
+	},
+	{
+		"nama": "Khoirun Nisa",
+		"id": "20DI7319",
+		"ttl": "Kudus, 28 Juli 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,59",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "H"
+	},
+	{
+		"nama": "Dewi Intan Kurniawati",
+		"id": "20DI7308",
+		"ttl": "Hulu Sungai Utara, 18 September 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,55",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "H"
+	},
+	{
+		"nama": "Savitri Dewi Ayuningtyas",
+		"id": "20DI7337",
+		"ttl": "Yogyakarta, 08 Maret 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,51",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "H"
+	},
+	{
+		"nama": "Neilfina Fiola Amanda",
+		"id": "20DI7377",
+		"ttl": "Curup, 25 Desember 2001",
+		"asal": "Bengkulu",
+		"ipk": "3,74",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "I"
+	},
+	{
+		"nama": "Anan Al Farizi",
+		"id": "20DI7350",
+		"ttl": "Purbalingga, 04 Juni 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,66",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "I"
+	},
+	{
+		"nama": "Putu Agus Riska Juniawan",
+		"id": "20DI7384",
+		"ttl": "Gesing, 22 Juni 2001",
+		"asal": "Bali",
+		"ipk": "3,60",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "I"
+	},
+	{
+		"nama": "Deni Esa Kusuma Arikandi",
+		"id": "20DI7356",
+		"ttl": "Mojokerto, 26 Juni 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,59",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "I"
+	},
+	{
+		"nama": "Yulia Mawardani",
+		"id": "20DI7393",
+		"ttl": "Sukoharjo, 13 Juli 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,53",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "I"
+	},
+	{
+		"nama": "Diana Oxsanna Rica",
+		"id": "20DI7410",
+		"ttl": "Lubuklinggau, 02 Agustus 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,76",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "J"
+	},
+	{
+		"nama": "Fadilah Rahma",
+		"id": "20DI7412",
+		"ttl": "Lahat, 16 Agustus 2000",
+		"asal": "Sumatera Selatan        ",
+		"ipk": "3,68",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "J"
+	},
+	{
+		"nama": "Reza Fitrama Nur Cahyono",
+		"id": "20DI7485",
+		"ttl": "Pacitan, 02 Januari 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,76",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "K"
+	},
+	{
+		"nama": "Amanda Anggita",
+		"id": "20DI7450",
+		"ttl": "Sleman, 23 Desember 2002",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,56",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "K"
+	},
+	{
+		"nama": "Adellia Azzahra",
+		"id": "20DI7446",
+		"ttl": "Magelang, 07 Juli 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,54",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "K"
+	},
+	{
+		"nama": "Lutfia Arya Latifah",
+		"id": "20DI7522",
+		"ttl": "Karanganyar, 13 November 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,79",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "L"
+	},
+	{
+		"nama": "Laila Nur Khasanah",
+		"id": "20DI7520",
+		"ttl": "Ngawi, 20 April 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,78",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "L"
+	},
+	{
+		"nama": "Zulaika Salma Salsabila",
+		"id": "20DI7547",
+		"ttl": "Karanganyar, 02 Juli 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,70",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "L"
+	},
+	{
+		"nama": "Ananda Fitria",
+		"id": "20DI7497",
+		"ttl": "Boyolali, 14 Desember 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,65",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "L"
+	},
+	{
+		"nama": "Chintan Afifah Wahyu Ningtyas",
+		"id": "20DI7503",
+		"ttl": "Karanganyar, 03 Maret 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,64",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "L"
+	},
+	{
+		"nama": "Sherly Nova Vitara",
+		"id": "20DI7538",
+		"ttl": "Magelang, 19 November 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,63",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "L"
+	},
+	{
+		"nama": "Hilmy Fauziyati",
+		"id": "20DI7517",
+		"ttl": "Kebumen, 16 November 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,58",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "L"
+	},
+	{
+		"nama": "Arnaldo Leonata Hosea Siahaan",
+		"id": "20DI7501",
+		"ttl": "Bogor, 30 Juni 2002",
+		"asal": "Sumatera Utara",
+		"ipk": "3,55",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "L"
+	},
+	{
+		"nama": "Fitria Anggraeni",
+		"id": "20DI7514",
+		"ttl": "Blora, 21 Desember 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,55",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "L"
+	},
+	{
+		"nama": "Rafif Iqbal Miftahuddin",
+		"id": "20DI7532",
+		"ttl": "Temanggung, 29 April 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,55",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "L"
+	},
+	{
+		"nama": "Aninda Rahmadhani",
+		"id": "20DI7498",
+		"ttl": "Bantul, 05 Desember 2001",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,54",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "L"
+	},
+	{
+		"nama": "Dwi Fitriana",
+		"id": "20DI7507",
+		"ttl": "Rembang, 27 Desember 2000",
+		"asal": "Jawa Tengah",
+		"ipk": "3,54",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "L"
+	},
+	{
+		"nama": "Zuljalali Adi Ikram",
+		"id": "20DI7045",
+		"ttl": "Sungguminasa, 23 November 1998",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,24",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "B"
+	},
+	{
+		"nama": "Anugrah Setyadin",
+		"id": "20DI7051",
+		"ttl": "Benteng Selayar, 13 Mei 2002",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,34",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "C"
+	},
+	{
+		"nama": "Asruddin Nur",
+		"id": "20DI7104",
+		"ttl": "Kenang-Kenang, 12 Mei 2002",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,18",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "D"
+	},
+	{
+		"nama": "Dwi Chandra Kusuma",
+		"id": "20DI7160",
+		"ttl": "Singaraja, 21 Oktober 1998",
+		"asal": "Bali",
+		"ipk": "2,83",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "E"
+	},
+	{
+		"nama": "Ghaza Muhammad Nauval",
+		"id": "20DI7166",
+		"ttl": "Makassar, 18 September 2002",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,28",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "E"
+	},
+	{
+		"nama": "Nauval Yusrizal",
+		"id": "20DI7230",
+		"ttl": "Temanggung, 10 November 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,41",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "F"
+	},
+	{
+		"nama": "Lalu Muhamad Agus Triana Putra",
+		"id": "20DI7221",
+		"ttl": "Gerung, 18 Agustus 2002",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,10",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "F"
+	},
+	{
+		"nama": "Anis Aprilia Sari",
+		"id": "20DI7250",
+		"ttl": "Pontianak, 10 April 2001",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,48",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "G"
+	},
+	{
+		"nama": "Manarul Hidayat",
+		"id": "20DI7273",
+		"ttl": "Watampone, 24 April 2002",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,24",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "G"
+	},
+	{
+		"nama": "Miftahuzzurury Syam",
+		"id": "20DI7322",
+		"ttl": "Makassar, 21 Juni 2002",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,01",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "H"
+	},
+	{
+		"nama": "Mahyuni Mangunsong",
+		"id": "20DI7370",
+		"ttl": "Tanjungbalai, 16 Mei 2001",
+		"asal": "Sumatera Utara",
+		"ipk": "3,24",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "I"
+	},
+	{
+		"nama": "Muh. Bimantara",
+		"id": "20DI7371",
+		"ttl": "Pinrang, 07 Oktober 2001",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,21",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "I"
+	},
+	{
+		"nama": "Muh. Ihsan Irsya",
+		"id": "20DI7425",
+		"ttl": "Watampone, 20 November 2000",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,01",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "J"
+	},
+	{
+		"nama": "Muhammad Agus Saputra",
+		"id": "20DI7477",
+		"ttl": "Makassar, 16 Agustus 2002",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,05",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "K"
+	},
+	{
+		"nama": "Suratmin Syafar",
+		"id": "20DI7541",
+		"ttl": "Bontolebang, 10 November 2002",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,13",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "L"
+	},
+	{
+		"nama": "Esti Aprilia Wulandari",
+		"id": "20DI7110",
+		"ttl": "Kediri, 06 April 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,54",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "D"
+	},
+	{
+		"nama": "Dian Dwi Martha",
+		"id": "20DI7409",
+		"ttl": "Bontolebang, 10 November 2002",
+		"asal": "Kepulauan Riau",
+		"ipk": "3,58",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "F"
+	},
+	{
+		"nama": "Dhita Saula Eka Rahit Candradewi",
+		"id": "20DI7409",
+		"ttl": "Pamekasan, 07 Juni 2004",
+		"asal": "Jawa Timur",
+		"ipk": "3,21",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "J"
+	},
+	{
+		"nama": "NH. Salsabiela",
+		"id": "20DI7128",
+		"ttl": "Tenam, 31 Maret 2002",
+		"asal": "Jambi",
+		"ipk": "3,60",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "D"
+	},
+	{
+		"nama": "Agus Purwanto Atmojo",
+		"id": "17263009",
+		"ttl": "Boyolali, 08 Juli 1991",
+		"asal": "Sumatera Barat",
+		"ipk": "3,27",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Chairil Sakti Yokka Rajasa",
+		"id": "17263012",
+		"ttl": "Pontianak, 04 Desember 1994",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,19",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Danang Kusumo Wijoyo",
+		"id": "17263014",
+		"ttl": "Bantul, 13 Mei 1995",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,31",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Dian Pranata Tampubolon",
+		"id": "17263016",
+		"ttl": "Laguboti, 31 Juli 1995",
+		"asal": "Sumatera Utara",
+		"ipk": "3,26",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Fransiskus Samosir",
+		"id": "17263021",
+		"ttl": "Balige, 06 September 1992",
+		"asal": "Sumatera Utara",
+		"ipk": "3,34",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Fusthatul Fikri",
+		"id": "17263022",
+		"ttl": "Lhokseumawe Aceh Utara, 03 Mei 1994",
+		"asal": "Aceh",
+		"ipk": "3,23",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Ita Putri Nurhermaya",
+		"id": "17263024",
+		"ttl": "Mempawah, 26 April 1992",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,50",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Khabib Addy Pradana",
+		"id": "17263026",
+		"ttl": "Bantul, 25 Juni 1992",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,27",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Lamijo",
+		"id": "17263027",
+		"ttl": "Blora, 28 Juni 1990",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,15",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Lusiana Maryati Karuni Poso Teku",
+		"id": "17263028",
+		"ttl": "Laus, 19 November 1989",
+		"asal": "Nusa Tenggara Timur",
+		"ipk": "3,40",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Muammar Irzan",
+		"id": "17263030",
+		"ttl": "Banda Aceh, 20 Januari 1991",
+		"asal": "Aceh",
+		"ipk": "3,31",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Nugraha Salman Ishaya",
+		"id": "17263032",
+		"ttl": "Cianjur, 26 Februari 1990",
+		"asal": "Jawa Barat",
+		"ipk": "3,64",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Rangga Pragara",
+		"id": "17263038",
+		"ttl": "Purbalingga, 22 Oktober 1995",
+		"asal": "Kalimantan Tengah",
+		"ipk": "3,39",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Reinhat Julian Afero Sinaga",
+		"id": "17263039",
+		"ttl": "Pematang Siantar, 07 Juli 1989",
+		"asal": "Kalimantan Timur",
+		"ipk": "3,35",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Rizka Amanda Pawah",
+		"id": "17263040",
+		"ttl": "Tidore, 03 November 1992",
+		"asal": "Maluku Utara",
+		"ipk": "3,34",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Tirta Khalis",
+		"id": "17263044",
+		"ttl": "Jakarta, 12 November 1994",
+		"asal": "Lampung",
+		"ipk": "3,43",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Yan Chendiyosy",
+		"id": "17263046",
+		"ttl": "Singkawang, 28 Oktober 1994",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,26",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Adek Chandra",
+		"id": "17263049",
+		"ttl": "Pariaman, 20 Juni 1990",
+		"asal": "Gorontalo",
+		"ipk": "3,43",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Agata Tri Putri Margaret",
+		"id": "17263050",
+		"ttl": "Lubuk Resam, 15 Mei 1993",
+		"asal": "Jambi",
+		"ipk": "3,70",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Agustinus Mahardika Bima Verry Gutama",
+		"id": "17263051",
+		"ttl": "Yogyakarta, 28 Agustus 1995",
+		"asal": "Sulawesi Utara",
+		"ipk": "3,28",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Alief Ramadhani",
+		"id": "17263052",
+		"ttl": "Pamekasan, 26 Maret 1992",
+		"asal": "Sulawesi Tenggara",
+		"ipk": "3,39",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Andrian Koida",
+		"id": "17263054",
+		"ttl": "Palu, 28 Juni 1992",
+		"asal": "Sulawesi Tengah",
+		"ipk": "3,18",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Antonius Kurniawan Mere Soy",
+		"id": "17263055",
+		"ttl": "Waikabubak, 24 Oktober 1994",
+		"asal": "Nusa Tenggara Timur",
+		"ipk": "3,34",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Ari Puji Purwita Sari",
+		"id": "17263056",
+		"ttl": "Sragen, 19 April 1990",
+		"asal": "Sumatra Barat",
+		"ipk": "3,47",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Boby Agung Prabowo",
+		"id": "17263057",
+		"ttl": "Ngawi, 26 Desember 1988",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,65",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Ferdi Rifanda Hambali",
+		"id": "17263058",
+		"ttl": "Sumenep, 26 Oktober 1992",
+		"asal": "Nusa Tenggara Timur",
+		"ipk": "3,23",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Gama Eko Nurwanto",
+		"id": "17263059",
+		"ttl": "Banyuwangi, 13 Februari 1994",
+		"asal": "Papua Barat",
+		"ipk": "3,39",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Irnita",
+		"id": "17263061",
+		"ttl": "Pontianak, 07 September 1994",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,46",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Km. Recky Tri Saputra Sendow",
+		"id": "17263063",
+		"ttl": "Ladongi, 08 Desember 1990",
+		"asal": "Sulawesi Tenggara",
+		"ipk": "3,26",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Mayckel Ridolf Njoma",
+		"id": "17263067",
+		"ttl": "Gamsungi, 09 Maret 1990",
+		"asal": "Maluku Utara",
+		"ipk": "3,38",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Mohamat Haswar Aswit",
+		"id": "17263069",
+		"ttl": "Raha, 25 September 1992",
+		"asal": "Sulawesi Tenggara",
+		"ipk": "3,17",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Muhamad Imam Pribadi",
+		"id": "17263070",
+		"ttl": "Selelos, 11 Oktober 1992",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,42",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Nyoman Satria Purwadinata",
+		"id": "17263074",
+		"ttl": "Singaraja, 11 September 1992",
+		"asal": "Bali",
+		"ipk": "3,47",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Rizki Febrian Hamdani",
+		"id": "17263077",
+		"ttl": "Kediri, 07 Februari 1992",
+		"asal": "Jawa Timur",
+		"ipk": "3,42",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Rudini Manggala Putra",
+		"id": "17263078",
+		"ttl": "Sengkang, 08 Juni 1992",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,36",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Surung Suranyate Manik",
+		"id": "17263081",
+		"ttl": "Barisan Salak, 03 Desember 1994",
+		"asal": "Sumatera utara",
+		"ipk": "3,56",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Toto Sudrajat",
+		"id": "17263085",
+		"ttl": "Ujung Pandang, 07 Juni 1992",
+		"asal": "Sulawesi Barat",
+		"ipk": "3,38",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Manajemen Pertanahan"
+	},
+	{
+		"nama": "Arif Ihsan",
+		"id": "17263011",
+		"ttl": "Pariaman, 25 April 1993",
+		"asal": "Sumatera Barat",
+		"ipk": "3,01",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Damar Sagari",
+		"id": "17263013",
+		"ttl": "Soppeng, 30 Mei 1992",
+		"asal": "Maluku Utara",
+		"ipk": "3,52",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Dannil Umbara",
+		"id": "17263015",
+		"ttl": "Lahat, 27 Agustus 1992",
+		"asal": "Sumatera Selatan",
+		"ipk": "3,18",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Dominicus Wayan Aditya",
+		"id": "17263017",
+		"ttl": "Gunungkidul, 08 Agustus 1995",
+		"asal": "Kalimantan Tengah",
+		"ipk": "3,41",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Fadhli Rasyid Pane",
+		"id": "17263019",
+		"ttl": "Padangsidimpuan, 25 Maret 1991",
+		"asal": "Sumatera Utara",
+		"ipk": "3,24",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Iqbal Prasetyo Darmawan",
+		"id": "17263023",
+		"ttl": "Bekasi, 28 Februari 1995",
+		"asal": "Jawa Barat",
+		"ipk": "3,14",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Jombang Rupawan",
+		"id": "17263025",
+		"ttl": "Palembang, 30 April 1990",
+		"asal": "Sumatera Selatan",
+		"ipk": "3,52",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Muhammad Abdul Nasser",
+		"id": "17263031",
+		"ttl": "Pekanbaru, 15 September 1992",
+		"asal": "Riau",
+		"ipk": "3,45",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Nurul Azmy D Tantja",
+		"id": "17263034",
+		"ttl": "Barru, 16 Februari 1993",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,62",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Putu Andi Martiana",
+		"id": "17263035",
+		"ttl": "Denpasar, 04 Maret 1992",
+		"asal": "Jawa Timur",
+		"ipk": "3,45",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Putu Eka Yuditha Syahputra",
+		"id": "17263036",
+		"ttl": "Batang, 24 Juni 1995",
+		"asal": " Jawa Tengah",
+		"ipk": "3,67",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Rahardian Rahmansani",
+		"id": "17263037",
+		"ttl": "Banyumas, 15 Juli 1994",
+		"asal": "Sumatera Barat",
+		"ipk": "3,60",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Rizki Aryadi",
+		"id": "17263041",
+		"ttl": "Banda Aceh, 16 Oktober 1990",
+		"asal": "Aceh",
+		"ipk": "3,57",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Yenny Indriani",
+		"id": "17263047",
+		"ttl": "Cimahi, 11 Juni 1996",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,47",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Yuli Ardianto Wibowo",
+		"id": "17263048",
+		"ttl": "Klaten, 19 Juli 1995",
+		"asal": "Kalimantan Tengah",
+		"ipk": "3,64",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Andi Muh. Said Azhari",
+		"id": "17263053",
+		"ttl": "Pangkajene, 01 November 1991",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,37",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Kadek Junarta",
+		"id": "17263062",
+		"ttl": "Yehpoh, 22 Juni 1991",
+		"asal": "Sulawesi Tenggara",
+		"ipk": "3,48",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Lia Novita Sari",
+		"id": "17263064",
+		"ttl": "Kerinci, 17 Juni 1993",
+		"asal": "Bengkulu",
+		"ipk": "3,50",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Made Yudha Indrawan",
+		"id": "17263065",
+		"ttl": "Sleman, 24 Januari 1993",
+		"asal": "Sulawesi Tengah",
+		"ipk": "3,52",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Mariska Widya Arfiana",
+		"id": "17263066",
+		"ttl": "Lumajang, 05 April 1995",
+		"asal": "Jawa Timur",
+		"ipk": "3,53",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Mohamad Nurcahyadi",
+		"id": "17263068",
+		"ttl": "Jakarta, 21 Juni 1991",
+		"asal": "Banten",
+		"ipk": "3,40",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Pandu Kuncoro Admaja",
+		"id": "17263075",
+		"ttl": "Singaraja, 17 Mei 1990",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,53",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Putu Yoga Eka Sumarta",
+		"id": "17263076",
+		"ttl": "Banjar, 06 Juli 1992",
+		"asal": "Bali",
+		"ipk": "3,43",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Steven Loudy",
+		"id": "17263080",
+		"ttl": "Jakarta, 07 April 1992",
+		"asal": "Banten",
+		"ipk": "3,29",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Suryawan Salahuddin",
+		"id": "17263082",
+		"ttl": "Kendari, 26 September 1995",
+		"asal": "Sulawesi Tenggara",
+		"ipk": "3,41",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Taufik Nur Rokhman",
+		"id": "17263083",
+		"ttl": "Kulon Progo, 22 Oktober 1995",
+		"asal": "Sulawesi Utara",
+		"ipk": "3,52",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Taufik Nursanto",
+		"id": "17263084",
+		"ttl": "Jakarta, 13 Juli 1994",
+		"asal": "Banten",
+		"ipk": "3,47",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Yaldi Gaung Azani",
+		"id": "17263086",
+		"ttl": "Bekasi, 30 Agustus 1991",
+		"asal": "Bangka Belitung",
+		"ipk": "3,40",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Yogi Katra Sirait",
+		"id": "17263087",
+		"ttl": "Medan, 06 April 1992",
+		"asal": "Papua Barat",
+		"ipk": "3,51",
+		"predikat": "Dengan Pujian",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Yusmanto",
+		"id": "17263088",
+		"ttl": "Ujung Pandang, 13 Maret 1994",
+		"asal": "Sulawesi Tengah",
+		"ipk": "3,46",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Ashfia Kusuma Devi",
+		"id": "16252934",
+		"ttl": "Kediri, 28 Juli 1993",
+		"asal": "Jawa Timur",
+		"ipk": "3,47",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Fisca Ambarwati",
+		"id": "16252942",
+		"ttl": "Ciamis, 27 Januari 1992",
+		"asal": "Jawa Tengah",
+		"ipk": "3,60",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Gusti Ayu Hary Andayani",
+		"id": "16252944",
+		"ttl": "Singaraja, 10 Juli 1992",
+		"asal": "Bali",
+		"ipk": "3,69",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Devi Arum Pratiwi",
+		"id": "16252977",
+		"ttl": "Sukoharjo, 03 Desember 1991",
+		"asal": "Bali",
+		"ipk": "3,60",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "Perpetan"
+	},
+	{
+		"nama": "Adela Catur Primadawati",
+		"id": "20DI6947",
+		"ttl": "Ngawi, 28 Desember 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,20",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Alesandro Amongso Pasca",
+		"id": "20DI6949",
+		"ttl": "Sungai Ayak, 11 Maret 2001",
+		"asal": "Kalimantan Barat",
+		"ipk": "2,88",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Aloysius Mardiana",
+		"id": "20DI6950",
+		"ttl": "Kediri, 19 Juli 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,31",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Andini Prameswari",
+		"id": "20DI6951",
+		"ttl": "Tegal, 27 Mei 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,45",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Aziza Tausia Putri",
+		"id": "20DI6952",
+		"ttl": "Dompu, 09 Desember 2002",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,01",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Bryant Handyatmaja Tri Kharisma",
+		"id": "20DI6953",
+		"ttl": "Blora, 01 Desember 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,49",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Christian Trinaldo Sinaga",
+		"id": "20DI6954",
+		"ttl": "Pematangsiantar, 05 September 2002",
+		"asal": "Sumatera Utara",
+		"ipk": "3,25",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Citra Fitria Sari",
+		"id": "20DI6955",
+		"ttl": "Cilacap, 04 November 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,48",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Dian Pratiwi",
+		"id": "20DI6956",
+		"ttl": "Luwuk Banggai, 26 Desember 2002",
+		"asal": "Sulawesi Tengah",
+		"ipk": "2,91",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Dinda Fakhirah",
+		"id": "20DI6957",
+		"ttl": "Jakarta, 20 Juni 2002",
+		"asal": "DKI Jakarta",
+		"ipk": "2,99",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Dwi Henny",
+		"id": "20DI6958",
+		"ttl": "Jombang, 10 Desember 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,39",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Eal Hadji Diouf",
+		"id": "20DI6959",
+		"ttl": "Jakarta, 05 Agustus 2002",
+		"asal": "DKI Jakarta",
+		"ipk": "3,15",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Fakhrizal Akbar Muhammad",
+		"id": "20DI6961",
+		"ttl": "Sleman, 04 April 2002",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,34",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Fransiscus Xaverius Bagas Wisnurusadi",
+		"id": "20DI6963",
+		"ttl": "Tulungagung, 03 Desember 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,08",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Gilang Asmazori",
+		"id": "20DI6964",
+		"ttl": "Panyalaian, 14 Juli 2001",
+		"asal": "Sumatera Barat",
+		"ipk": "2,99",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Hanifah Rahmawati",
+		"id": "20DI6965",
+		"ttl": "Tangerang, 01 Januari 2003",
+		"asal": "Banten",
+		"ipk": "3,16",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Haris Perdana Syahputra",
+		"id": "20DI6966",
+		"ttl": "Banda Aceh, 29 Desember 2001",
+		"asal": "Aceh",
+		"ipk": "2,81",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ida Fitria Trisnawati",
+		"id": "20DI6967",
+		"ttl": "Boyolali, 24 Desember 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,31",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ihsan Fuad Fachrudin",
+		"id": "20DI6968",
+		"ttl": "Gunungkidul, 22 September 1999",
+		"asal": "Jawa Barat",
+		"ipk": "3,26",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Kania Salsa Nabila",
+		"id": "20DI6969",
+		"ttl": "Banding Agung, 11 Juni 2002",
+		"asal": "Sumatera Selatan        ",
+		"ipk": "3,45",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Liana Risnanti",
+		"id": "20DI6970",
+		"ttl": "Bogor, 27 April 2001",
+		"asal": "Jawa Barat",
+		"ipk": "3,21",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Linanda Aliyyah Putri",
+		"id": "20DI6971",
+		"ttl": "Jakarta, 06 Juni 2002",
+		"asal": "DKI Jakarta",
+		"ipk": "3,14",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Lutfia Frisanti",
+		"id": "20DI6972",
+		"ttl": "Semarang, 27 Februari 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,38",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Mahda Lailatul Chusna",
+		"id": "20DI6973",
+		"ttl": "Madiun, 05 Juni 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,49",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Mahfud Fathur Rohman",
+		"id": "20DI6974",
+		"ttl": "Banyumas, 20 April 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,29",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Miranda Ainur Hadi",
+		"id": "20DI6975",
+		"ttl": "Rawak, 16 Maret 1999",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,10",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Mohammad Panji Kabo",
+		"id": "20DI6976",
+		"ttl": "Ternate, 20 Februari 2000",
+		"asal": "Maluku Utara",
+		"ipk": "2,74",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhamad Dicky",
+		"id": "20DI6977",
+		"ttl": "Pontianak, 15 Mei 1999",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,20",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Naufal Ismail",
+		"id": "20DI6978",
+		"ttl": "Bandar Lampung, 05 Mei 2001",
+		"asal": "Lampung",
+		"ipk": "3,24",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Tsaqib Faishal Siddiq",
+		"id": "20DI6979",
+		"ttl": "Ciamis, 10 Juni 2001",
+		"asal": "Banten",
+		"ipk": "3,29",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Noor Chalisza",
+		"id": "20DI6980",
+		"ttl": "Danau Salak, 09 Februari 2001",
+		"asal": "Kalimantan Selatan",
+		"ipk": "3,68",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Novia Mega Rahmadani",
+		"id": "20DI6982",
+		"ttl": "Hargomulyo, 27 November 2001",
+		"asal": "Lampung",
+		"ipk": "3,45",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nuraini Miftah Rahmawati",
+		"id": "20DI6983",
+		"ttl": "Bantul, 25 Agustus 2001",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,43",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Oktaviana Sri Wulan Andari",
+		"id": "20DI6984",
+		"ttl": "Sleman, 07 Oktober 2001",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,34",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rahmawan Aditya Prabowo",
+		"id": "20DI6985",
+		"ttl": "Wonogiri, 29 Januari 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,33",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rizki Nurafiya",
+		"id": "20DI6986",
+		"ttl": "Pamekasan, 30 Januari 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,28",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rizki Sulis Yuliyanto",
+		"id": "20DI6987",
+		"ttl": "Malang, 19 Juli 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,21",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rizqi Haristya",
+		"id": "20DI6988",
+		"ttl": "Pekalongan, 13 November 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,44",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Samsul Bahri",
+		"id": "20DI6989",
+		"ttl": "Sengkereng, 29 Juli 2002",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,21",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Septi Nur Afiqah",
+		"id": "20DI6990",
+		"ttl": "Pekanbaru, 25 September 2001",
+		"asal": "Riau",
+		"ipk": "3,35",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Simon Herens Yoteni",
+		"id": "20DI6992",
+		"ttl": "Isey, 26 Februari 1999",
+		"asal": "Papua Barat",
+		"ipk": "2,41",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Uswatun Mutmainah",
+		"id": "20DI6993",
+		"ttl": "Kananga, 21 Februari 2001",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,13",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Verdiansyah Meidyta Trisubangkit",
+		"id": "20DI6994",
+		"ttl": "Majalengka, 20 Mei 1999",
+		"asal": "Jawa Barat",
+		"ipk": "3,10",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Vivi Oktavia Syafi'i",
+		"id": "20DI6995",
+		"ttl": "Bojonegoro, 21 Oktober 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,49",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "A. Muh. Fitrah Wijaya Mulia Ilham",
+		"id": "20DI6996",
+		"ttl": "Parepare, 09 Desember 2002",
+		"asal": "Sulawesi Selatan",
+		"ipk": "2,90",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Abdul Hafiz Yusuf",
+		"id": "20DI6997",
+		"ttl": "Mataram, 24 Juni 2002",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "2,93",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Agil Saputri",
+		"id": "20DI6998",
+		"ttl": "Kebumen, 04 April 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,38",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ahmad Adib Fadhillah",
+		"id": "20DI6999",
+		"ttl": "Banjarmasin, 10 April 2002",
+		"asal": "Kalimantan Selatan",
+		"ipk": "3,05",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Alvian Yusuf Berlianto",
+		"id": "20DI7000",
+		"ttl": "Lumajang, 19 Juli 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,23",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Amira Nada Shabira",
+		"id": "20DI7001",
+		"ttl": "Makassar, 01 April 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,36",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Anida Sofyani Rizky Putri",
+		"id": "20DI7002",
+		"ttl": "Semarang, 28 Juli 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "2,98",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Berlianuwari",
+		"id": "20DI7003",
+		"ttl": "Dompu, 13 Januari 2001",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,10",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Cahyo Alfani",
+		"id": "20DI7004",
+		"ttl": "Kebumen, 28 Juni 1999",
+		"asal": "Jawa Tengah",
+		"ipk": "3,49",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Claresta Amandha Ayuwardani",
+		"id": "20DI7005",
+		"ttl": "Magelang, 21 Juni 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,33",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Dina Khairunnisya",
+		"id": "20DI7006",
+		"ttl": "Muara Bulian, 22 November 2002",
+		"asal": "Jambi",
+		"ipk": "3,14",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Erdhita Widya Prasanti",
+		"id": "20DI7007",
+		"ttl": "Nganjuk, 05 Januari 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,44",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Erlinda Nurul Muna",
+		"id": "20DI7008",
+		"ttl": "Pati, 30 Oktober 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,19",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Erzo Fridolino Lande",
+		"id": "20DI7009",
+		"ttl": "Ketapang, 14 Mei 2002",
+		"asal": "Kalimantan Barat",
+		"ipk": "2,76",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Fajar Ramadhan Israjudin",
+		"id": "20DI7010",
+		"ttl": "Tolitoli, 11 November 2002",
+		"asal": "Sulawesi Tengah",
+		"ipk": "2,70",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Febry Ahmad Aditya Fathah",
+		"id": "20DI7011",
+		"ttl": "Grobogan, 15 Februari 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,39",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Gaprash Setya Pambudi",
+		"id": "20DI7012",
+		"ttl": "Kediri, 27 Juli 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,34",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ihwanudin Setyawan",
+		"id": "20DI7013",
+		"ttl": "Bantul, 01 Agustus 2001",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,45",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ima Amalia",
+		"id": "20DI7014",
+		"ttl": "Yogyakarta, 07 Januari 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,48",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Iyang",
+		"id": "20DI7015",
+		"ttl": "Garut, 07 September 1999",
+		"asal": "Jawa Barat",
+		"ipk": "3,09",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Karin Puji Rahma Yulia Santoso",
+		"id": "20DI7016",
+		"ttl": "Bandung, 15 Juli 2002",
+		"asal": "Banten",
+		"ipk": "3,31",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Khafsah Fathul Jannah",
+		"id": "20DI7017",
+		"ttl": "Tolitoli, 23 Agustus 2002",
+		"asal": "Sulawesi Tengah",
+		"ipk": "3,09",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Malihah Izzatunnisa Az Zahra",
+		"id": "20DI7019",
+		"ttl": "Klaten, 15 November 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,43",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Malik Yusril Arifin",
+		"id": "20DI7020",
+		"ttl": "Hutalombang, 06 Januari 2000",
+		"asal": "Sumatera Utara",
+		"ipk": "3,16",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Mikael Sijabat",
+		"id": "20DI7022",
+		"ttl": "Bukittinggi, 12 Maret 2002",
+		"asal": "Sumatera Barat",
+		"ipk": "2,98",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Fajar Neija",
+		"id": "20DI7024",
+		"ttl": "Medan, 21 Juli 2002",
+		"asal": "Aceh",
+		"ipk": "3,11",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Munandar Purboningrat",
+		"id": "20DI7026",
+		"ttl": "Pringsewu, 13 Agustus 2001",
+		"asal": "Lampung",
+		"ipk": "3,13",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Oktaviani Sri Wulansari",
+		"id": "20DI7028",
+		"ttl": "Sleman, 07 Oktober 2001",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,03",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Pasca Alissa Putri",
+		"id": "20DI7029",
+		"ttl": "Bandar Lampung, 27 Juli 2002",
+		"asal": "Lampung",
+		"ipk": "3,28",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Putri Octaviana Azahra",
+		"id": "20DI7031",
+		"ttl": "Sleman, 04 Oktober 2001",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,20",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ra'ifkhan Ahnaf Kurnia Putra",
+		"id": "20DI7032",
+		"ttl": "Klaten, 22 Mei 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,51",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ria Novitasari",
+		"id": "20DI7033",
+		"ttl": "Manter, 07 Desember 2000",
+		"asal": "Kalimantan Barat",
+		"ipk": "2,85",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ridwan Fauzi Wahyudi",
+		"id": "20DI7034",
+		"ttl": "Lebak, 23 Maret 2002",
+		"asal": "Banten",
+		"ipk": "2,81",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rizky Rahmantya Wicaksana",
+		"id": "20DI7035",
+		"ttl": "Malang, 10 April 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,40",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rizqi Nur Azizah",
+		"id": "20DI7036",
+		"ttl": "Karanganyar, 29 September 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "2,94",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Salma Esti Noviani",
+		"id": "20DI7037",
+		"ttl": "Tulungagung, 14 November 1999",
+		"asal": "Jawa Timur",
+		"ipk": "3,36",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Shaliendra Febriansyah",
+		"id": "20DI7038",
+		"ttl": "Jakarta, 27 Februari 2002",
+		"asal": "DKI Jakarta",
+		"ipk": "3,20",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Thomas Indubri",
+		"id": "20DI7040",
+		"ttl": "Sausafor, 17 Desember 1998",
+		"asal": "Papua Barat",
+		"ipk": "2,54",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Vito Yanuardi",
+		"id": "20DI7041",
+		"ttl": "Bekasi, 14 Januari 2002",
+		"asal": "Jawa Barat",
+		"ipk": "3,35",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Wahyu Novita Sari",
+		"id": "20DI7042",
+		"ttl": "Magetan, 11 November 1999",
+		"asal": "Jawa Timur",
+		"ipk": "3,24",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Wahyuni Noviyanti Ramadhan",
+		"id": "20DI7043",
+		"ttl": "Rato, 07 November 2002",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,14",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Adin Nur Cahyono",
+		"id": "20DI7046",
+		"ttl": "Banjarnegara, 25 April 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,29",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Agnes Indah Wahyuningrum",
+		"id": "20DI7047",
+		"ttl": "Klaten, 24 Agustus 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,33",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Anandya Puspita Ramadhani",
+		"id": "20DI7048",
+		"ttl": "Jember, 05 Desember 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,48",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Angelina Septikasari Dua",
+		"id": "20DI7049",
+		"ttl": "Kupang, 10 September 2002",
+		"asal": "Nusa Tenggara Timur",
+		"ipk": "3,35",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Aprilianus Ibrani Senaru",
+		"id": "20DI7052",
+		"ttl": "Kumba, 22 April 2002",
+		"asal": "Nusa Tenggara Timur",
+		"ipk": "3,29",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Arief Satrio Wijanarko",
+		"id": "20DI7053",
+		"ttl": "Jember, 19 April 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,28",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Bagas Putra Aby Satia",
+		"id": "20DI7054",
+		"ttl": "Mataram, 11 November 2001",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,24",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Christian Dwi Immanuel Ardi",
+		"id": "20DI7055",
+		"ttl": "Magelang, 11 Juni 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,24",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Danisa Salsabila Hanifah",
+		"id": "20DI7056",
+		"ttl": "Sragen, 16 Maret 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,40",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Dian Dwi Wulandari",
+		"id": "20DI7057",
+		"ttl": "Majene, 15 Desember 2002",
+		"asal": "Sulawesi Barat",
+		"ipk": "3,41",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Dinda Yerita F. Sorenggani",
+		"id": "20DI7059",
+		"ttl": "Karang Anyar, 20 Februari 2001",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "2,96",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Elsa Yohana Sinaga",
+		"id": "20DI7060",
+		"ttl": "Perdagangan Simalungun, 19 Januari 2003",
+		"asal": "Jambi",
+		"ipk": "3,38",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Fanissa Febriana Zahra",
+		"id": "20DI7062",
+		"ttl": "Klaten, 12 Februari 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,41",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Galang Arnanda Putra",
+		"id": "20DI7063",
+		"ttl": "Kudus, 13 Januari 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,41",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ikhsan Maulana",
+		"id": "20DI7065",
+		"ttl": "Sanggau, 06 Juli 2003",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,28",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Jalu Rizky Ramadhan",
+		"id": "20DI7067",
+		"ttl": "Sleman, 05 Januari 2000",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,35",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Mardhia Putri Salsadilla",
+		"id": "20DI7068",
+		"ttl": "Pagar Alam, 01 Juni 2002",
+		"asal": "Sumatera Selatan        ",
+		"ipk": "3,43",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Maulidda Utami",
+		"id": "20DI7069",
+		"ttl": "Wonogiri, 06 Juni 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,45",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Maulidhina Meitry",
+		"id": "20DI7070",
+		"ttl": "Kuala Kapuas, 15 Mei 2002",
+		"asal": "Kalimantan Tengah",
+		"ipk": "3,10",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Mohammad Ariel Ardani",
+		"id": "20DI7071",
+		"ttl": "Toli-Toli, 02 Desember 2002",
+		"asal": "Sulawesi Tengah",
+		"ipk": "3,15",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Mohammad Firzi Firmansyah",
+		"id": "20DI7072",
+		"ttl": "Cianjur, 01 Maret 2002",
+		"asal": "Jawa Barat",
+		"ipk": "3,24",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhamad Ayyasy Abdurahman",
+		"id": "20DI7073",
+		"ttl": "Tegal, 02 Maret 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,25",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Akbar Revaldo",
+		"id": "20DI7074",
+		"ttl": "Palembang, 14 Oktober 2002",
+		"asal": "Jambi",
+		"ipk": "3,08",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Kasyful Ulum",
+		"id": "20DI7075",
+		"ttl": "Barabai, 16 Mei 2002",
+		"asal": "Kalimantan Selatan",
+		"ipk": "3,38",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Mutiara",
+		"id": "20DI7076",
+		"ttl": "Toli-Toli, 11 Agustus 2002",
+		"asal": "Sulawesi Tengah",
+		"ipk": "2,98",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nabilah Wulan Prawesti",
+		"id": "20DI7077",
+		"ttl": "Tangerang, 18 Januari 2002",
+		"asal": "Banten",
+		"ipk": "3,28",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nadiyah Eka Safitri",
+		"id": "20DI7078",
+		"ttl": "Surabaya, 04 Januari 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,23",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Oshi Krisnawati",
+		"id": "20DI7079",
+		"ttl": "Bantul, 08 Juni 2002",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,41",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Paranisa Nuha Hekmawati",
+		"id": "20DI7080",
+		"ttl": "Sukoharjo, 16 Maret 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,43",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Pradita Kurnia Valenando",
+		"id": "20DI7081",
+		"ttl": "Pandansari, 13 September 2002",
+		"asal": "Lampung",
+		"ipk": "3,23",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rahmat Al Hafiz",
+		"id": "20DI7083",
+		"ttl": "Langsa, 31 Juli 2001",
+		"asal": "Aceh",
+		"ipk": "3,26",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rifky Dwijaya Putra",
+		"id": "20DI7086",
+		"ttl": "Jakarta, 26 Juli 2002",
+		"asal": "Banten",
+		"ipk": "3,29",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ryan Reza Affandi",
+		"id": "20DI7087",
+		"ttl": "Kediri, 17 Juni 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,51",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Saharani Zalfa Azzahro",
+		"id": "20DI7088",
+		"ttl": "Kab Semarang, 25 Oktober 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,39",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Sri Astuti Rahayu",
+		"id": "20DI7091",
+		"ttl": "Pati, 10 Oktober 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,34",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Theofanny Dara Dinathe",
+		"id": "20DI7092",
+		"ttl": "Pontianak, 30 September 2002",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,38",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Viter M Wamati",
+		"id": "20DI7093",
+		"ttl": "Isui, 18 April 2001",
+		"asal": "Papua Barat",
+		"ipk": "2,60",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Wahyu Pratama Syahputra",
+		"id": "20DI7094",
+		"ttl": "Padang, 05 Desember 2000",
+		"asal": "Sumatera Barat",
+		"ipk": "3,29",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Yanuar Pratiwi Efendi",
+		"id": "20DI7095",
+		"ttl": "Pamekasan, 17 Januari 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,36",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Abdullah Anugerah Agung",
+		"id": "20DI7096",
+		"ttl": "Baturaja, 04 Maret 2000",
+		"asal": "Sumatera Selatan        ",
+		"ipk": "2,93",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ajeng Pratiwi Sekar Kinasih",
+		"id": "20DI7098",
+		"ttl": "Karanganyar, 04 Oktober 2000",
+		"asal": "Jawa Tengah",
+		"ipk": "3,43",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Akbar Wahyu Febriansyah",
+		"id": "20DI7099",
+		"ttl": "Denpasar, 21 Februari 2002",
+		"asal": "Bali",
+		"ipk": "3,35",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ani Suryani Usman Ata",
+		"id": "20DI7100",
+		"ttl": "Kalabahi, 30 September 2001",
+		"asal": "Nusa Tenggara Timur",
+		"ipk": "3,05",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Anida Khoirunnisa",
+		"id": "20DI7101",
+		"ttl": "Kediri, 23 April 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,45",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Aulia A Eka Putri",
+		"id": "20DI7105",
+		"ttl": "Yogyakarta, 26 Januari 2003",
+		"asal": "Sulawesi Tenggara",
+		"ipk": "2,85",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Dani Kusuma Widagdo",
+		"id": "20DI7106",
+		"ttl": "Karanganyar, 25 Oktober 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,08",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Endah Purnamasari",
+		"id": "20DI7109",
+		"ttl": "Bima, 23 September 2000",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,00",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Farah Diba Charizy",
+		"id": "20DI7111",
+		"ttl": "Pati, 10 September 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,31",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ghilbrand Jivencha Therik",
+		"id": "20DI7113",
+		"ttl": "Kupang, 26 November 2002",
+		"asal": "Nusa Tenggara Timur",
+		"ipk": "2,84",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Habib Nur Hidayatullah",
+		"id": "20DI7114",
+		"ttl": "Surakarta, 11 Januari 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,34",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "I Made Ananda Satya Prayaksa",
+		"id": "20DI7115",
+		"ttl": "Surabaya, 01 Maret 2003",
+		"asal": "Jawa Timur",
+		"ipk": "3,00",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Janu Syahwaliyan Rusida",
+		"id": "20DI7117",
+		"ttl": "Pancor, 12 Januari 2002",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "2,93",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Mawritsa Etufirka",
+		"id": "20DI7118",
+		"ttl": "Pontianak, 22 September 2002",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,39",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Mochamad Raka Rangga Trengginas",
+		"id": "20DI7119",
+		"ttl": "Batu, 09 Maret 2002",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,23",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhamad Ridwan Purnama",
+		"id": "20DI7121",
+		"ttl": "Garut, 08 Februari 2002",
+		"asal": "Jawa Barat",
+		"ipk": "3,40",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Agus Mubarok",
+		"id": "20DI7122",
+		"ttl": "Magelang, 01 Juli 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,34",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Fadhil Al Ghozy",
+		"id": "20DI7123",
+		"ttl": "Palangka Raya, 21 Agustus 2002",
+		"asal": "Kalimantan Tengah",
+		"ipk": "2,94",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Taufik",
+		"id": "20DI7124",
+		"ttl": "Tolitoli, 05 Oktober 2002",
+		"asal": "Sulawesi Tengah",
+		"ipk": "2,93",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Taufiqurahman",
+		"id": "20DI7125",
+		"ttl": "Muara Bulian, 24 Desember 2002",
+		"asal": "Jambi",
+		"ipk": "2,88",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Mutiah Anjelina",
+		"id": "20DI7126",
+		"ttl": "Pagaralam, 31 Januari 2003",
+		"asal": "Sumatera Selatan        ",
+		"ipk": "3,35",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nurul Sabrina",
+		"id": "20DI7129",
+		"ttl": "Tangerang, 07 Mei 2002",
+		"asal": "Banten",
+		"ipk": "3,14",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Pintaka Rachma Fernandes",
+		"id": "20DI7130",
+		"ttl": "Bantul, 11 April 2001",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,39",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Prastika Fadillah Sabrani Nuraini",
+		"id": "20DI7131",
+		"ttl": "Klaten, 01 Juni 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,13",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Putri Erika Oktavia",
+		"id": "20DI7132",
+		"ttl": "Bandung, 19 Oktober 2001",
+		"asal": "Jawa Barat",
+		"ipk": "3,29",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ranni Kholifah Agustina",
+		"id": "20DI7133",
+		"ttl": "Kediri, 12 Agustus 2001",
+		"asal": "Kalimantan Tengah",
+		"ipk": "3,24",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rifki Ardian Yussalim",
+		"id": "20DI7134",
+		"ttl": "Wonogiri, 22 Mei 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,34",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Salsabila Fatina",
+		"id": "20DI7135",
+		"ttl": "Magelang, 24 Agustus 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,38",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Sekar Yufrisia",
+		"id": "20DI7137",
+		"ttl": "Metro, 29 Juni 2001",
+		"asal": "Lampung",
+		"ipk": "3,68",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Siska Riskaryani",
+		"id": "20DI7139",
+		"ttl": "Polewali, 01 September 2000",
+		"asal": "Sulawesi Barat",
+		"ipk": "3,10",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Tio Paundra Febrian",
+		"id": "20DI7141",
+		"ttl": "Pringsewu, 16 Februari 2002",
+		"asal": "Lampung",
+		"ipk": "2,73",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Veronika Paulina Inda",
+		"id": "20DI7142",
+		"ttl": "Perongkan, 13 Januari 2003",
+		"asal": "Kalimantan Barat",
+		"ipk": "2,71",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Yarib Seus Mambor",
+		"id": "20DI7143",
+		"ttl": "Wondiboi, 16 Desember 1998",
+		"asal": "Papua Barat",
+		"ipk": "2,43",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Yusuf Ichsan Fernanda",
+		"id": "20DI7144",
+		"ttl": "Tangerang, 17 September 2002",
+		"asal": "Banten",
+		"ipk": "2,91",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Zuhrotul Munawwaroh",
+		"id": "20DI7145",
+		"ttl": "Ponorogo, 11 Juni 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,39",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Aan Farid Malaode",
+		"id": "20DI7146",
+		"ttl": "Lahorio, 22 Oktober 2000",
+		"asal": "Sulawesi Tenggara",
+		"ipk": "3,00",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ahmad Kahfi",
+		"id": "20DI7147",
+		"ttl": "Bandung, 18 Agustus 2002",
+		"asal": "Jawa Barat",
+		"ipk": "3,20",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ahmad Mu Tashim",
+		"id": "20DI7148",
+		"ttl": "Blora, 22 Juli 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "2,73",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ajeng Amalia Putri",
+		"id": "20DI7149",
+		"ttl": "Watampone, 02 Agustus 2002",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,14",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Akbar Nur Rochman",
+		"id": "20DI7150",
+		"ttl": "Yogyakarta, 01 Maret 2002",
+		"asal": "Sumatera Selatan        ",
+		"ipk": "3,08",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Alifia Lutfiana Rizqi",
+		"id": "20DI7151",
+		"ttl": "Klaten, 27 Desember 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,40",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Annisa Nur Septianingtyas",
+		"id": "20DI7153",
+		"ttl": "Magetan, 27 September 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,26",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Averina Fereira Amaral",
+		"id": "20DI7155",
+		"ttl": "Panite, 04 Februari 2001",
+		"asal": "Nusa Tenggara Timur",
+		"ipk": "3,19",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Brahim Suryo Bawono Putro",
+		"id": "20DI7156",
+		"ttl": "Tulungagung, 10 Maret 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,06",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Daniel Yoga Indra Wiratama",
+		"id": "20DI7158",
+		"ttl": "Klaten, 21 Oktober 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,09",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Desinta Romadona",
+		"id": "20DI7159",
+		"ttl": "Klaten, 11 Desember 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,44",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Fadela Zulfa Salsabila",
+		"id": "20DI7161",
+		"ttl": "Bima, 06 Juli 2002",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,50",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Fajar Anisa Kurniawati",
+		"id": "20DI7162",
+		"ttl": "Sleman, 21 September 2001",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,38",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Handoko Prakoso Wibowo",
+		"id": "20DI7167",
+		"ttl": "Klaten, 04 Agustus 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,39",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Jihan Abiyyah Qonitah",
+		"id": "20DI7170",
+		"ttl": "Batusangkar, 10 Januari 2002",
+		"asal": "Sumatera Barat",
+		"ipk": "3,38",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Kevin Teguh Putra",
+		"id": "20DI7171",
+		"ttl": "Kota Pasuruan, 05 April 2001",
+		"asal": "Jawa Timur",
+		"ipk": "2,94",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Lalu Harnasrin Kusumayadi Ma'sum",
+		"id": "20DI7172",
+		"ttl": "Praya, 23 Juli 2002",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,25",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhamad Fadil Nurdin",
+		"id": "20DI7174",
+		"ttl": "Dili, 14 November 1997",
+		"asal": "Nusa Tenggara Timur",
+		"ipk": "3,15",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhamad Gandi",
+		"id": "20DI7175",
+		"ttl": "Pangkin, 14 November 1999",
+		"asal": "Kalimantan Barat",
+		"ipk": "2,56",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhamad Vitra Permana",
+		"id": "20DI7177",
+		"ttl": "Purwakarta, 15 Desember 2001",
+		"asal": "Jawa Barat",
+		"ipk": "3,11",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Alif Fahrizki",
+		"id": "20DI7178",
+		"ttl": "Pati, 03 Juli 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,45",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Oza Maleakhi Lusa",
+		"id": "20DI7181",
+		"ttl": "Sampit, 26 Februari 2002",
+		"asal": "Kalimantan Tengah",
+		"ipk": "2,93",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rizki Prima Putra Harindra",
+		"id": "20DI7183",
+		"ttl": "Kota Semarang, 09 Agustus 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,08",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Seppinda Awallin Nugraheni",
+		"id": "20DI7185",
+		"ttl": "Pauh, 12 September 2002",
+		"asal": "Jambi",
+		"ipk": "2,94",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Sheva Natasya Salsabila",
+		"id": "20DI7186",
+		"ttl": "Ciamis, 23 Maret 2002",
+		"asal": "Jawa Barat",
+		"ipk": "3,13",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Shofi Nareswari Kaltsum",
+		"id": "20DI7187",
+		"ttl": "Bandar Lampung, 25 November 2002",
+		"asal": "Lampung",
+		"ipk": "3,33",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Silvia Rohmatika Khusna",
+		"id": "20DI7188",
+		"ttl": "Malang, 23 Februari 1999",
+		"asal": "Jawa Timur",
+		"ipk": "3,48",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Siti Fatimah Ayasyha Riezka",
+		"id": "20DI7189",
+		"ttl": "Langsa, 21 Desember 2002",
+		"asal": "Aceh",
+		"ipk": "2,65",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Tiara Anjani",
+		"id": "20DI7190",
+		"ttl": "Sragen, 17 April 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,10",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Tri Buana Tara",
+		"id": "20DI7191",
+		"ttl": "Pajaresuk, 22 April 2002",
+		"asal": "Lampung",
+		"ipk": "2,79",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Vicky Wahyu Setyapratama",
+		"id": "20DI7192",
+		"ttl": "Pacitan, 17 Februari 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,01",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Wulan",
+		"id": "20DI7193",
+		"ttl": "Sekadau, 26 Februari 2000",
+		"asal": "Kalimantan Barat",
+		"ipk": "2,64",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Zaitun Nasaret Urbon",
+		"id": "20DI7194",
+		"ttl": "Nanimori, 01 Mei 1997",
+		"asal": "Papua Barat",
+		"ipk": "2,51",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Zulfa Izza Nugroho",
+		"id": "20DI7195",
+		"ttl": "Surabaya, 21 Maret 2003",
+		"asal": "Jawa Timur",
+		"ipk": "3,31",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Achmad Aziz Ibramsyah",
+		"id": "20DI7196",
+		"ttl": "Kotabumi, 26 April 2002",
+		"asal": "Lampung",
+		"ipk": "2,76",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ahmad Bagus Reyhan",
+		"id": "20DI7197",
+		"ttl": "Kendari, 23 Juli 2002",
+		"asal": "Sulawesi Tenggara",
+		"ipk": "2,93",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Alexander Satrio Wibowo",
+		"id": "20DI7199",
+		"ttl": "Bandung, 11 November 2001",
+		"asal": "Jawa Barat",
+		"ipk": "2,73",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Alya Putri Junanti",
+		"id": "20DI7202",
+		"ttl": "Betung (Sumsel), 01 Juni 2002",
+		"asal": "Bengkulu",
+		"ipk": "3,40",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Amelia Nurjahidah",
+		"id": "20DI7203",
+		"ttl": "Tasikmalaya, 22 September 2000",
+		"asal": "Jawa Barat",
+		"ipk": "2,99",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Anisa Fitria",
+		"id": "20DI7204",
+		"ttl": "Sukadana, 24 November 2002",
+		"asal": "Kalimantan Barat",
+		"ipk": "2,88",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Annisa Tika Nugrahanti",
+		"id": "20DI7205",
+		"ttl": "Magelang, 29 September 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,28",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Deni Setyawan",
+		"id": "20DI7208",
+		"ttl": "Blora, 04 November 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,46",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Fatimah Najihatusholihah",
+		"id": "20DI7211",
+		"ttl": "Purbalingga, 28 Januari 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,46",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Fithria Anggraeni",
+		"id": "20DI7212",
+		"ttl": "Dompu, 15 Desember 2001",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,19",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Frida Indah Ikhwanti",
+		"id": "20DI7213",
+		"ttl": "Ponorogo, 06 Juli 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,30",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Gilang Dewa Pranata",
+		"id": "20DI7214",
+		"ttl": "TJ. Betuah, 14 November 1998",
+		"asal": "Bengkulu",
+		"ipk": "2,99",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Hasriani",
+		"id": "20DI7215",
+		"ttl": "Pinrang, 17 Februari 1999",
+		"asal": "Sulawesi Selatan",
+		"ipk": "2,94",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Hendrikho Gunires",
+		"id": "20DI7216",
+		"ttl": "Grobogan, 23 April 2000",
+		"asal": "Jawa Tengah",
+		"ipk": "3,18",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Husnun Eka Meilani",
+		"id": "20DI7217",
+		"ttl": "Bantul, 03 Mei 2002",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,50",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "I Gusti Ayu Yunda Yulia Dewi",
+		"id": "20DI7218",
+		"ttl": "Denpasar, 21 Juli 2002",
+		"asal": "Bali",
+		"ipk": "3,41",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "I Made Wira Darma Ananda Kusuma",
+		"id": "20DI7219",
+		"ttl": "Singaraja, 29 Maret 2002",
+		"asal": "Bali",
+		"ipk": "3,46",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Javarianavati Magenta",
+		"id": "20DI7220",
+		"ttl": "Kebumen, 01 Mei 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,46",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "M. Rizki Nur Rusmawanto",
+		"id": "20DI7222",
+		"ttl": "Bojonegoro, 13 Februari 2000",
+		"asal": "Jawa Timur",
+		"ipk": "2,73",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "M. Yusrizal Fajrul Islam M.",
+		"id": "20DI7223",
+		"ttl": "Pinrang, 13 Desember 2002",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,33",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Maria Sany Kondolele",
+		"id": "20DI7224",
+		"ttl": "Waingapu, 09 Maret 2003",
+		"asal": "Nusa Tenggara Timur",
+		"ipk": "3,11",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Melvy Elsya Putri",
+		"id": "20DI7225",
+		"ttl": "Padang, 05 Mei 2002",
+		"asal": "Sumatera Barat",
+		"ipk": "3,10",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Alfarabi",
+		"id": "20DI7226",
+		"ttl": "Medan, 12 Februari 2000",
+		"asal": "Jawa Barat",
+		"ipk": "3,25",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Dhiki Aulia Rahman",
+		"id": "20DI7227",
+		"ttl": "Gorontalo, 11 Juli 2002",
+		"asal": "Papua Barat",
+		"ipk": "3,30",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Nur Rizqi",
+		"id": "20DI7228",
+		"ttl": "Palembang, 15 Januari 2002",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,15",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Niken Candrasari",
+		"id": "20DI7231",
+		"ttl": "Kediri, 28 Oktober 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,23",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Puspita Kumala Dewi",
+		"id": "20DI7232",
+		"ttl": "Karanganyar, 27 April 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,44",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rahma Atin Nabilah",
+		"id": "20DI7233",
+		"ttl": "Kulon Progo, 24 Januari 2002",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,30",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rinuarni Penjarman",
+		"id": "20DI7234",
+		"ttl": "Sei Lampun Bugau, 08 Februari 2002",
+		"asal": "Kalimantan Barat",
+		"ipk": "2,80",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rizky Khairunnisa",
+		"id": "20DI7235",
+		"ttl": "Lubuklinggau, 26 September 2002",
+		"asal": "Sumatera Selatan        ",
+		"ipk": "2,79",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ryan Ariesta Paskalitho Riwu",
+		"id": "20DI7236",
+		"ttl": "Kupang, 31 Maret 2002",
+		"asal": "Nusa Tenggara Timur",
+		"ipk": "2,78",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Salsabilah Juwita Ashami",
+		"id": "20DI7237",
+		"ttl": "Sragen, 11 Desember 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,40",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Setyo Addy Nugroho",
+		"id": "20DI7238",
+		"ttl": "Boyolali, 04 Agustus 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,00",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Sri Sekar Dewi Ayuning Tyas",
+		"id": "20DI7239",
+		"ttl": "Banyumas, 27 Juli 2002",
+		"asal": "Lampung",
+		"ipk": "3,58",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Suci Alayda Sabilla",
+		"id": "20DI7240",
+		"ttl": "Pekanbaru, 13 Oktober 2002",
+		"asal": "Jawa Barat",
+		"ipk": "3,23",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Tessa Tri Andining",
+		"id": "20DI7241",
+		"ttl": "Bojonegoro, 28 September 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,23",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Tri Idarotul Barokah",
+		"id": "20DI7242",
+		"ttl": "Kebumen, 01 Mei 2003",
+		"asal": "Jawa Tengah",
+		"ipk": "2,98",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Viky Septiyanto",
+		"id": "20DI7243",
+		"ttl": "Madiun, 22 September 2001",
+		"asal": "Jawa Timur",
+		"ipk": "2,96",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Yosefa Meiry Elliani",
+		"id": "20DI7244",
+		"ttl": "Gonis Rabu, 25 Mei 2002",
+		"asal": "Kalimantan Barat",
+		"ipk": "2,71",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Zidan Ridho Mahendra",
+		"id": "20DI7245",
+		"ttl": "Berau, 23 Oktober 2001",
+		"asal": "Kalimantan Timur",
+		"ipk": "2,84",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Alberto Yongki Elvanandi",
+		"id": "20DI7246",
+		"ttl": "Sleman, 11 Desember 2001",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,34",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Alfian Dandy Nur Rahmat",
+		"id": "20DI7247",
+		"ttl": "Wonogiri, 15 Agustus 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,33",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Alisha Mirmana Fitri",
+		"id": "20DI7248",
+		"ttl": "Banjarnegara, 17 Desember 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,34",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Andrean Septianto",
+		"id": "20DI7249",
+		"ttl": "Palembang, 29 September 2002",
+		"asal": "Sumatera Selatan        ",
+		"ipk": "3,20",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Anjar Deli Pradipta",
+		"id": "20DI7251",
+		"ttl": "Kotabumi, 30 Juni 2002",
+		"asal": "Lampung",
+		"ipk": "3,19",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Anzila Afrin Marsa Azizah",
+		"id": "20DI7252",
+		"ttl": "Wonosobo, 14 Mei 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,43",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ari Ramdhani Pratama",
+		"id": "20DI7254",
+		"ttl": "Bogor, 13 Januari 1999",
+		"asal": "Jawa Barat",
+		"ipk": "2,98",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Asri Jerina Amalia",
+		"id": "20DI7255",
+		"ttl": "Sukabumi, 05 September 2001",
+		"asal": "Jawa Barat",
+		"ipk": "3,35",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Aulia Giri Wandana",
+		"id": "20DI7256",
+		"ttl": "Labuhan Batu, 31 Desember 2002",
+		"asal": "Riau",
+		"ipk": "3,13",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Deo Maulidio Santoso",
+		"id": "20DI7257",
+		"ttl": "Pamekasan, 08 Agustus 1997",
+		"asal": "Jawa Timur",
+		"ipk": "2,84",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Devi Zulaekha Adeprilliasari",
+		"id": "20DI7258",
+		"ttl": "Kebumen, 26 April 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,40",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Elsa Baiky",
+		"id": "20DI7260",
+		"ttl": "Batam, 09 Januari 2002",
+		"asal": "Kepulauan Riau",
+		"ipk": "3,34",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Fauzyah Putri Laras Sunaryo",
+		"id": "20DI7261",
+		"ttl": "Wonogiri, 27 Maret 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,44",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Galant Nanda Alamsyah",
+		"id": "20DI7262",
+		"ttl": "Kendari, 07 September 2001",
+		"asal": "Sulawesi Tenggara",
+		"ipk": "3,01",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Hana Sabrina",
+		"id": "20DI7263",
+		"ttl": "Kediri, 03 Maret 2000",
+		"asal": "Jawa Timur",
+		"ipk": "3,19",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Hilda Ginanti",
+		"id": "20DI7264",
+		"ttl": "Nenggung, 22 Maret 2002",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,24",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Hilmi Fadli Yahya",
+		"id": "20DI7265",
+		"ttl": "Pati, 17 Desember 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,14",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Intan Wahyuni",
+		"id": "20DI7267",
+		"ttl": "Teluk Batang, 10 September 2002",
+		"asal": "Kalimantan Barat",
+		"ipk": "2,91",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Jihan Kamilia Qotrunnada",
+		"id": "20DI7268",
+		"ttl": "Boyolali, 29 Januari 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,40",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Kartika Narmahadmi",
+		"id": "20DI7269",
+		"ttl": "Jakarta, 31 Maret 2001",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,28",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Lahira Putri Natasya",
+		"id": "20DI7270",
+		"ttl": "Bengkulu, 28 Januari 2002",
+		"asal": "Bengkulu",
+		"ipk": "3,21",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Lalu Rafli Harsandy Adhiguna",
+		"id": "20DI7271",
+		"ttl": "Yogyakarta, 24 April 2002",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,40",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "M. Reza Firdaus",
+		"id": "20DI7272",
+		"ttl": "Tabanan, 14 Februari 2000",
+		"asal": "Bali",
+		"ipk": "3,41",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Merlin Sabrina",
+		"id": "20DI7274",
+		"ttl": "Ujung Pandang, 15 November 2001",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,29",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Dzeldy Riandhany",
+		"id": "20DI7275",
+		"ttl": "Bogor, 04 Maret 2002",
+		"asal": "Jawa Barat",
+		"ipk": "2,94",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Luqman Abdillah Badubbah",
+		"id": "20DI7276",
+		"ttl": "Sidoarjo, 14 Mei 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,49",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nafisha Tiveny",
+		"id": "20DI7277",
+		"ttl": "Karanganyar, 23 April 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,18",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Niken Dwi Rizqiana",
+		"id": "20DI7278",
+		"ttl": "Kediri, 31 Desember 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,23",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nur Prasetya Adi Kusuma",
+		"id": "20DI7279",
+		"ttl": "Sleman, 25 Januari 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,29",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ochta Arya Ardianto",
+		"id": "20DI7280",
+		"ttl": "Gunungkidul, 19 Oktober 1999",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,16",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Putri Mustika Yanti",
+		"id": "20DI7281",
+		"ttl": "Purworejo, 06 Agustus 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,49",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rieska Amalia Sandradewi",
+		"id": "20DI7282",
+		"ttl": "Sleman, 24 Agustus 2002",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,38",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rizki Aeva Pratama",
+		"id": "20DI7283",
+		"ttl": "Pekanbaru, 20 Februari 2003",
+		"asal": "Kepulauan Riau",
+		"ipk": "2,89",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Sherina Melinda",
+		"id": "20DI7286",
+		"ttl": "Lahat, 07 Maret 2003",
+		"asal": "Sumatera Selatan        ",
+		"ipk": "3,44",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Siti Zubaedah Mahmud",
+		"id": "20DI7287",
+		"ttl": "Kalabahi, 02 November 1999",
+		"asal": "Nusa Tenggara Timur",
+		"ipk": "3,21",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Tamara Atriawati Yorry Supriatna",
+		"id": "20DI7288",
+		"ttl": "Jakarta, 11 Desember 2002",
+		"asal": "Jawa Barat",
+		"ipk": "3,49",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Theobaldus Kurnia Sinsoni Pango",
+		"id": "20DI7289",
+		"ttl": "Paga, 02 Maret 1999",
+		"asal": "Nusa Tenggara Timur",
+		"ipk": "2,91",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Titania Trias Enggar Palupi",
+		"id": "20DI7290",
+		"ttl": "Bojonegoro, 08 April 2000",
+		"asal": "Jawa Timur",
+		"ipk": "3,50",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Viodi Oka Saputra",
+		"id": "20DI7291",
+		"ttl": "Sekadau, 10 Oktober 2002",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,10",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Wahyu Eka Purna Satriani",
+		"id": "20DI7292",
+		"ttl": "Trenggalek, 06 September 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,35",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Yoggi Sofyan Hadi",
+		"id": "20DI7293",
+		"ttl": "Klaten, 16 Desember 2000",
+		"asal": "Jawa Tengah",
+		"ipk": "3,49",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Yohana Khairunnisa",
+		"id": "20DI7294",
+		"ttl": "Wonogiri, 30 November 2000",
+		"asal": "Jawa Tengah",
+		"ipk": "3,44",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Yunita Sari",
+		"id": "20DI7295",
+		"ttl": "Gedung Nyapah, 13 Juni 2001",
+		"asal": "Lampung",
+		"ipk": "3,40",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Adam Rizky Sasongko",
+		"id": "20DI7296",
+		"ttl": "Ngawi, 15 Agustus 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,46",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Alfian Rasyid Imadudin",
+		"id": "20DI7297",
+		"ttl": "Sleman, 21 Mei 2001",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,31",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ali Nur Huda",
+		"id": "20DI7298",
+		"ttl": "Boyolali, 31 Januari 2003",
+		"asal": "Jawa Tengah",
+		"ipk": "3,10",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Alvina",
+		"id": "20DI7299",
+		"ttl": "Pringsewu, 23 September 2000",
+		"asal": "Lampung",
+		"ipk": "2,98",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Aprinia Sarawati",
+		"id": "20DI7301",
+		"ttl": "Kebumen, 03 April 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,35",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ardhia Pramesti Regita Putri",
+		"id": "20DI7302",
+		"ttl": "Muara Bungo, 31 Desember 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,15",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Athauriq Fatta",
+		"id": "20DI7303",
+		"ttl": "Kuningan, 03 Juni 2000",
+		"asal": "Jawa Barat",
+		"ipk": "2,94",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Aulia Rahmawati Putri Prayitna",
+		"id": "20DI7304",
+		"ttl": "Garut, 14 November 2002",
+		"asal": "Jawa Barat",
+		"ipk": "3,30",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Auliana Efni Tanaya",
+		"id": "20DI7305",
+		"ttl": "Ketapang, 29 April 2001",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,33",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Christmas Leuwol",
+		"id": "20DI7306",
+		"ttl": "Timika, 25 Desember 2002",
+		"asal": "Papua",
+		"ipk": "2,65",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Darma Wijaya",
+		"id": "20DI7307",
+		"ttl": "Oku Timur, 21 Januari 2003",
+		"asal": "Sumatera Selatan        ",
+		"ipk": "3,29",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Dharmahita Yuang Raditya",
+		"id": "20DI7309",
+		"ttl": "Sidoarjo, 12 Juni 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,05",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Dio Alfaro Denisa",
+		"id": "20DI7310",
+		"ttl": "Pekanbaru, 29 Mei 2002",
+		"asal": "Riau",
+		"ipk": "3,36",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Edwin Yusuf Endarta Mahather",
+		"id": "20DI7311",
+		"ttl": "Semarang, 27 September 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "2,85",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Fauziah Rachma Dewi",
+		"id": "20DI7312",
+		"ttl": "Sragen, 14 Juli 2002",
+		"asal": "Kepulauan Riau",
+		"ipk": "3,06",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Feni Rahmawati",
+		"id": "20DI7313",
+		"ttl": "Boyolali, 30 Mei 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,36",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Fikri Khoiriyah Harahap",
+		"id": "20DI7314",
+		"ttl": "Huta Padang, 02 Januari 2003",
+		"asal": "Sumatera Utara",
+		"ipk": "3,19",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Gusti Ngurah Darmawan",
+		"id": "20DI7315",
+		"ttl": "Ranoeya, 27 September 2002",
+		"asal": "Sulawesi Tenggara",
+		"ipk": "3,41",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Hidayatul Khoiroh",
+		"id": "20DI7316",
+		"ttl": "Nganjuk, 25 Agustus 2000",
+		"asal": "Jawa Timur",
+		"ipk": "3,25",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Jilan Juhara",
+		"id": "20DI7318",
+		"ttl": "Bandar Lampung, 19 Juni 2002",
+		"asal": "Lampung",
+		"ipk": "3,09",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Laila Noor Saravina",
+		"id": "20DI7320",
+		"ttl": "Sleman, 14 Maret 2002",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,35",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "M Fasyihul Ammar",
+		"id": "20DI7321",
+		"ttl": "Kempo, 03 Juli 2002",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,00",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhamad Ersal",
+		"id": "20DI7323",
+		"ttl": "Loloan Timur, 20 Mei 2002",
+		"asal": "Bali",
+		"ipk": "3,15",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Fathur Rachman",
+		"id": "20DI7324",
+		"ttl": "Karawang, 28 September 2001",
+		"asal": "Jawa Barat",
+		"ipk": "3,00",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Nur 'Ali",
+		"id": "20DI7325",
+		"ttl": "Trenggalek, 07 September 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,43",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muthiarani Mahyunir Nur",
+		"id": "20DI7326",
+		"ttl": "Bengkulu, 09 Oktober 2002",
+		"asal": "Bengkulu",
+		"ipk": "3,20",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nadya Sri Auli",
+		"id": "20DI7327",
+		"ttl": "Pinrang, 01 November 2001",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,26",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nahdia Sabila Zain",
+		"id": "20DI7328",
+		"ttl": "Purworejo, 13 Januari 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,44",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ni Luh Putu Widia Wati",
+		"id": "20DI7329",
+		"ttl": "Denpasar, 02 Januari 2002",
+		"asal": "Bali",
+		"ipk": "3,18",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nimas Dwi Noor Pratiwi",
+		"id": "20DI7330",
+		"ttl": "Ponorogo, 04 Juni 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,29",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nuratul Awaliah",
+		"id": "20DI7331",
+		"ttl": "Sumbawa Besar, 12 Juli 2000",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,43",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ompu Bima Nugroho",
+		"id": "20DI7332",
+		"ttl": "Jepara, 01 Juni 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,45",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rahmi",
+		"id": "20DI7334",
+		"ttl": "Sukadana, 14 Februari 2002",
+		"asal": "Kalimantan Barat",
+		"ipk": "2,99",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rio Febriansyah Putra",
+		"id": "20DI7335",
+		"ttl": "Yogyakarta, 08 Februari 1998",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,09",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Risma Marga Wijaya",
+		"id": "20DI7336",
+		"ttl": "Bantul, 24 April 2001",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,45",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Stevanie Marcella Supusepa",
+		"id": "20DI7338",
+		"ttl": "Ambon, 27 Juni 2003",
+		"asal": "Maluku",
+		"ipk": "2,91",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Theresia Natalia Putri Soge",
+		"id": "20DI7339",
+		"ttl": "Kupang, 13 Desember 2002",
+		"asal": "Nusa Tenggara Timur",
+		"ipk": "3,15",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Vitalis Pedro",
+		"id": "20DI7341",
+		"ttl": "Nanga Taman, 13 Juni 2002",
+		"asal": "Kalimantan Barat",
+		"ipk": "2,91",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Widhya Rachma Dinanty",
+		"id": "20DI7342",
+		"ttl": "Cianjur, 06 April 2002",
+		"asal": "Jawa Barat",
+		"ipk": "3,03",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Wisnu Cakra Bhaskara",
+		"id": "20DI7343",
+		"ttl": "Sumenep, 25 Juni 2000",
+		"asal": "Jawa Timur",
+		"ipk": "2,63",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Zelicca Aulia Fitri",
+		"id": "20DI7345",
+		"ttl": "Kubang Pipik, 30 Desember 2000",
+		"asal": "Sumatera Barat",
+		"ipk": "3,28",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Adelia Rakeen Diah Pawestri",
+		"id": "20DI7346",
+		"ttl": "Batang, 26 September 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,20",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ahmad Yazid Dzikrullah",
+		"id": "20DI7347",
+		"ttl": "Jombang, 29 Oktober 2000",
+		"asal": "Jawa Timur",
+		"ipk": "3,43",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Alhimna Rusdy",
+		"id": "20DI7348",
+		"ttl": "Kulon Progo, 09 November 1997",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,40",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Amti Miftakhur Rizki",
+		"id": "20DI7349",
+		"ttl": "Karanganyar, 17 Oktober 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,46",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Awidiya Ardanariswari Wahyu Suputri",
+		"id": "20DI7351",
+		"ttl": "Jakarta, 22 April 2002",
+		"asal": "Jawa Barat",
+		"ipk": "2,94",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Azira Yusri Apriliane",
+		"id": "20DI7352",
+		"ttl": "Banyumas, 10 April 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,15",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Bemy Fransiska Claudia Dewy",
+		"id": "20DI7353",
+		"ttl": "Perongkan, 25 Juli 2001",
+		"asal": "Kalimantan Barat",
+		"ipk": "2,78",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Cindy Azlina Muthma'innah",
+		"id": "20DI7354",
+		"ttl": "Lubuklinggau, 18 Oktober 2002",
+		"asal": "Sumatera Selatan        ",
+		"ipk": "3,10",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Cindy Nurliya Syafitri",
+		"id": "20DI7355",
+		"ttl": "Sambas, 11 Februari 2002",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,24",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Dian Rizki Apriani",
+		"id": "20DI7357",
+		"ttl": "Purwokerto, 12 April 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,24",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Diaz Fachriansyah Putra",
+		"id": "20DI7358",
+		"ttl": "Jakarta, 11 Februari 2002",
+		"asal": "Jawa Barat",
+		"ipk": "3,39",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Edy Saputra",
+		"id": "20DI7359",
+		"ttl": "Blora, 15 April 1999",
+		"asal": "Jawa Tengah",
+		"ipk": "3,13",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Eric Yani Pratama",
+		"id": "20DI7360",
+		"ttl": "Trenggalek, 14 Mei 2000",
+		"asal": "Jawa Timur",
+		"ipk": "3,06",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Finda Dwi Liliyanti",
+		"id": "20DI7361",
+		"ttl": "Temanggung, 10 Januari 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,21",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Frisnanda Krisna Murti",
+		"id": "20DI7362",
+		"ttl": "Pringsewu, 05 Agustus 2001",
+		"asal": "Lampung",
+		"ipk": "2,91",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Gabe Brilian Parsaulian Panjaitan",
+		"id": "20DI7363",
+		"ttl": "Padang Sidimpuan, 23 Maret 2002",
+		"asal": "Riau",
+		"ipk": "2,88",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Hanafi Zaini",
+		"id": "20DI7364",
+		"ttl": "Sleman, 11 Mei 2001",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,38",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Hidayatul Mauly Widya Ningrum",
+		"id": "20DI7365",
+		"ttl": "Blitar, 04 Juni 2001",
+		"asal": "Jawa Timur",
+		"ipk": "2,89",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ilham Muharom",
+		"id": "20DI7366",
+		"ttl": "Wonogiri, 12 April 2000",
+		"asal": "Jawa Tengah",
+		"ipk": "3,41",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Iqbal Pahlevi",
+		"id": "20DI7367",
+		"ttl": "Lahat, 03 November 2002",
+		"asal": "Sumatera Selatan        ",
+		"ipk": "3,43",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Laila Ade Fitri",
+		"id": "20DI7368",
+		"ttl": "Demak, 16 Desember 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,29",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Luthfiati Az - Zahra",
+		"id": "20DI7369",
+		"ttl": "Kulon Progo, 30 Mei 2002",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,44",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhaimin",
+		"id": "20DI7372",
+		"ttl": "Pesa, 10 Januari 2003",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "2,79",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Iqbal Aditama Mulyadi",
+		"id": "20DI7373",
+		"ttl": "Bandung, 16 Juli 2002",
+		"asal": "Jawa Barat",
+		"ipk": "3,21",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Surya Satria",
+		"id": "20DI7374",
+		"ttl": "Banyuwangi, 21 Mei 1999",
+		"asal": "Jawa Timur",
+		"ipk": "2,95",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muthia Primandari",
+		"id": "20DI7375",
+		"ttl": "Manggar, 11 Mei 2002",
+		"asal": "Bangka Belitung",
+		"ipk": "2,94",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nanda Mita Delani",
+		"id": "20DI7376",
+		"ttl": "Grobogan, 07 Februari 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,03",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nova Dwi Ardhyana",
+		"id": "20DI7378",
+		"ttl": "Ponorogo, 23 Agustus 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,44",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nurul Amaliah",
+		"id": "20DI7379",
+		"ttl": "Poso, 26 Maret 2002",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,09",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nurul Fatani A.M. Nurdin",
+		"id": "20DI7380",
+		"ttl": "Ternate, 31 Januari 2002",
+		"asal": "Maluku Utara",
+		"ipk": "2,74",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Perlita Aubin Salsabila",
+		"id": "20DI7381",
+		"ttl": "Mataram, 10 April 2002",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,24",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Putra Jati Luhung",
+		"id": "20DI7382",
+		"ttl": "Tulung Pasik, 30 Oktober 2002",
+		"asal": "Lampung",
+		"ipk": "2,95",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Putri Oktaviana",
+		"id": "20DI7383",
+		"ttl": "Pati, 12 Oktober 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,30",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Qithfirul Aziz",
+		"id": "20DI7385",
+		"ttl": "Salatiga, 13 Juli 2003",
+		"asal": "Jawa Tengah",
+		"ipk": "3,48",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rahmat Ikhwanul Risya",
+		"id": "20DI7386",
+		"ttl": "Makassar, 21 Juni 2001",
+		"asal": "Sulawesi Tenggara",
+		"ipk": "2,50",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Robby Ramadan",
+		"id": "20DI7387",
+		"ttl": "Wonogiri, 23 November 2001",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,26",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Septy Novida",
+		"id": "20DI7388",
+		"ttl": "Pati, 13 Agustus 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,44",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ulfa Nirmala Putri",
+		"id": "20DI7389",
+		"ttl": "Kediri, 28 April 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,30",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Wilhelmina Ona Ema Kelen",
+		"id": "20DI7390",
+		"ttl": "Waibalun, 02 Maret 2000",
+		"asal": "Nusa Tenggara Timur",
+		"ipk": "2,94",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Yanuarius Majong",
+		"id": "20DI7391",
+		"ttl": "Sei Maboh, 13 Januari 2000",
+		"asal": "Kalimantan Barat",
+		"ipk": "2,74",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Yenny Shindy Denisa Tambunan",
+		"id": "20DI7392",
+		"ttl": "Batam, 12 Desember 2000",
+		"asal": "Kepulauan Riau",
+		"ipk": "3,23",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Zein Zihni Haq",
+		"id": "20DI7394",
+		"ttl": "Jayapura, 24 November 2001",
+		"asal": "Papua",
+		"ipk": "2,80",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Zelidar Annisa",
+		"id": "20DI7395",
+		"ttl": "Balikpapan, 12 Juli 2001",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,15",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Adelia Syelomitha",
+		"id": "20DI7396",
+		"ttl": "Tangerang, 02 Januari 2003",
+		"asal": "Banten",
+		"ipk": "3,39",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Afifah Shela Tonia",
+		"id": "20DI7397",
+		"ttl": "Ngawi, 16 Juli 2000",
+		"asal": "Jawa Barat",
+		"ipk": "2,83",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Aditya Dwitama",
+		"id": "20DI7398",
+		"ttl": "Manggar, 01 September 2000",
+		"asal": "Bangka Belitung",
+		"ipk": "2,74",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Al Aziz Esasurya Muharram",
+		"id": "20DI7399",
+		"ttl": "Tulungagung, 13 April 2000",
+		"asal": "Jawa Timur",
+		"ipk": "3,46",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Alfia Anggriana",
+		"id": "20DI7400",
+		"ttl": "Bantul, 19 Mei 2001",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,31",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Alifia Aulia Maudina Gazali",
+		"id": "20DI7401",
+		"ttl": "Mataram, 07 Juni 2002",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "2,89",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "An Nisa Pujiyanti",
+		"id": "20DI7402",
+		"ttl": "Klaten, 20 Agustus 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,08",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Angga Prasetyo Dewantoro",
+		"id": "20DI7403",
+		"ttl": "Klaten, 17 November 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,40",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Anggit Bayu Laksana",
+		"id": "20DI7404",
+		"ttl": "Sleman, 22 Juli 2001",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,25",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Anggita Hanum Pramesti",
+		"id": "20DI7405",
+		"ttl": "Pringsewu, 11 Mei 2002",
+		"asal": "Lampung",
+		"ipk": "3,36",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Brilliant Choirina Prabudi",
+		"id": "20DI7406",
+		"ttl": "Klaten, 14 Februari 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,23",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Cindy Fitry",
+		"id": "20DI7407",
+		"ttl": "Sekadau, 02 Juni 1999",
+		"asal": "Kalimantan Barat",
+		"ipk": "2,71",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Cici Amelia Agustin",
+		"id": "20DI7408",
+		"ttl": "Sumedang, 26 Agustus 2002",
+		"asal": "Jawa Barat",
+		"ipk": "2,66",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Dimas Haryo Pangestu",
+		"id": "20DI7411",
+		"ttl": "Yogyakarta, 21 Mei 2002",
+		"asal": "Jawa Barat",
+		"ipk": "2,89",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Fadlal Hamdi",
+		"id": "20DI7413",
+		"ttl": "Tegal, 25 Mei 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "2,93",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Gustian Azhari",
+		"id": "20DI7415",
+		"ttl": "Kebun Lado, 05 Agustus 2002",
+		"asal": "Riau",
+		"ipk": "2,88",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Harviast Valennino Exsannov",
+		"id": "20DI7416",
+		"ttl": "Wonogiri, 23 Desember 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,08",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ibnu Izhar Rulhaq",
+		"id": "20DI7417",
+		"ttl": "Sungai Paduan, 25 Mei 2001",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,13",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Jihan Nuriya Saputri",
+		"id": "20DI7418",
+		"ttl": "Tulungagung, 31 Januari 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,33",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Kinasih Mutiara Marsya",
+		"id": "20DI7420",
+		"ttl": "Pontianak, 27 Agustus 2003",
+		"asal": "Kalimantan Barat",
+		"ipk": "2,79",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Linda Aliyatul Iffah",
+		"id": "20DI7421",
+		"ttl": "Kabupaten Semarang, 09 Desember 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,08",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "M Rezki Dwi Cahyo Adiyansyah",
+		"id": "20DI7422",
+		"ttl": "Palembang, 02 September 2002",
+		"asal": "Sumatera Selatan        ",
+		"ipk": "3,19",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Marlon Yoteni",
+		"id": "20DI7423",
+		"ttl": "Isei, 10 Februari 2000",
+		"asal": "Papua Barat",
+		"ipk": "2,48",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Milzam Hazmi",
+		"id": "20DI7424",
+		"ttl": "Pringsewu, 11 Oktober 2002",
+		"asal": "Lampung",
+		"ipk": "3,19",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Rui Inzaldin",
+		"id": "20DI7426",
+		"ttl": "Bogor, 16 Juni 2000",
+		"asal": "Jawa Barat",
+		"ipk": "3,26",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nandita Ayu Anggraeni",
+		"id": "20DI7427",
+		"ttl": "Blora, 25 Juli 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,09",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nathasa Paruntung",
+		"id": "20DI7428",
+		"ttl": "Sorong, 20 Januari 2003",
+		"asal": "Papua Barat",
+		"ipk": "2,83",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nisaa Narest Mantari",
+		"id": "20DI7429",
+		"ttl": "Surakarta, 16 April 2002",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,21",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nurul Hamidatur Riskiyah",
+		"id": "20DI7430",
+		"ttl": "Sumenep, 17 Februari 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,24",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Prayoga Yudistiawan",
+		"id": "20DI7431",
+		"ttl": "Praya, 12 Februari 2002",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,16",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rachma Anisa Luthfiyya",
+		"id": "20DI7432",
+		"ttl": "Mataram, 31 Juli 2002",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,31",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rafael Febriantinus Prasetyo",
+		"id": "20DI7433",
+		"ttl": "Wonogiri, 04 Februari 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,33",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rahmanita Rizky Diani",
+		"id": "20DI7434",
+		"ttl": "Palembang, 05 Januari 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,33",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Reva Yuda Saifudin",
+		"id": "20DI7435",
+		"ttl": "Bojonegoro, 27 Juni 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,43",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Roy Hernandityo",
+		"id": "20DI7436",
+		"ttl": "Bantul, 27 Agustus 2002",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "2,93",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Shabrina Falah",
+		"id": "20DI7437",
+		"ttl": "Cilacap, 07 Oktober 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,31",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Sonya Wijaya",
+		"id": "20DI7438",
+		"ttl": "Parepare, 14 Oktober 2002",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,09",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Syarifah Desti Rahmadhani Rambe",
+		"id": "20DI7439",
+		"ttl": "Padangsidimpuan, 07 Desember 2000",
+		"asal": "Sumatera Utara",
+		"ipk": "2,99",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Taufan Firdaus",
+		"id": "20DI7440",
+		"ttl": "Pasarwajo, 01 Mei 2002",
+		"asal": "Sulawesi Tenggara",
+		"ipk": "2,84",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Tio Dona Rainedza",
+		"id": "20DI7441",
+		"ttl": "Bandar Lampung, 03 November 2001",
+		"asal": "Lampung",
+		"ipk": "2,85",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Umi Laila Rahma",
+		"id": "20DI7442",
+		"ttl": "Kediri, 10 Mei 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,35",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Yova Masan Padak",
+		"id": "20DI7443",
+		"ttl": "Ensali Jaya, 02 Februari 2003",
+		"asal": "Kalimantan Barat",
+		"ipk": "2,88",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Yunita Nur Utami",
+		"id": "20DI7444",
+		"ttl": "Wonogiri, 08 Juni 2000",
+		"asal": "Jawa Tengah",
+		"ipk": "3,21",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Zuraida Zulhar",
+		"id": "20DI7445",
+		"ttl": "Bantul, 06 Juli 2001",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,23",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Afrella Yumna Susani",
+		"id": "20DI7447",
+		"ttl": "Wonosobo, 18 April 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,50",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Alfi Izza Haryansyah",
+		"id": "20DI7448",
+		"ttl": "Madiun, 18 September 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,54",
+		"predikat": "Dengan pujian",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Alief Qufron Maulana",
+		"id": "20DI7449",
+		"ttl": "Pamekasan, 25 Juni 2000",
+		"asal": "Jawa Timur",
+		"ipk": "3,14",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ana Khoirun Nisa",
+		"id": "20DI7451",
+		"ttl": "Yogyakarta, 11 Oktober 2000",
+		"asal": "Jawa Tengah",
+		"ipk": "3,34",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ananda Restia Fathin Pratiwi",
+		"id": "20DI7452",
+		"ttl": "Sumbawa, 03 April 2002",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,13",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Arfan Firas Parmadi",
+		"id": "20DI7453",
+		"ttl": "Batam, 23 Agustus 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,38",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ashila Intan Mukti",
+		"id": "20DI7454",
+		"ttl": "Magelang, 19 Februari 2002",
+		"asal": "Banten",
+		"ipk": "3,28",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Aulia Zahra Islamia",
+		"id": "20DI7455",
+		"ttl": "Bantul, 28 Juni 2001",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,43",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Chika Ardhina Putri Andriyani",
+		"id": "20DI7456",
+		"ttl": "Sukoharjo, 26 Mei 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,25",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Dani Wijaya Dwi Suharno",
+		"id": "20DI7457",
+		"ttl": "Bandung, 17 Desember 2001",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,04",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Della Ardiani",
+		"id": "20DI7458",
+		"ttl": "Jakarta, 30 Desember 2001",
+		"asal": "Jawa Barat",
+		"ipk": "2,99",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Diannita Puspitasari",
+		"id": "20DI7459",
+		"ttl": "Pati, 13 Desember 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,29",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Dina Wahyu Setyaningsih",
+		"id": "20DI7460",
+		"ttl": "Ponorogo, 14 September 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,19",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Dzakir Fauzan Senen",
+		"id": "20DI7461",
+		"ttl": "Depok, 18 Februari 2002",
+		"asal": "Jawa Barat",
+		"ipk": "3,08",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ergan Scott Basten Ndoen",
+		"id": "20DI7462",
+		"ttl": "Nemberala, 30 Agustus 2000",
+		"asal": "Nusa Tenggara Timur",
+		"ipk": "2,51",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Fahmi Hidayatullah Budiman",
+		"id": "20DI7463",
+		"ttl": "Malang, 20 Desember 1999",
+		"asal": "Jawa Timur",
+		"ipk": "2,64",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Faisal Doni Prasetya",
+		"id": "20DI7464",
+		"ttl": "Karanganyar, 29 Mei 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,36",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Galih Tarisal Falah",
+		"id": "20DI7465",
+		"ttl": "Pontianak, 22 Januari 2001",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,23",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Gita Putri Nur Insani",
+		"id": "20DI7466",
+		"ttl": "Palembang, 15 Oktober 2002",
+		"asal": "Sumatera Selatan        ",
+		"ipk": "3,29",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Hengky Setiya Utami",
+		"id": "20DI7467",
+		"ttl": "Klaten, 15 Februari 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,25",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Isra Mahendra Dengoh",
+		"id": "20DI7468",
+		"ttl": "Manado, 15 Oktober 2001",
+		"asal": "Sulawesi Utara",
+		"ipk": "2,66",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Januar Ibnu Syafi",
+		"id": "20DI7469",
+		"ttl": "Banyumas, 01 Januari 2002",
+		"asal": "Banten",
+		"ipk": "3,06",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Kevin Chaerolis Yulianto",
+		"id": "20DI7470",
+		"ttl": "Jakarta, 14 Januari 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,14",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Khairin Nida",
+		"id": "20DI7471",
+		"ttl": "Amuntai, 14 Juli 2001",
+		"asal": "Kalimantan Selatan",
+		"ipk": "3,49",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Kiki Diah Novita",
+		"id": "20DI7472",
+		"ttl": "Ponorogo, 27 Juli 1998",
+		"asal": "Jawa Timur",
+		"ipk": "3,40",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Kresensia Sagita Putri",
+		"id": "20DI7473",
+		"ttl": "Sp II Sei Maboh, 31 Januari 2002",
+		"asal": "Kalimantan Barat",
+		"ipk": "2,99",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Lintang Aulia",
+		"id": "20DI7474",
+		"ttl": "Magelang, 06 Juli 1998",
+		"asal": "Jawa Tengah",
+		"ipk": "3,45",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Miranda Regina Kusumawardani",
+		"id": "20DI7475",
+		"ttl": "Bandar Lampung, 22 Agustus 2002",
+		"asal": "Lampung",
+		"ipk": "2,90",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Mochammad Fakih Rahmadna",
+		"id": "20DI7476",
+		"ttl": "Pringsewu, 03 Februari 2001",
+		"asal": "Lampung",
+		"ipk": "2,99",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Noval Aditya Syechan",
+		"id": "20DI7478",
+		"ttl": "Palembang, 23 Juni 2002",
+		"asal": "Sumatera Selatan        ",
+		"ipk": "3,36",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nisrina Dhia Mukaromah",
+		"id": "20DI7479",
+		"ttl": "Purbalingga, 19 Juli 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,11",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nur Rizkika Kalapat",
+		"id": "20DI7480",
+		"ttl": "Buton, 04 Mei 2002",
+		"asal": "Papua Barat",
+		"ipk": "2,84",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Prawesty Ajeng Sekar Kinasih",
+		"id": "20DI7481",
+		"ttl": "Ngawi, 25 Mei 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,28",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rafi Fadhlurrohman Adyadmiko",
+		"id": "20DI7482",
+		"ttl": "Magelang, 16 Juli 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,35",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ravellio Supriyadi",
+		"id": "20DI7483",
+		"ttl": "Cirebon, 20 Juni 2002",
+		"asal": "Jawa Barat",
+		"ipk": "3,13",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rema Solvi Soviana",
+		"id": "20DI7484",
+		"ttl": "Teruwai, 28 November 1999",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,18",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ria Rianti",
+		"id": "20DI7486",
+		"ttl": "Karanganyar, 23 Juli 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,24",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rio Eka Satria",
+		"id": "20DI7487",
+		"ttl": "Praya, 07 Januari 2002",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,08",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Safrudin Gerald Idris",
+		"id": "20DI7488",
+		"ttl": "Halmahera, 15 November 2000",
+		"asal": "Papua Barat",
+		"ipk": "2,44",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Singgih Pangarso",
+		"id": "20DI7490",
+		"ttl": "Bantul, 31 Desember 2000",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,25",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Syahriza Mildayana",
+		"id": "20DI7491",
+		"ttl": "Gowa, 21 Agustus 2001",
+		"asal": "Sulawesi Selatan",
+		"ipk": "2,49",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Tri Wahyu Prasetyo",
+		"id": "20DI7492",
+		"ttl": "Yosomulyo, 15 September 1997",
+		"asal": "Lampung",
+		"ipk": "2,70",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Trisno Gunawan",
+		"id": "20DI7493",
+		"ttl": "Salurindu, 26 Oktober 1998",
+		"asal": "Sulawesi Barat",
+		"ipk": "2,94",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Tyas Mahendra",
+		"id": "20DI7494",
+		"ttl": "Parit Pelang, 30 Mei 2002",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,39",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Vara Farlennzy Dea Trisna",
+		"id": "20DI7495",
+		"ttl": "Banyuwangi, 05 Februari 2002",
+		"asal": "Jawa Timur",
+		"ipk": "3,49",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Zanuba Retno Anggita",
+		"id": "20DI7496",
+		"ttl": "Tegal, 27 Januari 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,49",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Aona Fazilaturrizka",
+		"id": "20DI7499",
+		"ttl": "Mbungbasari, 26 April 2002",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,15",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ardianto",
+		"id": "20DI7500",
+		"ttl": "Bukittinggi, 10 November 2000",
+		"asal": "Sumatera Barat",
+		"ipk": "3,38",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Bryan Pramudya Ardana",
+		"id": "20DI7502",
+		"ttl": "Klaten, 01 April 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "3,30",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Dimas Agung Prasetya",
+		"id": "20DI7504",
+		"ttl": "Jakarta, 04 Desember 2001",
+		"asal": "DKI Jakarta",
+		"ipk": "3,40",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Sangat Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Dinda Seli Desmiati",
+		"id": "20DI7505",
+		"ttl": "Sukabumi, 01 Desember 2000",
+		"asal": "Jawa Barat",
+		"ipk": "3,46",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Dita Laili Roushul Fitri",
+		"id": "20DI7506",
+		"ttl": "Jombang, 23 Maret 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,50",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Erwin Dela Saputra",
+		"id": "20DI7508",
+		"ttl": "Sleman, 29 Oktober 2001",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,23",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Fahri Ahmad Yanuar",
+		"id": "20DI7509",
+		"ttl": "Bogor, 16 Januari 2000",
+		"asal": "Jawa Barat",
+		"ipk": "3,18",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Faisal Aldi Lolahi",
+		"id": "20DI7510",
+		"ttl": "Tobelo, 24 Agustus 1999",
+		"asal": "Maluku Utara",
+		"ipk": "2,85",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Faishal Thoriq Muzhaffar",
+		"id": "20DI7511",
+		"ttl": "Banjarnegara, 01 Oktober 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,49",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Fikri Ghanam Pradana",
+		"id": "20DI7512",
+		"ttl": "Kediri, 11 Mei 2002",
+		"asal": "Jawa Timur",
+		"ipk": "2,93",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Fikria Fatwa Zhafarani",
+		"id": "20DI7513",
+		"ttl": "Tangerang, 08 Maret 2003",
+		"asal": "Banten",
+		"ipk": "3,48",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Govindra Juniar Pinga",
+		"id": "20DI7515",
+		"ttl": "Oesao, 12 Juni 1998",
+		"asal": "Nusa Tenggara Timur",
+		"ipk": "2,68",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Hadi Wiranata",
+		"id": "20DI7516",
+		"ttl": "Ketapang, 15 Juni 2002",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,15",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Jihan Nur Azizah",
+		"id": "20DI7518",
+		"ttl": "Palembang, 24 Mei 2002",
+		"asal": "Sumatera Selatan        ",
+		"ipk": "3,28",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Kukuh Setya Herlambang",
+		"id": "20DI7519",
+		"ttl": "Sragen, 02 Juni 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,09",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Laily Cordelia Putri",
+		"id": "20DI7521",
+		"ttl": "Jakarta, 20 Juli 2001",
+		"asal": "DKI Jakarta",
+		"ipk": "3,33",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Maulida Fitri",
+		"id": "20DI7523",
+		"ttl": "Mungkur Uyam, 06 Januari 2000",
+		"asal": "Kalimantan Selatan",
+		"ipk": "3,40",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Meliyanti",
+		"id": "20DI7524",
+		"ttl": "Sekadau, 07 Maret 2001",
+		"asal": "Kalimantan Barat",
+		"ipk": "3,00",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Ajie Irawan",
+		"id": "20DI7525",
+		"ttl": "Tangerang, 16 Februari 2002",
+		"asal": "Banten",
+		"ipk": "3,18",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Muhammad Haikal Muttaqin",
+		"id": "20DI7526",
+		"ttl": "Pringsewu, 23 Oktober 2001",
+		"asal": "Lampung",
+		"ipk": "3,26",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nestiti Nada Trisna",
+		"id": "20DI7527",
+		"ttl": "Bandar Lampung, 13 Agustus 2002",
+		"asal": "Lampung",
+		"ipk": "3,36",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nova Andriyani",
+		"id": "20DI7528",
+		"ttl": "Pekalongan, 24 November 2000",
+		"asal": "Jawa Tengah",
+		"ipk": "3,44",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nurma Elita Anugraheni",
+		"id": "20DI7529",
+		"ttl": "Sleman, 28 Maret 2002",
+		"asal": "D.I. Yogyakarta",
+		"ipk": "3,40",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Prastyo Saputro",
+		"id": "20DI7530",
+		"ttl": "Ngawi, 02 Maret 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,46",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Qisthi Zenitha Hakim",
+		"id": "20DI7531",
+		"ttl": "Sleman, 23 September 2002",
+		"asal": "Riau",
+		"ipk": "3,28",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ridho Nur Fathoni",
+		"id": "20DI7533",
+		"ttl": "Madiun, 14 Oktober 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,14",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Rifka Adelia Wibowo",
+		"id": "20DI7534",
+		"ttl": "Kebumen, 03 Januari 2002",
+		"asal": "Jawa Tengah",
+		"ipk": "3,38",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Riskiyani Lailatul Natasya",
+		"id": "20DI7535",
+		"ttl": "Banyuwangi, 12 Desember 2001",
+		"asal": "Jawa Timur",
+		"ipk": "3,29",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ronanda Ispremadana",
+		"id": "20DI7536",
+		"ttl": "Selong, 26 November 2001",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,31",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Sairovi Marlon Brando Imburi",
+		"id": "20DI7537",
+		"ttl": "Nanimori, 19 November 1997",
+		"asal": "Papua Barat",
+		"ipk": "2,75",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Sidik Permana",
+		"id": "20DI7539",
+		"ttl": "Majalengka, 17 Juni 2002",
+		"asal": "Jawa Barat",
+		"ipk": "2,69",
+		"predikat": "-",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Siti Maryam Maulida",
+		"id": "20DI7540",
+		"ttl": "Selong, 28 Mei 2002",
+		"asal": "Nusa Tenggara Barat",
+		"ipk": "3,23",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Thariza Ayu Syafitri",
+		"id": "20DI7542",
+		"ttl": "Makassar, 27 April 2002",
+		"asal": "Sulawesi Selatan",
+		"ipk": "3,31",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Urai Rinto Anggara",
+		"id": "20DI7543",
+		"ttl": "Parit Pelang, 06 Januari 2002",
+		"asal": "Kalimantan Barat",
+		"ipk": "2,95",
+		"predikat": "Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Venny Octa Nurjanah",
+		"id": "20DI7544",
+		"ttl": "Madiun, 13 Oktober 2000",
+		"asal": "Jawa Timur",
+		"ipk": "3,43",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Wira Jayadi Ningrat Adisti",
+		"id": "20DI7545",
+		"ttl": "Polewali, 28 Oktober 2000",
+		"asal": "Sulawesi Barat",
+		"ipk": "3,06",
+		"predikat": "Sangat Memuaskan",
+		"pengasuhan": "Baik",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Nadya Zulfa Fulliarta",
+		"id": "19DI6529",
+		"ttl": "Surabaya, 12 Desember 2000",
+		"asal": "Jawa Timur",
+		"ipk": "2,68",
+		"predikat": "-",
+		"pengasuhan": "Cukup",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Aditya Rizky Putra Pamungkas",
+		"id": "19DI6648",
+		"ttl": "Semarang, 10 Maret 2001",
+		"asal": "Jawa Tengah",
+		"ipk": "2,25",
+		"predikat": "-",
+		"pengasuhan": "Cukup",
+		"konsentrasi": "-"
+	},
+	{
+		"nama": "Ilham Amar Fharahat",
+		"id": "19DI6869",
+		"ttl": "Singaraja, 18 Mei 2001",
+		"asal": "Bali",
+		"ipk": "2,31",
+		"predikat": "-",
+		"pengasuhan": "Cukup",
+		"konsentrasi": "-"
+	}
+]

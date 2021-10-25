@@ -249,7 +249,7 @@ class peristiwa extends Component {
 															maxLine={2}
 															ellipsis={" ... "}
 															trimRight
-															basedOn="words"
+															basedOn="letters"
 														/>
 													}
 												/>

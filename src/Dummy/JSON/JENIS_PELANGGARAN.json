@@ -1,0 +1,5 @@
+[
+	{ "id": 1, "nama": "Pelanggaran ringan" },
+	{ "id": 2, "nama": "Pelanggaran sedang" },
+	{ "id": 3, "nama": "Pelanggaran berat" }
+]

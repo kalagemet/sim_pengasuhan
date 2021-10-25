@@ -8,8 +8,8 @@ body #root {
 	padding: 0;
 	margin: 0;
 	position: fixed;
-	height: 100vh;
-	width: 100vw;
+	height: 100%;
+	width: 100%;
 	// min-width: 680px !important;
 	display: inline-flex;
 	@media screen and(max-width: 320px) {
@@ -200,5 +200,12 @@ $icon-bg-color: transparent !default;
 			padding-left: 8px;
 			border-radius: 3px;
 		}
+	}
+}
+
+.responsive_table {
+	@media screen and(max-width:700px ) {
+		font-size: 2vw !important;
+		width: max-content !important;
 	}
 }

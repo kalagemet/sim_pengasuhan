@@ -1,0 +1,1394 @@
+[
+	{
+		"id_kat": 2,
+		"id_jenis": 1,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran ringan",
+		"nama": "Pulang izin bermalam tidak tepat waktu tanpa alasan ayng dapat dipertanggungjawabkan",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 1,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran ringan",
+		"nama": "Izin bermalam tidak sesuai jadwal yang ditentukan untuk Taruna atau Taruni",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 1,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran ringan",
+		"nama": "Tidak mengajukan form izin bermalam",
+		"poin": 2
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "Pelanggaran ringan",
+		"nama": "Melawan atasan (insubordinasi), memperlakukan dosen dan pengasuh tidak dengan hormat",
+		"poin": 50
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "Pelanggaran ringan",
+		"nama": "tidak memenuhi ketentuan tata tertib makan",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 2,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran sedang",
+		"nama": "Berpakaian tidak rapi",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 3,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Tidak melaksanakan dinas jaga",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 2,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran sedang",
+		"nama": "Berpakaian, bersepatu, menggunakan tutup kepala dan menggunakan atribut pakaian dinas tidak sesuai dengan peraturan yang berlaku",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 2,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran sedang",
+		"nama": "Menggantung pakaian tidak pada tempatnya",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 3,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "meninggalkantugas jaga tanpa alasan yang jelas",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 2,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran sedang",
+		"nama": "Memakai sepatu tanpa disemir dan perlengkapan pakaian dinas yang tidak dibraso",
+		"poin": 1
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Tidak memeluk salah satu agama/atheis",
+		"poin": 50
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 2,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran sedang",
+		"nama": "Menjemur pakaian di tempat yang tidak semestinya.",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 2,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran sedang",
+		"nama": "Mengubah bentuk pakaian dinas",
+		"poin": 3
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 2,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran sedang",
+		"nama": "Berpakaian dinas tidak lengkap di dalam maupun di luar kampus.",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 2,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran sedang",
+		"nama": "Memakai pakaian dinas yang bukan miliknya.",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 2,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran sedang",
+		"nama": "Menyimpan pakaian melebihi ketentuan yang ditetapkan",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 2,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran sedang",
+		"nama": "memakai pakaian tidak pantas di lingkungan Kampus STPN.",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 4,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Berada di Asrana pada jam-jam pelajaran/perkuliahan",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 4,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Meninggalkan Asrama tanpa mematikan lampu dan kran air",
+		"poin": 2
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Memaksakan suatu agama kepada orang lain yang telah memeluk agama lain",
+		"poin": 50
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 4,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Membiarkan kamar dan lorong asrama kotor.",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 4,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Berkeliaran pada waktu istirahat malam.",
+		"poin": 3
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Menjalin hubungan khusus sesama jenis (Homoseksual/Lesbian)",
+		"poin": 50
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 4,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Memakai pakaian dalam atau tidak semestinya di lorong asrama.",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 4,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Membuang sampah tidak pada tempatnya.",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 4,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Hidup tidak membaur dengan suku/daerah lain di Asrama.",
+		"poin": 2
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Menghilangkan nyawa orang lain dengan sengaja ",
+		"poin": 50
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 4,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Meninggalkan lemari dalam keadaan tidak terkunci.",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 5,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Tidak mengikuti olahraga pada jam kegiatan olehraga tanpa alasan yang jelas.",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 5,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Memakai perlengkapan olahraga yang tidak sesuai dengan jenis kegiatannya pada waktu olahraga",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 5,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "memakai/menyimpan alat-alat olahraga bukan pada tempatnya.",
+		"poin": 1
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Berkelahi di dalam atau di luar kampus",
+		"poin": 50
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Mencemooh atau menghina agama orang lain",
+		"poin": 50
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Tidak menjalankan ibadah sesuai agama/kepercayaan",
+		"poin": 50
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Mengganggu pelaksanaan ibadah, baik agama sendiri maupun agama orang lain",
+		"poin": 50
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 6,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Menyalahgunakan pemakaian listrik.",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 6,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Penggunaan laptop tidak sebagaimana mestinya.",
+		"poin": 2
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Membuat keributan/tidak menjaga ketertiban di tempat-tempat ibadah",
+		"poin": 50
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Merusak sarana ibadah ",
+		"poin": 50
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 6,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Membuat kotor dan/atau merusak segala prasarana dan sarana kampus.",
+		"poin": 3
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Tidak menjaga nama baik STPN",
+		"poin": 50
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 6,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Memindahkan inventaris kamar tidak sesuai dengan ketentuan.",
+		"poin": 2
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Tidak mematuhi peraturan yang telah ditetapkan oleh STPN",
+		"poin": 50
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 6,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Menyimpan , membawa dan/atau mempergunakan barang inventaris tanpa izin dinas.",
+		"poin": 3
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Melakukan kegiatan yang dapat menimbulkan SARA",
+		"poin": 50
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 6,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Merubah arah/menutupi kamera CCTV",
+		"poin": 3
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 4,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Menggunakan handphone tidak sesuai ketentuan",
+		"poin": 10
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Hamil selama dalam pendidikan, kecuali diperbolehkan sesuai ketentuan yang berlaku",
+		"poin": 50
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Mengambil dan atau mempergunakan barang milik orang lain atau milik dinas tanpa hak",
+		"poin": 50
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Berjudi",
+		"poin": 50
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Menyimpan, mengedarkan dan atau menggunakan NARKOBA dan Psikotropika, dll yang termasuk Obat-obatan terlarang",
+		"poin": 50
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Membawa, menyimpan, memperjualbelikan senjata tajam dan atau senjata api",
+		"poin": 50
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Melakukan perbuatan amoral dan asusila",
+		"poin": 50
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 6,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Mengoperasikan handphone di waktu jam perkuliahan/ paraktikum.",
+		"poin": 2
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Meminum sesuatu yang mengandung alkohol maupun yang dapat memabukkan",
+		"poin": 50
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Melakukan ancaman atau intimidasi",
+		"poin": 50
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Bersumpah palsu",
+		"poin": 50
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Memalsukan tanda tangan",
+		"poin": 50
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 6,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Menggunakan sarana dan prasarana pengajaran, pelatihan dan pengasuhan tidak semestinya.",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 6,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Menggunakan peralatan elektronik yang menggunakan listrik Asrama tanpa izin dinas",
+		"poin": 2
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Melakukan kekerasan yang mengandung unsur pidana",
+		"poin": 50
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 6,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Menggunakan laptop/komputer yang bukan untuk kepentingan pendidikan/perkuliahan.",
+		"poin": 2
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Melanggar hal-hal yang menjurus atau mengarah pada pelanggaran tindak pidana",
+		"poin": 50
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Meninggalkan kampus tanpa ijin selama 7 (tujuh) hari berturut-turut atau 14 (empat belas) hari kumulatif dalam satu bulan",
+		"poin": 50
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 7,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Komisaris kelas membiarkan kelas tanpa dosen atau instruktur, serta tidak memberitahukan kepada pendamping kelas.",
+		"poin": 1
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Tinggal di luar asama tanpa ijin",
+		"poin": 50
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Merusak dan atau menghilangkan barang inventaris dinas",
+		"poin": 50
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 7,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Bersikap tidak memberikan hormat dan salam pada sivitas akademika, tamu dan senior saat bertemu/berpapasan.",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 7,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Bersikap tidak tertib dalam menunggu giliran.",
+		"poin": 1
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Melakukan dan atau terlibat dalam dalam kegiatan politik praktis",
+		"poin": 50
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 7,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Bersikap tidak siap pada waktu inspeksi.",
+		"poin": 1
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Terlibat atau mendukung gerakan sparatis",
+		"poin": 50
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 7,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Tidak bertanggungjawab atas anggota kantah/kakanwilnya.",
+		"poin": 2
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Melawan Pembina dan atau Pengasuh (insubordinasi)",
+		"poin": 50
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 7,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Membiarkan kerusuhan/kegaduhan",
+		"poin": 2
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Melanggar hal-hal yang diatur dalam PP No. 53 Tahun 2010 tentang Larangan dan Kewajiban PNS",
+		"poin": 50
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 7,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Bercanda pada waktu dosen memberikan perkuliahan.",
+		"poin": 1
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Memberikan keterangan palsu baik lisan maupun tertulis",
+		"poin": 50
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 7,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Mengajukan protes tanpa mengindahkan kode etik dan tata cara yang benar.",
+		"poin": 2
+	},
+	{
+		"id_kat": 3,
+		"id_jenis": 0,
+		"kat": "Tugas Jaga",
+		"jenis": "-",
+		"nama": "Hal-hal lain yang patut diduga termasuk kategori pelanggaran berat yang belum diatur dalam peraturan ini",
+		"poin": 50
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 7,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Mengutamakan kepentingan pribadi dari pada kepentingan korps/menggunakan nama korps untuk kepentingan pribadi.",
+		"poin": 2
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Membeli makanan dan minuman di luar tempat yang telah ditentukan",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 7,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Bertindak dan berperilaku apatis/masa bodoh, takut memberi tahu/teguran/peringatan terhadap taruna lain yang melakukan pelanggaran.",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 7,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Berlaku tidak jujur dalam melaksanakan tugas.",
+		"poin": 3
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "tidak menjinjing tas dengan tangan kiri",
+		"poin": 1
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Tidak memenuhi ketentuan tata tertib pemeliharaan dan kerapihan perorangan",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 8,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Memaksakan kehendaknya kepada orang lain.",
+		"poin": 2
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Ukuran rambut tyidak sesuai ketentuan",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 8,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Mengadakan pesta tanpa izin di lingkungan kampus.",
+		"poin": 2
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Tidak menjalankan kewajiban Taruna dalam menjaga kebersihan, kerapihan dan lingkungan asrama",
+		"poin": 1
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Tidak tidur di tempat tidurnya sendiri",
+		"poin": 1
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "tidak hadir tepat waktu pada saat dinas",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 8,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Menyalahgunakan izin kegiatan untuk kegiatan lain.",
+		"poin": 3
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 8,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Melakukan kegiatan ekstrakurikuler diluar jadwal yang ditetapkan tanpa izin.",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 8,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Memberikan perintah diluar kewenangannya.",
+		"poin": 2
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Terlambat mengikuti apel atau upacara",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 8,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Memprovokasikan yang bersifat negatif.",
+		"poin": 2
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Melakukan gerakan yang tidak perlu pada saat upacara atau apel",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 9,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Membawa dan/atau mengemudikan kendaraan bermotor ke, dari dan di dalam kampus tanpa perintah pejabat yang berwenang.",
+		"poin": 2
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Tidak menjalankan tata tertib di ruang kelas",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 9,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Berkendaraan tidak mematuhi peraturan lalu lintas di luar kampus STPN.",
+		"poin": 3
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Tidak belajar pada waktu jam wajib belajar",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 10,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Membuang sampah di ruang kelas tidak pada tempatnya.",
+		"poin": 1
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Tidak tertib dalam barisan, perpustakaan, kopersai, kantin dan tempat-tempat umum lainnya",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 10,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Membuat laporan palsu menganai jumlah anggota kelasnya.",
+		"poin": 1
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Menggunakan TV atau media hiburan lainnya tidak sesuai ketentuan",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 10,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Meninggalkan kelas tidak teratur atau ribut",
+		"poin": 1
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Menggunakan laptop dan internet tidak sesuai ketentuan",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 10,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Membuat keributan pada jam perkuliahan dan praktikum",
+		"poin": 1
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Pergerakan Taruna di asrama tidak sesuai ketentuan",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 11,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Tidak mengikuti apel tanpa alasan yang tidak bisa dipertanggungjawabkan.",
+		"poin": 2
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Tidak melengkapi diri dengan buku saku, pedoman tata kehidupan Taruna, buku catatan, buku literatur sesuai mata kuliah masing-masing dan alat tulis pada saat perkuliahan berlangsung",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 11,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Berbaris tidak rapi dan tertib pada saat apel.",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 11,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Membuat laporan palsu mengenai jumlah anggota pada saat apel.",
+		"poin": 2
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Berbuat gaduh dalam barisan, asrama dan tempat kegiatan belajar",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 11,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Mengabaiakan pembuatan laporan setelah tugas yang diberikan selesai dikerjakan.",
+		"poin": 1
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Membuat coretan-coretan di meja, kursi atau dinding",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 11,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Membubarkan diri dari barisan secara tidak tertib.",
+		"poin": 1
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Berada di Kantin pada jam kuliah",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 11,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Meninggalkan apel tanpa izin.",
+		"poin": 1
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Memelihara kumis, jenggot, dan jambang",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 12,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Terlambat membayar uang makan dan/atau laundry",
+		"poin": 2
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Membuat kegaduhan di kantin",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 12,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Terlambat membayar uang pendidikan.",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 13,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Membuat surat keterangan sakit palsu.",
+		"poin": 3
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Mengabaikan pengembalian buku-buku perpustakaan atau alat-alat praktek, olahraga dan seni pada tempatnya",
+		"poin": 1
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Tidak ada kerjasama dan toleransi antar agama",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 13,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Memberikan hukuman kepada junior dengan tidak manusiawi",
+		"poin": 3
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 13,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Keluar kampus tanpa izin.",
+		"poin": 2
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Memindahkan inventaris kamar tidak sesuai dengan ketentuan ",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 13,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Masuk keluar kampus tidak melewati gerbang utama.",
+		"poin": 2
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Menelepon diwaktu kuliah/jam pelajaran",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 13,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Bermalam di luar asrama tanpa izin bermalam atau cuti.",
+		"poin": 3
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 13,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Tidak mengiikuti kegiatan keagamaan yang telah ditentukan.",
+		"poin": 2
+	},
+	{
+		"id_kat": 1,
+		"id_jenis": 0,
+		"kat": "Pesiar Dan Izin Bermalam",
+		"jenis": "-",
+		"nama": "Hal-hal lain yang patut diduga termasuk kategori pelanggaran ringan yang belum diatur dalam peraturan ini",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 13,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Merokok",
+		"poin": 3
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 13,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Bertato, bertindik pada bagian tubuh bagi taruna.",
+		"poin": 3
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 13,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Mengumpat, memaki serta menghardik.",
+		"poin": 3
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 13,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Memakai perhiasan/asesoris yang tidak perlu selama pendidikan.",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 13,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Hal-hal lain yang patut diduga termasuk kategori pelanggaran sedang yang belum diatur dalam peraturan ini.",
+		"poin": 5
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 3,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Mengabaikan pengisian buku piket.",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 3,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Terlambat  menempati pos jaga.",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 14,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Taruna masuk asrama Taruni atau sebaliknya tanpa izin Pengasuhan",
+		"poin": 3
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 3,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Tidur pada waktu jaga.",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 3,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Meninggalkan pos jaga sebelum waktu serah terima jaga.",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 14,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Tidur ditempat yang tidak semestinya.",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 14,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Tidur diluar waktu yang telah ditentukan.",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 14,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Tidur di kamar pada waktu jam kuliah.",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 14,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Membawa tamu ke dalam kamar asrama.",
+		"poin": 3
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 14,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Menerima tamu diluar waktu yang telah ditentukan",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 14,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Menerima tamu di tempat yang tidak semestinya",
+		"poin": 3
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 14,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Memperlakukan tamu dengan tidak hormat.",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 14,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Membunyikan alat-alat musik pada tempat-tempat  yang mengganggu ketenangan orang lain.",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 14,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Membunyikan musik pada jam-jam istirahat sehingga menggangu ketenangan orang lain.",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 14,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Menyimpan, menempatkan, menempelkan gambar, foto, tulisan, hiasan, ataupun grafik secara tidak pantas dan melanggar etika di dalam kampus",
+		"poin": 3
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 14,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Makan/minum sambil berjalan atau ditempat yang tidak semestinya",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 14,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Duduk tidak sopan.",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 14,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Duduk ditempat yang tidak semestinya.",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 14,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Berkelakuan tidak semestinya/tidak menunjukkan sikap seorang taruna.",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 14,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Bersikap tidak sopan dimanapun berada.",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 14,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Berduaan berlainan jenis di jalan maupun di ruangan (berkhalwat/berpacaran).",
+		"poin": 3
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 14,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Membeli, menyimpan dan melihat majalah, tabloid, gambar, film yang bergambar porno dan internet dengan situs porno dan lain yang bercorak pornografi dan pornoiaksi.",
+		"poin": 5
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 15,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Terlambat masuk kelas.",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 15,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Meninggalkan kewajiban belajar tanpa izin.",
+		"poin": 1
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 15,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Meninggalkan perkuliahan, praktikum dan pengasuhan tanpa izin dinas",
+		"poin": 3
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 15,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Meninggalkan kuliah tanpa izin dari dosen",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 15,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Meninggalkan jadwal kegiatan ketarunaan tanpa alasan yang dapat diterima.",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 15,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Tidak memiliki dan/atau tidak membawa Buku Saku Taruna.",
+		"poin": 3
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 15,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Tidak memiliki Kartu Identitas Taruna STPN.",
+		"poin": 3
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 15,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Mengabaikan perintah/instruksi dari pembina",
+		"poin": 3
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 3,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Tidak dinas jaga",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 1,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran ringan",
+		"nama": "Izin bermalam dalam keadaan dicabut hak izinnya",
+		"poin": 2
+	},
+	{
+		"id_kat": 2,
+		"id_jenis": 3,
+		"kat": "Tata Cara Pakaian",
+		"jenis": "Pelanggaran berat",
+		"nama": "Melepas atribut jaga tidak sesuai ketentuan yang ditetapkan.",
+		"poin": 1
+	}
+]
