@@ -1,6 +1,7 @@
 import md5 from "md5";
 import React, { Component } from "react";
 import cookie from "react-cookie";
+import CryptoJS from "crypto-js";
 
 let ContextType;
 const { Provider, Consumer } = (ContextType = React.createContext());
@@ -9,13 +10,9 @@ class Context extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			authenticated: cookie.load("autenticated") || false,
-			loginAs: cookie.load("user_level") || "",
-			user: {
-				user_id: cookie.load("user_id") || "",
-				f_id: cookie.load("f_id") || "",
-				token: cookie.load("user_lock") || "",
-			},
+			authenticated: false,
+			loginAs: "",
+			user: { user: "", f_id: "", token: "" },
 			loadingApp: true,
 			message: [
 				// {
@@ -35,35 +32,73 @@ class Context extends Component {
 		};
 	}
 
+	componentDidMount() {
+		this.loadCookies();
+	}
+
 	componentWillUnmount() {
 		cookie.save("autenticated", this.state.authenticated, { maxAge: 3600 });
 		cookie.save("user_level", this.state.loginAs, { maxAge: 3600 });
-		cookie.save("user_id", this.state.user.user_id, { maxAge: 3600 });
-		cookie.save("f_id", this.state.user.f_id, { maxAge: 3600 });
-		cookie.save("user_lock", this.state.user.token, { maxAge: 3600 });
+		cookie.save("user", this.state.user.user_id, { maxAge: 3600 });
 	}
 
 	setLogin = (id, is_admin, f_id, password) => {
-		cookie.save("autenticated", true);
-		cookie.save("user_level", is_admin ? md5("admin") : md5("taruna"));
-		cookie.save("user_id", id);
-		cookie.save("f_id", f_id);
-		cookie.save("user_lock", md5(password));
+		this.saveCookies(id, is_admin, f_id, password);
+		this.loadCookies();
+	};
+
+	crypto = (encrypt, string) => {
+		if (encrypt) {
+			return CryptoJS.AES.encrypt(
+				JSON.stringify(string),
+				"6rw3xm49"
+			).toString();
+		} else {
+			try {
+				return JSON.parse(
+					CryptoJS.AES.decrypt(string, "6rw3xm49").toString(CryptoJS.enc.Utf8)
+				);
+			} catch {
+				return CryptoJS.AES.decrypt(string, "6rw3xm49").toString(
+					CryptoJS.enc.Utf8
+				);
+			}
+		}
+	};
+
+	loadCookies() {
 		this.setState({
-			authenticated: cookie.load("autenticated") || false,
-			loginAs: cookie.load("user_level") || "",
-			user: {
-				user: cookie.load("user_id") || "",
-				f_id: cookie.load("f_id") || "",
-				token: cookie.load("user_lock") || "",
-			},
+			authenticated: Boolean(
+				this.crypto(false, cookie.load("autenticated") || false)
+			),
+			loginAs: this.crypto(false, cookie.load("user_level") || ""),
+			user: this.crypto(false, cookie.load("user") || ""),
+			loadingApp: true,
 		});
-		setTimeout(() => this.setState({ loadingApp: false }), 3000);
+	}
+
+	saveCookies = (id, is_admin, f_id, password) => {
+		cookie.save("autenticated", this.crypto(true, true));
+		cookie.save(
+			"user_level",
+			is_admin
+				? this.crypto(true, md5("admin"))
+				: this.crypto(true, md5("taruna"))
+		);
+		cookie.save(
+			"user",
+			this.crypto(true, {
+				user_id: id,
+				f_id: f_id,
+				user_lock: md5(password),
+			})
+		);
 	};
 
 	logout = () => {
 		cookie.remove("autenticated");
 		cookie.remove("user_level");
+		cookie.remove("user");
 		this.setState({
 			authenticated: false,
 			loginAs: "",

@@ -1,4 +1,3 @@
-import md5 from "md5";
 import React, { Component } from "react";
 import {
 	Button,
@@ -10,13 +9,13 @@ import {
 	Message,
 	Segment,
 } from "semantic-ui-react";
+import { login as login_api } from "../Apis/Apis";
 import loginlogo from "../Assets/image/login.png";
 import logoStpn from "../Assets/logo_stpn.png";
 import { ContextType } from "../Context";
 
 class Login extends Component {
 	static contextType = ContextType;
-
 	state = {
 		loading: false,
 		username: "",
@@ -32,58 +31,33 @@ class Login extends Component {
 		}
 	}
 
-	login = async () => {
+	login() {
 		this.setState({ direct_link: false, auth_failed: false });
 		if (this.state.username !== "" || this.state.password !== "") {
 			this.setState({ loading: true });
-			let ts = new Date().toString();
-			var formData = new FormData();
-			formData.append(
-				"post_data",
-				JSON.stringify({
-					isAuth: "logged",
-					verb: "get_data_user_single",
-					id: this.state.username,
-					tSign: ts,
-					token: md5(md5(this.state.password) + ts),
-					special: 0,
-					operation: "read",
-					payload: {
-						is_direct: 1,
-						id: this.state.username,
-					},
-				})
+			login_api(this.state.username, this.state.password, (data) =>
+				data.error
+					? this.setState({
+							msg_err: "Username atau Password salah !!",
+							auth_failed: true,
+							loading: false,
+					  })
+					: data.is_active === 0
+					? this.setState({
+							msg_err:
+								"Autentikasi gagal, user anda tidak aktif, silahkan hubungi petugas !!",
+							auth_failed: true,
+							loading: false,
+					  })
+					: this.context.setLogin(
+							data.id_penguna,
+							data.is_admin === "1" ? true : false,
+							data.f_id,
+							this.state.password
+					  )
 			);
-			await fetch(process.env.REACT_APP_API_SERVER, {
-				method: "POST",
-				body: formData,
-			})
-				.then((response) => response.json())
-				.then((response) => {
-					response.is_active === 0
-						? this.setState({
-								msg_err:
-									"Autentikasi gagal, user anda tidak aktif, silahkan hubungi petugas !!",
-								auth_failed: true,
-								loading: false,
-						  })
-						: this.context.setLogin(
-								response.id_penguna,
-								response.is_admin === "1" ? true : false,
-								response.f_id,
-								this.state.password
-						  );
-				})
-				.catch((e) => {
-					// console.error(e);
-					this.setState({
-						msg_err: "Username atau Password salah !!",
-						auth_failed: true,
-						loading: false,
-					});
-				});
 		}
-	};
+	}
 
 	render() {
 		return (

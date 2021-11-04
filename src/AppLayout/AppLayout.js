@@ -26,6 +26,7 @@ import MenuBar from "./MenuBar";
 import { Consumer, ContextType } from "../Context";
 import Login from "../Page/Login";
 import md5 from "md5";
+import { getTahunAjar as getTahunAjar_api } from "../Apis/Apis";
 
 const LogoHeader = (sidebarExpand) => (
 	<Header inverted as="h3" className="header-logo">
@@ -283,6 +284,7 @@ class GetTahunAjar extends Component {
 	static contextType = ContextType;
 
 	state = {
+		error: false,
 		loading: true,
 		semester: [],
 		semesterActive: "Loading...",
@@ -295,60 +297,57 @@ class GetTahunAjar extends Component {
 		this.getTahunAjar();
 	}
 
+	decodeTahunAjar(arr) {
+		var data = [];
+		arr.forEach((d, i) => {
+			if (!data.find((x) => x.id_semester === d.id_semester)) {
+				data.push(d);
+			}
+		});
+		return data;
+	}
+
 	getTahunAjar = async () => {
-		let ts = new Date().toString();
-		var formData = new FormData();
-		formData.append(
-			"post_data",
-			JSON.stringify({
-				isAuth: "logged",
-				verb: "get_tahun_ajaran_semua",
-				id: this.context.user.f_id,
-				tSign: ts,
-				token: md5(this.context.user.token + ts),
-				special: 0,
-				operation: "read",
-				payload: {
-					is_direct: 1,
-					is_filtered: 0,
-					filter: { key1: "t.no_tahun" },
-					term: this.state.cari,
-					count: "10",
-					page: "1",
-				},
-			})
+		this.setState({ error: false });
+		getTahunAjar_api(this.context, this.state.cari, (response) =>
+			response.error
+				? this.setState({ error: true })
+				: this.setState(
+						{
+							semester: this.decodeTahunAjar(response.data),
+							loading: false,
+							loadingCari: false,
+						},
+						() => {
+							this.state.semester.forEach((d) =>
+								d.is_active === "1"
+									? this.setState({
+											semesterActive:
+												d.no_tahun +
+												"/" +
+												(Number(d.no_tahun) + 1) +
+												" " +
+												(d.no_semester === "1" ? "Genap" : "Ganjil"),
+									  })
+									: null
+							);
+						}
+				  )
 		);
-		await fetch(`${process.env.REACT_APP_API_SERVER}`, {
-			method: "POST",
-			body: formData,
-		})
-			.then((response) => response.json())
-			.then((response) => {
-				this.setState(
-					{
-						semester: response.data,
-						loading: false,
-						loadingCari: false,
-					},
-					() => {
-						this.state.semester.forEach((d) =>
-							d.is_active === "1"
-								? this.setState({
-										semesterActive:
-											d.no_tahun +
-											" " +
-											(d.no_semester === "1" ? "Genap" : "Ganjil"),
-								  })
-								: null
-						);
-					}
-				);
-			})
-			.catch((e) => console.error(e));
 	};
 
 	render() {
-		return this.state.loading ? (
+		return this.state.error ? (
+			<span>
+				Gagal Mengambil data tahun ajar{" "}
+				<Button
+					onClick={() => this.getTahunAjar()}
+					size="mini"
+					circular
+					icon="redo"
+				/>
+			</span>
+		) : this.state.loading ? (
 			<Placeholder fluid>
 				<Placeholder.Line />
 				<Placeholder.Line />
@@ -384,6 +383,8 @@ class GetTahunAjar extends Component {
 										value={d.id_semester}
 										text={
 											d.no_tahun +
+											"/" +
+											(Number(d.no_tahun) + 1) +
 											" " +
 											(d.no_semester === "1" ? "Genap" : "Ganjil")
 										}
