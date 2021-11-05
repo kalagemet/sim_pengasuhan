@@ -2,6 +2,9 @@ import md5 from "md5";
 import React, { Component } from "react";
 import cookie from "react-cookie";
 import CryptoJS from "crypto-js";
+import UID from "uniquebrowserid";
+
+const BROWSER_ID = md5(new UID().completeID() + "6rw3xm49");
 
 let ContextType;
 const { Provider, Consumer } = (ContextType = React.createContext());
@@ -48,49 +51,47 @@ class Context extends Component {
 	};
 
 	crypto = (encrypt, string) => {
+		if (string === "") return "";
 		if (encrypt) {
 			return CryptoJS.AES.encrypt(
 				JSON.stringify(string),
-				"6rw3xm49"
+				BROWSER_ID
 			).toString();
 		} else {
 			try {
 				return JSON.parse(
-					CryptoJS.AES.decrypt(string, "6rw3xm49").toString(CryptoJS.enc.Utf8)
+					CryptoJS.AES.decrypt(string, BROWSER_ID).toString(CryptoJS.enc.Utf8)
 				);
 			} catch {
-				return CryptoJS.AES.decrypt(string, "6rw3xm49").toString(
-					CryptoJS.enc.Utf8
-				);
+				return "";
 			}
 		}
 	};
 
 	loadCookies() {
-		this.setState({
-			authenticated: Boolean(
-				this.crypto(false, cookie.load("autenticated") || false)
-			),
-			loginAs: this.crypto(false, cookie.load("user_level") || ""),
-			user: this.crypto(false, cookie.load("user") || ""),
-			loadingApp: true,
-		});
+		let tmp = this.crypto(false, cookie.load("user_level") || "");
+		if (tmp !== "")
+			this.setState({
+				authenticated: Boolean(tmp.autenticated) || false,
+				loginAs: tmp.user_level || "",
+				user: tmp.user || "",
+				loadingApp: true,
+			});
 	}
 
 	saveCookies = (id, is_admin, f_id, password) => {
-		cookie.save("autenticated", this.crypto(true, true));
 		cookie.save(
-			"user_level",
-			is_admin
-				? this.crypto(true, md5("admin"))
-				: this.crypto(true, md5("taruna"))
-		);
-		cookie.save(
-			"user",
+			"context",
 			this.crypto(true, {
-				user_id: id,
-				f_id: f_id,
-				user_lock: md5(password),
+				autenticated: true,
+				user_level: is_admin
+					? this.crypto(true, md5("admin"))
+					: this.crypto(true, md5("taruna")),
+				user: {
+					user_id: id,
+					f_id: f_id,
+					user_lock: md5(password),
+				},
 			})
 		);
 	};
@@ -123,7 +124,7 @@ class Context extends Component {
 		setTimeout(() => this.popNotify(msg), 4000);
 	};
 
-	popNotify = async (msg) => {
+	popNotify = (msg) => {
 		let tmp = this.state.notification;
 		let index = tmp.indexOf(msg);
 		if (tmp.length > 0) {
