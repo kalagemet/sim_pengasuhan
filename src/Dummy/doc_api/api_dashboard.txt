@@ -29,6 +29,30 @@ Return      =>  {
     }
 }
 
+setTahun    =>  {
+                    "isAuth": "logged",
+                    "verb":"set_tahun_ajaran",
+                    "id":"admin",
+                    "tSign":"0000",
+                    "token":"47e943a33d522bb04645c5acfff36a4c",              
+                    "special":0,
+                    "operation": "read",
+                    "payload":
+                    {
+                        "is_active": id_semester
+                    }
+                }
+Return      =>  {
+    error: true|false,
+    err_msg: '',
+    data:{
+        id_tahun:
+        nama_tahun:
+        id_semester:
+        is_active:
+    }
+}
+
 get_jurusan    =>  {
                     "isAuth": "logged",
                     "verb":"get_jurusan",

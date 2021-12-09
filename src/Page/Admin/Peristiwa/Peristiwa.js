@@ -18,7 +18,7 @@ import {
 import TambahPeristiwa from "./Tambah";
 import LinesEllipsis from "react-lines-ellipsis";
 import { ContextType } from "../../../Context";
-import md5 from "md5";
+import { getFilterKategori } from "../../../Apis/Apis";
 const data = require("../../../Dummy/pelanggaran.json");
 const dataTable = require("../../../Dummy/peristiwa.json");
 
@@ -44,44 +44,20 @@ class peristiwa extends Component {
 	}
 
 	getFilterKategori = async () => {
-		let ts = new Date().toString();
-		var formData = new FormData();
-		formData.append(
-			"post_data",
-			JSON.stringify({
-				isAuth: "logged",
-				verb: "get_kategori",
-				id: "admin",
-				tSign: ts,
-				token: md5(this.context.user.token + ts),
-				special: 0,
-				operation: "read",
-				payload: {
-					is_direct: 1,
-					is_filtered: 0,
-					filter: { key1: "nama_kategori" },
-					term: this.state.cariKategori,
-					count: "10",
-					page: "1",
-				},
-			})
-		);
-		await fetch(`${process.env.REACT_APP_API_SERVER}`, {
-			method: "POST",
-			body: formData,
-		})
-			.then((response) => response.json())
-			.then((response) => {
+		getFilterKategori(this.context, this.state.cariKategori, (response) => {
+			if (response.status === 200) {
 				if (this.state.cariKategori === "") {
 					this.setState({ kategoriActive: { text: "semua", key: "" } });
 				}
 				this.setState({
-					kategori: response.data,
+					kategori: response.data.data,
 					loadingKategori: false,
 					loadingCariKategori: false,
 				});
-			})
-			.catch((e) => console.error(e));
+			} else {
+				console.error("get_kategori", response.status, response.msg);
+			}
+		});
 	};
 
 	pilihFilter = async (value) => {

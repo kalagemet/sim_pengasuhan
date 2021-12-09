@@ -1,0 +1,202 @@
+getPristiwa    =>  {
+                    "isAuth": "logged",
+                    "verb":"get_pristiwa",
+                    "id":"admin",
+                    "tSign":"0000",
+                    "token":"47e943a33d522bb04645c5acfff36a4c",              
+                    "special":0,
+                    "operation": "read",
+                    "payload":
+                    {
+                        "is_direct":1,
+                        "is_multiple":0,
+                        "is_filtered":0,
+                        "filter": {"kategori":"", "nama_pristiwa":""},
+                        "term":"",
+                        "is_and":"1", //1 untuk and 0 untuk or
+                        "count":"10",
+                        "page":"1"
+                    }
+                }
+Return      =>  {
+    error: true|false,
+    err_msg: '',
+    data:{
+        id_kategory:
+        nama_kategori
+        id_pristiwa:
+        nama_pristiwa:
+        tanggal:
+    }
+}
+
+getkategory    =>  {
+                    "isAuth": "logged",
+                    "verb":"get_kategori",
+                    "id":"admin",
+                    "tSign":"0000",
+                    "token":"47e943a33d522bb04645c5acfff36a4c",              
+                    "special":0,
+                    "operation": "read",
+                    "payload":
+                    {
+                        "is_direct":1,
+                        "is_multiple":0,
+                        "is_filtered":0,
+                        "filter": {"key1":"nama_kategori"},
+                        "term":"nama_kategori",
+                        "is_and":"0", //1 untuk and 0 untuk or
+                        "count":"",
+                    }
+                }
+Return      =>  {
+    error: true|false,
+    err_msg: '',
+    data:{
+        id_kategory:
+        nama_kategori:
+        is_penghargaan:
+    }
+}
+
+insertPristiwa    =>  {
+                    "isAuth": "logged",
+                    "verb":"insert_pristiwa",
+                    "id":"admin",
+                    "tSign":"0000",
+                    "token":"47e943a33d522bb04645c5acfff36a4c",              
+                    "special":0,
+                    "operation": "insert",
+                    "payload":
+                    {
+                        "nama_pristiwa":
+                        "id_kategori":
+                        "poin":
+                        "is_pointambahan":
+                    }
+                }
+Return      =>  {
+    error: true|false,
+    err_msg: '',
+    data:{
+        id_pristiwa:
+        nama_pristiwa:
+    }
+}
+
+getDetailPristiwa    =>  {
+                    "isAuth": "logged",
+                    "verb":"getDetailPristiwa",
+                    "id":"admin",
+                    "tSign":"0000",
+                    "token":"47e943a33d522bb04645c5acfff36a4c",              
+                    "special":0,
+                    "operation": "read",
+                    "payload":
+                    {
+                        "is_direct":1,
+                        "is_multiple":0,
+                        "is_filtered":0,
+                        "filter": {"key1":"id_pristiwa"},
+                        "term":"id_pristiwa",
+                        "is_and":"0", //1 untuk and 0 untuk or
+                        
+                    }
+                }
+Return      =>  {
+    error: true|false,
+    err_msg: '',
+    data:{
+        id_pristiwa:
+        nama_pristiwa:
+        tanggal:
+        poin:
+    }
+}
+
+getTarunaPenerimaPristiwa    =>  {
+                    "isAuth": "logged",
+                    "verb":"getDetailPristiwa",
+                    "id":"admin",
+                    "tSign":"0000",
+                    "token":"47e943a33d522bb04645c5acfff36a4c",              
+                    "special":0,
+                    "operation": "read",
+                    "payload":
+                    {
+                        "is_direct":1,
+                        "is_multiple":0,
+                        "is_filtered":0,
+                        "filter": {"id_pristiwa":"", "id_semester":"", "nama_taruna":""},
+                        "term":"",
+                        "is_and":"1", //1 untuk and 0 untuk or
+                        "count":"10",
+                        "page":"1"
+                    }
+                }
+Return      =>  {
+    error: true|false,
+    err_msg: '',
+    data:{
+        id_entri:
+        id_pristiwa:
+        nama_pristiwa:
+        id_taruna:
+        nama_taruna:
+        time:
+    }
+}
+
+getRiwayatPristiwa    =>  {
+                    "isAuth": "logged",
+                    "verb":"getRiwayatPristiwa",
+                    "id":"admin",
+                    "tSign":"0000",
+                    "token":"47e943a33d522bb04645c5acfff36a4c",              
+                    "special":0,
+                    "operation": "read",
+                    "payload":
+                    {
+                        "is_direct":1,
+                        "is_multiple":0,
+                        "is_filtered":0,
+                        "filter": {"id_pristiwa":"", "id_semester":"", "nama_taruna":""},
+                        "term":"",
+                        "is_and":"1", //1 untuk and 0 untuk or
+                        "count":"10",
+                        "page":"1"
+                    }
+                }
+Return      =>  {
+    error: true|false,
+    err_msg: '',
+    data:{
+        id_entri:
+        id_pristiwa:
+        nama_pristiwa:
+        jml_taruna:
+        poin:
+        time:
+    }
+}
+
+deletePristiwa    =>  {
+                    "isAuth": "logged",
+                    "verb":"deletePristiwa",
+                    "id":"admin",
+                    "tSign":"0000",
+                    "token":"47e943a33d522bb04645c5acfff36a4c",              
+                    "special":0,
+                    "operation": "read",
+                    "payload":
+                    {
+                        "id_pristiwa":""
+                    }
+                }
+Return      =>  {
+    error: true|false,
+    err_msg: '',
+    data:{
+        
+    }
+}

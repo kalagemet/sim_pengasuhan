@@ -1,0 +1,117 @@
+getTaruna    =>  {
+                    "isAuth": "logged",
+                    "verb":"getTaruna",
+                    "id":"admin",
+                    "tSign":"0000",
+                    "token":"47e943a33d522bb04645c5acfff36a4c",              
+                    "special":0,
+                    "operation": "read",
+                    "payload":
+                    {
+                        "is_direct":1,
+                        "is_multiple":0,
+                        "is_filtered":0,
+                        "filter": {"id_prodi":"","id_angkatan":"", "id_kelas":"", "nama_taruna":"", "status_poin":""},
+                        "term":"",
+                        "is_and":"1",
+                        "count":"10",
+                        "page":"1"
+                    }
+                }
+Return      =>  {
+    error: true|false,
+    err_msg: '',
+    data:{
+        id_taruna:
+        nama_taruna:
+        nama_prodi:
+        nama_angkatan:
+        nama_kelas:
+        poin:
+        status_poin:
+        is_active:
+    }
+}
+
+getProdi    =>  {
+                    "isAuth": "logged",
+                    "verb":"getProdi",
+                    "id":"admin",
+                    "tSign":"0000",
+                    "token":"47e943a33d522bb04645c5acfff36a4c",              
+                    "special":0,
+                    "operation": "read",
+                    "payload":
+                    {
+                        "is_direct":1,
+                        "is_multiple":0,
+                        "is_filtered":0,
+                        "filter": {"key1":""},
+                        "term":"",
+                        "is_and":"0",
+                    }
+                }
+Return      =>  {
+    error: true|false,
+    err_msg: '',
+    data:{
+        id_prodi:
+        nama_prodi:
+    }
+}
+
+
+getAngkatan    =>  {
+                    "isAuth": "logged",
+                    "verb":"getAngkatan",
+                    "id":"admin",
+                    "tSign":"0000",
+                    "token":"47e943a33d522bb04645c5acfff36a4c",              
+                    "special":0,
+                    "operation": "read",
+                    "payload":
+                    {
+                        "is_direct":1,
+                        "is_multiple":0,
+                        "is_filtered":0,
+                        "filter": {"key1":"id_prodi"},
+                        "term":"id_prodi",
+                        "is_and":"0",
+                    }
+                }
+Return      =>  {
+    error: true|false,
+    err_msg: '',
+    data:{
+        id_prodi:
+        nama_prodi:
+    }
+}
+
+
+getKelas    =>  {
+                    "isAuth": "logged",
+                    "verb":"getKelas",
+                    "id":"admin",
+                    "tSign":"0000",
+                    "token":"47e943a33d522bb04645c5acfff36a4c",              
+                    "special":0,
+                    "operation": "read",
+                    "payload":
+                    {
+                        "is_direct":1,
+                        "is_multiple":0,
+                        "is_filtered":0,
+                        "filter": {"key1":"id_angkatan"},
+                        "term":"id_angkatan",
+                        "is_and":"0",
+                    }
+                }
+Return      =>  {
+    error: true|false,
+    err_msg: '',
+    data:{
+        id_kelas:
+        nama_kelas:
+    }
+}
