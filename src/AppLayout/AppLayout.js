@@ -90,6 +90,7 @@ export function AppLayout(props) {
 				loadingApp,
 				notification,
 				popNotify,
+				user,
 			}) =>
 				authenticated ? (
 					<div className="app-layout">
@@ -112,6 +113,7 @@ export function AppLayout(props) {
 												}}
 											>
 												<Message
+													color={d.color}
 													onDismiss={() => popNotify(d.msg)}
 													info
 													icon={d.icon}
@@ -243,7 +245,7 @@ export function AppLayout(props) {
 														// alt="https://react.semantic-ui.com/images/wireframe/square-image.png"
 														circular
 													/>
-													Dhea Emeralda Annisa
+													{user.user || user.f_id}
 												</Header>
 											)}
 										</Grid.Column>
@@ -299,41 +301,45 @@ class GetTahunAjar extends Component {
 
 	decodeTahunAjar(arr) {
 		var data = [];
-		arr.forEach((d, i) => {
-			if (!data.find((x) => x.id_semester === d.id_semester)) {
-				data.push(d);
-			}
-		});
+		if (arr && arr.length > 0)
+			arr.forEach((d, i) => {
+				if (!data.find((x) => x.id_semester === d.id_semester)) {
+					data.push(d);
+				}
+			});
 		return data;
 	}
 
 	getTahunAjar = async () => {
 		this.setState({ error: false });
-		getTahunAjar_api(this.context, this.state.cari, (response) =>
-			response.error
-				? this.setState({ error: true })
-				: this.setState(
-						{
-							semester: this.decodeTahunAjar(response.data),
-							loading: false,
-							loadingCari: false,
-						},
-						() => {
-							this.state.semester.forEach((d) =>
-								d.is_active === "1"
-									? this.setState({
-											semesterActive:
-												d.no_tahun +
-												"/" +
-												(Number(d.no_tahun) + 1) +
-												" " +
-												(d.no_semester === "1" ? "Genap" : "Ganjil"),
-									  })
-									: null
-							);
-						}
-				  )
-		);
+		getTahunAjar_api(this.context, this.state.cari, (response) => {
+			if (response.status === 200) {
+				this.setState(
+					{
+						semester: this.decodeTahunAjar(response.data.data),
+						loading: false,
+						loadingCari: false,
+					},
+					() => {
+						this.state.semester.forEach((d) =>
+							d.is_active === "1"
+								? this.setState({
+										semesterActive:
+											d.no_tahun +
+											"/" +
+											(Number(d.no_tahun) + 1) +
+											" " +
+											(d.no_semester === "1" ? "Genap" : "Ganjil"),
+								  })
+								: null
+						);
+					}
+				);
+			} else {
+				console.error("get_tahun_ajar", response.status, response.msg);
+				this.setState({ error: true });
+			}
+		});
 	};
 
 	render() {

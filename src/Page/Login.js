@@ -35,27 +35,28 @@ class Login extends Component {
 		this.setState({ direct_link: false, auth_failed: false });
 		if (this.state.username !== "" || this.state.password !== "") {
 			this.setState({ loading: true });
-			login_api(this.state.username, this.state.password, (data) =>
-				data.error
-					? this.setState({
-							msg_err: "Username atau Password salah !!",
-							auth_failed: true,
-							loading: false,
-					  })
-					: data.is_active === 0
-					? this.setState({
-							msg_err:
-								"Autentikasi gagal, user anda tidak aktif, silahkan hubungi petugas !!",
-							auth_failed: true,
-							loading: false,
-					  })
-					: this.context.setLogin(
-							data.id_penguna,
-							data.is_admin === "1" ? true : false,
-							data.f_id,
-							this.state.password
-					  )
-			);
+			login_api(this.state.username, this.state.password, (data) => {
+				if (data.status === 200) {
+					data.data.is_active === "1"
+						? this.context.setLogin(
+								data.data.id_penguna,
+								data.data.is_admin === "1" ? true : false,
+								data.data.f_id,
+								this.state.password
+						  )
+						: this.setState({
+								msg_err: "Username atau Password salah !!",
+								auth_failed: true,
+								loading: false,
+						  });
+				} else {
+					this.setState({
+						msg_err: data.msg,
+						auth_failed: true,
+						loading: false,
+					});
+				}
+			});
 		}
 	}
 

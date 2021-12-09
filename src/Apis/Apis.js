@@ -1,4 +1,7 @@
+import axios from "axios";
 import md5 from "md5";
+
+axios.defaults.baseURL = process.env.REACT_APP_API_SERVER;
 
 export const login = async (username, password, response) => {
 	let ts = new Date().toString();
@@ -15,17 +18,22 @@ export const login = async (username, password, response) => {
 			operation: "read",
 			payload: {
 				is_direct: 1,
-				id: username,
+				is_multiple: 0,
+				is_filtered: 0,
+				filter: { key1: "f_id" },
+				term: "admin",
+				is_and: "0",
+				count: "10",
+				page: "1",
 			},
 		})
 	);
-	await fetch(process.env.REACT_APP_API_SERVER, {
+	await axios("/", {
 		method: "POST",
-		body: formData,
+		data: formData,
 	})
-		.then((data) => data.json())
-		.then((data) => response({ error: false, ...data }))
-		.catch((e) => response({ error: true, ...e }));
+		.then((res) => response(res))
+		.catch((e) => response({ status: 400, msg: e.message }));
 };
 
 export const getTahunAjar = async (context, cari, response) => {
@@ -51,11 +59,41 @@ export const getTahunAjar = async (context, cari, response) => {
 			},
 		})
 	);
-	await fetch(`${process.env.REACT_APP_API_SERVER}`, {
+	await axios("/", {
 		method: "POST",
-		body: formData,
+		data: formData,
 	})
-		.then((data) => data.json())
-		.then((data) => response({ error: false, ...data }))
-		.catch((e) => response({ error: true, ...e }));
+		.then((res) => response(res))
+		.catch((e) => response({ status: 400, msg: e.message }));
+};
+
+export const getFilterKategori = async (context, cari, response) => {
+	let ts = new Date().toString();
+	var formData = new FormData();
+	formData.append(
+		"post_data",
+		JSON.stringify({
+			isAuth: "logged",
+			verb: "get_kategori",
+			id: context.user.f_id,
+			tSign: ts,
+			token: md5(context.user.user_lock + ts),
+			special: 0,
+			operation: "read",
+			payload: {
+				is_direct: 1,
+				is_filtered: 0,
+				filter: { key1: "nama_kategori" },
+				term: cari,
+				count: "10",
+				page: "1",
+			},
+		})
+	);
+	await axios("/", {
+		method: "POST",
+		data: formData,
+	})
+		.then((res) => response(res))
+		.catch((e) => response({ status: 400, msg: e.message }));
 };

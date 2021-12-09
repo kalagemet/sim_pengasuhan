@@ -149,7 +149,7 @@ export default function StepOne(props) {
 									<Input
 										placeholder="Cari perisitwa"
 										icon="search"
-										labelPosition="right"
+										// labelPosition="right"
 									/>
 								</Grid.Column>
 							</Grid.Row>
@@ -216,7 +216,8 @@ export default function StepOne(props) {
 																						ellipsis={" ... "}
 																						trimRight
 																						basedOn="letters"
-																					/>
+																					/>,
+																					"red"
 																				);
 																			}}
 																			color="red"

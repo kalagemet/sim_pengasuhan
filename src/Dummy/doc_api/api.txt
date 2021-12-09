@@ -1,0 +1,152 @@
+daftar api pengasuhan
+read data:
+	dashboard
+	1. jumlah taruna aktif
+		- smt aktif
+		- prodi
+		- angkatan
+		- kelas
+	2. jumlah taruna kategori baik
+		- smt aktif
+		- prodi
+		- angkatan
+		- kelas
+	3. Jumlsh taruna kategori "merah" (poin kurang)
+		- smt aktif 
+		- prodi
+		- angkatan
+		- kelas
+	4. Jumlah pelanggaran terbanyak
+		- smt aktif 
+		- prodi
+		- angkatan
+		- kelas
+	5. jumlah penghargaan terbanyak
+		- smt aktif 
+		- prodi
+		- angkatan
+		- kelas
+	6. jumlah taruna dalam kategori (cukup: 50taruna baik:20taruna baik:20taruna dst...)
+		- smt aktif 
+		- prodi
+		- angkatan
+		- kelas
+	7. get angkatan
+		- prodi
+	8. get kelas
+		- prodi
+		- angkatan
+	   get prodi
+
+	9. daftar taruna dengan poin kurang
+		- smt aktif 
+		- prodi
+		- angkatan
+		- kelas
+		- page
+		- offset
+	10. daftar taruna poin tertingi
+		- smt aktif 
+		- prodi
+		- angkatan
+		- kelas
+		- page
+		- offset
+	11. daftar taruna poin kurang
+		- smt aktif 
+		- prodi
+		- angkatan
+		- kelas
+		- page
+		- offset
+	12. Daftar pelanggaran terbanyak
+		- ta.smt aktif 
+		- p.prodi
+		- angkatan
+		- kelas
+		- page
+		- offset
+	13. Daftar penghargaan terbanyak
+		- smt aktif 
+		- prodi
+		- angkatan
+		- kelas
+		- page
+		- offset
+	taruna
+	get daftar taruna
+		- prodi
+		- kelas
+		- angkatan
+		- offset
+		- limit
+		- string cari (nama,nit)
+		data:
+			- ID
+			- NIT
+			- Nama
+			- Status
+			- Kelas
+	set taruna aktif/tidak aktif (bisa login/tidak)
+		- ID
+
+	detail taruna
+	get peristiwa taruna
+		- semester
+		- cari (nama peristiwa)
+		- offset
+		- limit
+		data:
+			- nama peristiwa
+			- id entri peristiwa
+	detail pengguna
+		- id
+
+	peristiwa
+		get sub peristiwa
+
+		daftar peristiwa
+		- filter kategori
+		- filter sub peristiwa (penghargaan, pelanggaran)
+		- filter nama peristiwa
+		- 
+		tambah peristiwa
+			- nama peristiwa
+			- jumlah poin
+			- poin tambahan/bukan
+			- id sub peristiwa
+
+		detail peristiwa
+			- semester
+			- id taruna
+			- limit
+			- offset
+
+		edit peristiwa
+		delete peristiwa
+
+	riwayat entri
+		
+		- filter semester
+		- filter nama peristiwa
+		- rentang tanggal
+
+	daftar entri poin
+	- filter id sub kategori
+	- tanggal
+	- limit
+	- offset
+
+	insert poin
+	- daftar taruna (array)
+	- daftar peristiwa (array)
+
+	edit insert poin -> update array
+	
+
+
+
+
+
+update:
+	- set semester aktif

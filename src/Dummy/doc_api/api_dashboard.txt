@@ -1,0 +1,233 @@
+getTahun    =>  {
+                    "isAuth": "logged",
+                    "verb":"get_tahun_ajaran_semua",
+                    "id":"admin",
+                    "tSign":"0000",
+                    "token":"47e943a33d522bb04645c5acfff36a4c",              
+                    "special":0,
+                    "operation": "read",
+                    "payload":
+                    {
+                        "is_direct":1,
+                        "is_multiple":0,
+                        "is_filtered":0,
+                        "filter": {"key1":"f_id"},
+                        "term":"admin",
+                        "is_and":"0",
+                        "count":"10",
+                        "page":"1"
+                    }
+                }
+Return      =>  {
+    error: true|false,
+    err_msg: '',
+    data:{
+        id_tahun:
+        nama_tahun:
+        id_semester:
+        is_active:
+    }
+}
+
+get_jurusan    =>  {
+                    "isAuth": "logged",
+                    "verb":"get_jurusan",
+                    "id":"admin",
+                    "tSign":"0000",
+                    "token":"47e943a33d522bb04645c5acfff36a4c",              
+                    "special":0,
+                    "operation": "read",
+                    "payload":
+                    {
+                        "is_direct":1,
+                        "is_multiple":0,
+                        "is_filtered":0,
+                        "filter": {
+                        },
+                        "term":"admin",
+                        "is_and":"0",
+                        "count":"",
+                        "page":""
+                    }
+                }
+Return      =>  {
+    error: true|false,
+    err_msg: '',
+    data:{
+        id_prodi:
+        nama_prodi:
+    }
+}
+
+get_angkatan    =>  {
+                    "isAuth": "logged",
+                    "verb":"get_angkatan",
+                    "id":"admin",
+                    "tSign":"0000",
+                    "token":"47e943a33d522bb04645c5acfff36a4c",              
+                    "special":0,
+                    "operation": "read",
+                    "payload":
+                    {
+                        "is_direct":1,
+                        "is_multiple":0,
+                        "is_filtered":0,
+                        "filter": {
+                            id_jurusan:
+                        },
+                        "term":"admin",
+                        "is_and":"0",
+                        "count":"",
+                        "page":""
+                    }
+                }
+Return      =>  {
+    error: true|false,
+    err_msg: '',
+    data:{
+        id_angkatan:
+        nama_angkatan:
+    }
+}
+
+get_kelas    =>  {
+                    "isAuth": "logged",
+                    "verb":"get_kelas",
+                    "id":"admin",
+                    "tSign":"0000",
+                    "token":"47e943a33d522bb04645c5acfff36a4c",              
+                    "special":0,
+                    "operation": "read",
+                    "payload":
+                    {
+                        "is_direct":1,
+                        "is_multiple":0,
+                        "is_filtered":0,
+                        "filter": {
+                            id_jurusan:
+                            id_angkatan:
+                        },
+                        "term":"admin",
+                        "is_and":"0",
+                        "count":"",
+                        "page":""
+                    }
+                }
+Return      =>  {
+    error: true|false,
+    err_msg: '',
+    data:{
+        id_kelas:
+        nama_kelas:
+    }
+}
+
+get_ovierview    =>  {
+                    "isAuth": "logged",
+                    "verb":"get_ovierview",
+                    "id":"admin",
+                    "tSign":"0000",
+                    "token":"47e943a33d522bb04645c5acfff36a4c",              
+                    "special":0,
+                    "operation": "read",
+                    "payload":
+                    {
+                        "is_direct":1,
+                        "is_multiple":0,
+                        "is_filtered":0,
+                        "filter": {
+                            "tahun_ajar":"id_tahun"
+                            jurusan: id_jurusan
+                            angkatan: id_angkatan
+                            kelas: id_kelas
+                        },
+                        "term":"admin",
+                        "is_and":"0",
+                        "count":"",
+                        "page":""
+                    }
+                }
+Return      =>  {
+    error: true|false,
+    err_msg: '',
+    data:{
+        id_overview: jml_taruna|taruna_sangat baik|taruna belum baik|pelanggaran terbanyak|penghargaan terbanyak
+        nama_overview: ex "jumlah taruna aktif"|Jumlah Taruna|Taruna dengan kategori sangat baik|Taruna belum berkategori baik|Jenis Pelanggaran Terbanyak|Jenis Penghargaan Terbanyak
+        value: 
+    }
+}
+
+get_presentase taruna    =>  {
+                    "isAuth": "logged",
+                    "verb":"get_persen",
+                    "id":"admin",
+                    "tSign":"0000",
+                    "token":"47e943a33d522bb04645c5acfff36a4c",              
+                    "special":0,
+                    "operation": "read",
+                    "payload":
+                    {
+                        "is_direct":1,
+                        "is_multiple":0,
+                        "is_filtered":0,
+                        "filter": {
+                            "tahun_ajar":"id_tahun"
+                            jurusan: id_jurusan
+                            angkatan: id_angkatan
+                            kelas: id_kelas
+                        },
+                        "term":"admin",
+                        "is_and":"0",
+                        "count":"",
+                        "page":""
+                    }
+                }
+Return      =>  {
+    error: true|false,
+    err_msg: '',
+    data:{
+        jml_baik:
+        jml_tidakmemenuhi:
+        jml_cukup: 
+    }
+}
+
+get_daftar    =>  {
+                    "isAuth": "logged",
+                    "verb":"get_daftar",
+                    "id":"admin",
+                    "tSign":"0000",
+                    "token":"47e943a33d522bb04645c5acfff36a4c",              
+                    "special":0,
+                    "operation": "read",
+                    "payload":
+                    {
+                        "is_direct":1,
+                        "is_multiple":0,
+                        "is_filtered":0,
+                        "filter": {
+                            "tahun_ajar":"id_tahun"
+                            jurusan: id_jurusan
+                            angkatan: id_angkatan
+                            kelas: id_kelas
+                            func: jml_taruna|taruna_sangat baik|taruna belum baik|pelanggaran terbanyak|penghargaan terbanyak
+                        },
+                        "term":"admin",
+                        "is_and":"0",
+                        "count":"10",
+                        "page":"1"
+                    }
+                }
+Return      =>  {
+    error: true|false,
+    err_msg: '',
+    data:{
+        header:
+        rows:{
+            id_taruna:
+            nama_taruna:
+            poin:
+            status:
+        }
+    }
+}

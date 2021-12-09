@@ -69,24 +69,22 @@ class Context extends Component {
 	};
 
 	loadCookies() {
-		let tmp = this.crypto(false, cookie.load("user_level") || "");
-		if (tmp !== "")
-			this.setState({
-				authenticated: Boolean(tmp.autenticated) || false,
-				loginAs: tmp.user_level || "",
-				user: tmp.user || "",
-				loadingApp: true,
-			});
+		let tmp = this.crypto(false, cookie.load("context") || "");
+		// if (tmp !== "")
+		this.setState({
+			authenticated: Boolean(tmp.authenticated) || false,
+			loginAs: tmp.user_level || "",
+			user: tmp.user || "",
+			loadingApp: true,
+		});
 	}
 
 	saveCookies = (id, is_admin, f_id, password) => {
 		cookie.save(
 			"context",
 			this.crypto(true, {
-				autenticated: true,
-				user_level: is_admin
-					? this.crypto(true, md5("admin"))
-					: this.crypto(true, md5("taruna")),
+				authenticated: true,
+				user_level: is_admin ? md5("admin") : md5("taruna"),
 				user: {
 					user_id: id,
 					f_id: f_id,
@@ -97,22 +95,18 @@ class Context extends Component {
 	};
 
 	logout = () => {
-		cookie.remove("autenticated");
-		cookie.remove("user_level");
-		cookie.remove("user");
-		this.setState({
-			authenticated: false,
-			loginAs: "",
-		});
+		cookie.remove("context");
+		this.loadCookies();
 	};
 
 	setLoadingApp = (bool) => {
 		this.setState({ loadingApp: bool });
 	};
 
-	notify = async (icon, header, msg) => {
+	notify = async (icon, header, msg, color) => {
 		let tmp = this.state.notification;
 		tmp.unshift({
+			color: color || "teal",
 			icon: icon,
 			msg: msg,
 			header: header,
@@ -133,17 +127,17 @@ class Context extends Component {
 		}
 	};
 
-	switchUser = () => {
-		this.setLoadingApp(true);
-		if (this.state.loginAs === md5("admin")) {
-			this.setState({ loginAs: md5("taruna") });
-		} else if (this.state.loginAs === md5("taruna")) {
-			this.logout();
-		} else {
-			this.setState({ loginAs: "" });
-		}
-		setTimeout(() => this.setLoadingApp(false), 1000);
-	};
+	// switchUser = () => {
+	// 	this.setLoadingApp(true);
+	// 	if (this.state.loginAs === md5("admin")) {
+	// 		this.setState({ loginAs: md5("taruna") });
+	// 	} else if (this.state.loginAs === md5("taruna")) {
+	// 		this.logout();
+	// 	} else {
+	// 		this.setState({ loginAs: "" });
+	// 	}
+	// 	setTimeout(() => this.setLoadingApp(false), 1000);
+	// };
 
 	render() {
 		return (

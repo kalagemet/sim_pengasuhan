@@ -9,6 +9,7 @@ class Entri extends Component {
 		super(props);
 		this.state = {
 			activeIndex: 0,
+			berhasil: true,
 			data: {
 				peristiwa: [],
 				taruna: [],
