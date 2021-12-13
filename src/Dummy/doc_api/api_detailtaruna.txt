@@ -24,14 +24,45 @@ Return      =>  {
         nama_taruna:
         id_semester:
         is_active:	
-        Nama_Penguna
         Status_Aktif
         NIT
         nama_prodi
-IPS Pengasuhan	55
-Predikat IPS	Cukup
-IPK Pengasuhan	55
-Predikat IPK	Cukup
-Jumlah Poin	70 Poin
+        IPS Pengasuhan	
+        Predikat IPS	
+        IPK Pengasuhan	
+        Predikat IPK	
+        Jumlah Poin
+    }
+}
+
+getDetailPristiwaTaruna    =>  {
+                    "isAuth": "logged",
+                    "verb":"getDetailPristiwaTaruna",
+                    "id":"admin",
+                    "tSign":"0000",
+                    "token":"47e943a33d522bb04645c5acfff36a4c",              
+                    "special":0,
+                    "operation": "read",
+                    "payload":
+                    {
+                        "is_direct":1,
+                        "is_multiple":0,
+                        "is_filtered":0,
+                        "filter": {"id_taruna":"", "id_semester":"id_semester", "nama_pristiwa":""},
+                        "term":"",
+                        "is_and":"1", //1 untuk and 0 untuk or
+                        "count":"10",
+                        "page":"1"
+                    }
+                }
+Return      =>  {
+    error: true|false,
+    err_msg: '',
+    data:{
+        id_pristiwa:
+        nama_pristiwa
+        id_kategori
+        poin:
+        tanggal:
     }
 }
