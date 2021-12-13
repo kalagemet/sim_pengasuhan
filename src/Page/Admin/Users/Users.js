@@ -7,6 +7,7 @@ import {
 	Header,
 	Icon,
 	Input,
+	Label,
 	Message,
 	Pagination,
 	Segment,
@@ -168,7 +169,7 @@ class Users extends Component {
 					/>
 				) : (
 					<Segment vertical loading={this.state.loading}>
-						<Table unstackable>
+						<Table fixed unstackable>
 							<Table.Header>
 								<Table.Row>
 									<Table.HeaderCell>
@@ -210,36 +211,39 @@ class Users extends Component {
 												{d.id} - {d.nama}
 											</Table.Cell>
 											<Table.Cell>
-												<Checkbox checked toggle label="Aktif" />
+												<Label size="tiny" color="green">
+													Aktif
+												</Label>
 											</Table.Cell>
 											<Table.Cell>{d.prodi}</Table.Cell>
 											<Table.Cell>Kelas {d.kelas}</Table.Cell>
 											<Table.Cell>
-												<Button.Group icon size="tiny" fluid>
-													<Button
-														color="blue"
-														animated="vertical"
-														as={Link}
-														to="/users/detail"
-													>
-														<Button.Content visible>
-															<Icon fitted name="info" />
-														</Button.Content>
-														<Button.Content hidden>Detail</Button.Content>
-													</Button>
-													<Button animated="vertical" color="orange">
-														<Button.Content visible>
-															<Icon fitted name="pencil alternate" />
-														</Button.Content>
-														<Button.Content hidden>Edit</Button.Content>
-													</Button>
-													<Button animated="vertical" color="red">
-														<Button.Content visible>
-															<Icon fitted name="trash alternate" />
-														</Button.Content>
-														<Button.Content hidden>Hapus</Button.Content>
-													</Button>
-												</Button.Group>
+												{/* <Button.Group widths={3} icon size="tiny" fluid> */}
+												<Button
+													size="tiny"
+													color="blue"
+													animated="vertical"
+													as={Link}
+													to="/users/detail"
+												>
+													<Button.Content visible>
+														<Icon fitted name="info" />
+													</Button.Content>
+													<Button.Content hidden>Detail</Button.Content>
+												</Button>
+												<Button size="tiny" animated="vertical" color="orange">
+													<Button.Content visible>
+														<Icon fitted name="pencil alternate" />
+													</Button.Content>
+													<Button.Content hidden>Edit</Button.Content>
+												</Button>
+												<Button size="tiny" animated="vertical" color="red">
+													<Button.Content visible>
+														<Icon fitted name="trash alternate" />
+													</Button.Content>
+													<Button.Content hidden>Hapus</Button.Content>
+												</Button>
+												{/* </Button.Group> */}
 											</Table.Cell>
 										</Table.Row>
 									);

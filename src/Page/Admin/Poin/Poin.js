@@ -31,6 +31,7 @@ export default class Poin extends Component {
 			},
 		],
 		riwayat: [1, 2, 3, 4, 5, 6],
+		failKategori: true,
 	};
 
 	componentDidMount() {
@@ -44,6 +45,11 @@ export default class Poin extends Component {
 	};
 
 	getFilterKategori = async () => {
+		this.setState({
+			failKategori: false,
+			loadingKategori: true,
+			loadingCariKategori: true,
+		});
 		getFilterKategori(this.context, this.state.cariKategori, (response) => {
 			if (response.status === 200) {
 				if (this.state.cariKategori === "") {
@@ -76,98 +82,107 @@ export default class Poin extends Component {
 				<Grid>
 					<Grid.Row>
 						<Grid.Column textAlign="left" computer={12} mobile={16} tablet={12}>
-							<Dropdown
-								disabled={this.state.loading || this.state.loadingKategori}
-								loading={this.state.loadingKategori}
-								text={this.state.kategoriActive.text}
-								icon="filter"
-								floating
-								labeled
-								button
-								className="icon"
-							>
-								<Dropdown.Menu>
-									<Dropdown.Menu scrolling>
-										<Dropdown.Header>Kategori</Dropdown.Header>
-										<Dropdown.Item
-											key=""
-											active={this.state.kategoriActive.key === ""}
-											value=""
-											text="semua"
-											onClick={(e, d) => this.pilihFilter(d)}
-											label={{
-												color: "blue",
-												empty: true,
-												circular: false,
-											}}
-										/>
-										<Dropdown.Item
-											key="penghargaan"
-											active={this.state.kategoriActive.key === "penghargaan"}
-											value="penghargaan"
-											text="penghargaan"
-											onClick={(e, d) => this.pilihFilter(d)}
-											label={{
-												color: "green",
-												empty: true,
-												circular: false,
-											}}
-										/>
-										<Dropdown.Item
-											key="pelanggaran"
-											active={this.state.kategoriActive.key === "pelanggaran"}
-											value="pelanggaran"
-											text="pelanggaran"
-											onClick={(e, d) => this.pilihFilter(d)}
-											label={{
-												color: "red",
-												empty: true,
-												circular: false,
-											}}
-										/>
-										<Dropdown.Header>Sub peristiwa</Dropdown.Header>
-										<Input
-											focus
-											onClick={(e) => e.stopPropagation()}
-											loading={this.state.loadingCariKategori}
-											onChange={(e, d) =>
-												this.setState(
-													{
-														cariKategori: d.value,
-														loadingCariKategori: true,
-													},
-													this.getFilterKategori
-												)
-											}
-											icon="search"
-											iconPosition="left"
-											className="search"
-										/>
-										{this.state.kategori.length === 0 ? (
-											<Dropdown.Item key={0} text="Tidak ada data" disabled />
-										) : (
-											this.state.kategori.map((d) => {
-												return (
-													<Dropdown.Item
-														key={d.id_kategori}
-														active={
-															this.state.kategoriActive.key === d.id_kategori
-														}
-														value={d.id_kategori}
-														text={d.nama_kategori}
-														onClick={(e, d) => this.pilihFilter(d)}
-														label={{
-															color: d.is_penghargaan === "1" ? "green" : "red",
-															empty: true,
-															circular: true,
-														}}
-													/>
-												);
-											})
-										)}
+							{this.state.failKategori ? (
+								<Button
+									onClick={() => this.getFilterKategori()}
+									icon="redo"
+									content="Gagal..."
+								/>
+							) : (
+								<Dropdown
+									disabled={this.state.loading || this.state.loadingKategori}
+									loading={this.state.loadingKategori}
+									text={this.state.kategoriActive.text}
+									icon="filter"
+									floating
+									labeled
+									button
+									className="icon"
+								>
+									<Dropdown.Menu>
+										<Dropdown.Menu scrolling>
+											<Dropdown.Header>Kategori</Dropdown.Header>
+											<Dropdown.Item
+												key=""
+												active={this.state.kategoriActive.key === ""}
+												value=""
+												text="semua"
+												onClick={(e, d) => this.pilihFilter(d)}
+												label={{
+													color: "blue",
+													empty: true,
+													circular: false,
+												}}
+											/>
+											<Dropdown.Item
+												key="penghargaan"
+												active={this.state.kategoriActive.key === "penghargaan"}
+												value="penghargaan"
+												text="penghargaan"
+												onClick={(e, d) => this.pilihFilter(d)}
+												label={{
+													color: "green",
+													empty: true,
+													circular: false,
+												}}
+											/>
+											<Dropdown.Item
+												key="pelanggaran"
+												active={this.state.kategoriActive.key === "pelanggaran"}
+												value="pelanggaran"
+												text="pelanggaran"
+												onClick={(e, d) => this.pilihFilter(d)}
+												label={{
+													color: "red",
+													empty: true,
+													circular: false,
+												}}
+											/>
+											<Dropdown.Header>Sub peristiwa</Dropdown.Header>
+											<Input
+												focus
+												onClick={(e) => e.stopPropagation()}
+												loading={this.state.loadingCariKategori}
+												onChange={(e, d) =>
+													this.setState(
+														{
+															cariKategori: d.value,
+															loadingCariKategori: true,
+														},
+														this.getFilterKategori
+													)
+												}
+												icon="search"
+												iconPosition="left"
+												className="search"
+											/>
+											{this.state.kategori.length === 0 ? (
+												<Dropdown.Item key={0} text="Tidak ada data" disabled />
+											) : (
+												this.state.kategori.map((d) => {
+													return (
+														<Dropdown.Item
+															key={d.id_kategori}
+															active={
+																this.state.kategoriActive.key === d.id_kategori
+															}
+															value={d.id_kategori}
+															text={d.nama_kategori}
+															onClick={(e, d) => this.pilihFilter(d)}
+															label={{
+																color:
+																	d.is_penghargaan === "1" ? "green" : "red",
+																empty: true,
+																circular: true,
+															}}
+														/>
+													);
+												})
+											)}
+										</Dropdown.Menu>
 									</Dropdown.Menu>
-								</Dropdown.Menu>
-							</Dropdown>{" "}
+								</Dropdown>
+							)}{" "}
 							<Input
 								disabled={this.state.loading}
 								placeholder="Cari "

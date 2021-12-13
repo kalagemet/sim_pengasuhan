@@ -23,7 +23,7 @@ const Detail = (props) => {
 						<Table.HeaderCell>Detail Penguna</Table.HeaderCell>
 						<Table.HeaderCell>
 							<TranskripTaruna
-								singlepage
+								singlepage={1}
 								floated="right"
 								basic
 								positive
@@ -181,7 +181,7 @@ class DetailUsers extends Component {
 											<Table.Cell>
 												15650026 - Menjadi Komandan
 												<Label size="tiny" color="yellow">
-													Poin Tambahan
+													PT
 												</Label>
 											</Table.Cell>
 											<Table.Cell>20/20/2021 - 13.00</Table.Cell>

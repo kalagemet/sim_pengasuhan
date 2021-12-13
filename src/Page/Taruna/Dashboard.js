@@ -117,7 +117,7 @@ const TableView = (props) => {
 			</Header>
 			{props.data ? (
 				props.data.length > 0 ? (
-					<Table className="responsive_table" unstackable>
+					<Table unstackable>
 						<Table.Header>
 							<Table.Row>
 								<Table.HeaderCell>No.</Table.HeaderCell>

@@ -15,13 +15,7 @@ import CetakTranskrip from "../Admin/Pdf/TranskripTaruna";
 const DetailTaruna = () => {
 	return (
 		<Segment>
-			<Table
-				className="responsive_table"
-				unstackable
-				basic="very"
-				compact="very"
-				celled
-			>
+			<Table unstackable basic="very" compact="very" celled>
 				<Table.Header>
 					<Table.Row>
 						<Table.HeaderCell>Detail Taruna</Table.HeaderCell>
@@ -89,7 +83,7 @@ const TableView = () => {
 			<Header textAlign="center" dividing>
 				Riwayat Taruna
 			</Header>
-			<Grid className="responsive_table">
+			<Grid>
 				<Grid.Row>
 					<Grid.Column textAlign="left" width={8}>
 						<Select
@@ -113,7 +107,7 @@ const TableView = () => {
 					</Grid.Column>
 				</Grid.Row>
 			</Grid>
-			<Table className="responsive_table" unstackable>
+			<Table unstackable>
 				<Table.Header>
 					<Table.Row>
 						<Table.HeaderCell>No.</Table.HeaderCell>

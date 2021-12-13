@@ -28,7 +28,7 @@ const TableView = (props) => {
 					placeholder="Kategori"
 					options={props.kategori || []}
 				/>
-				<Table className="responsive_table" unstackable>
+				<Table unstackable>
 					<Table.Header>
 						<Table.Row>
 							<Table.HeaderCell>No.</Table.HeaderCell>

@@ -61,7 +61,7 @@ class Entri extends Component {
 						completed={this.state.activeIndex > 0 ? true : false}
 					>
 						<Step.Content>
-							<Step.Title>peristiwa</Step.Title>
+							<Step.Title>Pilih Peristiwa</Step.Title>
 							<Step.Description>Pilih poin yang akan di entri</Step.Description>
 						</Step.Content>
 					</Step>
@@ -70,7 +70,7 @@ class Entri extends Component {
 						completed={this.state.activeIndex > 1 ? true : false}
 					>
 						<Step.Content>
-							<Step.Title>Taruna</Step.Title>
+							<Step.Title>Pilih Taruna</Step.Title>
 							<Step.Description>
 								Pilih taruna yang akan di entri
 							</Step.Description>

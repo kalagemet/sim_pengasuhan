@@ -232,7 +232,7 @@ class Dashboard extends Component {
 		return (
 			<Segment vertical className="page-content-segment">
 				<Divider />
-				<div className="responsive_table">
+				<div>
 					<Select
 						placeholder="Jurusan"
 						value={1}

@@ -36,6 +36,7 @@ class peristiwa extends Component {
 				text: "semua",
 			},
 		],
+		failKategori: true,
 	};
 
 	componentDidMount() {
@@ -44,6 +45,11 @@ class peristiwa extends Component {
 	}
 
 	getFilterKategori = async () => {
+		this.setState({
+			failKategori: false,
+			loadingKategori: true,
+			loadingCariKategori: true,
+		});
 		getFilterKategori(this.context, this.state.cariKategori, (response) => {
 			if (response.status === 200) {
 				if (this.state.cariKategori === "") {
@@ -55,7 +61,7 @@ class peristiwa extends Component {
 					loadingCariKategori: false,
 				});
 			} else {
-				console.error("get_kategori", response.status, response.msg);
+				this.setState({ failKategori: true });
 			}
 		});
 	};
@@ -76,98 +82,106 @@ class peristiwa extends Component {
 				</Header>
 				<Grid columns={2}>
 					<Grid.Column textAlign="left">
-						<Dropdown
-							disabled={this.state.loading || this.state.loadingKategori}
-							loading={this.state.loadingKategori}
-							text={this.state.kategoriActive.text}
-							icon="filter"
-							floating
-							labeled
-							button
-							className="icon"
-						>
-							<Dropdown.Menu>
-								<Dropdown.Menu scrolling>
-									<Dropdown.Header>Kategori</Dropdown.Header>
-									<Dropdown.Item
-										key=""
-										active={this.state.kategoriActive.key === "semua"}
-										value=""
-										text="semua"
-										onClick={(e, d) => this.pilihFilter(d)}
-										label={{
-											color: "blue",
-											empty: true,
-											circular: false,
-										}}
-									/>
-									<Dropdown.Item
-										key="penghargaan"
-										active={this.state.kategoriActive.key === "penghargaan"}
-										value="penghargaan"
-										text="penghargaan"
-										onClick={(e, d) => this.pilihFilter(d)}
-										label={{
-											color: "green",
-											empty: true,
-											circular: false,
-										}}
-									/>
-									<Dropdown.Item
-										key="pelanggaran"
-										active={this.state.kategoriActive.key === "pelanggaran"}
-										value="pelanggaran"
-										text="pelanggaran"
-										onClick={(e, d) => this.pilihFilter(d)}
-										label={{
-											color: "red",
-											empty: true,
-											circular: false,
-										}}
-									/>
-									<Dropdown.Header>Sub peristiwa</Dropdown.Header>
-									<Input
-										focus
-										onClick={(e) => e.stopPropagation()}
-										loading={this.state.loadingCariKategori}
-										onChange={(e, d) =>
-											this.setState(
-												{
-													cariKategori: d.value,
-													loadingCariKategori: true,
-												},
-												this.getFilterKategori
-											)
-										}
-										icon="search"
-										iconPosition="left"
-										className="search"
-									/>
-									{this.state.kategori.length === 0 ? (
-										<Dropdown.Item key={0} text="Tidak ada data" disabled />
-									) : (
-										this.state.kategori.map((d) => {
-											return (
-												<Dropdown.Item
-													key={d.id_kategori}
-													active={
-														this.state.kategoriActive.key === d.id_kategori
-													}
-													value={d.id_kategori}
-													text={d.nama_kategori}
-													onClick={(e, d) => this.pilihFilter(d)}
-													label={{
-														color: d.is_penghargaan === "1" ? "green" : "red",
-														empty: true,
-														circular: true,
-													}}
-												/>
-											);
-										})
-									)}
+						{this.state.failKategori ? (
+							<Button
+								onClick={() => this.getFilterKategori()}
+								icon="redo"
+								content="Gagal..."
+							/>
+						) : (
+							<Dropdown
+								disabled={this.state.loading || this.state.loadingKategori}
+								loading={this.state.loadingKategori}
+								text={this.state.kategoriActive.text}
+								icon="filter"
+								floating
+								labeled
+								button
+								className="icon"
+							>
+								<Dropdown.Menu>
+									<Dropdown.Menu scrolling>
+										<Dropdown.Header>Kategori</Dropdown.Header>
+										<Dropdown.Item
+											key=""
+											active={this.state.kategoriActive.key === "semua"}
+											value=""
+											text="semua"
+											onClick={(e, d) => this.pilihFilter(d)}
+											label={{
+												color: "blue",
+												empty: true,
+												circular: false,
+											}}
+										/>
+										<Dropdown.Item
+											key="penghargaan"
+											active={this.state.kategoriActive.key === "penghargaan"}
+											value="penghargaan"
+											text="penghargaan"
+											onClick={(e, d) => this.pilihFilter(d)}
+											label={{
+												color: "green",
+												empty: true,
+												circular: false,
+											}}
+										/>
+										<Dropdown.Item
+											key="pelanggaran"
+											active={this.state.kategoriActive.key === "pelanggaran"}
+											value="pelanggaran"
+											text="pelanggaran"
+											onClick={(e, d) => this.pilihFilter(d)}
+											label={{
+												color: "red",
+												empty: true,
+												circular: false,
+											}}
+										/>
+										<Dropdown.Header>Sub peristiwa</Dropdown.Header>
+										<Input
+											focus
+											onClick={(e) => e.stopPropagation()}
+											loading={this.state.loadingCariKategori}
+											onChange={(e, d) =>
+												this.setState(
+													{
+														cariKategori: d.value,
+														loadingCariKategori: true,
+													},
+													this.getFilterKategori
+												)
+											}
+											icon="search"
+											iconPosition="left"
+											className="search"
+										/>
+										{this.state.kategori.length === 0 ? (
+											<Dropdown.Item key={0} text="Tidak ada data" disabled />
+										) : (
+											this.state.kategori.map((d) => {
+												return (
+													<Dropdown.Item
+														key={d.id_kategori}
+														active={
+															this.state.kategoriActive.key === d.id_kategori
+														}
+														value={d.id_kategori}
+														text={d.nama_kategori}
+														onClick={(e, d) => this.pilihFilter(d)}
+														label={{
+															color: d.is_penghargaan === "1" ? "green" : "red",
+															empty: true,
+															circular: true,
+														}}
+													/>
+												);
+											})
+										)}
+									</Dropdown.Menu>
 								</Dropdown.Menu>
-							</Dropdown.Menu>
-						</Dropdown>{" "}
+							</Dropdown>
+						)}{" "}
 						<Search placeholder="Cari " icon="search" />
 					</Grid.Column>
 					<Grid.Column>
@@ -202,7 +216,7 @@ class peristiwa extends Component {
 										<Table.Row key={i}>
 											<Table.Cell>{i + 1}</Table.Cell>
 											<Table.Cell>12/12/2021</Table.Cell>
-											<Table.Cell singleLine>
+											<Table.Cell>
 												<Label
 													color={
 														d.kategori === 1
@@ -212,7 +226,19 @@ class peristiwa extends Component {
 															: "grey"
 													}
 												>
-													{d.sub}
+													<Popup
+														hoverable
+														content={d.sub}
+														trigger={
+															<LinesEllipsis
+																text={d.sub}
+																maxLine={1}
+																ellipsis={" ... "}
+																trimRight
+																basedOn="letters"
+															/>
+														}
+													/>
 												</Label>
 											</Table.Cell>
 											<Table.Cell>
@@ -231,48 +257,50 @@ class peristiwa extends Component {
 												/>
 											</Table.Cell>
 											<Table.Cell>
-												<Button.Group icon size="tiny" fluid>
+												{/* <Button.Group icon size="tiny" fluid> */}
+												<Button
+													size="tiny"
+													color="blue"
+													animated="vertical"
+													as={Link}
+													to="/peristiwa/detail"
+												>
+													<Button.Content visible>
+														<Icon fitted name="info" />
+													</Button.Content>
+													<Button.Content hidden>Detail</Button.Content>
+												</Button>
+												<Button
+													size="tiny"
+													as={Link}
+													to="/peristiwa/riwayat"
+													color="teal"
+													animated="vertical"
+												>
+													<Button.Content visible>
+														<Icon fitted name="history" />
+													</Button.Content>
+													<Button.Content hidden>Riwayat</Button.Content>
+												</Button>
+												<TambahPeristiwa header="Edit peristiwa" edit data={d}>
 													<Button
-														color="blue"
+														size="tiny"
 														animated="vertical"
-														as={Link}
-														to="/peristiwa/detail"
+														color="orange"
 													>
 														<Button.Content visible>
-															<Icon fitted name="info" />
+															<Icon fitted name="pencil alternate" />
 														</Button.Content>
-														<Button.Content hidden>Detail</Button.Content>
+														<Button.Content hidden>Edit</Button.Content>
 													</Button>
-													<Button
-														as={Link}
-														to="/peristiwa/riwayat"
-														color="teal"
-														animated="vertical"
-													>
-														<Button.Content visible>
-															<Icon fitted name="history" />
-														</Button.Content>
-														<Button.Content hidden>Riwayat</Button.Content>
-													</Button>
-													<TambahPeristiwa
-														header="Edit peristiwa"
-														edit
-														data={d}
-													>
-														<Button animated="vertical" color="orange">
-															<Button.Content visible>
-																<Icon fitted name="pencil alternate" />
-															</Button.Content>
-															<Button.Content hidden>Edit</Button.Content>
-														</Button>
-													</TambahPeristiwa>
-													<Button animated="vertical" color="red">
-														<Button.Content visible>
-															<Icon fitted name="trash alternate" />
-														</Button.Content>
-														<Button.Content hidden>Hapus</Button.Content>
-													</Button>
-												</Button.Group>
+												</TambahPeristiwa>
+												<Button animated="vertical" color="red">
+													<Button.Content visible>
+														<Icon fitted name="trash alternate" />
+													</Button.Content>
+													<Button.Content hidden>Hapus</Button.Content>
+												</Button>
+												{/* </Button.Group> */}
 											</Table.Cell>
 										</Table.Row>
 									);
