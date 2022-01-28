@@ -9,7 +9,7 @@ import Dashboard from "./Page/Admin/Dashboard";
 import Entri from "./Page/Admin/Entri/Entri";
 import peristiwa from "./Page/Admin/Peristiwa/Peristiwa";
 import DashboardTaruna from "./Page/Taruna/Dashboard";
-import TranskripTaruna from "./Page/Taruna/Transkrip";
+import Transkrip from "./Page/Taruna/Transkrip";
 import Detailperistiwa from "./Page/Admin/Peristiwa/Detail";
 import Riwayatperistiwa from "./Page/Admin/Peristiwa/Riwayat";
 import Riwayat from "./Page/Admin/Riwayat/Riwayat";
@@ -64,7 +64,7 @@ function TarunaRouter(props) {
 				<Redirect to="/dashboard" />
 			</Route>
 			<Route exact path="/dashboard" component={DashboardTaruna} />
-			<Route exact path="/transkrip" component={TranskripTaruna} />
+			<Route exact path="/transkrip" component={Transkrip} />
 			<Route exact path="/daftarpoin" component={DaftarPoin} />
 			<Route exact path="*" component={NotFound} />
 		</Switch>

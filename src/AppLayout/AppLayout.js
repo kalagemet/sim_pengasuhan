@@ -27,6 +27,8 @@ import { Consumer, ContextType } from "../Context";
 import Login from "../Page/Login";
 import md5 from "md5";
 import { getTahunAjar as getTahunAjar_api } from "../Apis/Apis";
+import { setTahunAjar as setTahunAjar_api } from "../Apis/Apis";
+import LinesEllipsis from "react-lines-ellipsis";
 
 const LogoHeader = (sidebarExpand) => (
 	<Header inverted as="h3" className="header-logo">
@@ -163,7 +165,7 @@ export function AppLayout(props) {
 								{LogoHeader(sidebarExpand)}
 							</SidebarHeader>
 							<SidebarContent>
-								<MenuBar panel={loginAs} />
+								<MenuBar data={user} panel={loginAs} />
 							</SidebarContent>
 							<SidebarFooter
 								className={
@@ -236,16 +238,13 @@ export function AppLayout(props) {
 												<GetTahunAjar mobileView={mobileView} />
 											) : (
 												<Header as="h4" textAlign="right">
-													<Image
-														style={{ marginLeft: "15px" }}
-														className="user-account"
-														src={
-															"http://" + window.location.host + "/20293597.jpg"
-														}
-														// alt="https://react.semantic-ui.com/images/wireframe/square-image.png"
-														circular
+													<LinesEllipsis
+														text={user.username}
+														maxLine={1}
+														ellipsis={"..."}
+														trimRight
+														basedOn="words"
 													/>
-													{user.user || user.f_id}
 												</Header>
 											)}
 										</Grid.Column>
@@ -299,47 +298,38 @@ class GetTahunAjar extends Component {
 		this.getTahunAjar();
 	}
 
-	decodeTahunAjar(arr) {
-		var data = [];
-		if (arr && arr.length > 0)
-			arr.forEach((d, i) => {
-				if (!data.find((x) => x.id_semester === d.id_semester)) {
-					data.push(d);
-				}
-			});
-		return data;
-	}
-
 	getTahunAjar = async () => {
 		this.setState({ error: false });
 		getTahunAjar_api(this.context, this.state.cari, (response) => {
 			if (response.status === 200) {
-				this.setState(
-					{
-						semester: this.decodeTahunAjar(response.data.data),
+				if (response.data.error_code === 0) {
+					let all = response.data.data;
+					let active = all.pop();
+					this.setState({
+						semester: all,
+						semesterActive: active.nama_semester,
 						loading: false,
 						loadingCari: false,
-					},
-					() => {
-						this.state.semester.forEach((d) =>
-							d.is_active === "1"
-								? this.setState({
-										semesterActive:
-											d.no_tahun +
-											"/" +
-											(Number(d.no_tahun) + 1) +
-											" " +
-											(d.no_semester === "1" ? "Genap" : "Ganjil"),
-								  })
-								: null
-						);
-					}
-				);
+					});
+					this.context.setSemesterActive(active);
+				} else {
+					this.setState({ semesterActive: response.data.error_msg });
+				}
 			} else {
 				console.error("get_tahun_ajar", response.status, response.msg);
 				this.setState({ error: true });
 			}
 		});
+	};
+
+	setTahunAjar = async (id) => {
+		this.setState({ error: false });
+		this.context.setLoad(true);
+		setTahunAjar_api(this.context, id, (response) => {
+			// this.getTahunAjar();
+			window.location.reload();
+		});
+		this.context.setLoad(false);
 	};
 
 	render() {
@@ -386,15 +376,10 @@ class GetTahunAjar extends Component {
 									<Dropdown.Item
 										key={i}
 										disabled={this.state.loadingCari}
-										value={d.id_semester}
-										text={
-											d.no_tahun +
-											"/" +
-											(Number(d.no_tahun) + 1) +
-											" " +
-											(d.no_semester === "1" ? "Genap" : "Ganjil")
-										}
-										selected={d.is_active === "1"}
+										value={d.id}
+										text={d.nama_semester}
+										selected={d.aktif === 1}
+										onClick={(e, d) => this.setTahunAjar(d.value)}
 									/>
 								))
 							)}

@@ -93,10 +93,10 @@ export default function DaftarTaruna(props) {
 								<Table.Row key={i}>
 									<Table.Cell>{i + 1}</Table.Cell>
 									<Table.Cell>
-										{d.id} - {d.nama}
+										{d.nimhsmsmhs} - {d.nmmhsmsmhs}
 									</Table.Cell>
-									<Table.Cell>{d.prodi}</Table.Cell>
-									<Table.Cell>{d.kelas}</Table.Cell>
+									<Table.Cell>{d.prodi === "01" ? "D-I" : "D-IV"}</Table.Cell>
+									<Table.Cell>{d.angkatan + " / " + d.kelas}</Table.Cell>
 									<Table.Cell textAlign="right">
 										{checkBox ? (
 											<Checkbox

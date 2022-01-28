@@ -1,5 +1,6 @@
-import React, { Component } from "react";
+import React, { Component, forwardRef } from "react";
 import { Link } from "react-router-dom";
+import DatePicker from "react-datepicker";
 import {
 	Segment,
 	Grid,
@@ -8,40 +9,87 @@ import {
 	Button,
 	Dropdown,
 	Message,
-	Icon,
 	Pagination,
 	Table,
 	Label,
 } from "semantic-ui-react";
-import { getFilterKategori } from "../../../Apis/Apis";
+import { getEntri, getKategori } from "../../../Apis/Apis";
 import { ContextType } from "../../../Context";
 
 export default class Poin extends Component {
 	static contextType = ContextType;
-	state = {
-		loading: false,
-		kategori: [],
-		loadingKategori: true,
-		cariKategori: "",
-		loadingCariKategori: false,
-		kategoriActive: [
-			{
-				key: "",
-				text: "semua",
-			},
-		],
-		riwayat: [1, 2, 3, 4, 5, 6],
-		failKategori: true,
-	};
+	constructor(props) {
+		super(props);
+		this.state = {
+			loading: false,
+			kategori: [],
+			loadingKategori: true,
+			cariKategori: "",
+			loadingCariKategori: false,
+			kategoriActive: [
+				{
+					key: "",
+					text: "semua",
+				},
+			],
+			riwayat: [],
+
+			dateRange: [null, null],
+
+			active_page: 1,
+			total_page: 1,
+			limit_page: 25,
+			total_data: 0,
+
+			failKategori: true,
+		};
+	}
+
+	formatDate(date) {
+		let a = new Date(date);
+		return `${("0" + a.getDate()).slice(-2)}/${("0" + (a.getMonth() + 1)).slice(
+			-2
+		)}/${a.getFullYear()}`;
+	}
 
 	componentDidMount() {
-		this.context.setLoad(true);
 		this.getFilterKategori();
 		this.getDataTable();
 	}
 
 	getDataTable = async () => {
-		this.context.setLoad(false);
+		this.setState({ loading: true });
+		getEntri(
+			this.context,
+			this.state.kategoriActive.key,
+			this.state.dateRange[0],
+			this.state.dateRange[1],
+			this.state.active_page,
+			this.state.limit_page,
+			(response) => {
+				if (response.status === 200) {
+					if (response.data.error_code === 0) {
+						this.setState({
+							active_page: response.data.data.current_page,
+							riwayat: response.data.data.data,
+							total_page: response.data.data.last_page,
+							total_data: response.data.data.total,
+						});
+					} else {
+						console.log(response.data.error_msg);
+						this.context.setNotify(
+							"warning",
+							"Error saat mengambil data",
+							response.data.error_msg,
+							"orange"
+						);
+					}
+				} else {
+					console.error("get_riwayat_entri", response.status, response.msg);
+				}
+				this.setState({ loading: false });
+			}
+		);
 	};
 
 	getFilterKategori = async () => {
@@ -50,30 +98,67 @@ export default class Poin extends Component {
 			loadingKategori: true,
 			loadingCariKategori: true,
 		});
-		getFilterKategori(this.context, this.state.cariKategori, (response) => {
+		await getKategori(this.context, this.state.cariKategori, (response) => {
 			if (response.status === 200) {
-				if (this.state.cariKategori === "") {
-					this.setState({ kategoriActive: { text: "semua", key: "" } });
+				if (response.data.error_code === 0) {
+					if (this.state.cariKategori === "") {
+						this.setState({ kategoriActive: { text: "semua", key: "" } });
+					}
+					this.setState({
+						kategori: response.data.data,
+						loadingKategori: false,
+						loadingCariKategori: false,
+					});
+				} else {
+					console.log(response.data.error_msg);
+					this.context.setNotify(
+						"warning",
+						"Error saat mengambil data",
+						response.data.error_msg,
+						"orange"
+					);
 				}
-				this.setState({
-					kategori: response.data.data,
-					loadingKategori: false,
-					loadingCariKategori: false,
-				});
 			} else {
-				console.error("get_kategori", response.status, response.msg);
+				console.error("get_kategori_peristiwa", response.status, response.msg);
+				this.setState({ failKategori: true });
 			}
 		});
 	};
 
 	pilihFilter = async (value) => {
-		this.setState({
-			kategoriActive: { key: value.value, text: value.text },
-			loading: true,
-		});
+		this.setState(
+			{
+				kategoriActive: { key: value.value, text: value.text },
+				loading: true,
+			},
+			() => this.getDataTable()
+		);
 	};
 
 	render() {
+		const [startDate, endDate] = this.state.dateRange;
+		const ButtonCalendar = forwardRef(
+			({ value, onClick, placeholder }, ref) => {
+				return (
+					<Button.Group>
+						<Button
+							basic
+							positive
+							content={
+								value === ""
+									? placeholder
+									: this.formatDate(startDate) + " - " + value
+							}
+							ref={ref}
+							onClick={onClick}
+							icon="calendar"
+							labelPosition="left"
+						/>
+						<Button positive icon="search" />
+					</Button.Group>
+				);
+			}
+		);
 		return (
 			<Segment textAlign="right" vertical className="page-content-segment">
 				<Header textAlign="center" as="h4" dividing color="blue">
@@ -104,7 +189,7 @@ export default class Poin extends Component {
 											<Dropdown.Header>Kategori</Dropdown.Header>
 											<Dropdown.Item
 												key=""
-												active={this.state.kategoriActive.key === ""}
+												active={this.state.kategoriActive.key === "semua"}
 												value=""
 												text="semua"
 												onClick={(e, d) => this.pilihFilter(d)}
@@ -159,19 +244,16 @@ export default class Poin extends Component {
 											{this.state.kategori.length === 0 ? (
 												<Dropdown.Item key={0} text="Tidak ada data" disabled />
 											) : (
-												this.state.kategori.map((d) => {
+												this.state.kategori.map((d, i) => {
 													return (
 														<Dropdown.Item
-															key={d.id_kategori}
-															active={
-																this.state.kategoriActive.key === d.id_kategori
-															}
-															value={d.id_kategori}
+															key={i}
+															active={this.state.kategoriActive.key === d.id}
+															value={d.id}
 															text={d.nama_kategori}
 															onClick={(e, d) => this.pilihFilter(d)}
 															label={{
-																color:
-																	d.is_penghargaan === "1" ? "green" : "red",
+																color: d.pelanggaran === 1 ? "red" : "green",
 																empty: true,
 																circular: true,
 															}}
@@ -183,15 +265,27 @@ export default class Poin extends Component {
 									</Dropdown.Menu>
 								</Dropdown>
 							)}{" "}
-							<Input
+							<DatePicker
 								disabled={this.state.loading}
-								placeholder="Cari "
-								iconPosition="left"
-								icon="search"
+								dateFormat="dd/MM/yyyy"
+								selected={endDate}
+								placeholderText="Pilih Rentang"
+								shouldCloseOnSelect={false}
+								selectsRange
+								data={startDate}
+								startDate={startDate}
+								endDate={endDate}
+								customInput={<ButtonCalendar />}
+								onChange={(update) =>
+									this.setState({ dateRange: update }, () =>
+										this.getDataTable()
+									)
+								}
 							/>
 						</Grid.Column>
 						<Grid.Column textAlign="right" computer={4} mobile={16} tablet={4}>
 							<Button
+								disabled={this.state.loading}
 								icon="add"
 								labelPosition="left"
 								content="Entri Poin"
@@ -203,72 +297,86 @@ export default class Poin extends Component {
 						</Grid.Column>
 					</Grid.Row>
 				</Grid>
-				{/* {this.state.riwayat.length === 0 ? (
+				{this.state.riwayat.length === 0 ? (
 					<Message
 						warning
 						style={{ textAlign: "center", margin: "50px 0 50px 0" }}
 						icon="box"
 						content="Tidak ada data yang ditampilkan"
 					/>
-				) : ( */}
-				<Segment vertical loading={this.state.loading}>
-					<Table unstackable>
-						<Table.Header>
-							<Table.Row>
-								<Table.HeaderCell>No.</Table.HeaderCell>
-								<Table.HeaderCell>Tanggal</Table.HeaderCell>
-								<Table.HeaderCell>Jml peristiwa</Table.HeaderCell>
-								<Table.HeaderCell>Poin</Table.HeaderCell>
-								<Table.HeaderCell>Taruna</Table.HeaderCell>
-								<Table.HeaderCell>Aksi</Table.HeaderCell>
-							</Table.Row>
-						</Table.Header>
-						<Table.Body>
-							{this.state.riwayat.map((i) => {
-								return (
-									<Table.Row key={i}>
-										<Table.Cell>{i + 1}</Table.Cell>
-										<Table.Cell>12/02/2021</Table.Cell>
-										<Table.Cell>40 Menjadi Komandan... </Table.Cell>
-										<Table.Cell>
-											<Label color="red">@20</Label>
-										</Table.Cell>
-										<Table.Cell>
-											20 <Icon name="user" />
-										</Table.Cell>
-										<Table.Cell>
-											<Button
-												as={Link}
-												to="/poin/edit"
-												fluid
-												icon="edit"
-												labelPosition="left"
-												basic
-												content="Edit"
-												color="red"
-											/>
-										</Table.Cell>
-									</Table.Row>
-								);
-							})}
-						</Table.Body>
-					</Table>
-					<Message
-						info
-						icon="info circle"
-						content="Menampilkan 1-20 dari 200 Data"
-						style={{ textAlign: "center", fontStyle: "italic" }}
-					/>
-					<Pagination
-						defaultActivePage={1}
-						firstItem={null}
-						lastItem={null}
-						pointing
-						secondary
-						totalPages={3}
-					/>
-				</Segment>
-				{/* )} */}
+				) : (
+					<Segment vertical loading={this.state.loading}>
+						<Table unstackable>
+							<Table.Header>
+								<Table.Row>
+									<Table.HeaderCell>No.</Table.HeaderCell>
+									<Table.HeaderCell>Tanggal</Table.HeaderCell>
+									<Table.HeaderCell>Tanggal Perubahan</Table.HeaderCell>
+									<Table.HeaderCell>User</Table.HeaderCell>
+									<Table.HeaderCell>Detail</Table.HeaderCell>
+									<Table.HeaderCell>Aksi</Table.HeaderCell>
+								</Table.Row>
+							</Table.Header>
+							<Table.Body>
+								{this.state.riwayat.map((d, i) => {
+									return (
+										<Table.Row key={i}>
+											<Table.Cell>
+												{(this.state.active_page - 1) * this.state.limit_page +
+													i +
+													1}
+											</Table.Cell>
+											<Table.Cell>{d.tanggal}</Table.Cell>
+											<Table.Cell>
+												{d.tanggal === d.update ? " - " : d.update}
+											</Table.Cell>
+											<Table.Cell>
+												<Label color="orange">{d.oleh}</Label>
+											</Table.Cell>
+											<Table.Cell>
+												{d.jml_peristiwa +
+													" Peristiwa  " +
+													d.jml_taruna +
+													" Trauna"}
+											</Table.Cell>
+											<Table.Cell>
+												<Button
+													as={Link}
+													to={"/poin/edit?id_entri=" + d.id_entri}
+													fluid
+													icon="edit"
+													labelPosition="left"
+													basic
+													content="Edit"
+													color="red"
+												/>
+											</Table.Cell>
+										</Table.Row>
+									);
+								})}
+							</Table.Body>
+						</Table>
+						<Message
+							info
+							icon="info circle"
+							content={"Menampilkan total " + this.state.total_data + " Data"}
+							style={{ textAlign: "center", fontStyle: "italic" }}
+						/>
+						<Pagination
+							defaultActivePage={1}
+							onPageChange={(e, d) =>
+								this.setState({ active_page: d.activePage }, () =>
+									this.getDataTable()
+								)
+							}
+							firstItem={null}
+							lastItem={null}
+							pointing
+							secondary
+							totalPages={this.state.total_page}
+						/>
+					</Segment>
+				)}
 			</Segment>
 		);
 	}

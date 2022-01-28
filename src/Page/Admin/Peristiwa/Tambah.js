@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import LinesEllipsis from "react-lines-ellipsis";
 import {
 	Button,
 	Checkbox,
@@ -9,32 +10,142 @@ import {
 	Modal,
 	Select,
 } from "semantic-ui-react";
-const data = require("../../../Dummy/pelanggaran.json");
+import { insertPeristiwa, updatePeristiwa } from "../../../Apis/Apis";
 
 export default function TambahPeristiwa(props) {
 	const [open, setOpen] = useState(false);
 	const [state, setState] = useState({
-		poin_tambahan: true,
+		id: "",
+		poin_tambahan: 1,
 		nama_peristiwa: "",
 		kategori: 0,
 		poin: 0,
 		subPeristiwa: null,
 	});
+	const [data, setData] = useState([]);
+	const [tmp, setTmp] = useState([]);
+
+	const simpan = async () => {
+		props.context.setLoad(true);
+		await insertPeristiwa(props.context, state, (response) => {
+			if (response.status === 200) {
+				if (response.data.error_code === 0) {
+					props.context.setNotify(
+						"check circle outline",
+						"Berhasil",
+						<LinesEllipsis
+							text={"Menambah " + response.data.data.nama_peristiwa}
+							maxLine={2}
+							ellipsis={" ..."}
+							trimRight
+							basedOn="words"
+						/>,
+						"green"
+					);
+					props.onFinish();
+					setState({
+						id: "",
+						poin_tambahan: 1,
+						nama_peristiwa: "",
+						kategori: 0,
+						poin: 0,
+						subPeristiwa: null,
+					});
+					setOpen(false);
+				} else {
+					console.log(response.data.error_msg);
+					props.context.setNotify(
+						"warning",
+						"Error saat mengirim data",
+						response.data.error_msg,
+						"orange"
+					);
+				}
+			} else {
+				console.error("insert_peristiwa", response.status, response.msg);
+				props.context.setNotify(
+					"warning",
+					"Error saat mengirim data",
+					response.msg,
+					"red"
+				);
+			}
+		});
+		props.context.setLoad(false);
+	};
+
+	const update = async () => {
+		props.context.setLoad(true);
+		await updatePeristiwa(props.context, state, (response) => {
+			if (response.status === 200) {
+				if (response.data.error_code === 0) {
+					props.context.setNotify(
+						"check circle outline",
+						"Berhasil",
+						<LinesEllipsis
+							text={"Menyimpan " + response.data.data.nama_peristiwa}
+							maxLine={2}
+							ellipsis={" ..."}
+							trimRight
+							basedOn="words"
+						/>,
+						"green"
+					);
+					setOpen(false);
+					props.onFinish();
+				} else {
+					console.log(response.data.error_msg);
+					props.context.setNotify(
+						"warning",
+						"Error saat mengirim data",
+						response.data.error_msg,
+						"orange"
+					);
+				}
+			} else {
+				console.error("update_peristiwa", response.status, response.msg);
+				props.context.setNotify(
+					"warning",
+					"Error saat mengirim data",
+					response.msg,
+					"red"
+				);
+			}
+		});
+		props.context.setLoad(false);
+	};
 
 	useEffect(() => {
 		function edited() {
 			if (props.edit) {
-				setState({
-					poin_tambahan: props.data.poin_tambahan,
-					nama_peristiwa: props.data.nama,
-					kategori: props.data.kategori,
-					poin: props.data.poin,
-					subPeristiwa: props.data.sub_id,
-				});
+				let tmp = {
+					id: props.record.id,
+					poin_tambahan: props.record.poin_tambahan,
+					nama_peristiwa: props.record.nama_peristiwa,
+					kategori: props.record.pelanggaran === 1 ? 2 : 1,
+					poin: props.record.poin,
+					subPeristiwa: props.record.id_kategori,
+				};
+				setTmp(tmp);
+				setState(tmp);
 			}
 		}
+		function getData() {
+			if (props.data.length > 0) {
+				let tmp = props.data.map((d, i) => {
+					return {
+						key: i,
+						value: d.id,
+						text: d.nama_kategori,
+						pelanggaran: d.pelanggaran,
+					};
+				});
+				setData(tmp);
+			}
+		}
+		getData();
 		edited();
-	}, [props.data, props.edit]);
+	}, [props.data, props.edit, props.record]);
 
 	return (
 		<Modal
@@ -56,7 +167,7 @@ export default function TambahPeristiwa(props) {
 								fluid
 								value={state.nama_peristiwa}
 								onChange={(e, d) =>
-									setState({ ...state, nama_peristiwa: d.value })
+									setState({ ...state, nama_peristiwa: d.value.toUpperCase() })
 								}
 								placeholder="ex: tidak mengikuti apel pagi"
 							/>
@@ -66,7 +177,13 @@ export default function TambahPeristiwa(props) {
 						<Grid.Column>
 							<label>Kategori peristiwa</label>
 							<Select
-								onChange={(e, d) => setState({ ...state, kategori: d.value })}
+								onChange={(e, d) =>
+									setState({
+										...state,
+										kategori: d.value,
+										poin_tambahan: d.value === 2 ? 0 : state.poin_tambahan,
+									})
+								}
 								fluid
 								placeholder="Pilih kategori"
 								value={state.kategori}
@@ -90,7 +207,7 @@ export default function TambahPeristiwa(props) {
 							<label>Jumlah Poin</label>
 							<Input
 								type="number"
-								disabled={state.poin_tambahan}
+								disabled={state.poin_tambahan === 1}
 								value={state.poin}
 								onChange={(e, d) => setState({ ...state, poin: d.value })}
 								fluid
@@ -98,10 +215,15 @@ export default function TambahPeristiwa(props) {
 							/>
 							<br />
 							<Checkbox
-								checked={state.poin_tambahan}
+								checked={state.poin_tambahan === 1}
 								onChange={(e, d) =>
-									setState({ ...state, poin_tambahan: d.checked, poin: 0 })
+									setState({
+										...state,
+										poin_tambahan: d.checked ? 1 : 0,
+										poin: 0,
+									})
 								}
+								disabled={state.kategori === 2}
 								label="Poin Tambahan"
 							/>
 						</Grid.Column>
@@ -114,9 +236,9 @@ export default function TambahPeristiwa(props) {
 								value={state.subPeristiwa}
 								options={
 									state.kategori === 1
-										? data[0].SubPenghargaan
+										? data.filter((d) => d.pelanggaran === 0)
 										: state.kategori === 2
-										? data[1].SubPelanggaran
+										? data.filter((d) => d.pelanggaran === 1)
 										: [{ value: 0, text: "Pilih kategori", disabled: true }]
 								}
 								onChange={(e, d) =>
@@ -134,20 +256,22 @@ export default function TambahPeristiwa(props) {
 				/>
 			</Modal.Content>
 			<Modal.Actions>
-				<Button content="Batal" onClick={() => setOpen(false)} />
+				<Button
+					content="Batal"
+					onClick={
+						props.edit
+							? () => {
+									setState(tmp);
+									setOpen(false);
+							  }
+							: () => setOpen(false)
+					}
+				/>
 				<Button.Group>
 					{props.edit ? (
 						<Button
 							color="yellow"
-							onClick={() =>
-								setState({
-									poin_tambahan: props.data.poin_tambahan,
-									nama_peristiwa: props.data.nama,
-									kategori: props.data.kategori,
-									poin: props.data.poin,
-									subPeristiwa: props.data.sub_id,
-								})
-							}
+							onClick={() => setState(tmp)}
 							content="Reset"
 						/>
 					) : (
@@ -155,6 +279,7 @@ export default function TambahPeristiwa(props) {
 					)}
 					<Button
 						content="Simpan"
+						onClick={props.edit ? () => update() : () => simpan()}
 						icon="right chevron"
 						labelPosition="right"
 						primary

@@ -1,25 +1,38 @@
 import React, { Component } from "react";
 import { Header, Segment, Step, Tab } from "semantic-ui-react";
+import { ContextType } from "../../../Context";
 import StepOne from "./StepOne";
 import StepThree from "./StepThree";
 import StepTwo from "./StepTwo";
 
 class Entri extends Component {
+	static contextType = ContextType;
 	constructor(props) {
 		super(props);
 		this.state = {
 			activeIndex: 0,
-			berhasil: true,
+			berhasil: false,
 			data: {
 				peristiwa: [],
 				taruna: [],
+				poin_tambahan: [],
+				keterangan: [],
+				tanggal: [],
 			},
 		};
 	}
 
-	setperistiwa = (data) => {
-		this.setState({ data: { ...this.state.data, peristiwa: data } });
-		this.setState({ activeIndex: 1 });
+	setperistiwa = (data, poin_tambahan, ket, tgl) => {
+		this.setState({
+			data: {
+				...this.state.data,
+				peristiwa: data,
+				poin_tambahan: poin_tambahan,
+				keterangan: ket,
+				tanggal: tgl,
+			},
+			activeIndex: 1,
+		});
 	};
 
 	setTaruna = (data) => {
@@ -93,6 +106,7 @@ class Entri extends Component {
 							render: () => (
 								<Tab.Pane>
 									<StepOne
+										context={this.context}
 										data={this.state.data}
 										nextState={this.setperistiwa}
 									/>
@@ -103,6 +117,7 @@ class Entri extends Component {
 							render: () => (
 								<Tab.Pane>
 									<StepTwo
+										context={this.context}
 										data={this.state.data}
 										nextState={this.setTaruna}
 										prefState={this.handleTab}
@@ -114,6 +129,7 @@ class Entri extends Component {
 							render: () => (
 								<Tab.Pane>
 									<StepThree
+										context={this.context}
 										success={this.berhasil}
 										data={this.state.data}
 										prefState={this.handleTab}

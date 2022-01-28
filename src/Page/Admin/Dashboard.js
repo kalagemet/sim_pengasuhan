@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Chart from "react-google-charts";
+import LinesEllipsis from "react-lines-ellipsis";
 import {
 	Button,
 	Card,
@@ -11,6 +12,13 @@ import {
 	Placeholder,
 	Select,
 } from "semantic-ui-react";
+import {
+	getAngkatan,
+	getDashboardCount,
+	getKelas,
+	getProdi,
+} from "../../Apis/Apis";
+import { ContextType } from "../../Context";
 import TableView from "./TableView";
 
 const LoadingChartView = () => {
@@ -61,122 +69,48 @@ const LoadingCardView = () => {
 };
 
 const CardView = (props) => {
+	function color(param) {
+		if (param === "Sangat Baik") return "#1da6f0";
+		else if (param === "Baik") return "green";
+		if (param === "Cukup") return "orange";
+		else if (param === "Kurang") return "red";
+		else return "grey";
+	}
+
 	return (
 		<div className="card-dashboard">
-			<Card raised style={{ background: "green" }}>
-				<Card.Header className="title">Jumlah Taruna</Card.Header>
-				<Card.Content>
-					<Statistic className="value">
-						<Statistic.Value>800</Statistic.Value>
-						<Statistic.Label>
-							<Button
-								onClick={() => props.setTableView(0)}
-								className="action"
-								animated
-							>
-								<Button.Content visible>Taruna Aktif</Button.Content>
-								<Button.Content hidden>
-									Daftar Taruna
-									<Icon name="arrow right" />
-								</Button.Content>
-							</Button>
-						</Statistic.Label>
-					</Statistic>
-				</Card.Content>
-			</Card>
-			<Card raised style={{ background: "#1da6f0" }}>
-				<Card.Header className="title">
-					Taruna dengan kategori sangat baik
-				</Card.Header>
-				<Card.Content>
-					<Statistic className="value">
-						<Statistic.Value>800</Statistic.Value>
-						<Statistic.Label>
-							<Button
-								onClick={() => props.setTableView(0)}
-								className="action"
-								animated
-							>
-								<Button.Content visible>Taruna Aktif</Button.Content>
-								<Button.Content hidden>
-									Tampilkan
-									<Icon name="arrow right" />
-								</Button.Content>
-							</Button>
-						</Statistic.Label>
-					</Statistic>
-				</Card.Content>
-			</Card>
-			<Card raised style={{ background: "red" }}>
-				<Card.Header className="title">
-					Taruna belum berkategori baik
-				</Card.Header>
-				<Card.Content>
-					<Statistic className="value">
-						<Statistic.Value>32</Statistic.Value>
-						<Statistic.Label>
-							<Button
-								onClick={() => props.setTableView(1)}
-								className="action"
-								animated
-							>
-								<Button.Content visible>Taruna Aktif</Button.Content>
-								<Button.Content hidden>
-									Tampilkan
-									<Icon name="arrow right" />
-								</Button.Content>
-							</Button>
-						</Statistic.Label>
-					</Statistic>
-				</Card.Content>
-			</Card>
-			<Card raised style={{ background: "orange" }}>
-				<Card.Header className="title">Jenis Pelanggaran Terbanyak</Card.Header>
-				<Card.Content>
-					<Statistic className="value">
-						<Statistic.Value>2 </Statistic.Value>
-						<Statistic.Label>
-							<Button
-								onClick={() => props.setTableView(2)}
-								className="action"
-								animated
-							>
-								<Button.Content visible>Pelanggaran</Button.Content>
-								<Button.Content hidden>
-									Tampilkan
-									<Icon name="arrow right" />
-								</Button.Content>
-							</Button>
-						</Statistic.Label>
-					</Statistic>
-				</Card.Content>
-			</Card>
-			<Card raised style={{ background: "#1da6f0" }}>
-				<Card.Header className="title">Jenis Penghargaan Terbanyak</Card.Header>
-				<Card.Content>
-					<Statistic className="value">
-						<Statistic.Value>30</Statistic.Value>
-						<Statistic.Label>
-							<Button
-								onClick={() => props.setTableView(3)}
-								className="action"
-								animated
-							>
-								<Button.Content visible>Penghargaan</Button.Content>
-								<Button.Content hidden>
-									Tampilkan
-									<Icon name="arrow right" />
-								</Button.Content>
-							</Button>
-						</Statistic.Label>
-					</Statistic>
-				</Card.Content>
-			</Card>
+			{props.data.map((d, i) => (
+				<Card key={i} raised style={{ background: color(d.predikat) }}>
+					<Card.Header className="title">
+						Taruna dengan kategori {d.predikat}
+					</Card.Header>
+					<Card.Content>
+						<Statistic className="value">
+							<Statistic.Value>{d.jml || 0}</Statistic.Value>
+							<Statistic.Label>
+								<Button
+									onClick={() => props.setTableView(d.predikat)}
+									className="action"
+									animated
+								>
+									<Button.Content visible>Taruna</Button.Content>
+									<Button.Content hidden>
+										Tampilkan
+										<Icon name="arrow right" />
+									</Button.Content>
+								</Button>
+							</Statistic.Label>
+						</Statistic>
+					</Card.Content>
+				</Card>
+			))}
 		</div>
 	);
 };
 
-const ChartView = () => {
+const ChartView = (props) => {
+	let arr = [["Jenis", "Jumlah Poin"]];
+	props.data.map((d) => arr.push([d.predikat, 8]));
 	return (
 		<Segment vertical className="chart">
 			<Chart
@@ -184,12 +118,7 @@ const ChartView = () => {
 				height={"400px"}
 				chartType="PieChart"
 				loader={<div>Loading Chart</div>}
-				data={[
-					["Jenis", "Jumlah Poin"],
-					["Baik", 200],
-					["Tidak Memenuhi", 20],
-					["Cukup", 40],
-				]}
+				data={arr}
 				options={{
 					title: "Presentase Poin",
 					colors: ["green", "red", "orange"],
@@ -203,29 +132,129 @@ const ChartView = () => {
 };
 
 class Dashboard extends Component {
+	static contextType = ContextType;
 	constructor(props) {
 		super(props);
 		this.state = {
-			loadingChart: true,
-			loadingCard: true,
-			activeCard: 1,
+			loadingCard: false,
+			activeCard: "",
+
+			prodi: [],
+			selected_prodi: 0,
+			angkatan: [],
+			selected_angkatan: 0,
+			kelas: [],
+			selected_kelas: 0,
+
+			card: [],
 		};
 		this.setTableView = this.setTableView.bind(this);
 	}
 
 	componentDidMount() {
-		setTimeout(
-			() =>
-				this.setState({
-					loadingCard: false,
-					loadingChart: false,
-				}),
-			1000
-		);
+		this.prodi();
+		this.loadDashboard();
 	}
 
-	setTableView = (index) => {
-		this.setState({ activeCard: index });
+	loadDashboard = async () => {
+		this.setState({ loadingCard: true });
+		await getDashboardCount(
+			this.context,
+			this.state.selected_prodi,
+			this.state.selected_angkatan,
+			this.state.selected_kelas,
+			(response) => {
+				if (response.status === 200) {
+					if (response.data.error_code === 0) {
+						this.setState({ loadingCard: false, card: response.data.data });
+					} else {
+						console.log(response.data.error_msg);
+					}
+				} else {
+					console.error("get_dashboard", response.status, response.msg);
+				}
+			}
+		);
+	};
+
+	prodi = async () => {
+		this.setState({ loadFilter: true });
+		await getProdi(this.context, (response) => {
+			if (response.status === 200) {
+				if (response.data.error_code === 0) {
+					response.data.data.length > 0
+						? this.setState({
+								prodi: response.data.data,
+								selected_prodi: 0,
+								selected_angkatan: 0,
+								selected_kelas: 0,
+								activeCard: "",
+								taruna: [],
+								pilihanTaruna: [],
+						  })
+						: this.setState({ prodi: response.data.data });
+				} else {
+					console.log(response.data.error_msg);
+				}
+			} else {
+				console.error("get_prodi", response.status, response.msg);
+			}
+		});
+		this.setState({ loadFilter: false });
+	};
+
+	angkatan = async () => {
+		await getAngkatan(this.context, this.state.selected_prodi, (response) => {
+			if (response.status === 200) {
+				if (response.data.error_code === 0) {
+					response.data.data.length > 0
+						? this.setState({
+								angkatan: response.data.data,
+								selected_angkatan: 0,
+								selected_kelas: 0,
+								activeCard: "",
+								taruna: [],
+								pilihanTaruna: [],
+						  })
+						: this.setState({ angkatan: response.data.data });
+				} else {
+					console.log(response.data.error_msg);
+				}
+			} else {
+				console.error("get_angkatan", response.status, response.msg);
+			}
+		});
+	};
+
+	kelas = async () => {
+		await getKelas(
+			this.context,
+			this.state.selected_prodi,
+			this.state.selected_angkatan,
+			(response) => {
+				if (response.status === 200) {
+					if (response.data.error_code === 0) {
+						response.data.data.length > 0
+							? this.setState({
+									kelas: response.data.data,
+									selected_kelas: 0,
+									activeCard: "",
+									taruna: [],
+									pilihanTaruna: [],
+							  })
+							: this.setState({ kelas: response.data.data });
+					} else {
+						console.log(response.data.error_msg);
+					}
+				} else {
+					console.error("get_kelas", response.status, response.msg);
+				}
+			}
+		);
+	};
+
+	setTableView = (predikat) => {
+		this.setState({ activeCard: predikat });
 	};
 
 	render() {
@@ -234,83 +263,90 @@ class Dashboard extends Component {
 				<Divider />
 				<div>
 					<Select
-						placeholder="Jurusan"
-						value={1}
-						options={[
-							{
-								key: 0,
-								value: "0",
-								text: "Semua Jurusan",
-							},
-							{
-								key: 1,
-								value: "1",
-								text: "D-I PPK",
-							},
-							{
-								key: 2,
-								value: "2",
-								text: "D-IV Pertanahan",
-							},
-						]}
+						style={{ width: "100px" }}
+						placeholder="Program Studi"
+						value={this.state.selected_prodi}
+						onChange={(e, d) =>
+							this.setState({ selected_prodi: d.value }, () => this.angkatan())
+						}
+						options={this.state.prodi.map((d, i) => {
+							return {
+								key: i,
+								value: d.kode,
+								text: (
+									<LinesEllipsis
+										text={d.nama}
+										maxLine={1}
+										ellipsis={"..."}
+										trimRight
+										basedOn="letters"
+									/>
+								),
+							};
+						})}
 					/>{" "}
 					<Select
-						placeholder="Angkatan"
-						value={1}
-						options={[
-							{
-								key: 0,
-								value: "0",
-								text: "Semua Angkatan",
-							},
-							{
-								key: 1,
-								value: "1",
-								text: "2020",
-							},
-							{
-								key: 2,
-								value: "2",
-								text: "2021",
-							},
-						]}
+						placeholder="Pilih Angkatan"
+						value={this.state.selected_angkatan}
+						onChange={(e, d) =>
+							this.setState(
+								{
+									selected_angkatan: d.value,
+									limit_page: 25,
+									active_page: 1,
+								},
+								() => this.kelas()
+							)
+						}
+						options={this.state.angkatan.map((d, i) => {
+							return {
+								key: i,
+								value: d,
+								text: d,
+							};
+						})}
 					/>{" "}
 					<Select
-						placeholder="Kelas"
-						value={1}
-						options={[
-							{
-								key: 0,
-								value: "0",
-								text: "Semua Kelas",
-							},
-							{
-								key: 1,
-								value: "1",
-								text: "2020 - A",
-							},
-							{
-								key: 2,
-								value: "2",
-								text: "2020 - B",
-							},
-						]}
+						placeholder="Pilih Kelas"
+						value={this.state.selected_kelas}
+						onChange={(e, d) =>
+							this.setState({ selected_kelas: d.value }, () =>
+								this.loadDashboard()
+							)
+						}
+						options={this.state.kelas.map((d, i) => {
+							return {
+								key: i,
+								value: d,
+								text: d,
+							};
+						})}
 					/>
 				</div>
 				<Divider />
 				{this.state.loadingCard ? (
 					<LoadingCardView />
 				) : (
-					<CardView setTableView={() => this.setTableView()} />
+					<CardView data={this.state.card} setTableView={this.setTableView} />
 				)}
 				<Divider />
 				<Grid>
 					<Grid.Row>
 						<Grid.Column mobile={16} tablet={16} computer={8}>
-							<TableView index={this.state.activeCard} />
+							<TableView
+								prodi={this.state.selected_prodi}
+								angkatan={this.state.selected_angkatan}
+								kelas={this.state.selected_kelas}
+								context={this.context}
+								predikat={this.state.activeCard}
+							/>
 						</Grid.Column>
 						<Grid.Column mobile={16} tablet={16} computer={8}>
-							{this.state.loadingChart ? <LoadingChartView /> : <ChartView />}
+							{this.state.loadingCard ? (
+								<LoadingChartView />
+							) : (
+								<ChartView data={this.state.card} />
+							)}
 						</Grid.Column>
 					</Grid.Row>
 				</Grid>

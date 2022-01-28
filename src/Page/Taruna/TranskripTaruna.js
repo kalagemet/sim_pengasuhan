@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Grid, Header, Segment, Image, Table, Button } from "semantic-ui-react";
-import "../../../Styles/Pdf.scss";
+import "../../Styles/Pdf.scss";
 import QRCode from "react-qr-code";
-import logo_stpn from "../../../Assets/logo_stpn.png";
+import logo_stpn from "../../Assets/logo_stpn.png";
 import ReactToPrint, { PrintContextConsumer } from "react-to-print";
-import { Consumer } from "../../../Context";
-import { getDetailTaruna, getRekapPoin } from "../../../Apis/Apis";
+import { getDetailTaruna, getRekapPoin } from "../../Apis/ApisTaruna";
+import { Consumer } from "../../Context";
 
 const TranskripTarunaDOM = React.forwardRef((props, ref) => {
 	const [data, setData] = useState([]);
@@ -15,7 +15,7 @@ const TranskripTarunaDOM = React.forwardRef((props, ref) => {
 	useEffect(() => {
 		//get Detail
 		function getDetail() {
-			getDetailTaruna(props.context, props.id_taruna, (response) => {
+			getDetailTaruna(props.context, (response) => {
 				if (response.status === 200) {
 					if (response.data.error_code === 0) {
 						setData(response.data.data);
@@ -29,22 +29,17 @@ const TranskripTarunaDOM = React.forwardRef((props, ref) => {
 		}
 		//get rekapitulasi
 		function getRekap() {
-			getRekapPoin(
-				props.context,
-				props.id_taruna,
-				props.id_semester,
-				(response) => {
-					if (response.status === 200) {
-						if (response.data.error_code === 0) {
-							setRekap(response.data.data);
-						} else {
-							console.log(response.data.error_msg);
-						}
+			getRekapPoin(props.context, props.id_semester, (response) => {
+				if (response.status === 200) {
+					if (response.data.error_code === 0) {
+						setRekap(response.data.data);
 					} else {
-						console.error("get_rekap_poin", response.status, response.msg);
+						console.log(response.data.error_msg);
 					}
+				} else {
+					console.error("get_rekap_poin", response.status, response.msg);
 				}
-			);
+			});
 		}
 		getRekap();
 		getDetail();
@@ -198,36 +193,6 @@ export default function TranskripTaruna(props) {
 		func();
 	};
 
-	const DocumentDom = () => {
-		if (props.singlepage || props.singlepage === undefined) {
-			return (
-				<TranskripTarunaDOM
-					loading={props.loading}
-					context={props.context}
-					id_semester={props.id_semester}
-					nama_semester={props.nama_semester}
-					id_taruna={props.id_taruna}
-				/>
-			);
-		} else {
-			var hal = [];
-			let data = [...props.data];
-			data.map((d, i) => {
-				hal.push(
-					<TranskripTarunaDOM
-						key={i}
-						loading={props.loading}
-						context={props.context}
-						id_semester={props.id_semester}
-						nama_semester={props.nama_semester}
-						id_taruna={d.nimhsmsmhs}
-					/>
-				);
-			});
-			return hal;
-		}
-	};
-
 	return (
 		<Consumer>
 			{({ setLoad }) => (
@@ -244,7 +209,13 @@ export default function TranskripTaruna(props) {
 						</PrintContextConsumer>
 					</ReactToPrint>
 					<div ref={ref}>
-						<DocumentDom />
+						<TranskripTarunaDOM
+							loading={props.loading}
+							context={props.context}
+							id_semester={props.id_semester}
+							nama_semester={props.nama_semester}
+							id_taruna={props.id_taruna}
+						/>
 					</div>
 				</div>
 			)}

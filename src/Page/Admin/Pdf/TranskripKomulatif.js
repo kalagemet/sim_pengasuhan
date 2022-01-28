@@ -22,7 +22,6 @@ const TranskripDOM = React.forwardRef((props, ref) => (
 	>
 		<Segment vertical style={{ minHeight: "95%" }}>
 			<br />
-
 			{props.header ? (
 				<Segment vertical>
 					<Grid style={{ borderBottom: "solid 2px" }} columns="3">
@@ -55,10 +54,15 @@ const TranskripDOM = React.forwardRef((props, ref) => (
 							<Grid.Row>Tahun Ajar</Grid.Row>
 						</Grid.Column>
 						<Grid.Column width="7">
-							<Grid.Row>: D {"(2019)"}</Grid.Row>
-							<Grid.Row>: D124566</Grid.Row>
-							<Grid.Row>: D-IV Pengukuran</Grid.Row>
-							<Grid.Row>: 2020/2021 Genap</Grid.Row>
+							<Grid.Row>: {props.kelas}</Grid.Row>
+							<Grid.Row>: {props.angkatan}</Grid.Row>
+							<Grid.Row>
+								:{" "}
+								{props.prodi === "01"
+									? "D-I Pengukuran dan Pemetaan Kadastral"
+									: "D-IV Manajemen Perpetaan"}
+							</Grid.Row>
+							<Grid.Row>: {props.semester}</Grid.Row>
 						</Grid.Column>
 						<Grid.Column textAlign="center" width="4"></Grid.Column>
 					</Grid>
@@ -78,12 +82,11 @@ const TranskripDOM = React.forwardRef((props, ref) => (
 						<Table.HeaderCell>NIT</Table.HeaderCell>
 						<Table.HeaderCell>Nama Taruna</Table.HeaderCell>
 						<Table.HeaderCell textAlign="center">
-							Poin Penghargaan
+							Poin Pengasuhan
 						</Table.HeaderCell>
 						<Table.HeaderCell textAlign="center">
-							Poin Pelanggaran
+							Poin Komulatif
 						</Table.HeaderCell>
-						<Table.HeaderCell textAlign="center">IPK</Table.HeaderCell>
 					</Table.Row>
 				</Table.Header>
 				<Table.Body>
@@ -93,11 +96,10 @@ const TranskripDOM = React.forwardRef((props, ref) => (
 								<Table.Cell>
 									{props.page === 1 ? 1 + i : 28 + 35 * (props.page - 2) + i}
 								</Table.Cell>
-								<Table.Cell>{d.id}</Table.Cell>
-								<Table.Cell singleLine>{d.nama}</Table.Cell>
-								<Table.Cell textAlign="center">-</Table.Cell>
-								<Table.Cell textAlign="center">5</Table.Cell>
-								<Table.Cell textAlign="center">5</Table.Cell>
+								<Table.Cell>{d.nimhsmsmhs}</Table.Cell>
+								<Table.Cell singleLine>{d.nmmhsmsmhs}</Table.Cell>
+								<Table.Cell textAlign="center">{d.ips}</Table.Cell>
+								<Table.Cell textAlign="center">{d.ipk}</Table.Cell>
 							</Table.Row>
 						);
 					})}
@@ -152,6 +154,7 @@ export default function Transkrip(props) {
 		for (let i = 0; i < page; i++) {
 			hal.push(
 				<TranskripDOM
+					{...props}
 					content={pagination(i)}
 					page={i + 1}
 					totalPage={page}

@@ -10,6 +10,7 @@ import {
 	Segment,
 } from "semantic-ui-react";
 import { login as login_api } from "../Apis/Apis";
+import { loginTaruna } from "../Apis/ApisTaruna";
 import loginlogo from "../Assets/image/login.png";
 import logoStpn from "../Assets/logo_stpn.png";
 import { ContextType } from "../Context";
@@ -31,24 +32,27 @@ class Login extends Component {
 		}
 	}
 
-	login() {
+	login = async () => {
 		this.setState({ direct_link: false, auth_failed: false });
 		if (this.state.username !== "" || this.state.password !== "") {
 			this.setState({ loading: true });
-			login_api(this.state.username, this.state.password, (data) => {
+			await login_api(this.state.username, this.state.password, (data) => {
 				if (data.status === 200) {
-					data.data.is_active === "1"
+					data.data.error_code === 0
 						? this.context.setLogin(
-								data.data.id_penguna,
-								data.data.is_admin === "1" ? true : false,
-								data.data.f_id,
-								this.state.password
+								this.state.username,
+								data.data.data.admin === 1,
+								data.data.data.token,
+								data.data.data.nama,
+								data.data.data.id,
+								data.data.data.email
 						  )
-						: this.setState({
-								msg_err: "Username atau Password salah !!",
-								auth_failed: true,
-								loading: false,
-						  });
+						: this.login_taruna();
+					//   this.setState({
+					// 		msg_err: data.data.error_msg,
+					// 		auth_failed: true,
+					// 		loading: false,
+					//   });
 				} else {
 					this.setState({
 						msg_err: data.msg,
@@ -58,7 +62,34 @@ class Login extends Component {
 				}
 			});
 		}
-	}
+	};
+
+	login_taruna = async () => {
+		await loginTaruna(this.state.username, this.state.password, (data) => {
+			if (data.status === 200) {
+				data.data.error_code === 0
+					? this.context.setLogin(
+							this.state.username,
+							data.data.data.admin === 1,
+							data.data.data.token,
+							data.data.data.nama,
+							data.data.data.id,
+							data.data.data.email
+					  )
+					: this.setState({
+							msg_err: data.data.error_msg,
+							auth_failed: true,
+							loading: false,
+					  });
+			} else {
+				this.setState({
+					msg_err: data.msg,
+					auth_failed: true,
+					loading: false,
+				});
+			}
+		});
+	};
 
 	render() {
 		return (
@@ -136,7 +167,9 @@ class Login extends Component {
 							>
 								Login
 							</Button>
-							<Button className="login-btn-lupa">Lupa Password</Button>
+							<Button disabled className="login-btn-lupa">
+								Lupa Password
+							</Button>
 						</div>
 					</Form>
 				</Segment>

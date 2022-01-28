@@ -8,10 +8,11 @@ import {
 	Table,
 	Label,
 	Confirm,
+	Divider,
 } from "semantic-ui-react";
 import LinesEllipsis from "react-lines-ellipsis";
 import { useEffect, useState } from "react";
-
+import { entriPoin } from "../../../Apis/Apis";
 export default function StepThree(props) {
 	const [loading, setLoading] = useState(false);
 	const [berhasil, setBerhasil] = useState(false);
@@ -24,12 +25,49 @@ export default function StepThree(props) {
 	});
 
 	const submitData = () => {
+		setKonfirmasi(false);
 		setLoading(true);
-		setBerhasil(true);
-		setTimeout(() => {
-			setLoading(false);
-			props.success();
-		}, 3000);
+		setBerhasil(false);
+		let record = [];
+		props.data.peristiwa.forEach((d, i) => {
+			props.data.taruna.forEach((dat, index) => {
+				let tmp = {
+					id_taruna: dat.nimhsmsmhs,
+					id_peristiwa: d.id,
+					poin_tambahan:
+						d.poin_tambahan === 1 ? props.data.poin_tambahan[i] : 0,
+					tgl: new Date(props.data.tanggal[i]),
+					keterangan: props.data.keterangan[i],
+				};
+				record.push(tmp);
+			});
+		});
+		entriPoin(props.context, record, (response) => {
+			if (response.status === 200) {
+				if (response.data.error_code === 0) {
+					// console.log(response.data.data);
+					setBerhasil(true);
+					props.success();
+				} else {
+					console.log(response.data.error_msg);
+					props.context.setNotify(
+						"warning",
+						"Error saat menyimpan data",
+						response.data.error_msg,
+						"orange"
+					);
+				}
+			} else {
+				console.error("get_kategori_peristiwa", response.status, response.msg);
+				props.context.setNotify(
+					"warning",
+					"Error saat mengirim data",
+					response.msg,
+					"red"
+				);
+			}
+		});
+		setLoading(false);
 	};
 	return (
 		<Segment vertical>
@@ -92,19 +130,36 @@ export default function StepThree(props) {
 											<Table.Cell>{i + 1}</Table.Cell>
 											<Table.Cell>
 												<LinesEllipsis
-													text={d.nama}
+													text={d.nama_peristiwa}
 													maxLine={1}
 													ellipsis={" ... "}
 													trimRight
 													basedOn="letters"
 												/>
+												<i style={{ color: "grey" }}>
+													{props.data.tanggal[i].getDate() +
+														"/" +
+														(props.data.tanggal[i].getMonth() + 1) +
+														"/" +
+														props.data.tanggal[i].getFullYear() +
+														" Ket: " +
+														props.data.keterangan[i]}
+												</i>
 											</Table.Cell>
 											<Table.Cell>
 												<Label
-													color={d.kategori === 1 ? "green" : "red"}
+													color={
+														d.poin_tambahan === 1
+															? "orange"
+															: d.pelanggaran === 0
+															? "green"
+															: "red"
+													}
 													horizontal
 												>
-													{d.poin}
+													{d.poin_tambahan === 1
+														? props.data.poin_tambahan[i]
+														: d.poin}
 												</Label>
 											</Table.Cell>
 										</Table.Row>
@@ -118,6 +173,7 @@ export default function StepThree(props) {
 									<Table.Row>
 										<Table.HeaderCell>No.</Table.HeaderCell>
 										<Table.HeaderCell>Nama Taruna</Table.HeaderCell>
+										<Table.HeaderCell>Ket.</Table.HeaderCell>
 									</Table.Row>
 								</Table.Header>
 								<Table.Body>
@@ -125,7 +181,14 @@ export default function StepThree(props) {
 										<Table.Row key={i}>
 											<Table.Cell>{i + 1}</Table.Cell>
 											<Table.Cell>
-												{d.id} - {d.nama}
+												{d.nimhsmsmhs} - {d.nmmhsmsmhs}
+											</Table.Cell>
+											<Table.Cell>
+												{(d.prodi === "01" ? "D-I" : "D-IV") +
+													"/" +
+													d.angkatan +
+													"/" +
+													d.kelas}
 											</Table.Cell>
 										</Table.Row>
 									))}
@@ -133,6 +196,10 @@ export default function StepThree(props) {
 							</Table>
 						</Grid.Column>
 					</Grid>
+					<Divider />
+					<Label color="red">Poin Pelanggaran</Label>
+					<Label color="green">Poin Penghargaan </Label>
+					<Label color="orange">Poin Tambahan</Label>
 					<Message
 						warning
 						icon="info circle"

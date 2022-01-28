@@ -1,8 +1,9 @@
 {
 	"name": "sim_pengasuhan",
-	"homepage": "http://penerimaan.stpn.ac.id",
+	"homepage": "https://pengasuhan.stpn.ac.id",
 	"version": "0.1.0",
-	"private": true,
+	"proxy": "http://api.pengasuhan.stpn.ac.id/",
+	"private": false,
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.11.4",
 		"@testing-library/react": "^11.1.0",

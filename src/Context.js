@@ -15,8 +15,8 @@ class Context extends Component {
 		this.state = {
 			authenticated: false,
 			loginAs: "",
-			user: { user: "", f_id: "", token: "" },
-			loadingApp: true,
+			user: { user_id: "", user_lock: "" },
+			loadingApp: false,
 			message: [
 				// {
 				// 	error: 0,
@@ -24,14 +24,15 @@ class Context extends Component {
 				// 	header: "Sekolah Tinggi Petanahan Nasional",
 				// 	msg: "Lorent ipsum dolar set",
 				// },
-				{
-					error: 0,
-					user: md5("taruna"),
-					header: "Selamat Datang, Dhea",
-					msg: "Sistem Informasi Pengasuhan STPN Yogyakarta",
-				},
+				// {
+				// 	error: 0,
+				// 	user: md5("taruna"),
+				// 	header: "Selamat Datang, Dhea",
+				// 	msg: "Sistem Informasi Pengasuhan STPN Yogyakarta",
+				// },
 			],
 			notification: [],
+			semesterActive: [],
 		};
 	}
 
@@ -45,9 +46,23 @@ class Context extends Component {
 		cookie.save("user", this.state.user.user_id, { maxAge: 3600 });
 	}
 
-	setLogin = (id, is_admin, f_id, password) => {
-		this.saveCookies(id, is_admin, f_id, password);
+	setLogin = (id, is_admin, token, nama, id_user, email) => {
+		this.saveCookies(id, is_admin, token, nama, id_user, email);
 		this.loadCookies();
+		this.setState({
+			message: [
+				{
+					error: 0,
+					user: md5("taruna"),
+					header: "Selamat Datang, " + nama.toUpperCase(),
+					msg: "Sistem Informasi Pengasuhan STPN Yogyakarta",
+				},
+			],
+		});
+	};
+
+	setSemesterActive = (arr = []) => {
+		this.setState({ semesterActive: arr });
 	};
 
 	crypto = (encrypt, string) => {
@@ -79,16 +94,18 @@ class Context extends Component {
 		});
 	}
 
-	saveCookies = (id, is_admin, f_id, password) => {
+	saveCookies = (user, is_admin, token, nama, id_user, email) => {
 		cookie.save(
 			"context",
 			this.crypto(true, {
 				authenticated: true,
 				user_level: is_admin ? md5("admin") : md5("taruna"),
 				user: {
-					user_id: id,
-					f_id: f_id,
-					user_lock: md5(password),
+					user_id: user,
+					user_lock: token,
+					identity: id_user,
+					username: nama,
+					email: email,
 				},
 			})
 		);
@@ -127,18 +144,6 @@ class Context extends Component {
 		}
 	};
 
-	// switchUser = () => {
-	// 	this.setLoadingApp(true);
-	// 	if (this.state.loginAs === md5("admin")) {
-	// 		this.setState({ loginAs: md5("taruna") });
-	// 	} else if (this.state.loginAs === md5("taruna")) {
-	// 		this.logout();
-	// 	} else {
-	// 		this.setState({ loginAs: "" });
-	// 	}
-	// 	setTimeout(() => this.setLoadingApp(false), 1000);
-	// };
-
 	render() {
 		return (
 			<Provider
@@ -150,6 +155,7 @@ class Context extends Component {
 					logout: this.logout,
 					setNotify: this.notify,
 					popNotify: this.popNotify,
+					setSemesterActive: this.setSemesterActive,
 				}}
 			>
 				{this.props.children}
