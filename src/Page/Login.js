@@ -130,6 +130,7 @@ class Login extends Component {
 					<Form>
 						<Form.Field className="input-field">
 							<Input
+								disabled={this.state.loading}
 								onChange={(e, d) => this.setState({ username: d.value })}
 								icon
 								iconPosition="left"
@@ -142,6 +143,7 @@ class Login extends Component {
 						<Form.Field className="input-field">
 							<Input
 								onChange={(e, d) => this.setState({ password: d.value })}
+								disabled={this.state.loading}
 								icon
 								iconPosition="left"
 								placeholder="password..."

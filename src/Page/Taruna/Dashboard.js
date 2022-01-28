@@ -125,38 +125,41 @@ function TableView(props) {
 		total_data: 0,
 	});
 
-	useEffect(async () => {
-		setLoading(true);
-		if (props.active === 0 || props.active === 1) {
-			await getDashboardData(
-				props.context,
-				props.semester,
-				props.active,
-				page.limit_page,
-				(response) => {
-					if (response.status === 200) {
-						if (response.data.error_code === 0) {
-							setData(response.data.data.data);
-							setPage({
-								...page,
-								active_page: response.data.data.current_page,
-								total_page: response.data.data.last_page,
-								total_data: response.data.data.total,
-							});
+	useEffect(() => {
+		async function getData() {
+			setLoading(true);
+			if (props.active === 0 || props.active === 1) {
+				await getDashboardData(
+					props.context,
+					props.semester,
+					props.active,
+					page.limit_page,
+					(response) => {
+						if (response.status === 200) {
+							if (response.data.error_code === 0) {
+								setData(response.data.data.data);
+								setPage({
+									...page,
+									active_page: response.data.data.current_page,
+									total_page: response.data.data.last_page,
+									total_data: response.data.data.total,
+								});
+							} else {
+								console.log(response.data.error_msg);
+							}
 						} else {
-							console.log(response.data.error_msg);
+							console.error(
+								"get_dashboard_taruna",
+								response.status,
+								response.msg
+							);
 						}
-					} else {
-						console.error(
-							"get_dashboard_taruna",
-							response.status,
-							response.msg
-						);
 					}
-				}
-			);
-			setLoading(false);
+				);
+				setLoading(false);
+			}
 		}
+		getData();
 	}, [props.active]);
 
 	return loading ? (

@@ -17,7 +17,6 @@ export const login = async (username, password, response) => {
 	await axios("/", {
 		method: "POST",
 		headers: {
-			"Access-Control-Allow-Origin": "*",
 			Accept: "*/*",
 			"Content-Type": "application/json",
 		},
