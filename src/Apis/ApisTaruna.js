@@ -18,7 +18,7 @@ export const loginTaruna = async (username, password, response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getToken",
@@ -35,7 +35,7 @@ export const getDetailTaruna = async (context, response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getDetailTaruna",
@@ -54,7 +54,7 @@ export const getTahunAjar = async (context, cari, response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getSemester",
@@ -83,7 +83,7 @@ export const getLogTaruna = async (
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getLogTaruna",
@@ -107,7 +107,7 @@ export const getRekapPoin = async (context, id_smt, response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getRekapPoin",
@@ -129,7 +129,7 @@ export const getKategori = async (context, string, response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getKategori",
@@ -158,7 +158,7 @@ export const getPeristiwa = async (
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getPeristiwa",
@@ -182,7 +182,7 @@ export const getDashboardCount = async (context, smt, response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getDashboardCount",
@@ -210,7 +210,7 @@ export const getDashboardData = async (
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getDashboardData",

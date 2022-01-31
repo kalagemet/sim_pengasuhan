@@ -18,7 +18,7 @@ export const login = async (username, password, response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getToken",
@@ -35,7 +35,7 @@ export const getTahunAjar = async (context, cari, response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getSemester",
@@ -57,7 +57,7 @@ export const setTahunAjar = async (context, id, response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "setSemester",
@@ -79,7 +79,7 @@ export const getProdi = async (context, response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getProdi",
@@ -98,7 +98,7 @@ export const getAngkatan = async (context, prodi, response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getAngkatan",
@@ -120,7 +120,7 @@ export const getKelas = async (context, prodi, angkatan, response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getKelas",
@@ -152,7 +152,7 @@ export const getTaruna = async (
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getTaruna",
@@ -178,7 +178,7 @@ export const getKategori = async (context, string, response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getKategori",
@@ -200,7 +200,7 @@ export const insertPeristiwa = async (context, record, response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "insertPeristiwa",
@@ -226,7 +226,7 @@ export const updatePeristiwa = async (context, record, response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "updatePeristiwa",
@@ -260,7 +260,7 @@ export const getPeristiwa = async (
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getPeristiwa",
@@ -284,7 +284,7 @@ export const hapusPeristiwa = async (context, id, response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "deletePeristiwa",
@@ -306,7 +306,7 @@ export const entriPoin = async (context, record = [], response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "entriPoin",
@@ -334,7 +334,7 @@ export const getEntri = async (
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getEntri",
@@ -359,7 +359,7 @@ export const getRecord = async (context, id_entri, response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getRecord",
@@ -381,7 +381,7 @@ export const updateEntri = async (context, id_entri, array, response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "editEntriPoin",
@@ -414,7 +414,7 @@ export const getLog = async (
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getLog",
@@ -440,7 +440,7 @@ export const getDetailPeristiwa = async (context, id_peristiwa, response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getDetailPeristiwa",
@@ -469,7 +469,7 @@ export const getLogPeristiwa = async (
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getLogPeristiwa",
@@ -501,7 +501,7 @@ export const getRiwayatPeristiwa = async (
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getRiwayatPeristiwa",
@@ -526,7 +526,7 @@ export const getDetailTaruna = async (context, id_taruna, response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getDetailTaruna",
@@ -556,7 +556,7 @@ export const getLogTaruna = async (
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getLogTaruna",
@@ -587,7 +587,7 @@ export const getDashboardCount = async (
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getDashboardCount",
@@ -620,7 +620,7 @@ export const getDashboardDaftarTaruna = async (
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getDashboardDaftarTaruna",
@@ -646,7 +646,7 @@ export const getRekapPoin = async (context, id_taruna, id_smt, response) => {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
-			"Content-Type": "application/json",
+			"Content-Type": "application/x-www-form-urlencoded",
 		},
 		data: {
 			act: "getRekapPoin",
