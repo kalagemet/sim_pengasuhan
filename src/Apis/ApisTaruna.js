@@ -14,7 +14,7 @@ const logout = (context) => {
 };
 
 export const loginTaruna = async (username, password, response) => {
-	await axios("/user", {
+	await axios("/apis/user", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -31,7 +31,7 @@ export const loginTaruna = async (username, password, response) => {
 };
 
 export const getDetailTaruna = async (context, response) => {
-	await axios("/user", {
+	await axios("/apis/user", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -50,7 +50,7 @@ export const getDetailTaruna = async (context, response) => {
 };
 
 export const getTahunAjar = async (context, cari, response) => {
-	await axios("/user", {
+	await axios("/apis/user", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -79,7 +79,7 @@ export const getLogTaruna = async (
 	limit,
 	response
 ) => {
-	await axios("/user?page=" + page, {
+	await axios("/apis/user?page=" + page, {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -103,7 +103,7 @@ export const getLogTaruna = async (
 };
 
 export const getRekapPoin = async (context, id_smt, response) => {
-	await axios("/user", {
+	await axios("/apis/user", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -125,7 +125,7 @@ export const getRekapPoin = async (context, id_smt, response) => {
 };
 
 export const getKategori = async (context, string, response) => {
-	await axios("/user", {
+	await axios("/apis/user", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -154,7 +154,7 @@ export const getPeristiwa = async (
 	limit,
 	response
 ) => {
-	await axios("/user?page=" + page, {
+	await axios("/apis/user?page=" + page, {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -178,7 +178,7 @@ export const getPeristiwa = async (
 };
 
 export const getDashboardCount = async (context, smt, response) => {
-	await axios("/user", {
+	await axios("/apis/user", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -206,7 +206,7 @@ export const getDashboardData = async (
 	limit,
 	response
 ) => {
-	await axios("/user", {
+	await axios("/apis/user", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",

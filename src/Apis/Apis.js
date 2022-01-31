@@ -14,7 +14,7 @@ const logout = (context) => {
 };
 
 export const login = async (username, password, response) => {
-	await axios("", {
+	await axios("/apis", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -31,7 +31,7 @@ export const login = async (username, password, response) => {
 };
 
 export const getTahunAjar = async (context, cari, response) => {
-	await axios("", {
+	await axios("/apis", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -53,7 +53,7 @@ export const getTahunAjar = async (context, cari, response) => {
 };
 
 export const setTahunAjar = async (context, id, response) => {
-	await axios("", {
+	await axios("/apis", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -75,7 +75,7 @@ export const setTahunAjar = async (context, id, response) => {
 };
 
 export const getProdi = async (context, response) => {
-	await axios("", {
+	await axios("/apis", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -94,7 +94,7 @@ export const getProdi = async (context, response) => {
 };
 
 export const getAngkatan = async (context, prodi, response) => {
-	await axios("", {
+	await axios("/apis", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -116,7 +116,7 @@ export const getAngkatan = async (context, prodi, response) => {
 };
 
 export const getKelas = async (context, prodi, angkatan, response) => {
-	await axios("", {
+	await axios("/apis", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -148,7 +148,7 @@ export const getTaruna = async (
 	page,
 	response
 ) => {
-	await axios("?page=" + page, {
+	await axios("/apis?page=" + page, {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -174,7 +174,7 @@ export const getTaruna = async (
 };
 
 export const getKategori = async (context, string, response) => {
-	await axios("", {
+	await axios("/apis", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -196,7 +196,7 @@ export const getKategori = async (context, string, response) => {
 };
 
 export const insertPeristiwa = async (context, record, response) => {
-	await axios("", {
+	await axios("/apis", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -222,7 +222,7 @@ export const insertPeristiwa = async (context, record, response) => {
 };
 
 export const updatePeristiwa = async (context, record, response) => {
-	await axios("", {
+	await axios("/apis", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -256,7 +256,7 @@ export const getPeristiwa = async (
 	limit,
 	response
 ) => {
-	await axios("?page=" + page, {
+	await axios("/apis?page=" + page, {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -280,7 +280,7 @@ export const getPeristiwa = async (
 };
 
 export const hapusPeristiwa = async (context, id, response) => {
-	await axios("", {
+	await axios("/apis", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -302,7 +302,7 @@ export const hapusPeristiwa = async (context, id, response) => {
 };
 
 export const entriPoin = async (context, record = [], response) => {
-	await axios("", {
+	await axios("/apis", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -330,7 +330,7 @@ export const getEntri = async (
 	limit,
 	response
 ) => {
-	await axios("?page=" + page, {
+	await axios("/apis?page=" + page, {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -355,7 +355,7 @@ export const getEntri = async (
 };
 
 export const getRecord = async (context, id_entri, response) => {
-	await axios("", {
+	await axios("/apis", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -377,7 +377,7 @@ export const getRecord = async (context, id_entri, response) => {
 };
 
 export const updateEntri = async (context, id_entri, array, response) => {
-	await axios("", {
+	await axios("/apis", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -410,7 +410,7 @@ export const getLog = async (
 	limit,
 	response
 ) => {
-	await axios("?page=" + page, {
+	await axios("/apis?page=" + page, {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -436,7 +436,7 @@ export const getLog = async (
 };
 
 export const getDetailPeristiwa = async (context, id_peristiwa, response) => {
-	await axios("", {
+	await axios("/apis", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -465,7 +465,7 @@ export const getLogPeristiwa = async (
 	limit,
 	response
 ) => {
-	await axios("?page=" + page, {
+	await axios("/apis?page=" + page, {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -497,7 +497,7 @@ export const getRiwayatPeristiwa = async (
 	limit,
 	response
 ) => {
-	await axios("?page=" + page, {
+	await axios("/apis?page=" + page, {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -522,7 +522,7 @@ export const getRiwayatPeristiwa = async (
 };
 
 export const getDetailTaruna = async (context, id_taruna, response) => {
-	await axios("", {
+	await axios("/apis", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -552,7 +552,7 @@ export const getLogTaruna = async (
 	limit,
 	response
 ) => {
-	await axios("?page=" + page, {
+	await axios("/apis?page=" + page, {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -564,7 +564,7 @@ export const getLogTaruna = async (
 			token: context.user.user_lock,
 			payload: {
 				id_taruna: id_taruna,
-				id_smt: smt === 0 ? "" : smt,
+				id_smt: smt === 0 ? "/" : smt,
 				string: filter,
 				limit: limit,
 			},
@@ -583,7 +583,7 @@ export const getDashboardCount = async (
 	kelas,
 	response
 ) => {
-	await axios("", {
+	await axios("/apis", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -616,7 +616,7 @@ export const getDashboardDaftarTaruna = async (
 	page,
 	response
 ) => {
-	await axios("?page=" + page, {
+	await axios("/apis?page=" + page, {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -642,7 +642,7 @@ export const getDashboardDaftarTaruna = async (
 };
 
 export const getRekapPoin = async (context, id_taruna, id_smt, response) => {
-	await axios("", {
+	await axios("/apis", {
 		method: "POST",
 		headers: {
 			Accept: "*/*",
@@ -654,7 +654,7 @@ export const getRekapPoin = async (context, id_taruna, id_smt, response) => {
 			token: context.user.user_lock,
 			payload: {
 				id_taruna: id_taruna,
-				id_smt: id_smt === 0 ? "" : id_smt,
+				id_smt: id_smt === 0 ? "/" : id_smt,
 			},
 		},
 	})
