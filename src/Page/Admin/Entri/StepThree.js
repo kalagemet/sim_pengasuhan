@@ -24,7 +24,7 @@ export default function StepThree(props) {
 		}
 	});
 
-	const submitData = () => {
+	const submitData = async () => {
 		setKonfirmasi(false);
 		setLoading(true);
 		setBerhasil(false);
@@ -42,11 +42,12 @@ export default function StepThree(props) {
 				record.push(tmp);
 			});
 		});
-		entriPoin(props.context, record, (response) => {
+		await entriPoin(props.context, record, (response) => {
 			if (response.status === 200) {
 				if (response.data.error_code === 0) {
 					// console.log(response.data.data);
 					setBerhasil(true);
+					setLoading(false);
 					props.success();
 				} else {
 					console.log(response.data.error_msg);
@@ -56,6 +57,7 @@ export default function StepThree(props) {
 						response.data.error_msg,
 						"orange"
 					);
+					setLoading(false);
 				}
 			} else {
 				console.error("get_kategori_peristiwa", response.status, response.msg);
@@ -65,9 +67,9 @@ export default function StepThree(props) {
 					response.msg,
 					"red"
 				);
+				setLoading(false);
 			}
 		});
-		setLoading(false);
 	};
 	return (
 		<Segment vertical>

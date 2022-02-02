@@ -118,7 +118,7 @@ export default function DaftarPeristiwa(props) {
 										/>
 									</Table.Cell>
 									<Table.Cell>
-										{d.poin}
+										{d.poin_tambahan === 1 ? d.poin_ex : d.poin}{" "}
 										{d.poin_tambahan === 1 ? (
 											<Label color="orange" horizontal>
 												Poin Tambahan
@@ -129,10 +129,10 @@ export default function DaftarPeristiwa(props) {
 									</Table.Cell>
 									<Table.Cell>
 										<Label
-											color={d.pelanggaran === 1 ? "green" : "red"}
+											color={d.pelanggaran === 0 ? "green" : "red"}
 											horizontal
 										>
-											{d.kategori === 1 ? "Penghargaan" : "Pelanggaran"}
+											{d.pelanggaran === 0 ? "Penghargaan" : "Pelanggaran"}
 										</Label>
 									</Table.Cell>
 									<Table.Cell>{d.nama_kategori}</Table.Cell>

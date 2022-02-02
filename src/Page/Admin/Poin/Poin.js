@@ -59,7 +59,7 @@ export default class Poin extends Component {
 
 	getDataTable = async () => {
 		this.setState({ loading: true });
-		getEntri(
+		await getEntri(
 			this.context,
 			this.state.kategoriActive.key,
 			this.state.dateRange[0],
@@ -337,7 +337,7 @@ export default class Poin extends Component {
 												{d.jml_peristiwa +
 													" Peristiwa  " +
 													d.jml_taruna +
-													" Trauna"}
+													" Taruna"}
 											</Table.Cell>
 											<Table.Cell>
 												<Button
