@@ -9,7 +9,11 @@ import { Consumer } from "../../Context";
 
 const TranskripTarunaDOM = React.forwardRef((props, ref) => {
 	const [data, setData] = useState([]);
+	const [ips, setIps] = useState([]);
 	const [rekap, setRekap] = useState([]);
+	const [NAMA_PENANDATANGAN, setNama] = useState();
+	const [JABATAN_PENANDATANGAN, setJabatan] = useState();
+	const [NIP_PENANDATANGAN, setNIP] = useState();
 	const date = new Date();
 
 	useEffect(() => {
@@ -32,7 +36,8 @@ const TranskripTarunaDOM = React.forwardRef((props, ref) => {
 			getRekapPoin(props.context, props.id_semester, (response) => {
 				if (response.status === 200) {
 					if (response.data.error_code === 0) {
-						setRekap(response.data.data);
+						setRekap(response.data.data.data);
+						setIps(response.data.data.ips);
 					} else {
 						console.log(response.data.error_msg);
 					}
@@ -41,9 +46,16 @@ const TranskripTarunaDOM = React.forwardRef((props, ref) => {
 				}
 			});
 		}
-		getRekap();
-		getDetail();
-	}, [props.loading]);
+		fetch("/envi.json")
+			.then((res) => res.json())
+			.then((data) => {
+				setNama(data.TRANSKRIPT_NAME);
+				setNIP(data.TRANSKRIPT_NIP);
+				setJabatan(data.TRANSKRIPT_TITLE);
+				getDetail();
+				getRekap();
+			});
+	}, [props.id_semester]);
 
 	return (
 		<div
@@ -85,8 +97,14 @@ const TranskripTarunaDOM = React.forwardRef((props, ref) => {
 						<Grid.Row>Nama Taruna</Grid.Row>
 						<Grid.Row>Nomor Induk Taruna</Grid.Row>
 						<Grid.Row>Program Studi</Grid.Row>
-						<Grid.Row>Poin Pengasuhan</Grid.Row>
-						<Grid.Row>Predikat Pengasuhan</Grid.Row>
+						<Grid.Row>
+							Poin Pengasuhan{" "}
+							{props.id_semester === 0 ? "Komulatif" : "Semester"}
+						</Grid.Row>
+						<Grid.Row>
+							Predikat Pengasuhan{" "}
+							{props.id_semester === 0 ? "Komulatif" : "Semester"}
+						</Grid.Row>
 						{props.id_semester === 0 ? null : <Grid.Row>Semester</Grid.Row>}
 					</Grid.Column>
 					<Grid.Column width="7">
@@ -94,11 +112,10 @@ const TranskripTarunaDOM = React.forwardRef((props, ref) => {
 						<Grid.Row>: {data.id_taruna}</Grid.Row>
 						<Grid.Row>: {data.prodi}</Grid.Row>
 						<Grid.Row>
-							: {props.id_semester === 0 ? data.ipk : data.ips}
+							: {props.id_semester === 0 ? data.ipk : ips.nilai}
 						</Grid.Row>
 						<Grid.Row>
-							:{" "}
-							{props.id_semester === 0 ? data.predikat_ipk : data.predikat_ips}
+							: {props.id_semester === 0 ? data.predikat_ipk : ips.predikat}
 						</Grid.Row>
 						{props.id_semester === 0 ? null : (
 							<Grid.Row>
@@ -129,9 +146,7 @@ const TranskripTarunaDOM = React.forwardRef((props, ref) => {
 						{rekap.map((d, i) => {
 							return d.is_pelanggaran === 1 ? null : (
 								<Table.Row key={i}>
-									<Table.Cell>
-										{i + 1}. {d.nama_kategori}
-									</Table.Cell>
+									<Table.Cell>{d.nama_kategori}</Table.Cell>
 									<Table.Cell textAlign="right">
 										{d.poin + d.poin_tambahan}
 									</Table.Cell>
@@ -152,9 +167,7 @@ const TranskripTarunaDOM = React.forwardRef((props, ref) => {
 						{rekap.map((d, i) => {
 							return d.is_pelanggaran === 0 ? null : (
 								<Table.Row key={i}>
-									<Table.Cell>
-										{i + 1}. {d.nama_kategori}
-									</Table.Cell>
+									<Table.Cell>{d.nama_kategori}</Table.Cell>
 									<Table.Cell textAlign="right">{d.poin}</Table.Cell>
 								</Table.Row>
 							);
@@ -167,16 +180,16 @@ const TranskripTarunaDOM = React.forwardRef((props, ref) => {
 						<p>
 							MENGESAHKAN
 							<br />
-							KASUBAG KEMAHASISWAAN DAN ALUMNI
+							{JABATAN_PENANDATANGAN}
 							<br />
 							SEKOLAH TINGGI PETANAHAN YOGYAKARTA
 						</p>
 						<b>
 							<p style={{ marginTop: 70 }}>
-								<u>Gad Momole, S.SiT., MPA.</u>
+								<u>{NAMA_PENANDATANGAN}</u>
 							</p>
 						</b>
-						<p>NIP. 197610101997031003</p>
+						<p>{NIP_PENANDATANGAN}</p>
 					</Grid.Column>
 				</Grid>
 				<i>Di cetak pada : {date.toLocaleString()}</i>

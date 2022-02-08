@@ -32,7 +32,7 @@ const Detail = (props) => {
 						<Table.HeaderCell>Detail Penguna</Table.HeaderCell>
 						<Table.HeaderCell>
 							<TranskripTaruna
-								disabled={props.loading}
+								disabled={props.loading || !props.transkrip}
 								singlepage={1}
 								context={props.context}
 								floated="right"
@@ -95,6 +95,7 @@ class DetailUsers extends Component {
 			semester: [],
 			semesterSelected: "",
 			nama_semester: "",
+			ips: [],
 			filter: "",
 
 			data: [],
@@ -177,7 +178,8 @@ class DetailUsers extends Component {
 				if (response.status === 200) {
 					if (response.data.error_code === 0) {
 						this.setState({
-							rekap: response.data.data,
+							rekap: response.data.data.data,
+							ips: response.data.data.ips,
 						});
 					} else {
 						console.log(response.data.error_msg);
@@ -295,7 +297,7 @@ class DetailUsers extends Component {
 												this.setState(
 													{
 														semesterSelected: d.value,
-														nama_semester: d.text,
+														nama_semester: e.nativeEvent.target.outerText,
 														active_page: 1,
 														data: [],
 														rekap: [],
@@ -323,6 +325,7 @@ class DetailUsers extends Component {
 											<Table.Row>
 												<Table.HeaderCell>No.</Table.HeaderCell>
 												<Table.HeaderCell>Nama peristiwa</Table.HeaderCell>
+												<Table.HeaderCell>Semester</Table.HeaderCell>
 												<Table.HeaderCell>Tanggal</Table.HeaderCell>
 												<Table.HeaderCell>Kategori</Table.HeaderCell>
 												<Table.HeaderCell>Jumlah Poin</Table.HeaderCell>
@@ -340,6 +343,7 @@ class DetailUsers extends Component {
 														1}
 												</Table.Cell>
 												<Table.Cell>{d.nama_peristiwa}</Table.Cell>
+												<Table.Cell>{d.smt}</Table.Cell>
 												<Table.Cell>{d.tanggal}</Table.Cell>
 												<Table.Cell>
 													{d.pelanggaran === 0 ? "Penghargaan" : "Pelanggaran"}{" "}
@@ -458,6 +462,7 @@ class DetailUsers extends Component {
 								id_taruna={this.state.id_taruna}
 								data={this.state.detail}
 								setLoad={this.context.setLoad}
+								transkrip={this.state.data.length > 0}
 							/>
 						</Grid.Column>
 					</Grid.Row>

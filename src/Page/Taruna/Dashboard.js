@@ -128,6 +128,7 @@ function TableView(props) {
 	useEffect(() => {
 		async function getData() {
 			setLoading(true);
+			setData([]);
 			if (props.active === 0 || props.active === 1) {
 				await getDashboardData(
 					props.context,
@@ -160,7 +161,7 @@ function TableView(props) {
 			}
 		}
 		getData();
-	}, [props.active]);
+	}, [props.active, props.semester]);
 
 	return loading ? (
 		<LoadingTableView />
@@ -262,42 +263,8 @@ const CardView = (props) => {
 	}
 	return (
 		<div className="card-dashboard">
-			<Card raised style={{ background: color(props.data.predikat) }}>
-				<Card.Header className="title">Status Pengasuhan</Card.Header>
-				<Card.Content>
-					<Statistic className="value">
-						<Statistic.Value>{props.data.predikat}</Statistic.Value>
-						<Statistic.Label>
-							<Button as={Link} to="/transkrip" className="action" animated>
-								<Button.Content visible>Detail</Button.Content>
-								<Button.Content hidden>
-									Transkrip
-									<Icon name="arrow right" />
-								</Button.Content>
-							</Button>
-						</Statistic.Label>
-					</Statistic>
-				</Card.Content>
-			</Card>
 			<Card raised style={{ background: "#1da6f0" }}>
-				<Card.Header className="title">Poin Pengasuhan</Card.Header>
-				<Card.Content>
-					<Statistic className="value">
-						<Statistic.Value>{props.data.nilai}</Statistic.Value>
-						<Statistic.Label>
-							<Button as={Link} to="/transkrip" className="action" animated>
-								<Button.Content visible>Poin</Button.Content>
-								<Button.Content hidden>
-									Lihat
-									<Icon name="arrow right" />
-								</Button.Content>
-							</Button>
-						</Statistic.Label>
-					</Statistic>
-				</Card.Content>
-			</Card>
-			<Card raised style={{ background: "#1da6f0" }}>
-				<Card.Header className="title">Jumlah Penghargaan</Card.Header>
+				<Card.Header className="title">Poin Penghargaan</Card.Header>
 				<Card.Content>
 					<Statistic className="value">
 						<Statistic.Value>{props.data.penghargaan}</Statistic.Value>
@@ -318,7 +285,7 @@ const CardView = (props) => {
 				</Card.Content>
 			</Card>
 			<Card raised style={{ background: "red" }}>
-				<Card.Header className="title">Jumlah Pelanggaran</Card.Header>
+				<Card.Header className="title">Poin Pelanggaran</Card.Header>
 				<Card.Content>
 					<Statistic className="value">
 						<Statistic.Value>{props.data.pelanggaran}</Statistic.Value>
@@ -328,6 +295,42 @@ const CardView = (props) => {
 								className="action"
 								animated
 							>
+								<Button.Content visible>Poin</Button.Content>
+								<Button.Content hidden>
+									Lihat
+									<Icon name="arrow right" />
+								</Button.Content>
+							</Button>
+						</Statistic.Label>
+					</Statistic>
+				</Card.Content>
+			</Card>
+			<Card raised style={{ background: color(props.data.predikat) }}>
+				<Card.Header className="title">Status Pengasuhan</Card.Header>
+				<Card.Content>
+					<Statistic className="value">
+						<Statistic.Value>{props.data.predikat}</Statistic.Value>
+						<Statistic.Label>
+							<Button as={Link} to="/transkrip" className="action" animated>
+								<Button.Content visible>Detail</Button.Content>
+								<Button.Content hidden>
+									Transkrip
+									<Icon name="arrow right" />
+								</Button.Content>
+							</Button>
+						</Statistic.Label>
+					</Statistic>
+				</Card.Content>
+			</Card>
+			<Card raised style={{ background: "#1da6f0" }}>
+				<Card.Header className="title">
+					Total Poin {props.data.semesterSelected === 0 ? "Komulatif" : ""}
+				</Card.Header>
+				<Card.Content>
+					<Statistic className="value">
+						<Statistic.Value>{props.data.nilai}</Statistic.Value>
+						<Statistic.Label>
+							<Button as={Link} to="/transkrip" className="action" animated>
 								<Button.Content visible>Poin</Button.Content>
 								<Button.Content hidden>
 									Lihat
@@ -377,14 +380,12 @@ class DashboardTaruna extends Component {
 				if (response.status === 200) {
 					if (response.data.error_code === 0) {
 						let data = [...response.data.data.record];
-						data.map((d, i) => {
-							if (d.param === 0) {
-								this.setState({ penghargaan: d.jml });
-							}
-							if (d.param === 1) {
-								this.setState({ pelanggaran: d.jml });
-							}
-						});
+						data.map((d, i) =>
+							this.setState({
+								penghargaan: d.penghargaan,
+								pelanggaran: d.pelanggaran,
+							})
+						);
 						if (response.data.data.poin) {
 							this.setState({
 								loadingCard: false,
@@ -457,9 +458,7 @@ class DashboardTaruna extends Component {
 								data: [],
 								rekap: [],
 							},
-							() => {
-								this.loadDashboard();
-							}
+							() => this.loadDashboard()
 						)
 					}
 				/>

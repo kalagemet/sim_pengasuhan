@@ -30,7 +30,7 @@ const DetailTaruna = (props) => {
 						<Table.HeaderCell>Detail Penguna</Table.HeaderCell>
 						<Table.HeaderCell>
 							<TranskripTaruna
-								disabled={props.loading}
+								disabled={props.loading || !props.transkrip}
 								singlepage={1}
 								context={props.context}
 								floated="right"
@@ -143,6 +143,7 @@ class Transkrip extends Component {
 			semester: [],
 			semesterSelected: "",
 			nama_semester: "",
+			ips: [],
 			filter: "",
 
 			data: [],
@@ -166,7 +167,6 @@ class Transkrip extends Component {
 				if (response.data.error_code === 0) {
 					this.setState({ detail: response.data.data }, () => {
 						this.getTahunAjar();
-						this.getRekap();
 					});
 				} else {
 					console.log(response.data.error_msg);
@@ -200,7 +200,10 @@ class Transkrip extends Component {
 							nama_semester: active.nama_semester,
 							semester: all,
 						},
-						() => this.getData()
+						() => {
+							this.getData();
+							this.getRekap();
+						}
 					);
 				} else {
 					console.log(response.data.error_msg);
@@ -213,7 +216,7 @@ class Transkrip extends Component {
 
 	getData = async () => {
 		this.setState({ loading: true });
-		await getLogTaruna(
+		getLogTaruna(
 			this.context,
 			this.state.semesterSelected,
 			this.state.filter,
@@ -247,30 +250,27 @@ class Transkrip extends Component {
 
 	getRekap = async () => {
 		this.context.setLoad(true);
-		await getRekapPoin(
-			this.context,
-			this.state.semesterSelected,
-			(response) => {
-				if (response.status === 200) {
-					if (response.data.error_code === 0) {
-						this.setState({
-							rekap: response.data.data,
-						});
-					} else {
-						console.log(response.data.error_msg);
-						this.context.setNotify(
-							"warning",
-							"Error saat mengambil detail poin",
-							response.data.error_msg,
-							"red"
-						);
-					}
+		getRekapPoin(this.context, this.state.semesterSelected, (response) => {
+			if (response.status === 200) {
+				if (response.data.error_code === 0) {
+					this.setState({
+						rekap: response.data.data.data,
+						ips: response.data.data.ips,
+					});
 				} else {
-					console.error("get_rekap_poin", response.status, response.msg);
+					console.log(response.data.error_msg);
+					this.context.setNotify(
+						"warning",
+						"Error saat mengambil detail poin",
+						response.data.error_msg,
+						"red"
+					);
 				}
-				this.context.setLoad(false);
+			} else {
+				console.error("get_rekap_poin", response.status, response.msg);
 			}
-		);
+			this.context.setLoad(false);
+		});
 	};
 
 	render() {
@@ -308,7 +308,7 @@ class Transkrip extends Component {
 														this.setState(
 															{
 																semesterSelected: d.value,
-																nama_semester: d.text,
+																nama_semester: e.nativeEvent.target.outerText,
 																active_page: 1,
 																data: [],
 																rekap: [],
@@ -339,6 +339,7 @@ class Transkrip extends Component {
 												<Table.Row>
 													<Table.HeaderCell>No.</Table.HeaderCell>
 													<Table.HeaderCell>Nama peristiwa</Table.HeaderCell>
+													<Table.HeaderCell>Semester</Table.HeaderCell>
 													<Table.HeaderCell>Tanggal</Table.HeaderCell>
 													<Table.HeaderCell>Kategori</Table.HeaderCell>
 													<Table.HeaderCell>Jumlah Poin</Table.HeaderCell>
@@ -355,6 +356,7 @@ class Transkrip extends Component {
 															1}
 													</Table.Cell>
 													<Table.Cell>{d.nama_peristiwa}</Table.Cell>
+													<Table.Cell>{d.smt}</Table.Cell>
 													<Table.Cell>{d.tanggal}</Table.Cell>
 													<Table.Cell>
 														{d.pelanggaran === 0
@@ -465,6 +467,7 @@ class Transkrip extends Component {
 									id_taruna={this.context.user.identity}
 									data={this.state.detail}
 									setLoad={this.context.setLoad}
+									transkrip={this.state.data.length > 0}
 								/>
 							)}
 						</Grid.Column>
