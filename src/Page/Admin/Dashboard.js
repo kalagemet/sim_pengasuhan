@@ -110,7 +110,7 @@ const CardView = (props) => {
 
 const ChartView = (props) => {
 	let arr = [["Jenis", "Jumlah Poin"]];
-	props.data.map((d) => arr.push([d.predikat, 8]));
+	props.data.map((d) => arr.push([d.predikat, d.jml]));
 	return (
 		<Segment vertical className="chart">
 			<Chart
@@ -121,7 +121,7 @@ const ChartView = (props) => {
 				data={arr}
 				options={{
 					title: "Presentase Poin",
-					colors: ["green", "red", "orange"],
+					colors: ["green", "orange", "red"],
 					// Just add this option
 					pieHole: 0.6,
 				}}

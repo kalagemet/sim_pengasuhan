@@ -107,6 +107,7 @@ const ChartView = (props) => {
 				options={{
 					title: "Presentase Poin",
 					// Just add this option
+					colors: ["green", "red"],
 					pieHole: 0.5,
 				}}
 				rootProps={{ "data-testid": "3" }}

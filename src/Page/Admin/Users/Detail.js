@@ -129,7 +129,10 @@ class DetailUsers extends Component {
 							nama_semester: active.nama_semester,
 							semester: all,
 						},
-						() => this.getData()
+						() => {
+							this.getData();
+							this.getRekap();
+						}
 					);
 				} else {
 					console.log(response.data.error_msg);
@@ -149,7 +152,6 @@ class DetailUsers extends Component {
 				if (response.data.error_code === 0) {
 					this.setState({ detail: response.data.data }, () => {
 						this.getTahunAjar();
-						this.getRekap();
 					});
 				} else {
 					console.log(response.data.error_msg);

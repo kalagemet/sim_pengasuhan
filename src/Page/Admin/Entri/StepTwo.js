@@ -341,6 +341,7 @@ export default function StepTwo(props) {
 													<Table.HeaderCell>Nama Taruna</Table.HeaderCell>
 													<Table.HeaderCell>Poin Sementara</Table.HeaderCell>
 													<Table.HeaderCell>Poin Komulatif</Table.HeaderCell>
+													<Table.HeaderCell>Status</Table.HeaderCell>
 													<Table.HeaderCell textAlign="right">
 														{checkBox ? (
 															<Button.Group size="small">
@@ -389,6 +390,7 @@ export default function StepTwo(props) {
 														</Table.Cell>
 														<Table.Cell>{d.ips} Poin</Table.Cell>
 														<Table.Cell>{d.ipk} Poin</Table.Cell>
+														<Table.Cell>{d.status}</Table.Cell>
 														<Table.Cell textAlign="right">
 															{checkBox ? (
 																<Checkbox
@@ -455,6 +457,20 @@ export default function StepTwo(props) {
 											content={"Menampilkan " + page.total_data + " Data"}
 											style={{ textAlign: "center", fontStyle: "italic" }}
 										/>
+										<Message style={{ textAlign: "left" }}>
+											<Message.Header>
+												Keterangan Status Taruna berdasarkan database Akademik
+											</Message.Header>
+											<Message.List
+												items={[
+													"A = Aktif",
+													"C = Cuti",
+													"D = Drop Out",
+													"N = Tidak Aktif",
+													"M = Meninggal",
+												]}
+											/>
+										</Message>
 										<Pagination
 											defaultActivePage={1}
 											onPageChange={(e, d) =>

@@ -379,6 +379,7 @@ class Users extends Component {
 									<Table.HeaderCell>Poin Semester</Table.HeaderCell>
 									<Table.HeaderCell>Poin Komulatif</Table.HeaderCell>
 									<Table.HeaderCell>Kelas</Table.HeaderCell>
+									<Table.HeaderCell>Status</Table.HeaderCell>
 									<Table.HeaderCell>Aksi</Table.HeaderCell>
 								</Table.Row>
 							</Table.Header>
@@ -413,6 +414,7 @@ class Users extends Component {
 													{d.angkatan + " / " + d.kelas}
 												</Label>
 											</Table.Cell>
+											<Table.Cell>{d.status}</Table.Cell>
 											<Table.Cell singleLine>
 												<Button.Group widths={3} icon size="tiny" fluid>
 													<Button
@@ -486,6 +488,20 @@ class Users extends Component {
 							content={"Menampilkan " + this.state.total_data + " total data"}
 							style={{ textAlign: "center", fontStyle: "italic" }}
 						/>
+						<Message style={{ textAlign: "left" }}>
+							<Message.Header>
+								Keterangan Status Taruna berdasarkan database Akademik
+							</Message.Header>
+							<Message.List
+								items={[
+									"A = Aktif",
+									"C = Cuti",
+									"D = Drop Out",
+									"N = Tidak Aktif",
+									"M = Meninggal",
+								]}
+							/>
+						</Message>
 						<Pagination
 							defaultActivePage={1}
 							onPageChange={(e, d) =>
