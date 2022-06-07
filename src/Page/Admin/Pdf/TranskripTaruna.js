@@ -12,8 +12,11 @@ const TranskripTarunaDOM = React.forwardRef((props, ref) => {
 	const [ips, setIps] = useState([]);
 	const [rekap, setRekap] = useState([]);
 	const [NAMA_PENANDATANGAN, setNama] = useState();
+	const [NAMA_MENGETAHUI, setNamaMENGETAHUI] = useState();
 	const [JABATAN_PENANDATANGAN, setJabatan] = useState();
+	const [JABATAN_MENGETAHUI, setJabatanMENGETAHUI] = useState();
 	const [NIP_PENANDATANGAN, setNIP] = useState();
+	const [NIP_MENGETAHUI, setNIP_MENGETAHUI] = useState();
 	const date = new Date();
 
 	useEffect(() => {
@@ -57,6 +60,9 @@ const TranskripTarunaDOM = React.forwardRef((props, ref) => {
 				setNama(data.TRANSKRIPT_NAME);
 				setNIP(data.TRANSKRIPT_NIP);
 				setJabatan(data.TRANSKRIPT_TITLE);
+				setNamaMENGETAHUI(data.TRANSKRIPT_NAME_MENGETAHUI);
+				setNIP_MENGETAHUI(data.TRANSKRIPT_NIP_MENGETAHUI);
+				setJabatanMENGETAHUI(data.TRANSKRIPT_TITLE_MENGETAHUI);
 				getRekap();
 				getDetail();
 			});
@@ -143,16 +149,18 @@ const TranskripTarunaDOM = React.forwardRef((props, ref) => {
 				<Table basic="very">
 					<Table.Header style={{ fontWight: "bold" }}>
 						<Table.Row>
-							<Table.HeaderCell>Poin Penghargaan</Table.HeaderCell>
-							<Table.HeaderCell textAlign="right">Total Poin</Table.HeaderCell>
+							<Table.HeaderCell>Nilai Sapta Karakter</Table.HeaderCell>
+							<Table.HeaderCell textAlign="right">Poin</Table.HeaderCell>
 						</Table.Row>
 					</Table.Header>
 					<Table.Body>
 						{rekap.map((d, i) => {
 							return d.is_pelanggaran === 1 ? null : (
 								<Table.Row key={i}>
-									<Table.Cell>{d.nama_kategori}</Table.Cell>
-									<Table.Cell textAlign="right">
+									<Table.Cell style={{ padding: "5px" }}>
+										{d.nama_kategori}
+									</Table.Cell>
+									<Table.Cell style={{ padding: "5px" }} textAlign="right">
 										{d.poin + d.poin_tambahan}
 									</Table.Cell>
 								</Table.Row>
@@ -160,46 +168,71 @@ const TranskripTarunaDOM = React.forwardRef((props, ref) => {
 						})}
 					</Table.Body>
 				</Table>
-				<br />
 				<Table basic="very">
 					<Table.Header style={{ fontWight: "bold" }}>
 						<Table.Row>
 							<Table.HeaderCell>Poin Pelanggaran</Table.HeaderCell>
-							<Table.HeaderCell textAlign="right">Total Poin</Table.HeaderCell>
+							<Table.HeaderCell textAlign="right">Poin</Table.HeaderCell>
 						</Table.Row>
 					</Table.Header>
 					<Table.Body>
 						{rekap.map((d, i) => {
 							return d.is_pelanggaran === 0 ? null : (
 								<Table.Row key={i}>
-									<Table.Cell>{d.nama_kategori}</Table.Cell>
-									<Table.Cell textAlign="right">{d.poin}</Table.Cell>
+									<Table.Cell style={{ padding: "5px" }}>
+										{d.nama_kategori}
+									</Table.Cell>
+									<Table.Cell style={{ padding: "5px" }} textAlign="right">
+										{d.poin}
+									</Table.Cell>
 								</Table.Row>
 							);
 						})}
 					</Table.Body>
 				</Table>
+				<br />
 				<Grid columns={2}>
-					<Grid.Column></Grid.Column>
+					<Grid.Column textAlign="center">
+						<p>
+							MENGETAHUI
+							<br />
+							a/n KETUA SEKOLAH TINGGI PETANAHAN NASIONAL <br />
+							{JABATAN_MENGETAHUI}
+							<br />
+							{/* SEKOLAH TINGGI PETANAHAN YOGYAKARTA */}
+						</p>
+						<b>
+							<p style={{ marginTop: 50 }}>
+								<u>{NAMA_MENGETAHUI}</u>
+							</p>
+						</b>
+						<p>{NIP_MENGETAHUI}</p>
+					</Grid.Column>
 					<Grid.Column textAlign="center">
 						<p>
 							MENGESAHKAN
 							<br />
 							{JABATAN_PENANDATANGAN}
 							<br />
-							SEKOLAH TINGGI PETANAHAN YOGYAKARTA
+							{/* SEKOLAH TINGGI PETANAHAN YOGYAKARTA */}
 						</p>
 						<b>
-							<p style={{ marginTop: 70 }}>
+							<p style={{ marginTop: 65 }}>
 								<u>{NAMA_PENANDATANGAN}</u>
 							</p>
 						</b>
 						<p>{NIP_PENANDATANGAN}</p>
 					</Grid.Column>
 				</Grid>
-				<i>Di cetak pada : {date.toLocaleString()}</i>
 			</Segment>
-			<i>halaman 1 dari 1 halaman</i>
+			<Grid columns={2}>
+				<Grid.Column textAlign="left">
+					<i>halaman 1 dari 1 halaman</i>
+				</Grid.Column>
+				<Grid.Column textAlign="right">
+					<i>Di cetak pada : {date.toLocaleString()}</i>
+				</Grid.Column>
+			</Grid>
 		</div>
 	);
 });
